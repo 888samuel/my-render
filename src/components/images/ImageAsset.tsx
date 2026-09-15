@@ -11,7 +11,8 @@ type ImageAssetProps = {
 
 export const ImageAsset = ({ layer }: ImageAssetProps) => {
   const fit = layer.fit ?? "cover";
-  const src = staticFile(resolveAsset(layer.asset_id));
+  const relativePath = layer.src ?? resolveLayerAsset(layer);
+  const src = staticFile(relativePath.replace(/^\//, ""));
   const cropScale = fit === "centered_crop" ? 1.18 : 1;
 
   return (
@@ -38,6 +39,14 @@ export const ImageAsset = ({ layer }: ImageAssetProps) => {
       {layer.overlay === "dark_gradient" ? <DarkGradient /> : null}
     </AbsoluteFill>
   );
+};
+
+const resolveLayerAsset = (layer: ImageLayer): string => {
+  if (layer.asset_id) {
+    return resolveAsset(layer.asset_id);
+  }
+
+  throw new Error("ERROR:\nImage layer is missing asset_id or src.");
 };
 
 const DarkGradient = () => {

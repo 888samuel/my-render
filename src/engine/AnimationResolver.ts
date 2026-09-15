@@ -3,6 +3,7 @@ import type { MotionType, TextAnimationType } from "../types/common";
 import { theme } from "../styles/theme";
 import { lerpFrames } from "../utils/interpolate";
 import { secondsToFrames } from "../utils/time";
+import { normalizeTextAnimation } from "./normalizeAliases";
 
 export type MotionCurve = {
   scaleFrom: number;
@@ -33,8 +34,10 @@ export function resolveMotion(type: MotionType): MotionCurve {
   switch (type) {
     case "none":
     case "static":
+    case "static_hold":
       return STATIC_MOTION;
     case "slow_zoom_in":
+    case "zoom_in":
       return {
         scaleFrom: 1.02,
         scaleTo: 1.08,
@@ -44,6 +47,7 @@ export function resolveMotion(type: MotionType): MotionCurve {
         translateYTo: 0,
       };
     case "slow_zoom_out":
+    case "zoom_out":
       return {
         scaleFrom: 1.08,
         scaleTo: 1.02,
@@ -70,6 +74,35 @@ export function resolveMotion(type: MotionType): MotionCurve {
         translateYFrom: 0,
         translateYTo: 0,
       };
+    case "pan_up":
+    case "tilt_up":
+      return {
+        scaleFrom: 1.1,
+        scaleTo: 1.1,
+        translateXFrom: 0,
+        translateXTo: 0,
+        translateYFrom: 3.2,
+        translateYTo: -3.2,
+      };
+    case "pan_down":
+    case "tilt_down":
+      return {
+        scaleFrom: 1.1,
+        scaleTo: 1.1,
+        translateXFrom: 0,
+        translateXTo: 0,
+        translateYFrom: -3.2,
+        translateYTo: 3.2,
+      };
+    case "pan_diagonal":
+      return {
+        scaleFrom: 1.12,
+        scaleTo: 1.12,
+        translateXFrom: -2.4,
+        translateXTo: 2.4,
+        translateYFrom: -2.0,
+        translateYTo: 2.0,
+      };
     case "subtle_movement":
       return {
         scaleFrom: 1.03,
@@ -80,6 +113,30 @@ export function resolveMotion(type: MotionType): MotionCurve {
         translateYTo: -1.2,
       };
   }
+}
+
+export function applyMotionIntensity(
+  curve: MotionCurve,
+  intensity: number | undefined,
+): MotionCurve {
+  if (intensity === undefined) {
+    return curve;
+  }
+
+  if (intensity <= 0) {
+    return STATIC_MOTION;
+  }
+
+  const factor = Math.min(1.8, Math.max(0.35, intensity / 0.25));
+
+  return {
+    scaleFrom: 1 + (curve.scaleFrom - 1) * factor,
+    scaleTo: 1 + (curve.scaleTo - 1) * factor,
+    translateXFrom: curve.translateXFrom * factor,
+    translateXTo: curve.translateXTo * factor,
+    translateYFrom: curve.translateYFrom * factor,
+    translateYTo: curve.translateYTo * factor,
+  };
 }
 
 export type SampledMotion = {
@@ -128,8 +185,9 @@ export function resolveTextEntrance(
     translateY: 0,
     scale: 1,
   };
+  const type = normalizeTextAnimation(animation);
 
-  switch (animation) {
+  switch (type) {
     case "none":
     case "word_reveal":
     case "dramatic_reveal":
@@ -151,6 +209,7 @@ export function resolveTextEntrance(
           0,
         ),
       };
+    case "fade_up":
     case "slide_up":
       return {
         ...rest,
@@ -163,6 +222,7 @@ export function resolveTextEntrance(
         opacity: lerpFrames(frame, 0, enterFrames, 0, 1),
         translateX: lerpFrames(frame, 0, enterFrames, 36, 0),
       };
+    case "scale_up":
     case "scale_in":
       return {
         ...rest,

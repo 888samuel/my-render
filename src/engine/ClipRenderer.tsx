@@ -7,6 +7,7 @@ import { LayerRenderer } from "./LayerRenderer";
 import type { Clip, Transition } from "../types/edit-plan";
 import { secondsToFrames } from "../utils/time";
 import { theme } from "../styles/theme";
+import { normalizeTransitionType } from "./normalizeTransition";
 
 type ClipRendererProps = {
   clip: Clip;
@@ -65,28 +66,32 @@ const ClipTransition = ({
 }) => {
   let content: ReactNode = children;
 
-  if (transitionOut && transitionOut.type === "fade") {
-    content = (
-      <Fade
-        direction="out"
-        durationSec={transitionOut.duration_sec ?? theme.animation.transitionSec}
-      >
-        {content}
-      </Fade>
-    );
+  if (transitionOut) {
+    const outType = normalizeTransitionType(transitionOut.type);
+    if (outType === "fade") {
+      content = (
+        <Fade
+          direction="out"
+          durationSec={transitionOut.duration_sec ?? theme.animation.transitionSec}
+        >
+          {content}
+        </Fade>
+      );
+    }
   }
 
   if (transitionIn) {
     const durationSec = transitionIn.duration_sec ?? theme.animation.transitionSec;
-    if (transitionIn.type === "fade") {
+    const inType = normalizeTransitionType(transitionIn.type);
+    if (inType === "fade") {
       content = (
         <Fade direction="in" durationSec={durationSec}>
           {content}
         </Fade>
       );
-    } else if (transitionIn.type === "crossfade") {
+    } else if (inType === "crossfade") {
       content = <Crossfade durationSec={durationSec}>{content}</Crossfade>;
-    } else if (transitionIn.type === "slide") {
+    } else if (inType === "slide") {
       content = <Slide durationSec={durationSec}>{content}</Slide>;
     }
   }

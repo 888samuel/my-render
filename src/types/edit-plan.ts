@@ -13,6 +13,7 @@ import type {
 
 export type Motion = {
   type: MotionType;
+  intensity?: number;
 };
 
 export type TextAnimation = {
@@ -39,7 +40,8 @@ export type LayerTiming = {
 
 export type ImageLayer = LayerTiming & {
   type: "image";
-  asset_id: AssetId;
+  asset_id?: AssetId;
+  src?: string;
   fit?: ImageFit;
   motion?: Motion;
   overlay?: ImageOverlay;

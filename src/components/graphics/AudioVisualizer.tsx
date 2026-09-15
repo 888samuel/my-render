@@ -22,7 +22,7 @@ export const AudioVisualizer = ({
   const { fps, width } = useVideoConfig();
   const audioSrc = plan.audio?.src;
   const src = staticFile(
-    (audioSrc ?? "assets/audio/voiceover.wav").replace(/^\//, ""),
+    (audioSrc ?? "assets/audio/output.mp3").replace(/^\//, ""),
   );
   const audioData = useAudioData(src);
   const frame = compositionFrameOffset + localFrame;

@@ -2,6 +2,7 @@ import { Html5Audio, Sequence, staticFile } from "remotion";
 import { AbsoluteFill } from "../components/common/AbsoluteFill";
 import { ClipRenderer } from "./ClipRenderer";
 import { EditPlanProvider } from "./EditPlanContext";
+import { EthiopicFont } from "../styles/EthiopicFont";
 import { theme } from "../styles/theme";
 import { secondsToFrames } from "../utils/time";
 import { validateAssets } from "../validation/validateAssets";
@@ -23,6 +24,7 @@ export const VideoEngine = ({ editPlan }: VideoEngineProps) => {
           backgroundColor: theme.colors.background,
         }}
       >
+        <EthiopicFont />
         {editPlan.clips.map((clip) => (
           <ClipRenderer key={clip.id} clip={clip} fps={editPlan.video.fps} />
         ))}

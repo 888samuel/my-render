@@ -1,6 +1,6 @@
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import { AbsoluteFill } from "../common/AbsoluteFill";
-import { SafeArea } from "../common/SafeArea";
+import { SafeArea, textAlignForPlacement } from "../common/SafeArea";
 import { Entrance } from "./AnimatedText";
 import { wordRevealOpacity } from "../../engine/AnimationResolver";
 import { theme } from "../../styles/theme";
@@ -54,9 +54,8 @@ const statementStyle = (placement: LayerPlacement) => {
     letterSpacing: "-0.02em",
     lineHeight: 1.3,
     maxWidth: 1280,
-    textAlign: (placement === "center" ? "center" : "left") as
-      | "center"
-      | "left",
+    whiteSpace: "pre-line" as const,
+    textAlign: textAlignForPlacement(placement),
   };
 };
 

@@ -22,6 +22,9 @@ export const LayerRenderer = ({
 }: LayerRendererProps) => {
   switch (layer.type) {
     case "title":
+      if (!layer.text.trim() || layer.placement === "none") {
+        return null;
+      }
       return (
         <Title
           text={layer.text}
@@ -30,6 +33,9 @@ export const LayerRenderer = ({
         />
       );
     case "text":
+      if (!layer.text.trim() || layer.placement === "none") {
+        return null;
+      }
       return (
         <AnimatedText
           text={layer.text}

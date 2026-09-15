@@ -9,8 +9,9 @@ export const theme = {
     overlayBottom: "rgba(6, 7, 10, 0.72)",
   },
   fonts: {
-    display: 'Georgia, "Times New Roman", serif',
-    body: 'Inter, "Segoe UI", system-ui, sans-serif',
+    display:
+      '"Noto Sans Ethiopic", Ebrima, Nyala, Georgia, "Times New Roman", serif',
+    body: '"Noto Sans Ethiopic", Ebrima, Inter, "Segoe UI", system-ui, sans-serif',
   },
   fontSize: {
     title: 72,

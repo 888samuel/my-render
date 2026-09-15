@@ -8,9 +8,14 @@ export function validateAssets(plan: EditPlan): void {
         continue;
       }
 
-      if (!hasAsset(layer.asset_id)) {
+      if (layer.type === "image" && layer.src) {
+        continue;
+      }
+
+      const assetId = layer.asset_id;
+      if (!assetId || !hasAsset(assetId)) {
         throw new Error(
-          `ERROR:\nAsset "${layer.asset_id}" referenced by clip "${clip.id}" does not exist.`,
+          `ERROR:\nAsset "${assetId ?? ""}" referenced by clip "${clip.id}" does not exist.`,
         );
       }
     }

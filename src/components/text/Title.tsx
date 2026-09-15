@@ -1,5 +1,5 @@
 import { AbsoluteFill } from "../common/AbsoluteFill";
-import { SafeArea } from "../common/SafeArea";
+import { SafeArea, textAlignForPlacement } from "../common/SafeArea";
 import { RevealText } from "./AnimatedText";
 import { theme } from "../../styles/theme";
 import type { LayerPlacement } from "../../types/common";
@@ -27,16 +27,17 @@ export const Title = ({
         <RevealText
           text={text}
           animation={animation}
-          align={placement === "left" || placement === "lower_third" ? "left" : "center"}
+          align={textAlignForPlacement(placement)}
           style={{
             color: theme.colors.text,
             fontFamily: theme.fonts.display,
             fontSize,
             fontWeight: 500,
             fontStyle: variant === "statement" ? "italic" : "normal",
-            letterSpacing: variant === "statement" ? "0.01em" : "-0.03em",
-            lineHeight: 1.18,
-            maxWidth: variant === "statement" ? 1200 : 1400,
+            letterSpacing: variant === "statement" ? "0.01em" : "-0.02em",
+            lineHeight: 1.22,
+            maxWidth: variant === "statement" ? 1280 : 1500,
+            whiteSpace: "pre-line",
           }}
         />
       </SafeArea>

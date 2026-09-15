@@ -1,7 +1,12 @@
 import type { ReactNode } from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import type { Motion } from "../../types/edit-plan";
-import { resolveMotion, sampleMotion } from "../../engine/AnimationResolver";
+import {
+  applyMotionIntensity,
+  resolveMotion,
+  sampleMotion,
+} from "../../engine/AnimationResolver";
+import { normalizeMotionType } from "../../engine/normalizeAliases";
 
 type ImageMotionProps = {
   motion?: Motion;
@@ -11,8 +16,9 @@ type ImageMotionProps = {
 export const ImageMotion = ({ motion, children }: ImageMotionProps) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
+  const type = normalizeMotionType(motion?.type ?? "static");
   const sampled = sampleMotion(
-    resolveMotion(motion?.type ?? "static"),
+    applyMotionIntensity(resolveMotion(type), motion?.intensity),
     frame,
     durationInFrames,
   );

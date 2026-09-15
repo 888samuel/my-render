@@ -7,7 +7,7 @@ import {
 } from "../../engine/AnimationResolver";
 import { lerpFrames } from "../../utils/interpolate";
 import { AbsoluteFill } from "../common/AbsoluteFill";
-import { SafeArea } from "../common/SafeArea";
+import { SafeArea, textAlignForPlacement } from "../common/SafeArea";
 import { theme } from "../../styles/theme";
 import { secondsToFrames } from "../../utils/time";
 import type { LayerPlacement } from "../../types/common";
@@ -17,7 +17,7 @@ type RevealTextProps = {
   text: string;
   animation?: TextAnimation;
   style?: CSSProperties;
-  align?: "left" | "center";
+  align?: "left" | "center" | "right";
 };
 
 export const RevealText = ({
@@ -85,8 +85,7 @@ export const AnimatedText = ({
   animation?: TextAnimation;
   placement?: LayerPlacement;
 }) => {
-  const align =
-    placement === "left" || placement === "lower_third" ? "left" : "center";
+  const align = textAlignForPlacement(placement);
 
   return (
     <AbsoluteFill>
@@ -101,8 +100,9 @@ export const AnimatedText = ({
             fontSize: theme.fontSize.statement,
             fontWeight: 500,
             letterSpacing: "-0.02em",
-            lineHeight: 1.25,
-            maxWidth: 1200,
+            lineHeight: 1.3,
+            maxWidth: 1280,
+            whiteSpace: "pre-line",
           }}
         />
       </SafeArea>
