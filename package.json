@@ -1,17 +1,16 @@
 {
   "name": "video-editor",
   "version": "1.0.0",
-  "description": "My Remotion video",
+  "description": "JSON-driven Remotion editing engine for educational/documentary videos",
   "repository": {},
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.524",
+    "@remotion/media-utils": "4.0.524",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "remotion": "4.0.524",
-    "@remotion/tailwind-v4": "4.0.524",
-    "tailwindcss": "4.0.0"
+    "remotion": "4.0.524"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.524",
@@ -25,9 +24,9 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
-  },
-  "sideEffects": [
-    "*.css"
-  ]
+    "lint": "eslint src && tsc",
+    "render": "remotion render VideoComposition",
+    "render:low-ram": "remotion render VideoComposition out/youtube-low-ram.mp4 --concurrency=1 --disallow-parallel-encoding --jpeg-quality=80 --offthreadvideo-cache-size-in-bytes=268435456 --timeout=180000",
+    "still": "remotion still VideoComposition out/preview.png"
+  }
 }

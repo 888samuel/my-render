@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "video_id": "demo",
+  "segments": [
+    {
+      "id": "seg_001",
+      "start_sec": 0,
+      "end_sec": 5,
+      "text": "This is a placeholder timed script. The AI planner is not part of this engine."
+    }
+  ]
+}

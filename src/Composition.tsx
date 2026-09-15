@@ -1,25 +1,10 @@
-import { CalculateMetadataFunction, Composition } from "remotion";
+import { VideoEngine } from "./engine/VideoEngine";
+import type { EditPlan } from "./types/edit-plan";
 
-type Props = {};
-
-const calculateMetadata: CalculateMetadataFunction<Props> = () => {
-  return {};
+export type VideoCompositionProps = {
+  editPlan: EditPlan;
 };
 
-export const MyComposition = () => {
-  return (
-    <Composition
-      id="MyComp"
-      component={MyComponent}
-      durationInFrames={60}
-      fps={30}
-      width={1280}
-      height={720}
-      calculateMetadata={calculateMetadata}
-    />
-  );
-};
-
-export const MyComponent: React.FC<Props> = () => {
-  return null;
+export const VideoComposition = ({ editPlan }: VideoCompositionProps) => {
+  return <VideoEngine editPlan={editPlan} />;
 };
