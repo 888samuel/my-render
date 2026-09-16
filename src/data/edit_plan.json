@@ -38,13 +38,24 @@
         },
         {
           "type": "text",
-          "text": "Healing Silence...",
+          "text": "ዘሕዊ ስቕታ",
           "variant": "title",
           "start_sec": 0.4,
           "end_sec": 2.08,
           "placement": "center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Healing Silence...",
+          "variant": "subtitle",
+          "start_sec": 0.4,
+          "end_sec": 2.08,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
           }
         }
       ]
@@ -71,6 +82,17 @@
           "motion": {
             "type": "slow_zoom_in",
             "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "ሰላም ንዓኻትኩም ይኹን ደቂ እግዚኣብሄር።",
+          "variant": "title",
+          "start_sec": 4.06,
+          "end_sec": 6.061,
+          "placement": "center",
+          "animation": {
+            "type": "fade_up"
           }
         },
         {
@@ -112,6 +134,17 @@
         },
         {
           "type": "text",
+          "text": "ሰላም ነቶም ዝደኸሙ፡ ዝጠመዩን ልቦም ዝኸበደን።",
+          "variant": "title",
+          "start_sec": 7.301,
+          "end_sec": 10.801,
+          "placement": "center",
+          "animation": {
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
           "text": "Peace to those who are weary, hungry, and heavy-hearted.",
           "variant": "subtitle",
           "start_sec": 7.301,
@@ -149,13 +182,24 @@
         },
         {
           "type": "text",
-          "text": "Today, I will speak to you about the heaviest trial a human can endure: The Silence of God.",
+          "text": "ሎሚ ብዛዕባ እቲ ሓደ ወዲ ሰብ ክሓልፎ ዝኽእል ዝኸበደ ፈተና ክዛረበኩም እየ፦ እቲ ናይ እግዚኣብሔር ስቕታ።",
           "variant": "title",
           "start_sec": 12.741,
           "end_sec": 18.902,
           "placement": "center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Today, I will speak to you about the heaviest trial a human can endure: The Silence of God.",
+          "variant": "subtitle",
+          "start_sec": 12.741,
+          "end_sec": 18.902,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
           }
         }
       ]
@@ -182,6 +226,17 @@
           "motion": {
             "type": "slow_zoom_in",
             "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "ሎሚ ብዛዕባ ቃላት ኣይኮንናን ክንዛረብ።",
+          "variant": "title",
+          "start_sec": 21.282,
+          "end_sec": 23.143,
+          "placement": "center",
+          "animation": {
+            "type": "fade_up"
           }
         },
         {
@@ -223,6 +278,17 @@
         },
         {
           "type": "text",
+          "text": "ሎሚ ብዛዕባ \"ስቕታ\" ኢና ክንመያየጥ።",
+          "variant": "title",
+          "start_sec": 24.183,
+          "end_sec": 26.243,
+          "placement": "center",
+          "animation": {
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
           "text": "Today, we are going to discuss \"silence\".",
           "variant": "subtitle",
           "start_sec": 24.183,
@@ -256,6 +322,17 @@
           "motion": {
             "type": "slow_zoom_in",
             "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "ብዛዕባ እቲ እግዚኣብሔር ስቕ ዝበለ ዝመስለሉ፡ ንሕና ድማ ኣብ ውሽጢ ጭንቀት ኮይንና ሰማይ ሰማይ እንጥምተሉ ሰዓት።",
+          "variant": "title",
+          "start_sec": 28.103,
+          "end_sec": 35.064,
+          "placement": "center",
+          "animation": {
+            "type": "fade_up"
           }
         },
         {
@@ -297,13 +374,24 @@
         },
         {
           "type": "text",
-          "text": "My brethren, who are troubled more by the silence of God than the worldly noise around us... this message is for you.",
+          "text": "ሎሚ ኣብ ምድርና ካብ ዘሎ ጭውጭውታ ንላዕሊ፡ እቲ ናይ እግዚኣብሔር ስቕታ ዘጨነቐኩም ወገነይ... እዚ መደብ እዚ ንዓኻትኩም እዩ።",
           "variant": "title",
           "start_sec": 37.184,
           "end_sec": 44.165,
           "placement": "top_center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "My brethren, who are troubled more by the silence of God than the worldly noise around us... this message is for you.",
+          "variant": "subtitle",
+          "start_sec": 37.184,
+          "end_sec": 44.165,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
           }
         }
       ]
@@ -334,11 +422,22 @@
         },
         {
           "type": "text",
-          "text": "What is God doing when He remains silent?",
+          "text": "እግዚኣብሔር ስቕ ክብል ከሎ እንታይ እዩ ዝገብር ዘሎ?",
           "variant": "highlighted_text",
           "start_sec": 45.825,
           "end_sec": 47.725,
           "placement": "top_center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "What is God doing when He remains silent?",
+          "variant": "subtitle",
+          "start_sec": 45.825,
+          "end_sec": 47.725,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -371,11 +470,22 @@
         },
         {
           "type": "text",
-          "text": "What kind of healing has He hidden within His silence?",
+          "text": "ኣብ ውሽጢ እቲ ስቕታኡ እንታይ ዓይነት ፈውሲ ሓቢኡ ኣሎ?",
           "variant": "highlighted_text",
           "start_sec": 49.205,
           "end_sec": 56.906,
           "placement": "top_center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "What kind of healing has He hidden within His silence?",
+          "variant": "subtitle",
+          "start_sec": 49.205,
+          "end_sec": 56.906,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -408,11 +518,22 @@
         },
         {
           "type": "text",
-          "text": "Silence does not mean 'distance'.",
+          "text": "ስቕታ ማለት 'ምርሓቕ' ማለት ኣይኮነን።",
           "variant": "highlighted_text",
           "start_sec": 58.706,
           "end_sec": 64.227,
           "placement": "center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Silence does not mean 'distance'.",
+          "variant": "subtitle",
+          "start_sec": 58.706,
+          "end_sec": 64.227,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -445,13 +566,24 @@
         },
         {
           "type": "text",
-          "text": "In our Orthodox faith, silence is a great laboratory where the Holy Spirit works.",
+          "text": "ኣብ ኦርቶዶክሳዊት እምነትና፡ ስቕታ ማለት መንፈስ ቅዱስ ስራሕ ዝሰርሓሉ ዓቢ ቤተ-ፈተነ እዩ።",
           "variant": "title",
           "start_sec": 65.967,
           "end_sec": 70.828,
           "placement": "top_center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "In our Orthodox faith, silence is a great laboratory where the Holy Spirit works.",
+          "variant": "subtitle",
+          "start_sec": 65.967,
+          "end_sec": 70.828,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
           }
         }
       ]
@@ -482,13 +614,24 @@
         },
         {
           "type": "text",
-          "text": "Today, to understand why God stays silent, we will journey through three great silences in history.",
+          "text": "ሎሚ፡ እግዚአብሔር ስቕ ክብል ከሎ ንምንታይ ምዃኑ ንምርዳእ፡ ኣብ ታሪኽ ናብ ዝተፈጸሙ ሰለስተ ዓበይቲ ስቕታታት ክንጓዓዝ ኢና።",
           "variant": "title",
           "start_sec": 72.808,
           "end_sec": 80.589,
           "placement": "center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Today, to understand why God stays silent, we will journey through three great silences in history.",
+          "variant": "subtitle",
+          "start_sec": 72.808,
+          "end_sec": 80.589,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
           }
         }
       ]
@@ -519,13 +662,24 @@
         },
         {
           "type": "text",
-          "text": "First Silence: The Siege of Samaria. \"Let us now step back 2,876 years from our present time.\"",
+          "text": "ቀዳማይ ስቕታ፦ ምኽባብ ሰማርያ።",
           "variant": "title",
           "start_sec": 81.609,
           "end_sec": 88.61,
           "placement": "center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "First Silence: The Siege of Samaria. \"Let us now step back 2,876 years from our present time.\"",
+          "variant": "subtitle",
+          "start_sec": 81.609,
+          "end_sec": 88.61,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
           }
         }
       ]
@@ -556,11 +710,22 @@
         },
         {
           "type": "text",
-          "text": "To the year 850 Before Christ.",
+          "text": "ናብ 850 ዓመተ ዓለም ቅድሚ ልደተ ክርስቶስ።",
           "variant": "highlighted_text",
           "start_sec": 88.83,
           "end_sec": 91.43,
           "placement": "top_center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "To the year 850 Before Christ.",
+          "variant": "subtitle",
+          "start_sec": 88.83,
+          "end_sec": 91.43,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -593,13 +758,24 @@
         },
         {
           "type": "text",
-          "text": "The city of Samaria—filled with corpses and driven mad by despair.",
+          "text": "እታ ብኣስከሬን ዝተመልአት፡ ብጭንቀት ዝዓበደት ከተማ ሰማርያ።",
           "variant": "title",
           "start_sec": 91.85,
           "end_sec": 95.47,
           "placement": "top_center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "The city of Samaria—filled with corpses and driven mad by despair.",
+          "variant": "subtitle",
+          "start_sec": 91.85,
+          "end_sec": 95.47,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
           }
         }
       ]
@@ -630,11 +806,22 @@
         },
         {
           "type": "text",
-          "text": "It was an era when Israel was divided into two kingdoms.",
+          "text": "እስራኤል ኣብ ክልተ ተኸፊላ ዝነበረትሉ እዋን እዩ።",
           "variant": "highlighted_text",
           "start_sec": 96.511,
           "end_sec": 98.651,
           "placement": "top_center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "It was an era when Israel was divided into two kingdoms.",
+          "variant": "subtitle",
+          "start_sec": 96.511,
+          "end_sec": 98.651,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -667,13 +854,24 @@
         },
         {
           "type": "text",
-          "text": "The Northern Kingdom of Israel was ruled by King Joram.",
+          "text": "እታ ናይ ሰሜን መንግስቲ (እስራኤል) ብንጉስ ዮራም ትመሓደር ነበረት።",
           "variant": "title",
           "start_sec": 100.271,
           "end_sec": 103.091,
           "placement": "top_center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "The Northern Kingdom of Israel was ruled by King Joram.",
+          "variant": "subtitle",
+          "start_sec": 100.271,
+          "end_sec": 103.091,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
           }
         }
       ]
@@ -704,11 +902,22 @@
         },
         {
           "type": "text",
-          "text": "Joram was the son of the wicked Ahab and Jezebel.",
+          "text": "ዮራም ወዲ እቶም ክፉኣት ኣክኣብን ኤልዛቤልን እዩ ነይሩ።",
           "variant": "highlighted_text",
           "start_sec": 104.691,
           "end_sec": 107.632,
           "placement": "top_center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joram was the son of the wicked Ahab and Jezebel.",
+          "variant": "subtitle",
+          "start_sec": 104.691,
+          "end_sec": 107.632,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -741,13 +950,24 @@
         },
         {
           "type": "text",
-          "text": "Like his parents, he did what provoked God to anger, worshiping idols.",
+          "text": "ከም ወለዱ ንኣምላኽ ዘቆጥዕ ስራሕ ይሰርሕ፡ ንጣኦታት ይሰግድ ነበረ።",
           "variant": "title",
           "start_sec": 109.052,
           "end_sec": 113.612,
           "placement": "top_center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Like his parents, he did what provoked God to anger, worshiping idols.",
+          "variant": "subtitle",
+          "start_sec": 109.052,
+          "end_sec": 113.612,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
           }
         }
       ]
@@ -778,13 +998,24 @@
         },
         {
           "type": "text",
-          "text": "So God, to discipline Israel, used the ruthless King of Syria, Ben-hadad, as His rod.",
+          "text": "እግዚኣብሔር ድማ ንእስራኤል ክቐጽዓ ኢሉ፡ ነቲ ጨካን ንጉስ ሶርያ ወልደ ኣዴር ቤንሃዳድ ከም በትሪ ተጠቐመሉ።",
           "variant": "title",
           "start_sec": 114.893,
           "end_sec": 119.893,
           "placement": "top_center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "So God, to discipline Israel, used the ruthless King of Syria, Ben-hadad, as His rod.",
+          "variant": "subtitle",
+          "start_sec": 114.893,
+          "end_sec": 119.893,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
           }
         }
       ]
@@ -811,6 +1042,17 @@
           "motion": {
             "type": "slow_zoom_in",
             "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "ቤንሃዳድ ንብምሉኡ ሰራዊቱ ኣኪቡ መጸ።",
+          "variant": "title",
+          "start_sec": 120.893,
+          "end_sec": 123.274,
+          "placement": "center",
+          "animation": {
+            "type": "fade_up"
           }
         },
         {
@@ -852,13 +1094,24 @@
         },
         {
           "type": "text",
-          "text": "And he besieged the city of Samaria.",
+          "text": "ንከተማ ሰማርያ ድማ ከበባ።",
           "variant": "title",
           "start_sec": 124.254,
           "end_sec": 125.774,
           "placement": "center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "And he besieged the city of Samaria.",
+          "variant": "subtitle",
+          "start_sec": 124.254,
+          "end_sec": 125.774,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
           }
         }
       ]
@@ -889,11 +1142,22 @@
         },
         {
           "type": "text",
-          "text": "Think about it deeply... a siege is not just weapons; a siege is psychological warfare.",
+          "text": "ብዝርዝር ሕሰቡሉ... ከበባ ማለት ብረት ጥራይ ኣይኮነን፤ ከበባ ማለት ስነ-ልቦናዊ ኲናት እዩ።",
           "variant": "highlighted_text",
           "start_sec": 126.194,
           "end_sec": 131.894,
           "placement": "top_center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Think about it deeply... a siege is not just weapons; a siege is psychological warfare.",
+          "variant": "subtitle",
+          "start_sec": 126.194,
+          "end_sec": 131.894,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -926,11 +1190,22 @@
         },
         {
           "type": "text",
-          "text": "Ben-hadad declared, 'I will not slay them with weapons, but I will wait until starvation brings them to their knees.'",
+          "text": "ቤንሃዳድ 'ብጥይት ኣይቀትሎምን እየ፡ ብጥሜት ግን ክሳብ ዝምበርከኹ ክጽበዮም እየ' በለ።",
           "variant": "quote",
           "start_sec": 131.894,
           "end_sec": 136.775,
           "placement": "center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Ben-hadad declared, 'I will not slay them with weapons, but I will wait until starvation brings them to their knees.'",
+          "variant": "subtitle",
+          "start_sec": 131.894,
+          "end_sec": 136.775,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -963,11 +1238,22 @@
         },
         {
           "type": "text",
-          "text": "For years, the blockade held firm.",
+          "text": "ንዓመታት እቲ ዕጽዋ ጸንዐ።",
           "variant": "highlighted_text",
           "start_sec": 137.235,
           "end_sec": 138.695,
           "placement": "top_center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "For years, the blockade held firm.",
+          "variant": "subtitle",
+          "start_sec": 137.235,
+          "end_sec": 138.695,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -1000,11 +1286,22 @@
         },
         {
           "type": "text",
-          "text": "Inside Samaria, all grain ran out.",
+          "text": "ኣብ ውሽጢ ሰማርያ እኽሊ ተወድአ።",
           "variant": "highlighted_text",
           "start_sec": 139.115,
           "end_sec": 140.575,
           "placement": "top_center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Inside Samaria, all grain ran out.",
+          "variant": "subtitle",
+          "start_sec": 139.115,
+          "end_sec": 140.575,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -1033,6 +1330,17 @@
           "motion": {
             "type": "slow_zoom_in",
             "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "እቲ ንቡር መግቢ ጠፍአ።",
+          "variant": "title",
+          "start_sec": 141.416,
+          "end_sec": 142.476,
+          "placement": "center",
+          "animation": {
+            "type": "fade_up"
           }
         },
         {
@@ -1074,11 +1382,22 @@
         },
         {
           "type": "text",
-          "text": "The Bible tells us that a donkey's head was sold for eighty pieces of silver.",
+          "text": "መጽሓፍ ቅዱስ ርእሲ ኣድጊ ብሰማንያ ቅርሺ ይሽየጥ ነበረ ይብለና።",
           "variant": "highlighted_text",
           "start_sec": 142.856,
           "end_sec": 146.176,
           "placement": "center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "The Bible tells us that a donkey's head was sold for eighty pieces of silver.",
+          "variant": "subtitle",
+          "start_sec": 142.856,
+          "end_sec": 146.176,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -1111,11 +1430,22 @@
         },
         {
           "type": "text",
-          "text": "Just imagine... a donkey's head is unclean according to the Law, forbidden to eat.",
+          "text": "ሕሰቡ እስቲ... ርእሲ ኣድጊ እኮ ኣብ ኦሪት ርኹስ እዩ፡ ኣይብላዕን እዩ።",
           "variant": "highlighted_text",
           "start_sec": 146.856,
           "end_sec": 150.416,
           "placement": "top_center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Just imagine... a donkey's head is unclean according to the Law, forbidden to eat.",
+          "variant": "subtitle",
+          "start_sec": 146.856,
+          "end_sec": 150.416,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -1148,11 +1478,22 @@
         },
         {
           "type": "text",
-          "text": "But extreme hunger knows no law.",
+          "text": "ግን ጥሜት ሕጊ የብሉን።",
           "variant": "highlighted_text",
           "start_sec": 151.357,
           "end_sec": 152.457,
           "placement": "center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "But extreme hunger knows no law.",
+          "variant": "subtitle",
+          "start_sec": 151.357,
+          "end_sec": 152.457,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
           }
@@ -1185,13 +1526,24 @@
         },
         {
           "type": "text",
-          "text": "The skin of the people clung tightly to their bones.",
+          "text": "ህዝቢ ቆርበቱ ምስ ዓጽሙ ተጣበቐ።",
           "variant": "title",
           "start_sec": 152.877,
           "end_sec": 154.737,
           "placement": "top_center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "The skin of the people clung tightly to their bones.",
+          "variant": "subtitle",
+          "start_sec": 152.877,
+          "end_sec": 154.737,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
           }
         }
       ]

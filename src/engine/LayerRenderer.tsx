@@ -45,6 +45,24 @@ export const LayerRenderer = ({
           />
         );
       }
+      if (layer.variant === "quote") {
+        return (
+          <Quote
+            text={layer.text}
+            animation={layer.animation}
+            placement={layer.placement}
+          />
+        );
+      }
+      if (layer.variant === "highlighted_text") {
+        return (
+          <HighlightText
+            text={layer.text}
+            animation={layer.animation}
+            placement={layer.placement}
+          />
+        );
+      }
       return (
         <AnimatedText
           text={layer.text}
