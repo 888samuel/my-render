@@ -36,11 +36,21 @@ export const LayerRenderer = ({
       if (!layer.text.trim() || layer.placement === "none") {
         return null;
       }
+      if (layer.variant === "title") {
+        return (
+          <Title
+            text={layer.text}
+            animation={layer.animation}
+            placement={layer.placement}
+          />
+        );
+      }
       return (
         <AnimatedText
           text={layer.text}
           animation={layer.animation}
           placement={layer.placement}
+          variant={layer.variant === "subtitle" ? "subtitle" : "body"}
         />
       );
     case "quote":

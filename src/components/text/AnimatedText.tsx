@@ -80,12 +80,15 @@ export const AnimatedText = ({
   text,
   animation,
   placement = "lower_third",
+  variant = "body",
 }: {
   text: string;
   animation?: TextAnimation;
   placement?: LayerPlacement;
+  variant?: "body" | "subtitle";
 }) => {
   const align = textAlignForPlacement(placement);
+  const isSubtitle = variant === "subtitle";
 
   return (
     <AbsoluteFill>
@@ -96,13 +99,16 @@ export const AnimatedText = ({
           align={align}
           style={{
             color: theme.colors.text,
-            fontFamily: theme.fonts.display,
-            fontSize: theme.fontSize.statement,
-            fontWeight: 500,
-            letterSpacing: "-0.02em",
+            fontFamily: isSubtitle ? theme.fonts.body : theme.fonts.display,
+            fontSize: isSubtitle ? theme.fontSize.body : theme.fontSize.statement,
+            fontWeight: isSubtitle ? 400 : 500,
+            letterSpacing: isSubtitle ? "0.01em" : "-0.02em",
             lineHeight: 1.3,
-            maxWidth: 1280,
+            maxWidth: isSubtitle ? 1500 : 1280,
             whiteSpace: "pre-line",
+            textShadow: isSubtitle
+              ? "0 2px 10px rgba(0,0,0,0.75)"
+              : undefined,
           }}
         />
       </SafeArea>

@@ -55,6 +55,7 @@ export type VideoLayer = LayerTiming & {
 export type TextLayer = LayerTiming & {
   type: "text";
   text: string;
+  variant?: "title" | "subtitle" | "body" | "highlighted_text";
   animation?: TextAnimation;
 };
 

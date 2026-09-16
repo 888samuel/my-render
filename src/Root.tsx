@@ -5,7 +5,7 @@ import { VideoComposition } from "./Composition";
 import { getVideoDurationSeconds } from "./engine/Timeline";
 import { secondsToFrames } from "./utils/time";
 import type { EditPlan } from "./types/edit-plan";
-import editPlanJson from "./data/edit-plan.json";
+import editPlanJson from "./data/edit_plan.json";
 
 const editPlan = editPlanJson as EditPlan;
 
