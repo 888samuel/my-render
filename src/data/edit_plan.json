@@ -1,0 +1,1546 @@
+{
+  "version": "1.0",
+  "video": {
+    "id": "divine_silence_samaria",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "duration_sec": 155.0
+  },
+  "audio": {
+    "src": "assets/audio/output.mp3",
+    "start_sec": 0
+  },
+  "clips": [
+    {
+      "id": "s000",
+      "start_sec": 0.0,
+      "end_sec": 2.5,
+      "transition_in": {
+        "type": "fade_in_from_black",
+        "duration_sec": 0.3
+      },
+      "transition_out": {
+        "type": "fade_in_from_black",
+        "duration_sec": 0.3
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_001",
+          "src": "assets/images/img_001.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "HEALING SILENCE",
+          "variant": "title",
+          "start_sec": 0.0,
+          "end_sec": 2.5,
+          "placement": "center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Healing Silence...",
+          "variant": "subtitle",
+          "start_sec": 0.0,
+          "end_sec": 2.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s001",
+      "start_sec": 0.0,
+      "end_sec": 3.0,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_001",
+          "src": "assets/images/img_001.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "Peace be upon you, children of God.",
+          "variant": "subtitle",
+          "start_sec": 0.0,
+          "end_sec": 3.0,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s002",
+      "start_sec": 3.0,
+      "end_sec": 6.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_001",
+          "src": "assets/images/img_001.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "Peace to those who are weary, hungry, and heavy-hearted.",
+          "variant": "subtitle",
+          "start_sec": 3.0,
+          "end_sec": 6.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s003",
+      "start_sec": 6.5,
+      "end_sec": 13.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "whip_pan",
+        "duration_sec": 0.3
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_002",
+          "src": "assets/images/img_002.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "zoom_out",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "THE SILENCE OF GOD",
+          "variant": "title",
+          "start_sec": 6.5,
+          "end_sec": 13.5,
+          "placement": "center",
+          "animation": {
+            "type": "scale_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Today, I will speak to you about the heaviest trial a human can endure: The Silence of God.",
+          "variant": "subtitle",
+          "start_sec": 6.5,
+          "end_sec": 13.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s004",
+      "start_sec": 13.5,
+      "end_sec": 16.7,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "hard_cut",
+        "duration_sec": 0.0
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_003",
+          "src": "assets/images/img_003.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "Today, we are not here to talk about mere words.",
+          "variant": "subtitle",
+          "start_sec": 13.5,
+          "end_sec": 16.7,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s005",
+      "start_sec": 16.7,
+      "end_sec": 20.0,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "smooth_slide",
+        "duration_sec": 0.3
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_003",
+          "src": "assets/images/img_003.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "SILENCE",
+          "variant": "title",
+          "start_sec": 16.7,
+          "end_sec": 20.0,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Today, we are going to discuss \"silence\".",
+          "variant": "subtitle",
+          "start_sec": 16.7,
+          "end_sec": 20.0,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s006",
+      "start_sec": 20.0,
+      "end_sec": 26.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_002",
+          "src": "assets/images/img_002.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "About those moments when God seems silent, and in our anguish, we gaze helplessly at the heavens.",
+          "variant": "subtitle",
+          "start_sec": 20.0,
+          "end_sec": 26.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s007",
+      "start_sec": 26.5,
+      "end_sec": 34.0,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "glitch_cut",
+        "duration_sec": 0.3
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_003",
+          "src": "assets/images/img_003.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "THIS MESSAGE IS FOR YOU",
+          "variant": "title",
+          "start_sec": 26.5,
+          "end_sec": 34.0,
+          "placement": "top_center",
+          "animation": {
+            "type": "slide_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "My brethren, who are troubled more by the silence of God than the worldly noise around us... this message is for you.",
+          "variant": "subtitle",
+          "start_sec": 26.5,
+          "end_sec": 34.0,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s008",
+      "start_sec": 34.0,
+      "end_sec": 38.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "zoom_punch",
+        "duration_sec": 0.3
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_004",
+          "src": "assets/images/img_004.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "WHAT IS GOD DOING?",
+          "variant": "highlighted_text",
+          "start_sec": 34.0,
+          "end_sec": 38.5,
+          "placement": "top_center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "What is God doing when He remains silent?",
+          "variant": "subtitle",
+          "start_sec": 34.0,
+          "end_sec": 38.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s009",
+      "start_sec": 38.5,
+      "end_sec": 43.0,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "soft_blur",
+        "duration_sec": 0.3
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_005",
+          "src": "assets/images/img_005.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_down",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "HIDDEN HEALING",
+          "variant": "highlighted_text",
+          "start_sec": 38.5,
+          "end_sec": 43.0,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "What kind of healing has He hidden within His silence?",
+          "variant": "subtitle",
+          "start_sec": 38.5,
+          "end_sec": 43.0,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s010",
+      "start_sec": 43.0,
+      "end_sec": 46.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "hard_cut",
+        "duration_sec": 0.0
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_005",
+          "src": "assets/images/img_005.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "static_hold",
+            "intensity": 0.0
+          }
+        },
+        {
+          "type": "text",
+          "text": "SILENCE ≠ DISTANCE",
+          "variant": "highlighted_text",
+          "start_sec": 43.0,
+          "end_sec": 46.5,
+          "placement": "center",
+          "animation": {
+            "type": "scale_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Silence does not mean 'distance'.",
+          "variant": "subtitle",
+          "start_sec": 43.0,
+          "end_sec": 46.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s011",
+      "start_sec": 46.5,
+      "end_sec": 52.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_004",
+          "src": "assets/images/img_004.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "LABORATORY OF THE HOLY SPIRIT",
+          "variant": "title",
+          "start_sec": 46.5,
+          "end_sec": 52.5,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "In our Orthodox faith, silence is a great laboratory where the Holy Spirit works.",
+          "variant": "subtitle",
+          "start_sec": 46.5,
+          "end_sec": 52.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s012",
+      "start_sec": 52.5,
+      "end_sec": 59.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "whip_pan",
+        "duration_sec": 0.3
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_006",
+          "src": "assets/images/img_006.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_down",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "3 GREAT HISTORICAL SILENCES",
+          "variant": "title",
+          "start_sec": 52.5,
+          "end_sec": 59.5,
+          "placement": "center",
+          "animation": {
+            "type": "slide_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Today, to understand why God stays silent, we will journey through three great silences in history.",
+          "variant": "subtitle",
+          "start_sec": 52.5,
+          "end_sec": 59.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s013",
+      "start_sec": 59.5,
+      "end_sec": 63.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "flash_cut",
+        "duration_sec": 0.0
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_007",
+          "src": "assets/images/img_007.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "PART I: THE SIEGE OF SAMARIA",
+          "variant": "title",
+          "start_sec": 59.5,
+          "end_sec": 63.5,
+          "placement": "center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "First Silence: The Siege of Samaria.",
+          "variant": "subtitle",
+          "start_sec": 59.5,
+          "end_sec": 63.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s014",
+      "start_sec": 63.5,
+      "end_sec": 68.0,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_007",
+          "src": "assets/images/img_007.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "2,876 YEARS AGO",
+          "variant": "highlighted_text",
+          "start_sec": 63.5,
+          "end_sec": 68.0,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Let us now step back 2,876 years from our present time.",
+          "variant": "subtitle",
+          "start_sec": 63.5,
+          "end_sec": 68.0,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s015",
+      "start_sec": 68.0,
+      "end_sec": 72.0,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "hard_cut",
+        "duration_sec": 0.0
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_007",
+          "src": "assets/images/img_007.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "zoom_in",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "850 BC",
+          "variant": "highlighted_text",
+          "start_sec": 68.0,
+          "end_sec": 72.0,
+          "placement": "top_center",
+          "animation": {
+            "type": "scale_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "To the year 850 Before Christ.",
+          "variant": "subtitle",
+          "start_sec": 68.0,
+          "end_sec": 72.0,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s016",
+      "start_sec": 72.0,
+      "end_sec": 77.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_008",
+          "src": "assets/images/img_008.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "SAMARIA: CITY OF DESPAIR",
+          "variant": "title",
+          "start_sec": 72.0,
+          "end_sec": 77.5,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "The city of Samaria—filled with corpses and driven mad by despair.",
+          "variant": "subtitle",
+          "start_sec": 72.0,
+          "end_sec": 77.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s017",
+      "start_sec": 77.5,
+      "end_sec": 81.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "slide",
+        "duration_sec": 0.3
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_008",
+          "src": "assets/images/img_008.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "ISRAEL (NORTH) ⚡ JUDAH (SOUTH)",
+          "variant": "highlighted_text",
+          "start_sec": 77.5,
+          "end_sec": 81.5,
+          "placement": "top_center",
+          "animation": {
+            "type": "slide_left"
+          }
+        },
+        {
+          "type": "text",
+          "text": "It was an era when Israel was divided into two kingdoms.",
+          "variant": "subtitle",
+          "start_sec": 77.5,
+          "end_sec": 81.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s018",
+      "start_sec": 81.5,
+      "end_sec": 86.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "hard_cut",
+        "duration_sec": 0.0
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_009",
+          "src": "assets/images/img_009.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "KING JORAM OF ISRAEL",
+          "variant": "title",
+          "start_sec": 81.5,
+          "end_sec": 86.5,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "The Northern Kingdom of Israel was ruled by King Joram.",
+          "variant": "subtitle",
+          "start_sec": 81.5,
+          "end_sec": 86.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s019",
+      "start_sec": 86.5,
+      "end_sec": 91.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_010",
+          "src": "assets/images/img_010.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "SON OF AHAB & JEZEBEL",
+          "variant": "highlighted_text",
+          "start_sec": 86.5,
+          "end_sec": 91.5,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joram was the son of the wicked Ahab and Jezebel.",
+          "variant": "subtitle",
+          "start_sec": 86.5,
+          "end_sec": 91.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s020",
+      "start_sec": 91.5,
+      "end_sec": 97.0,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_011",
+          "src": "assets/images/img_011.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "PAGAN IDOLATRY",
+          "variant": "title",
+          "start_sec": 91.5,
+          "end_sec": 97.0,
+          "placement": "top_center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Like his parents, he did what provoked God to anger, worshiping idols.",
+          "variant": "subtitle",
+          "start_sec": 91.5,
+          "end_sec": 97.0,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s021",
+      "start_sec": 97.0,
+      "end_sec": 103.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "whip_pan",
+        "duration_sec": 0.3
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_012",
+          "src": "assets/images/img_012.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "KING BEN-HADAD OF SYRIA",
+          "variant": "title",
+          "start_sec": 97.0,
+          "end_sec": 103.5,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "So God, to discipline Israel, used the ruthless King of Syria, Ben-hadad, as His rod.",
+          "variant": "subtitle",
+          "start_sec": 97.0,
+          "end_sec": 103.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s022",
+      "start_sec": 103.5,
+      "end_sec": 108.0,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "hard_cut",
+        "duration_sec": 0.0
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_013",
+          "src": "assets/images/img_013.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "Ben-hadad assembled his entire army and marched forth.",
+          "variant": "subtitle",
+          "start_sec": 103.5,
+          "end_sec": 108.0,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s023",
+      "start_sec": 108.0,
+      "end_sec": 111.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.3
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_007",
+          "src": "assets/images/img_007.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "zoom_out",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "THE SIEGE",
+          "variant": "title",
+          "start_sec": 108.0,
+          "end_sec": 111.5,
+          "placement": "center",
+          "animation": {
+            "type": "scale_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "And he besieged the city of Samaria.",
+          "variant": "subtitle",
+          "start_sec": 108.0,
+          "end_sec": 111.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s024",
+      "start_sec": 111.5,
+      "end_sec": 117.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_008",
+          "src": "assets/images/img_008.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "PSYCHOLOGICAL WARFARE",
+          "variant": "highlighted_text",
+          "start_sec": 111.5,
+          "end_sec": 117.5,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Think about it deeply... a siege is not just weapons; a siege is psychological warfare.",
+          "variant": "subtitle",
+          "start_sec": 111.5,
+          "end_sec": 117.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s025",
+      "start_sec": 117.5,
+      "end_sec": 123.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "flash_cut",
+        "duration_sec": 0.0
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_012",
+          "src": "assets/images/img_012.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "“I will wait until starvation brings them to their knees.”\n— Ben-hadad",
+          "variant": "quote",
+          "start_sec": 117.5,
+          "end_sec": 123.5,
+          "placement": "center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Ben-hadad declared, 'I will not slay them with weapons, but I will wait until starvation brings them to their knees.'",
+          "variant": "subtitle",
+          "start_sec": 117.5,
+          "end_sec": 123.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s026",
+      "start_sec": 123.5,
+      "end_sec": 127.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_014",
+          "src": "assets/images/img_014.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "zoom_out",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "FOR YEARS...",
+          "variant": "highlighted_text",
+          "start_sec": 123.5,
+          "end_sec": 127.5,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "For years, the blockade held firm.",
+          "variant": "subtitle",
+          "start_sec": 123.5,
+          "end_sec": 127.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s027",
+      "start_sec": 127.5,
+      "end_sec": 131.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "hard_cut",
+        "duration_sec": 0.0
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_015",
+          "src": "assets/images/img_015.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_down",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "GRAIN DEPLETED",
+          "variant": "highlighted_text",
+          "start_sec": 127.5,
+          "end_sec": 131.5,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Inside Samaria, all grain ran out.",
+          "variant": "subtitle",
+          "start_sec": 127.5,
+          "end_sec": 131.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s028",
+      "start_sec": 131.5,
+      "end_sec": 135.0,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_015",
+          "src": "assets/images/img_015.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "Normal food vanished completely.",
+          "variant": "subtitle",
+          "start_sec": 131.5,
+          "end_sec": 135.0,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s029",
+      "start_sec": 135.0,
+      "end_sec": 140.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "whip_pan",
+        "duration_sec": 0.3
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_006",
+          "src": "assets/images/img_006.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "DONKEY HEAD = 80 SILVER COINS",
+          "variant": "highlighted_text",
+          "start_sec": 135.0,
+          "end_sec": 140.5,
+          "placement": "center",
+          "animation": {
+            "type": "scale_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "The Bible tells us that a donkey's head was sold for eighty pieces of silver.",
+          "variant": "subtitle",
+          "start_sec": 135.0,
+          "end_sec": 140.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s030",
+      "start_sec": 140.5,
+      "end_sec": 146.0,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_006",
+          "src": "assets/images/img_006.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "text": "UNCLEAN IN THE LAW",
+          "variant": "highlighted_text",
+          "start_sec": 140.5,
+          "end_sec": 146.0,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Just imagine... a donkey's head is unclean according to the Law, forbidden to eat.",
+          "variant": "subtitle",
+          "start_sec": 140.5,
+          "end_sec": 146.0,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s031",
+      "start_sec": 146.0,
+      "end_sec": 149.5,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "flash_cut",
+        "duration_sec": 0.0
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_016",
+          "src": "assets/images/img_016.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "subtle_movement",
+            "intensity": 0.35
+          }
+        },
+        {
+          "type": "text",
+          "text": "HUNGER KNOWS NO LAW!",
+          "variant": "highlighted_text",
+          "start_sec": 146.0,
+          "end_sec": 149.5,
+          "placement": "center",
+          "animation": {
+            "type": "dramatic_reveal"
+          }
+        },
+        {
+          "type": "text",
+          "text": "But extreme hunger knows no law.",
+          "variant": "subtitle",
+          "start_sec": 146.0,
+          "end_sec": 149.5,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s032",
+      "start_sec": 149.5,
+      "end_sec": 155.0,
+      "transition_in": {
+        "type": "none",
+        "duration_sec": 0.0
+      },
+      "transition_out": {
+        "type": "fade_to_black",
+        "duration_sec": 0.5
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_016",
+          "src": "assets/images/img_016.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.15
+          }
+        },
+        {
+          "type": "text",
+          "text": "SKIN CLINGING TO BONES",
+          "variant": "title",
+          "start_sec": 149.5,
+          "end_sec": 155.0,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "The skin of the people clung tightly to their bones.",
+          "variant": "subtitle",
+          "start_sec": 149.5,
+          "end_sec": 155.0,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "clip_visualizer",
+      "start_sec": 0.0,
+      "end_sec": 155.0,
+      "layers": [
+        {
+          "type": "graphic",
+          "graphic": "audio_visualizer",
+          "variant": "bars"
+        }
+      ]
+    }
+  ]
+}
