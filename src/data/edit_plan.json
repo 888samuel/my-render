@@ -5,7 +5,7 @@
     "width": 1920,
     "height": 1080,
     "fps": 30,
-    "duration_sec": 155.0
+    "duration_sec": 155
   },
   "audio": {
     "src": "assets/audio/output.mp3",
@@ -14,15 +14,15 @@
   "clips": [
     {
       "id": "s001",
-      "start_sec": 0.4,
-      "end_sec": 2.08,
+      "start_sec": 0,
+      "end_sec": 4.06,
       "transition_in": {
         "type": "fade_in_from_black",
-        "duration_sec": 0.3
+        "duration_sec": 0.4
       },
       "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -52,14 +52,14 @@
     {
       "id": "s002",
       "start_sec": 4.06,
-      "end_sec": 6.061,
+      "end_sec": 7.301,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -89,10 +89,10 @@
     {
       "id": "s003",
       "start_sec": 7.301,
-      "end_sec": 10.801,
+      "end_sec": 13.241,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -126,10 +126,10 @@
     {
       "id": "s004",
       "start_sec": 12.741,
-      "end_sec": 18.902,
+      "end_sec": 21.782,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -163,14 +163,14 @@
     {
       "id": "s005",
       "start_sec": 21.282,
-      "end_sec": 23.143,
+      "end_sec": 24.183,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
-      },
-      "transition_out": {
         "type": "cross_dissolve",
         "duration_sec": 0.5
+      },
+      "transition_out": {
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -200,10 +200,10 @@
     {
       "id": "s006",
       "start_sec": 24.183,
-      "end_sec": 26.243,
+      "end_sec": 28.603,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -237,10 +237,10 @@
     {
       "id": "s007",
       "start_sec": 28.103,
-      "end_sec": 35.064,
+      "end_sec": 37.684,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -274,10 +274,10 @@
     {
       "id": "s008",
       "start_sec": 37.184,
-      "end_sec": 44.165,
+      "end_sec": 46.325,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -311,10 +311,10 @@
     {
       "id": "s009",
       "start_sec": 45.825,
-      "end_sec": 47.725,
+      "end_sec": 49.705,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -348,14 +348,14 @@
     {
       "id": "s010",
       "start_sec": 49.205,
-      "end_sec": 56.906,
+      "end_sec": 58.706,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
-      },
-      "transition_out": {
         "type": "cross_dissolve",
         "duration_sec": 0.5
+      },
+      "transition_out": {
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -385,10 +385,10 @@
     {
       "id": "s011",
       "start_sec": 58.706,
-      "end_sec": 64.227,
+      "end_sec": 66.467,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -422,10 +422,10 @@
     {
       "id": "s012",
       "start_sec": 65.967,
-      "end_sec": 70.828,
+      "end_sec": 73.308,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -459,10 +459,10 @@
     {
       "id": "s013",
       "start_sec": 72.808,
-      "end_sec": 80.589,
+      "end_sec": 82.109,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -496,14 +496,14 @@
     {
       "id": "s014",
       "start_sec": 81.609,
-      "end_sec": 88.61,
+      "end_sec": 88.83,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
-      },
-      "transition_out": {
         "type": "cross_dissolve",
         "duration_sec": 0.5
+      },
+      "transition_out": {
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -533,10 +533,10 @@
     {
       "id": "s015",
       "start_sec": 88.83,
-      "end_sec": 91.43,
+      "end_sec": 92.35,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -570,14 +570,14 @@
     {
       "id": "s016",
       "start_sec": 91.85,
-      "end_sec": 95.47,
+      "end_sec": 96.511,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
-      },
-      "transition_out": {
         "type": "cross_dissolve",
         "duration_sec": 0.5
+      },
+      "transition_out": {
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -607,10 +607,10 @@
     {
       "id": "s017",
       "start_sec": 96.511,
-      "end_sec": 98.651,
+      "end_sec": 100.771,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -644,10 +644,10 @@
     {
       "id": "s018",
       "start_sec": 100.271,
-      "end_sec": 103.091,
+      "end_sec": 105.191,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -681,10 +681,10 @@
     {
       "id": "s019",
       "start_sec": 104.691,
-      "end_sec": 107.632,
+      "end_sec": 109.552,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -718,10 +718,10 @@
     {
       "id": "s020",
       "start_sec": 109.052,
-      "end_sec": 113.612,
+      "end_sec": 115.393,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -755,10 +755,10 @@
     {
       "id": "s021",
       "start_sec": 114.893,
-      "end_sec": 119.893,
+      "end_sec": 121.393,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -792,10 +792,10 @@
     {
       "id": "s022",
       "start_sec": 120.893,
-      "end_sec": 123.274,
+      "end_sec": 124.754,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -829,10 +829,10 @@
     {
       "id": "s023",
       "start_sec": 124.254,
-      "end_sec": 125.774,
+      "end_sec": 126.694,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -866,10 +866,10 @@
     {
       "id": "s024",
       "start_sec": 126.194,
-      "end_sec": 131.894,
+      "end_sec": 132.394,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -903,10 +903,10 @@
     {
       "id": "s025",
       "start_sec": 131.894,
-      "end_sec": 136.775,
+      "end_sec": 137.735,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -940,10 +940,10 @@
     {
       "id": "s026",
       "start_sec": 137.235,
-      "end_sec": 138.695,
+      "end_sec": 139.615,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -977,14 +977,14 @@
     {
       "id": "s027",
       "start_sec": 139.115,
-      "end_sec": 140.575,
+      "end_sec": 141.416,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
-      },
-      "transition_out": {
         "type": "cross_dissolve",
         "duration_sec": 0.5
+      },
+      "transition_out": {
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -1014,10 +1014,10 @@
     {
       "id": "s028",
       "start_sec": 141.416,
-      "end_sec": 142.476,
+      "end_sec": 143.356,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -1051,14 +1051,14 @@
     {
       "id": "s029",
       "start_sec": 142.856,
-      "end_sec": 146.176,
+      "end_sec": 146.856,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
-      },
-      "transition_out": {
         "type": "cross_dissolve",
         "duration_sec": 0.5
+      },
+      "transition_out": {
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -1088,10 +1088,10 @@
     {
       "id": "s030",
       "start_sec": 146.856,
-      "end_sec": 150.416,
+      "end_sec": 151.857,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -1125,14 +1125,14 @@
     {
       "id": "s031",
       "start_sec": 151.357,
-      "end_sec": 152.457,
+      "end_sec": 152.877,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0.0
-      },
-      "transition_out": {
         "type": "cross_dissolve",
         "duration_sec": 0.5
+      },
+      "transition_out": {
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -1165,11 +1165,11 @@
       "end_sec": 154.737,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "fade_to_black",
-        "duration_sec": 0.5
+        "duration_sec": 0.8
       },
       "layers": [
         {
@@ -1198,8 +1198,8 @@
     },
     {
       "id": "clip_visualizer",
-      "start_sec": 0.0,
-      "end_sec": 155.0,
+      "start_sec": 0,
+      "end_sec": 155,
       "layers": [
         {
           "type": "graphic",

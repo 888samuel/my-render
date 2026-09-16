@@ -68,12 +68,13 @@ const ClipTransition = ({
 
   if (transitionOut) {
     const outType = normalizeTransitionType(transitionOut.type);
-    if (outType === "fade") {
+    const durationSec =
+      transitionOut.duration_sec ?? theme.animation.transitionSec;
+    // Outgoing dissolve/slide is rendered as a fade-out so the next overlapping
+    // clip's fade-in can blend into a cross-dissolve.
+    if (outType === "fade" || outType === "crossfade" || outType === "slide") {
       content = (
-        <Fade
-          direction="out"
-          durationSec={transitionOut.duration_sec ?? theme.animation.transitionSec}
-        >
+        <Fade direction="out" durationSec={durationSec}>
           {content}
         </Fade>
       );
@@ -81,7 +82,8 @@ const ClipTransition = ({
   }
 
   if (transitionIn) {
-    const durationSec = transitionIn.duration_sec ?? theme.animation.transitionSec;
+    const durationSec =
+      transitionIn.duration_sec ?? theme.animation.transitionSec;
     const inType = normalizeTransitionType(transitionIn.type);
     if (inType === "fade") {
       content = (
