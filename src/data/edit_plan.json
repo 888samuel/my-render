@@ -8,7 +8,7 @@
     "duration_sec": 229.758
   },
   "audio": {
-    "src": "assets/audio/output.mp3",
+    "src": "assets/audio/my-recording.mp3",
     "start_sec": 0
   },
   "clips": [
@@ -27,8 +27,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img001",
-          "src": "assets/images/img001.png",
+          "asset_id": "img_001",
+          "src": "assets/images/img_001.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -40,11 +40,12 @@
           "type": "text",
           "text": "THE ILLUSION OF KNOWLEDGE",
           "start_sec": 1.5,
-          "end_sec": 5.0,
+          "end_sec": 5,
           "placement": "top_center",
           "animation": {
             "type": "dramatic_reveal"
-          }
+          },
+          "variant": "title"
         },
         {
           "type": "text",
@@ -54,7 +55,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_up"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -68,13 +70,13 @@
       },
       "transition_out": {
         "type": "hard_cut",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img002",
-          "src": "assets/images/img002.png",
+          "asset_id": "img_002",
+          "src": "assets/images/img_002.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -100,7 +102,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -110,7 +113,7 @@
       "end_sec": 47.244,
       "transition_in": {
         "type": "hard_cut",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -119,8 +122,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img003",
-          "src": "assets/images/img003.png",
+          "asset_id": "img_003",
+          "src": "assets/images/img_003.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -132,31 +135,34 @@
           "type": "text",
           "text": "EXPLANATION BREAKDOWN vs. SOCIAL MEDIA HYPE",
           "start_sec": 18.221,
-          "end_sec": 24.0,
+          "end_sec": 24,
           "placement": "top_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Most people say 'Yes, I know it'; however, when asked to explain the process step by step, how shallow their knowledge truly is immediately becomes evident.",
           "start_sec": 18.221,
-          "end_sec": 33.0,
+          "end_sec": 33,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_up"
-          }
+          },
+          "variant": "subtitle"
         },
         {
           "type": "text",
           "text": "On social media and common motivational advice, voices dominatingly shout 'believe in yourself' or 'fake it till you make it.'",
-          "start_sec": 33.0,
+          "start_sec": 33,
           "end_sec": 47.244,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_up"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -175,8 +181,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img004",
-          "src": "assets/images/img004.png",
+          "asset_id": "img_004",
+          "src": "assets/images/img_004.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -202,7 +208,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -221,8 +228,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img004",
-          "src": "assets/images/img004.png",
+          "asset_id": "img_004",
+          "src": "assets/images/img_004.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -234,7 +241,7 @@
           "type": "text",
           "text": "OVERCONFIDENCE & BLINDNESS",
           "start_sec": 55.724,
-          "end_sec": 58.0,
+          "end_sec": 58,
           "placement": "top_left",
           "animation": {
             "type": "slide_up"
@@ -248,7 +255,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_up"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -267,8 +275,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img005",
-          "src": "assets/images/img005.png",
+          "asset_id": "img_005",
+          "src": "assets/images/img_005.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -280,7 +288,7 @@
           "type": "text",
           "text": "ILLUSION OF EXPLANATORY DEPTH (IOED)",
           "start_sec": 61.305,
-          "end_sec": 66.0,
+          "end_sec": 66,
           "placement": "right",
           "animation": {
             "type": "word_reveal"
@@ -294,7 +302,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -313,8 +322,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img005",
-          "src": "assets/images/img005.png",
+          "asset_id": "img_005",
+          "src": "assets/images/img_005.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -326,7 +335,7 @@
           "type": "text",
           "text": "Perceived Understanding vs. Actual Knowledge",
           "start_sec": 71.906,
-          "end_sec": 75.0,
+          "end_sec": 75,
           "placement": "right",
           "animation": {
             "type": "fade_up"
@@ -340,7 +349,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -359,8 +369,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img006",
-          "src": "assets/images/img006.png",
+          "asset_id": "img_006",
+          "src": "assets/images/img_006.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -372,11 +382,12 @@
           "type": "text",
           "text": "FALSE BELIEF: 'I KNOW'",
           "start_sec": 80.846,
-          "end_sec": 83.0,
+          "end_sec": 83,
           "placement": "top_center",
           "animation": {
             "type": "scale_up"
-          }
+          },
+          "variant": "title"
         },
         {
           "type": "text",
@@ -386,7 +397,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -400,13 +412,13 @@
       },
       "transition_out": {
         "type": "hard_cut",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img007",
-          "src": "assets/images/img007.png",
+          "asset_id": "img_007",
+          "src": "assets/images/img_007.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -418,11 +430,12 @@
           "type": "text",
           "text": "University of Waterloo Study: Zipper • Helicopter • Speedometer",
           "start_sec": 87.067,
-          "end_sec": 95.0,
+          "end_sec": 95,
           "placement": "top_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "title"
         },
         {
           "type": "text",
@@ -432,7 +445,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -451,8 +465,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img007",
-          "src": "assets/images/img007.png",
+          "asset_id": "img_007",
+          "src": "assets/images/img_007.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -464,7 +478,7 @@
           "type": "text",
           "text": "SHATTERED OVERCONFIDENCE",
           "start_sec": 108.809,
-          "end_sec": 111.0,
+          "end_sec": 111,
           "placement": "bottom_left",
           "animation": {
             "type": "slide_up"
@@ -478,7 +492,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -497,8 +512,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img008",
-          "src": "assets/images/img008.png",
+          "asset_id": "img_008",
+          "src": "assets/images/img_008.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -510,11 +525,12 @@
           "type": "text",
           "text": "FEELING OF IGNORANCE (ስምዒት ዘይምፍላጥ)",
           "start_sec": 114.769,
-          "end_sec": 120.0,
+          "end_sec": 120,
           "placement": "top_center",
           "animation": {
             "type": "dramatic_reveal"
-          }
+          },
+          "variant": "title"
         },
         {
           "type": "text",
@@ -524,7 +540,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -543,8 +560,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img008",
-          "src": "assets/images/img008.png",
+          "asset_id": "img_008",
+          "src": "assets/images/img_008.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -556,7 +573,7 @@
           "type": "text",
           "text": "STUDY N = 2,862 PARTICIPANTS | RECEPTIVITY TO EXPERTS ▲ 85%",
           "start_sec": 125.65,
-          "end_sec": 133.0,
+          "end_sec": 133,
           "placement": "top_left",
           "animation": {
             "type": "slide_left"
@@ -570,7 +587,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -589,8 +607,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img009",
-          "src": "assets/images/img009.png",
+          "asset_id": "img_009",
+          "src": "assets/images/img_009.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -602,11 +620,12 @@
           "type": "text",
           "text": "'I KNOW' ➔ 'CAN I EXPLAIN?' ➔ 'I TRULY DON'T KNOW'",
           "start_sec": 142.571,
-          "end_sec": 149.0,
+          "end_sec": 149,
           "placement": "top_center",
           "animation": {
             "type": "word_reveal"
-          }
+          },
+          "variant": "title"
         },
         {
           "type": "text",
@@ -616,7 +635,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -635,8 +655,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img009",
-          "src": "assets/images/img009.png",
+          "asset_id": "img_009",
+          "src": "assets/images/img_009.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -652,7 +672,8 @@
           "placement": "top_center",
           "animation": {
             "type": "fade_up"
-          }
+          },
+          "variant": "title"
         },
         {
           "type": "text",
@@ -662,7 +683,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -676,13 +698,13 @@
       },
       "transition_out": {
         "type": "hard_cut",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img010",
-          "src": "assets/images/img010.png",
+          "asset_id": "img_010",
+          "src": "assets/images/img_010.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -708,7 +730,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -718,7 +741,7 @@
       "end_sec": 173.894,
       "transition_in": {
         "type": "hard_cut",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -727,8 +750,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img010",
-          "src": "assets/images/img010.png",
+          "asset_id": "img_010",
+          "src": "assets/images/img_010.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -774,7 +797,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -793,8 +817,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img011",
-          "src": "assets/images/img011.png",
+          "asset_id": "img_011",
+          "src": "assets/images/img_011.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -806,7 +830,7 @@
           "type": "text",
           "text": "ALBERT BANDURA | SELF-EFFICACY (ናይ ውልቀ-ዓቕሚ እምነት)",
           "start_sec": 174.974,
-          "end_sec": 182.0,
+          "end_sec": 182,
           "placement": "top_right",
           "animation": {
             "type": "fade_in"
@@ -820,7 +844,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -839,8 +864,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img011",
-          "src": "assets/images/img011.png",
+          "asset_id": "img_011",
+          "src": "assets/images/img_011.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -852,7 +877,7 @@
           "type": "text",
           "text": "ENACTIVE ATTAINMENT (ተግብራዊ ዓወታት)",
           "start_sec": 192.635,
-          "end_sec": 196.0,
+          "end_sec": 196,
           "placement": "top_right",
           "animation": {
             "type": "scale_in"
@@ -866,7 +891,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -885,8 +911,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img012",
-          "src": "assets/images/img012.png",
+          "asset_id": "img_012",
+          "src": "assets/images/img_012.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -898,7 +924,7 @@
           "type": "text",
           "text": "SELF-CONFIDENCE & CAPACITY FOR ACTION GROWING",
           "start_sec": 200.036,
-          "end_sec": 204.0,
+          "end_sec": 204,
           "placement": "top_left",
           "animation": {
             "type": "slide_up"
@@ -912,7 +938,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -931,8 +958,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img013",
-          "src": "assets/images/img013.png",
+          "asset_id": "img_013",
+          "src": "assets/images/img_013.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -948,7 +975,8 @@
           "placement": "top_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "title"
         },
         {
           "type": "text",
@@ -958,7 +986,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -977,8 +1006,8 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img013",
-          "src": "assets/images/img013.png",
+          "asset_id": "img_013",
+          "src": "assets/images/img_013.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -990,11 +1019,12 @@
           "type": "text",
           "text": "HUMBLE ACKNOWLEDGMENT ➔ DELIBERATE PRACTICE",
           "start_sec": 216.917,
-          "end_sec": 221.0,
+          "end_sec": 221,
           "placement": "top_center",
           "animation": {
             "type": "scale_in"
-          }
+          },
+          "variant": "title"
         },
         {
           "type": "text",
@@ -1004,7 +1034,8 @@
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
-          }
+          },
+          "variant": "subtitle"
         }
       ]
     },
@@ -1018,13 +1049,13 @@
       },
       "transition_out": {
         "type": "fade_to_black",
-        "duration_sec": 1.0
+        "duration_sec": 1
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img013",
-          "src": "assets/images/img013.png",
+          "asset_id": "img_013",
+          "src": "assets/images/img_013.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -1040,7 +1071,8 @@
           "placement": "center",
           "animation": {
             "type": "dramatic_reveal"
-          }
+          },
+          "variant": "title"
         }
       ]
     },
