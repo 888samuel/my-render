@@ -1,11 +1,11 @@
 {
   "version": "1.0",
   "video": {
-    "id": "divine_silence_samaria",
+    "id": "tigrigna_educational_video",
     "width": 1920,
     "height": 1080,
     "fps": 30,
-    "duration_sec": 155
+    "duration_sec": 229.758
   },
   "audio": {
     "src": "assets/audio/output.mp3",
@@ -14,93 +14,89 @@
   "clips": [
     {
       "id": "s001",
-      "start_sec": 0,
-      "end_sec": 4.06,
+      "start_sec": 1.5,
+      "end_sec": 11.821,
       "transition_in": {
         "type": "fade_in_from_black",
-        "duration_sec": 0.4
+        "duration_sec": 0.5
       },
       "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_001",
-          "src": "assets/images/img_001.png",
+          "asset_id": "img001",
+          "src": "assets/images/img001.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
             "type": "slow_zoom_in",
-            "intensity": 0.15
+            "intensity": 0.25
           }
         },
         {
           "type": "text",
-          "text": "ዘሕዊ ስቕታ",
-          "variant": "title",
-          "start_sec": 0.4,
-          "end_sec": 2.08,
-          "placement": "center",
+          "text": "THE ILLUSION OF KNOWLEDGE",
+          "start_sec": 1.5,
+          "end_sec": 5.0,
+          "placement": "top_center",
           "animation": {
-            "type": "fade_up"
+            "type": "dramatic_reveal"
           }
         },
         {
           "type": "text",
-          "text": "Healing Silence...",
-          "variant": "subtitle",
-          "start_sec": 0.4,
-          "end_sec": 2.08,
+          "text": "Until you wake up from the mental illusion of believing 'I know everything,' your self-confidence feels solid.",
+          "start_sec": 1.5,
+          "end_sec": 11.821,
           "placement": "bottom_center",
           "animation": {
-            "type": "fade_in"
+            "type": "fade_up"
           }
         }
       ]
     },
     {
       "id": "s002",
-      "start_sec": 4.06,
-      "end_sec": 7.301,
+      "start_sec": 11.821,
+      "end_sec": 16.201,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.3
       },
       "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "hard_cut",
+        "duration_sec": 0.0
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_001",
-          "src": "assets/images/img_001.png",
+          "asset_id": "img002",
+          "src": "assets/images/img002.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "pan_right",
+            "intensity": 0.2
           }
         },
         {
           "type": "text",
-          "text": "ሰላም ንዓኻትኩም ይኹን ደቂ እግዚኣብሄር።",
-          "variant": "title",
-          "start_sec": 4.06,
-          "end_sec": 6.061,
-          "placement": "center",
+          "text": "MECHANICAL CHALLENGE: CAN YOU EXPLAIN A ZIPPER?",
+          "start_sec": 11.821,
+          "end_sec": 14.5,
+          "placement": "top_right",
           "animation": {
-            "type": "fade_up"
+            "type": "slide_left"
           }
         },
         {
           "type": "text",
-          "text": "Peace be upon you, children of God.",
-          "variant": "subtitle",
-          "start_sec": 4.06,
-          "end_sec": 6.061,
+          "text": "However, can you explain in detail how a simple zipper works?",
+          "start_sec": 11.821,
+          "end_sec": 16.201,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -110,11 +106,11 @@
     },
     {
       "id": "s003",
-      "start_sec": 7.301,
-      "end_sec": 13.241,
+      "start_sec": 18.221,
+      "end_sec": 47.244,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "hard_cut",
+        "duration_sec": 0.0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -123,80 +119,86 @@
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_001",
-          "src": "assets/images/img_001.png",
+          "asset_id": "img003",
+          "src": "assets/images/img003.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "pan_left",
+            "intensity": 0.3
           }
         },
         {
           "type": "text",
-          "text": "ሰላም ነቶም ዝደኸሙ፡ ዝጠመዩን ልቦም ዝኸበደን።",
-          "variant": "title",
-          "start_sec": 7.301,
-          "end_sec": 10.801,
-          "placement": "center",
+          "text": "EXPLANATION BREAKDOWN vs. SOCIAL MEDIA HYPE",
+          "start_sec": 18.221,
+          "end_sec": 24.0,
+          "placement": "top_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Most people say 'Yes, I know it'; however, when asked to explain the process step by step, how shallow their knowledge truly is immediately becomes evident.",
+          "start_sec": 18.221,
+          "end_sec": 33.0,
+          "placement": "bottom_center",
           "animation": {
             "type": "fade_up"
           }
         },
         {
           "type": "text",
-          "text": "Peace to those who are weary, hungry, and heavy-hearted.",
-          "variant": "subtitle",
-          "start_sec": 7.301,
-          "end_sec": 10.801,
+          "text": "On social media and common motivational advice, voices dominatingly shout 'believe in yourself' or 'fake it till you make it.'",
+          "start_sec": 33.0,
+          "end_sec": 47.244,
           "placement": "bottom_center",
           "animation": {
-            "type": "fade_in"
+            "type": "fade_up"
           }
         }
       ]
     },
     {
       "id": "s004",
-      "start_sec": 12.741,
-      "end_sec": 21.782,
+      "start_sec": 48.764,
+      "end_sec": 53.864,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "type": "fade",
+        "duration_sec": 0.3
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_002",
-          "src": "assets/images/img_002.png",
+          "asset_id": "img004",
+          "src": "assets/images/img004.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "tilt_down",
+            "intensity": 0.25
           }
         },
         {
           "type": "text",
-          "text": "ሎሚ ብዛዕባ እቲ ሓደ ወዲ ሰብ ክሓልፎ ዝኽእል ዝኸበደ ፈተና ክዛረበኩም እየ፦ እቲ ናይ እግዚኣብሔር ስቕታ።",
-          "variant": "title",
-          "start_sec": 12.741,
-          "end_sec": 18.902,
-          "placement": "center",
+          "text": "Subjective Confidence vs. Real Competence",
+          "start_sec": 48.764,
+          "end_sec": 51.5,
+          "placement": "top_right",
           "animation": {
-            "type": "fade_up"
+            "type": "scale_in"
           }
         },
         {
           "type": "text",
-          "text": "Today, I will speak to you about the heaviest trial a human can endure: The Silence of God.",
-          "variant": "subtitle",
-          "start_sec": 12.741,
-          "end_sec": 18.902,
+          "text": "However, does subjective confidence built without competence lead to true achievements?",
+          "start_sec": 48.764,
+          "end_sec": 53.864,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -206,93 +208,89 @@
     },
     {
       "id": "s005",
-      "start_sec": 21.282,
-      "end_sec": 24.183,
+      "start_sec": 55.724,
+      "end_sec": 59.185,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "type": "flash_cut",
+        "duration_sec": 0.2
       },
       "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.4
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_003",
-          "src": "assets/images/img_003.png",
+          "asset_id": "img004",
+          "src": "assets/images/img004.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "zoom_in",
+            "intensity": 0.35
           }
         },
         {
           "type": "text",
-          "text": "ሎሚ ብዛዕባ ቃላት ኣይኮንናን ክንዛረብ።",
-          "variant": "title",
-          "start_sec": 21.282,
-          "end_sec": 23.143,
-          "placement": "center",
+          "text": "OVERCONFIDENCE & BLINDNESS",
+          "start_sec": 55.724,
+          "end_sec": 58.0,
+          "placement": "top_left",
           "animation": {
-            "type": "fade_up"
+            "type": "slide_up"
           }
         },
         {
           "type": "text",
-          "text": "Today, we are not here to talk about mere words.",
-          "variant": "subtitle",
-          "start_sec": 21.282,
-          "end_sec": 23.143,
+          "text": "Or, on the contrary, does it lead us to blindness and overconfidence?",
+          "start_sec": 55.724,
+          "end_sec": 59.185,
           "placement": "bottom_center",
           "animation": {
-            "type": "fade_in"
+            "type": "fade_up"
           }
         }
       ]
     },
     {
       "id": "s006",
-      "start_sec": 24.183,
-      "end_sec": 28.603,
+      "start_sec": 61.305,
+      "end_sec": 70.546,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_003",
-          "src": "assets/images/img_003.png",
+          "asset_id": "img005",
+          "src": "assets/images/img005.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "slow_zoom_out",
+            "intensity": 0.2
           }
         },
         {
           "type": "text",
-          "text": "ሎሚ ብዛዕባ \"ስቕታ\" ኢና ክንመያየጥ።",
-          "variant": "title",
-          "start_sec": 24.183,
-          "end_sec": 26.243,
-          "placement": "center",
+          "text": "ILLUSION OF EXPLANATORY DEPTH (IOED)",
+          "start_sec": 61.305,
+          "end_sec": 66.0,
+          "placement": "right",
           "animation": {
-            "type": "fade_up"
+            "type": "word_reveal"
           }
         },
         {
           "type": "text",
-          "text": "Today, we are going to discuss \"silence\".",
-          "variant": "subtitle",
-          "start_sec": 24.183,
-          "end_sec": 26.243,
+          "text": "Psychological researchers call this cognitive distortion the 'Illusion of Explanatory Depth.'",
+          "start_sec": 61.305,
+          "end_sec": 70.546,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -302,45 +300,43 @@
     },
     {
       "id": "s007",
-      "start_sec": 28.103,
-      "end_sec": 37.684,
+      "start_sec": 71.906,
+      "end_sec": 78.446,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_002",
-          "src": "assets/images/img_002.png",
+          "asset_id": "img005",
+          "src": "assets/images/img005.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "pan_down",
+            "intensity": 0.2
           }
         },
         {
           "type": "text",
-          "text": "ብዛዕባ እቲ እግዚኣብሔር ስቕ ዝበለ ዝመስለሉ፡ ንሕና ድማ ኣብ ውሽጢ ጭንቀት ኮይንና ሰማይ ሰማይ እንጥምተሉ ሰዓት።",
-          "variant": "title",
-          "start_sec": 28.103,
-          "end_sec": 35.064,
-          "placement": "center",
+          "text": "Perceived Understanding vs. Actual Knowledge",
+          "start_sec": 71.906,
+          "end_sec": 75.0,
+          "placement": "right",
           "animation": {
             "type": "fade_up"
           }
         },
         {
           "type": "text",
-          "text": "About those moments when God seems silent, and in our anguish, we gaze helplessly at the heavens.",
-          "variant": "subtitle",
-          "start_sec": 28.103,
-          "end_sec": 35.064,
+          "text": "People feel that their understanding of various things is much deeper than what they actually know.",
+          "start_sec": 71.906,
+          "end_sec": 78.446,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -350,45 +346,43 @@
     },
     {
       "id": "s008",
-      "start_sec": 37.184,
-      "end_sec": 46.325,
+      "start_sec": 80.846,
+      "end_sec": 84.687,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.4
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_003",
-          "src": "assets/images/img_003.png",
+          "asset_id": "img006",
+          "src": "assets/images/img006.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "pan_left",
+            "intensity": 0.25
           }
         },
         {
           "type": "text",
-          "text": "ሎሚ ኣብ ምድርና ካብ ዘሎ ጭውጭውታ ንላዕሊ፡ እቲ ናይ እግዚኣብሔር ስቕታ ዘጨነቐኩም ወገነይ... እዚ መደብ እዚ ንዓኻትኩም እዩ።",
-          "variant": "title",
-          "start_sec": 37.184,
-          "end_sec": 44.165,
+          "text": "FALSE BELIEF: 'I KNOW'",
+          "start_sec": 80.846,
+          "end_sec": 83.0,
           "placement": "top_center",
           "animation": {
-            "type": "fade_up"
+            "type": "scale_up"
           }
         },
         {
           "type": "text",
-          "text": "My brethren, who are troubled more by the silence of God than the worldly noise around us... this message is for you.",
-          "variant": "subtitle",
-          "start_sec": 37.184,
-          "end_sec": 44.165,
+          "text": "Starting from the false belief of 'I know,' they deceive themselves.",
+          "start_sec": 80.846,
+          "end_sec": 84.687,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -398,45 +392,43 @@
     },
     {
       "id": "s009",
-      "start_sec": 45.825,
-      "end_sec": 49.705,
+      "start_sec": 87.067,
+      "end_sec": 106.729,
       "transition_in": {
-        "type": "cross_dissolve",
+        "type": "smooth_slide",
         "duration_sec": 0.5
       },
       "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "type": "hard_cut",
+        "duration_sec": 0.0
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_004",
-          "src": "assets/images/img_004.png",
+          "asset_id": "img007",
+          "src": "assets/images/img007.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "pan_right",
+            "intensity": 0.35
           }
         },
         {
           "type": "text",
-          "text": "እግዚኣብሔር ስቕ ክብል ከሎ እንታይ እዩ ዝገብር ዘሎ?",
-          "variant": "highlighted_text",
-          "start_sec": 45.825,
-          "end_sec": 47.725,
+          "text": "University of Waterloo Study: Zipper • Helicopter • Speedometer",
+          "start_sec": 87.067,
+          "end_sec": 95.0,
           "placement": "top_center",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_in"
           }
         },
         {
           "type": "text",
-          "text": "What is God doing when He remains silent?",
-          "variant": "subtitle",
-          "start_sec": 45.825,
-          "end_sec": 47.725,
+          "text": "As scientific studies conducted at the University of Waterloo confirmed, when participants were asked to explain in detail how a device—for example, a zipper, a helicopter, or a speedometer—works, because they could not explain the process, a major gap in their knowledge was instantly revealed.",
+          "start_sec": 87.067,
+          "end_sec": 106.729,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -446,45 +438,43 @@
     },
     {
       "id": "s010",
-      "start_sec": 49.205,
-      "end_sec": 58.706,
+      "start_sec": 108.809,
+      "end_sec": 112.449,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "type": "flash_cut",
+        "duration_sec": 0.1
       },
       "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.3
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_005",
-          "src": "assets/images/img_005.png",
+          "asset_id": "img007",
+          "src": "assets/images/img007.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "zoom_in",
+            "intensity": 0.3
           }
         },
         {
           "type": "text",
-          "text": "ኣብ ውሽጢ እቲ ስቕታኡ እንታይ ዓይነት ፈውሲ ሓቢኡ ኣሎ?",
-          "variant": "highlighted_text",
-          "start_sec": 49.205,
-          "end_sec": 56.906,
-          "placement": "top_center",
+          "text": "SHATTERED OVERCONFIDENCE",
+          "start_sec": 108.809,
+          "end_sec": 111.0,
+          "placement": "bottom_left",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "slide_up"
           }
         },
         {
           "type": "text",
-          "text": "What kind of healing has He hidden within His silence?",
-          "variant": "subtitle",
-          "start_sec": 49.205,
-          "end_sec": 56.906,
+          "text": "Attempting to explain the process in detail shattered their false self-confidence.",
+          "start_sec": 108.809,
+          "end_sec": 112.449,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -494,45 +484,43 @@
     },
     {
       "id": "s011",
-      "start_sec": 58.706,
-      "end_sec": 66.467,
+      "start_sec": 114.769,
+      "end_sec": 125.55,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "fade_in_from_black",
+        "duration_sec": 0.5
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_005",
-          "src": "assets/images/img_005.png",
+          "asset_id": "img008",
+          "src": "assets/images/img008.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
             "type": "slow_zoom_in",
-            "intensity": 0.15
+            "intensity": 0.25
           }
         },
         {
           "type": "text",
-          "text": "ስቕታ ማለት 'ምርሓቕ' ማለት ኣይኮነን።",
-          "variant": "highlighted_text",
-          "start_sec": 58.706,
-          "end_sec": 64.227,
-          "placement": "center",
+          "text": "FEELING OF IGNORANCE (ስምዒት ዘይምፍላጥ)",
+          "start_sec": 114.769,
+          "end_sec": 120.0,
+          "placement": "top_center",
           "animation": {
             "type": "dramatic_reveal"
           }
         },
         {
           "type": "text",
-          "text": "Silence does not mean 'distance'.",
-          "variant": "subtitle",
-          "start_sec": 58.706,
-          "end_sec": 64.227,
+          "text": "The greatest insight was that this test generated a 'feeling of ignorance' inside people.",
+          "start_sec": 114.769,
+          "end_sec": 125.55,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -542,45 +530,43 @@
     },
     {
       "id": "s012",
-      "start_sec": 65.967,
-      "end_sec": 73.308,
+      "start_sec": 125.65,
+      "end_sec": 141.651,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.4
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_004",
-          "src": "assets/images/img_004.png",
+          "asset_id": "img008",
+          "src": "assets/images/img008.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "pan_down",
+            "intensity": 0.2
           }
         },
         {
           "type": "text",
-          "text": "ኣብ ኦርቶዶክሳዊት እምነትና፡ ስቕታ ማለት መንፈስ ቅዱስ ስራሕ ዝሰርሓሉ ዓቢ ቤተ-ፈተነ እዩ።",
-          "variant": "title",
-          "start_sec": 65.967,
-          "end_sec": 70.828,
-          "placement": "top_center",
+          "text": "STUDY N = 2,862 PARTICIPANTS | RECEPTIVITY TO EXPERTS ▲ 85%",
+          "start_sec": 125.65,
+          "end_sec": 133.0,
+          "placement": "top_left",
           "animation": {
-            "type": "fade_up"
+            "type": "slide_left"
           }
         },
         {
           "type": "text",
-          "text": "In our Orthodox faith, silence is a great laboratory where the Holy Spirit works.",
-          "variant": "subtitle",
-          "start_sec": 65.967,
-          "end_sec": 70.828,
+          "text": "As a large study of 2,862 participants confirmed, when people acknowledged their own ignorance by saying 'I don't know,' they became much more willing to set aside lay opinions and listen to and accept expert knowledge.",
+          "start_sec": 125.65,
+          "end_sec": 141.651,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -590,45 +576,43 @@
     },
     {
       "id": "s013",
-      "start_sec": 72.808,
-      "end_sec": 82.109,
+      "start_sec": 142.571,
+      "end_sec": 154.792,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.4
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_006",
-          "src": "assets/images/img_006.png",
+          "asset_id": "img009",
+          "src": "assets/images/img009.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
             "type": "slow_zoom_in",
-            "intensity": 0.15
+            "intensity": 0.3
           }
         },
         {
           "type": "text",
-          "text": "ሎሚ፡ እግዚአብሔር ስቕ ክብል ከሎ ንምንታይ ምዃኑ ንምርዳእ፡ ኣብ ታሪኽ ናብ ዝተፈጸሙ ሰለስተ ዓበይቲ ስቕታታት ክንጓዓዝ ኢና።",
-          "variant": "title",
-          "start_sec": 72.808,
-          "end_sec": 80.589,
-          "placement": "center",
+          "text": "'I KNOW' ➔ 'CAN I EXPLAIN?' ➔ 'I TRULY DON'T KNOW'",
+          "start_sec": 142.571,
+          "end_sec": 149.0,
+          "placement": "top_center",
           "animation": {
-            "type": "fade_up"
+            "type": "word_reveal"
           }
         },
         {
           "type": "text",
-          "text": "Today, to understand why God stays silent, we will journey through three great silences in history.",
-          "variant": "subtitle",
-          "start_sec": 72.808,
-          "end_sec": 80.589,
+          "text": "So, if we shift from the distortion of 'I know' to the question 'Can I explain it in detail?', we ultimately reach the calibrated outcome of 'I truly don't know.'",
+          "start_sec": 142.571,
+          "end_sec": 154.792,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -638,45 +622,43 @@
     },
     {
       "id": "s014",
-      "start_sec": 81.609,
-      "end_sec": 88.83,
+      "start_sec": 156.713,
+      "end_sec": 161.373,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.3
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_007",
-          "src": "assets/images/img_007.png",
+          "asset_id": "img009",
+          "src": "assets/images/img009.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "pan_up",
+            "intensity": 0.2
           }
         },
         {
           "type": "text",
-          "text": "ቀዳማይ ስቕታ፦ ምኽባብ ሰማርያ።",
-          "variant": "title",
-          "start_sec": 81.609,
-          "end_sec": 88.61,
-          "placement": "center",
+          "text": "ADMISSION OF IGNORANCE = PATHWAY TO LEARNING",
+          "start_sec": 156.713,
+          "end_sec": 159.5,
+          "placement": "top_center",
           "animation": {
             "type": "fade_up"
           }
         },
         {
           "type": "text",
-          "text": "First Silence: The Siege of Samaria. \"Let us now step back 2,876 years from our present time.\"",
-          "variant": "subtitle",
-          "start_sec": 81.609,
-          "end_sec": 88.61,
+          "text": "And this acknowledgment of your ignorance is what opens the pathway to true learning.",
+          "start_sec": 156.713,
+          "end_sec": 161.373,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -686,45 +668,43 @@
     },
     {
       "id": "s015",
-      "start_sec": 88.83,
-      "end_sec": 92.35,
+      "start_sec": 162.453,
+      "end_sec": 165.553,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.3
       },
       "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "type": "hard_cut",
+        "duration_sec": 0.0
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_007",
-          "src": "assets/images/img_007.png",
+          "asset_id": "img010",
+          "src": "assets/images/img010.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "zoom_in",
+            "intensity": 0.2
           }
         },
         {
           "type": "text",
-          "text": "ናብ 850 ዓመተ ዓለም ቅድሚ ልደተ ክርስቶስ።",
-          "variant": "highlighted_text",
-          "start_sec": 88.83,
-          "end_sec": 91.43,
-          "placement": "top_center",
+          "text": "TRUE COMPETENCE (ሓቀኛ ብቕዓት)",
+          "start_sec": 162.453,
+          "end_sec": 164.5,
+          "placement": "top_left",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "scale_in"
           }
         },
         {
           "type": "text",
-          "text": "To the year 850 Before Christ.",
-          "variant": "subtitle",
-          "start_sec": 88.83,
-          "end_sec": 91.43,
+          "text": "Through this, true competence emerges.",
+          "start_sec": 162.453,
+          "end_sec": 165.553,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -734,45 +714,63 @@
     },
     {
       "id": "s016",
-      "start_sec": 91.85,
-      "end_sec": 96.511,
+      "start_sec": 166.213,
+      "end_sec": 173.894,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "type": "hard_cut",
+        "duration_sec": 0.0
       },
       "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.4
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_008",
-          "src": "assets/images/img_008.png",
+          "asset_id": "img010",
+          "src": "assets/images/img010.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "pan_right",
+            "intensity": 0.25
           }
         },
         {
           "type": "text",
-          "text": "እታ ብኣስከሬን ዝተመልአት፡ ብጭንቀት ዝዓበደት ከተማ ሰማርያ።",
-          "variant": "title",
-          "start_sec": 91.85,
-          "end_sec": 95.47,
-          "placement": "top_center",
+          "text": "1. Repeated Practice | ተደጋገሚ ልምምድ",
+          "start_sec": 166.213,
+          "end_sec": 173.894,
+          "placement": "top_left",
           "animation": {
-            "type": "fade_up"
+            "type": "slide_up"
           }
         },
         {
           "type": "text",
-          "text": "The city of Samaria—filled with corpses and driven mad by despair.",
-          "variant": "subtitle",
-          "start_sec": 91.85,
-          "end_sec": 95.47,
+          "text": "2. Practical Experience | ተግብራዊ ልምዲ",
+          "start_sec": 168.7,
+          "end_sec": 173.894,
+          "placement": "center_left",
+          "animation": {
+            "type": "slide_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "3. Accurate Feedback | እሩም ርእይቶ",
+          "start_sec": 171.2,
+          "end_sec": 173.894,
+          "placement": "bottom_left",
+          "animation": {
+            "type": "slide_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Competence is built through repeated practice, practical experience, and accurate feedback.",
+          "start_sec": 166.213,
+          "end_sec": 173.894,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -782,45 +780,43 @@
     },
     {
       "id": "s017",
-      "start_sec": 96.511,
-      "end_sec": 100.771,
+      "start_sec": 174.974,
+      "end_sec": 192.635,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.4
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_008",
-          "src": "assets/images/img_008.png",
+          "asset_id": "img011",
+          "src": "assets/images/img011.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
             "type": "slow_zoom_in",
-            "intensity": 0.15
+            "intensity": 0.3
           }
         },
         {
           "type": "text",
-          "text": "እስራኤል ኣብ ክልተ ተኸፊላ ዝነበረትሉ እዋን እዩ።",
-          "variant": "highlighted_text",
-          "start_sec": 96.511,
-          "end_sec": 98.651,
-          "placement": "top_center",
+          "text": "ALBERT BANDURA | SELF-EFFICACY (ናይ ውልቀ-ዓቕሚ እምነት)",
+          "start_sec": 174.974,
+          "end_sec": 182.0,
+          "placement": "top_right",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "fade_in"
           }
         },
         {
           "type": "text",
-          "text": "It was an era when Israel was divided into two kingdoms.",
-          "variant": "subtitle",
-          "start_sec": 96.511,
-          "end_sec": 98.651,
+          "text": "As research by psychologist Albert Bandura explains, 'self-efficacy' is an individual's conviction in their capability to effectively perform a specific task or produce a specific outcome in a given situation.",
+          "start_sec": 174.974,
+          "end_sec": 192.635,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -830,45 +826,43 @@
     },
     {
       "id": "s018",
-      "start_sec": 100.271,
-      "end_sec": 105.191,
+      "start_sec": 192.635,
+      "end_sec": 198.756,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_009",
-          "src": "assets/images/img_009.png",
+          "asset_id": "img011",
+          "src": "assets/images/img011.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "pan_diagonal",
+            "intensity": 0.2
           }
         },
         {
           "type": "text",
-          "text": "እታ ናይ ሰሜን መንግስቲ (እስራኤል) ብንጉስ ዮራም ትመሓደር ነበረት።",
-          "variant": "title",
-          "start_sec": 100.271,
-          "end_sec": 103.091,
-          "placement": "top_center",
+          "text": "ENACTIVE ATTAINMENT (ተግብራዊ ዓወታት)",
+          "start_sec": 192.635,
+          "end_sec": 196.0,
+          "placement": "top_right",
           "animation": {
-            "type": "fade_up"
+            "type": "scale_in"
           }
         },
         {
           "type": "text",
-          "text": "The Northern Kingdom of Israel was ruled by King Joram.",
-          "variant": "subtitle",
-          "start_sec": 100.271,
-          "end_sec": 103.091,
+          "text": "This self-efficacy belief is rooted not in empty hope, but in enactive attainment and the accumulation of real experience.",
+          "start_sec": 192.635,
+          "end_sec": 198.756,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -878,45 +872,43 @@
     },
     {
       "id": "s019",
-      "start_sec": 104.691,
-      "end_sec": 109.552,
+      "start_sec": 200.036,
+      "end_sec": 206.296,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "type": "smooth_slide",
+        "duration_sec": 0.4
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_010",
-          "src": "assets/images/img_010.png",
+          "asset_id": "img012",
+          "src": "assets/images/img012.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "tilt_up",
+            "intensity": 0.3
           }
         },
         {
           "type": "text",
-          "text": "ዮራም ወዲ እቶም ክፉኣት ኣክኣብን ኤልዛቤልን እዩ ነይሩ።",
-          "variant": "highlighted_text",
-          "start_sec": 104.691,
-          "end_sec": 107.632,
-          "placement": "top_center",
+          "text": "SELF-CONFIDENCE & CAPACITY FOR ACTION GROWING",
+          "start_sec": 200.036,
+          "end_sec": 204.0,
+          "placement": "top_left",
           "animation": {
-            "type": "dramatic_reveal"
+            "type": "slide_up"
           }
         },
         {
           "type": "text",
-          "text": "Joram was the son of the wicked Ahab and Jezebel.",
-          "variant": "subtitle",
-          "start_sec": 104.691,
-          "end_sec": 107.632,
+          "text": "When true competence and self-efficacy are built, self-confidence and the capacity for action continue to grow.",
+          "start_sec": 200.036,
+          "end_sec": 206.296,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -926,45 +918,43 @@
     },
     {
       "id": "s020",
-      "start_sec": 109.052,
-      "end_sec": 115.393,
+      "start_sec": 207.937,
+      "end_sec": 215.157,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.4
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_011",
-          "src": "assets/images/img_011.png",
+          "asset_id": "img013",
+          "src": "assets/images/img013.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
+            "type": "pan_diagonal",
+            "intensity": 0.2
           }
         },
         {
           "type": "text",
-          "text": "ከም ወለዱ ንኣምላኽ ዘቆጥዕ ስራሕ ይሰርሕ፡ ንጣኦታት ይሰግድ ነበረ።",
-          "variant": "title",
-          "start_sec": 109.052,
-          "end_sec": 113.612,
+          "text": "RETURNING TO THE ZIPPER METAPHOR",
+          "start_sec": 207.937,
+          "end_sec": 211.5,
           "placement": "top_center",
           "animation": {
-            "type": "fade_up"
+            "type": "fade_in"
           }
         },
         {
           "type": "text",
-          "text": "Like his parents, he did what provoked God to anger, worshiping idols.",
-          "variant": "subtitle",
-          "start_sec": 109.052,
-          "end_sec": 113.612,
+          "text": "Returning to our starting example of the zipper: true self-confidence does not begin with the false pretense that 'I know everything.'",
+          "start_sec": 207.937,
+          "end_sec": 215.157,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -974,45 +964,43 @@
     },
     {
       "id": "s021",
-      "start_sec": 114.893,
-      "end_sec": 121.393,
+      "start_sec": 216.917,
+      "end_sec": 225.178,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.3
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_012",
-          "src": "assets/images/img_012.png",
+          "asset_id": "img013",
+          "src": "assets/images/img013.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
             "type": "slow_zoom_in",
-            "intensity": 0.15
+            "intensity": 0.25
           }
         },
         {
           "type": "text",
-          "text": "እግዚኣብሔር ድማ ንእስራኤል ክቐጽዓ ኢሉ፡ ነቲ ጨካን ንጉስ ሶርያ ወልደ ኣዴር ቤንሃዳድ ከም በትሪ ተጠቐመሉ።",
-          "variant": "title",
-          "start_sec": 114.893,
-          "end_sec": 119.893,
+          "text": "HUMBLE ACKNOWLEDGMENT ➔ DELIBERATE PRACTICE",
+          "start_sec": 216.917,
+          "end_sec": 221.0,
           "placement": "top_center",
           "animation": {
-            "type": "fade_up"
+            "type": "scale_in"
           }
         },
         {
           "type": "text",
-          "text": "So God, to discipline Israel, used the ruthless King of Syria, Ben-hadad, as His rod.",
-          "variant": "subtitle",
-          "start_sec": 114.893,
-          "end_sec": 119.893,
+          "text": "On the contrary, it is grounded in humbly acknowledging your ignorance, and then building competence through genuine effort and practice.",
+          "start_sec": 216.917,
+          "end_sec": 225.178,
           "placement": "bottom_center",
           "animation": {
             "type": "fade_in"
@@ -1022,528 +1010,36 @@
     },
     {
       "id": "s022",
-      "start_sec": 120.893,
-      "end_sec": 124.754,
+      "start_sec": 226.398,
+      "end_sec": 229.758,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_013",
-          "src": "assets/images/img_013.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
-          }
-        },
-        {
-          "type": "text",
-          "text": "ቤንሃዳድ ንብምሉኡ ሰራዊቱ ኣኪቡ መጸ።",
-          "variant": "title",
-          "start_sec": 120.893,
-          "end_sec": 123.274,
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          }
-        },
-        {
-          "type": "text",
-          "text": "Ben-hadad assembled his entire army and marched forth.",
-          "variant": "subtitle",
-          "start_sec": 120.893,
-          "end_sec": 123.274,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          }
-        }
-      ]
-    },
-    {
-      "id": "s023",
-      "start_sec": 124.254,
-      "end_sec": 126.694,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_007",
-          "src": "assets/images/img_007.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
-          }
-        },
-        {
-          "type": "text",
-          "text": "ንከተማ ሰማርያ ድማ ከበባ።",
-          "variant": "title",
-          "start_sec": 124.254,
-          "end_sec": 125.774,
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          }
-        },
-        {
-          "type": "text",
-          "text": "And he besieged the city of Samaria.",
-          "variant": "subtitle",
-          "start_sec": 124.254,
-          "end_sec": 125.774,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          }
-        }
-      ]
-    },
-    {
-      "id": "s024",
-      "start_sec": 126.194,
-      "end_sec": 132.394,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_008",
-          "src": "assets/images/img_008.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
-          }
-        },
-        {
-          "type": "text",
-          "text": "ብዝርዝር ሕሰቡሉ... ከበባ ማለት ብረት ጥራይ ኣይኮነን፤ ከበባ ማለት ስነ-ልቦናዊ ኲናት እዩ።",
-          "variant": "highlighted_text",
-          "start_sec": 126.194,
-          "end_sec": 131.894,
-          "placement": "top_center",
-          "animation": {
-            "type": "dramatic_reveal"
-          }
-        },
-        {
-          "type": "text",
-          "text": "Think about it deeply... a siege is not just weapons; a siege is psychological warfare.",
-          "variant": "subtitle",
-          "start_sec": 126.194,
-          "end_sec": 131.894,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          }
-        }
-      ]
-    },
-    {
-      "id": "s025",
-      "start_sec": 131.894,
-      "end_sec": 137.735,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_012",
-          "src": "assets/images/img_012.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
-          }
-        },
-        {
-          "type": "text",
-          "text": "ቤንሃዳድ 'ብጥይት ኣይቀትሎምን እየ፡ ብጥሜት ግን ክሳብ ዝምበርከኹ ክጽበዮም እየ' በለ።",
-          "variant": "quote",
-          "start_sec": 131.894,
-          "end_sec": 136.775,
-          "placement": "center",
-          "animation": {
-            "type": "fade_in"
-          }
-        },
-        {
-          "type": "text",
-          "text": "Ben-hadad declared, 'I will not slay them with weapons, but I will wait until starvation brings them to their knees.'",
-          "variant": "subtitle",
-          "start_sec": 131.894,
-          "end_sec": 136.775,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          }
-        }
-      ]
-    },
-    {
-      "id": "s026",
-      "start_sec": 137.235,
-      "end_sec": 139.615,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_014",
-          "src": "assets/images/img_014.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
-          }
-        },
-        {
-          "type": "text",
-          "text": "ንዓመታት እቲ ዕጽዋ ጸንዐ።",
-          "variant": "highlighted_text",
-          "start_sec": 137.235,
-          "end_sec": 138.695,
-          "placement": "top_center",
-          "animation": {
-            "type": "dramatic_reveal"
-          }
-        },
-        {
-          "type": "text",
-          "text": "For years, the blockade held firm.",
-          "variant": "subtitle",
-          "start_sec": 137.235,
-          "end_sec": 138.695,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          }
-        }
-      ]
-    },
-    {
-      "id": "s027",
-      "start_sec": 139.115,
-      "end_sec": 141.416,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "transition_out": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_015",
-          "src": "assets/images/img_015.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
-          }
-        },
-        {
-          "type": "text",
-          "text": "ኣብ ውሽጢ ሰማርያ እኽሊ ተወድአ።",
-          "variant": "highlighted_text",
-          "start_sec": 139.115,
-          "end_sec": 140.575,
-          "placement": "top_center",
-          "animation": {
-            "type": "dramatic_reveal"
-          }
-        },
-        {
-          "type": "text",
-          "text": "Inside Samaria, all grain ran out.",
-          "variant": "subtitle",
-          "start_sec": 139.115,
-          "end_sec": 140.575,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          }
-        }
-      ]
-    },
-    {
-      "id": "s028",
-      "start_sec": 141.416,
-      "end_sec": 143.356,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_015",
-          "src": "assets/images/img_015.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
-          }
-        },
-        {
-          "type": "text",
-          "text": "እቲ ንቡር መግቢ ጠፍአ።",
-          "variant": "title",
-          "start_sec": 141.416,
-          "end_sec": 142.476,
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          }
-        },
-        {
-          "type": "text",
-          "text": "Normal food vanished completely.",
-          "variant": "subtitle",
-          "start_sec": 141.416,
-          "end_sec": 142.476,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          }
-        }
-      ]
-    },
-    {
-      "id": "s029",
-      "start_sec": 142.856,
-      "end_sec": 146.856,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "transition_out": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_006",
-          "src": "assets/images/img_006.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
-          }
-        },
-        {
-          "type": "text",
-          "text": "መጽሓፍ ቅዱስ ርእሲ ኣድጊ ብሰማንያ ቅርሺ ይሽየጥ ነበረ ይብለና።",
-          "variant": "highlighted_text",
-          "start_sec": 142.856,
-          "end_sec": 146.176,
-          "placement": "center",
-          "animation": {
-            "type": "dramatic_reveal"
-          }
-        },
-        {
-          "type": "text",
-          "text": "The Bible tells us that a donkey's head was sold for eighty pieces of silver.",
-          "variant": "subtitle",
-          "start_sec": 142.856,
-          "end_sec": 146.176,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          }
-        }
-      ]
-    },
-    {
-      "id": "s030",
-      "start_sec": 146.856,
-      "end_sec": 151.857,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_006",
-          "src": "assets/images/img_006.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
-          }
-        },
-        {
-          "type": "text",
-          "text": "ሕሰቡ እስቲ... ርእሲ ኣድጊ እኮ ኣብ ኦሪት ርኹስ እዩ፡ ኣይብላዕን እዩ።",
-          "variant": "highlighted_text",
-          "start_sec": 146.856,
-          "end_sec": 150.416,
-          "placement": "top_center",
-          "animation": {
-            "type": "dramatic_reveal"
-          }
-        },
-        {
-          "type": "text",
-          "text": "Just imagine... a donkey's head is unclean according to the Law, forbidden to eat.",
-          "variant": "subtitle",
-          "start_sec": 146.856,
-          "end_sec": 150.416,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          }
-        }
-      ]
-    },
-    {
-      "id": "s031",
-      "start_sec": 151.357,
-      "end_sec": 152.877,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.5
-      },
-      "transition_out": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_016",
-          "src": "assets/images/img_016.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.15
-          }
-        },
-        {
-          "type": "text",
-          "text": "ግን ጥሜት ሕጊ የብሉን።",
-          "variant": "highlighted_text",
-          "start_sec": 151.357,
-          "end_sec": 152.457,
-          "placement": "center",
-          "animation": {
-            "type": "dramatic_reveal"
-          }
-        },
-        {
-          "type": "text",
-          "text": "But extreme hunger knows no law.",
-          "variant": "subtitle",
-          "start_sec": 151.357,
-          "end_sec": 152.457,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          }
-        }
-      ]
-    },
-    {
-      "id": "s032",
-      "start_sec": 152.877,
-      "end_sec": 154.737,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
+        "duration_sec": 0.3
       },
       "transition_out": {
         "type": "fade_to_black",
-        "duration_sec": 0.8
+        "duration_sec": 1.0
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_016",
-          "src": "assets/images/img_016.png",
+          "asset_id": "img013",
+          "src": "assets/images/img013.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
+            "type": "slow_zoom_out",
             "intensity": 0.15
           }
         },
         {
           "type": "text",
-          "text": "ህዝቢ ቆርበቱ ምስ ዓጽሙ ተጣበቐ።",
-          "variant": "title",
-          "start_sec": 152.877,
-          "end_sec": 154.737,
-          "placement": "top_center",
+          "text": "True self-confidence begins with acknowledging what you do not know.",
+          "start_sec": 226.398,
+          "end_sec": 229.758,
+          "placement": "center",
           "animation": {
-            "type": "fade_up"
-          }
-        },
-        {
-          "type": "text",
-          "text": "The skin of the people clung tightly to their bones.",
-          "variant": "subtitle",
-          "start_sec": 152.877,
-          "end_sec": 154.737,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
+            "type": "dramatic_reveal"
           }
         }
       ]
@@ -1551,7 +1047,7 @@
     {
       "id": "clip_visualizer",
       "start_sec": 0,
-      "end_sec": 155,
+      "end_sec": 229.758,
       "layers": [
         {
           "type": "graphic",
