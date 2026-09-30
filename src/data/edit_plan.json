@@ -14,15 +14,15 @@
   "clips": [
     {
       "id": "s001",
-      "start_sec": 1.5,
-      "end_sec": 11.821,
+      "start_sec": 0,
+      "end_sec": 12.421,
       "transition_in": {
         "type": "fade_in_from_black",
-        "duration_sec": 0.5
+        "duration_sec": 0.6
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -33,7 +33,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "slow_zoom_in",
-            "intensity": 0.25
+            "intensity": 0.28
           }
         },
         {
@@ -63,14 +63,14 @@
     {
       "id": "s002",
       "start_sec": 11.821,
-      "end_sec": 16.201,
+      "end_sec": 18.821,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "hard_cut",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -81,7 +81,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "pan_right",
-            "intensity": 0.2
+            "intensity": 0.26
           }
         },
         {
@@ -110,14 +110,14 @@
     {
       "id": "s003",
       "start_sec": 18.221,
-      "end_sec": 47.244,
+      "end_sec": 49.364,
       "transition_in": {
-        "type": "hard_cut",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -169,14 +169,14 @@
     {
       "id": "s004",
       "start_sec": 48.764,
-      "end_sec": 53.864,
+      "end_sec": 55.724,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "fade",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -187,7 +187,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "tilt_down",
-            "intensity": 0.25
+            "intensity": 0.26
           }
         },
         {
@@ -216,14 +216,14 @@
     {
       "id": "s005",
       "start_sec": 55.724,
-      "end_sec": 59.185,
+      "end_sec": 61.905,
       "transition_in": {
-        "type": "flash_cut",
-        "duration_sec": 0.2
+        "type": "none",
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.4
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -263,14 +263,14 @@
     {
       "id": "s006",
       "start_sec": 61.305,
-      "end_sec": 70.546,
+      "end_sec": 71.906,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.5
+        "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -281,7 +281,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "slow_zoom_out",
-            "intensity": 0.2
+            "intensity": 0.26
           }
         },
         {
@@ -310,14 +310,14 @@
     {
       "id": "s007",
       "start_sec": 71.906,
-      "end_sec": 78.446,
+      "end_sec": 81.446,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -328,7 +328,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "pan_down",
-            "intensity": 0.2
+            "intensity": 0.26
           }
         },
         {
@@ -357,14 +357,14 @@
     {
       "id": "s008",
       "start_sec": 80.846,
-      "end_sec": 84.687,
+      "end_sec": 87.667,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "duration_sec": 0.6
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.4
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -375,7 +375,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "pan_left",
-            "intensity": 0.25
+            "intensity": 0.26
           }
         },
         {
@@ -405,13 +405,13 @@
     {
       "id": "s009",
       "start_sec": 87.067,
-      "end_sec": 106.729,
+      "end_sec": 108.809,
       "transition_in": {
-        "type": "smooth_slide",
-        "duration_sec": 0.5
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "hard_cut",
+        "type": "none",
         "duration_sec": 0
       },
       "layers": [
@@ -453,14 +453,14 @@
     {
       "id": "s010",
       "start_sec": 108.809,
-      "end_sec": 112.449,
+      "end_sec": 115.369,
       "transition_in": {
-        "type": "flash_cut",
-        "duration_sec": 0.1
+        "type": "none",
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -500,14 +500,14 @@
     {
       "id": "s011",
       "start_sec": 114.769,
-      "end_sec": 125.55,
+      "end_sec": 125.65,
       "transition_in": {
-        "type": "fade_in_from_black",
-        "duration_sec": 0.5
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -518,7 +518,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "slow_zoom_in",
-            "intensity": 0.25
+            "intensity": 0.28
           }
         },
         {
@@ -548,14 +548,14 @@
     {
       "id": "s012",
       "start_sec": 125.65,
-      "end_sec": 141.651,
+      "end_sec": 143.171,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.4
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -566,7 +566,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "pan_down",
-            "intensity": 0.2
+            "intensity": 0.26
           }
         },
         {
@@ -595,14 +595,14 @@
     {
       "id": "s013",
       "start_sec": 142.571,
-      "end_sec": 154.792,
+      "end_sec": 156.713,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.4
+        "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -643,14 +643,14 @@
     {
       "id": "s014",
       "start_sec": 156.713,
-      "end_sec": 161.373,
+      "end_sec": 163.053,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -661,7 +661,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "pan_up",
-            "intensity": 0.2
+            "intensity": 0.26
           }
         },
         {
@@ -691,13 +691,13 @@
     {
       "id": "s015",
       "start_sec": 162.453,
-      "end_sec": 165.553,
+      "end_sec": 166.213,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "hard_cut",
+        "type": "none",
         "duration_sec": 0
       },
       "layers": [
@@ -709,7 +709,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "zoom_in",
-            "intensity": 0.2
+            "intensity": 0.28
           }
         },
         {
@@ -738,14 +738,14 @@
     {
       "id": "s016",
       "start_sec": 166.213,
-      "end_sec": 173.894,
+      "end_sec": 175.574,
       "transition_in": {
-        "type": "hard_cut",
+        "type": "none",
         "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.4
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -756,7 +756,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "pan_right",
-            "intensity": 0.25
+            "intensity": 0.26
           }
         },
         {
@@ -808,11 +808,11 @@
       "end_sec": 192.635,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.4
+        "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -852,14 +852,14 @@
     {
       "id": "s018",
       "start_sec": 192.635,
-      "end_sec": 198.756,
+      "end_sec": 200.636,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -870,7 +870,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "pan_diagonal",
-            "intensity": 0.2
+            "intensity": 0.26
           }
         },
         {
@@ -899,14 +899,14 @@
     {
       "id": "s019",
       "start_sec": 200.036,
-      "end_sec": 206.296,
+      "end_sec": 208.537,
       "transition_in": {
-        "type": "smooth_slide",
-        "duration_sec": 0.4
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
       },
       "transition_out": {
         "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -946,14 +946,14 @@
     {
       "id": "s020",
       "start_sec": 207.937,
-      "end_sec": 215.157,
+      "end_sec": 216.917,
       "transition_in": {
         "type": "cross_dissolve",
-        "duration_sec": 0.4
+        "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -964,7 +964,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "pan_diagonal",
-            "intensity": 0.2
+            "intensity": 0.26
           }
         },
         {
@@ -994,14 +994,14 @@
     {
       "id": "s021",
       "start_sec": 216.917,
-      "end_sec": 225.178,
+      "end_sec": 226.398,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -1012,7 +1012,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "slow_zoom_in",
-            "intensity": 0.25
+            "intensity": 0.28
           }
         },
         {
@@ -1044,8 +1044,8 @@
       "start_sec": 226.398,
       "end_sec": 229.758,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.3
+        "type": "none",
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "fade_to_black",
@@ -1060,7 +1060,7 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "slow_zoom_out",
-            "intensity": 0.15
+            "intensity": 0.26
           }
         },
         {
