@@ -75,6 +75,17 @@ export type TransitionType =
   | "dissolve_smoke"
   | "circle_pulse";
 
+export type GraphicKind =
+  | "numbered_list"
+  | "comparison"
+  | "timeline"
+  | "flow"
+  | "key_statement"
+  | "audio_visualizer"
+  | "lower_third"
+  | "chapter_card"
+  | "year_stamp";
+
 export type LayerType =
   | "image"
   | "video"
@@ -83,15 +94,9 @@ export type LayerType =
   | "quote"
   | "list"
   | "highlighted_text"
+  | "lower_third"
+  | "chapter_card"
   | "graphic"
   | "transition";
-
-export type GraphicKind =
-  | "numbered_list"
-  | "comparison"
-  | "timeline"
-  | "flow"
-  | "key_statement"
-  | "audio_visualizer";
 
 export type AssetKind = "image" | "video" | "audio" | "font";

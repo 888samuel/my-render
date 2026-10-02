@@ -37,7 +37,7 @@ export function resolveAsset(assetId: AssetId): string {
   }
 
   const underscored = assetId.match(/^img(\d+)$/i);
-  if (underscored) {
+  if (underscored?.[1]) {
     return `assets/images/img_${underscored[1].padStart(3, "0")}.png`;
   }
 

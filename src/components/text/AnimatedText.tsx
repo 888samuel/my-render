@@ -29,8 +29,15 @@ export const RevealText = ({
   const frame = useCurrentFrame();
   const { durationInFrames, fps } = useVideoConfig();
   const type = animation?.type ?? "fade_in";
+  const autoExit = animation?.auto_exit ?? true;
   const isWordReveal = type === "word_reveal" || type === "dramatic_reveal";
-  const entrance = resolveTextEntrance(frame, durationInFrames, type, fps);
+  const entrance = resolveTextEntrance(
+    frame,
+    durationInFrames,
+    type,
+    fps,
+    autoExit,
+  );
 
   if (!isWordReveal) {
     return (
@@ -53,6 +60,7 @@ export const RevealText = ({
       style={{
         ...style,
         textAlign: align,
+        opacity: entrance.opacity,
       }}
     >
       {words.map((word, index) => (
@@ -129,6 +137,7 @@ export const Entrance = ({ animation, children }: EntranceProps) => {
     durationInFrames,
     animation?.type ?? "fade_in",
     fps,
+    animation?.auto_exit ?? true,
   );
 
   return <div style={entranceToCss(style)}>{children}</div>;

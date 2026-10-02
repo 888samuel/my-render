@@ -26,6 +26,17 @@
       },
       "layers": [
         {
+          "type": "chapter_card",
+          "eyebrow": "Episode",
+          "title": "THE ILLUSION OF KNOWLEDGE",
+          "subtitle": "Educational Series",
+          "start_sec": 0,
+          "end_sec": 3.2,
+          "animation": {
+            "type": "scale_in"
+          }
+        },
+        {
           "type": "image",
           "asset_id": "img_001",
           "src": "assets/images/img_001.png",
@@ -112,8 +123,8 @@
       "start_sec": 18.221,
       "end_sec": 49.364,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+        "type": "wipe_left",
+        "duration_sec": 0.55
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -163,6 +174,17 @@
             "type": "fade_up"
           },
           "variant": "subtitle"
+        },
+        {
+          "type": "lower_third",
+          "title": "Key Idea",
+          "subtitle": "Self-confidence vs true knowing",
+          "start_sec": 18.621,
+          "end_sec": 24.721,
+          "placement": "bottom_left",
+          "animation": {
+            "type": "slide_up"
+          }
         }
       ]
     },
@@ -359,8 +381,8 @@
       "start_sec": 80.846,
       "end_sec": 87.667,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+        "type": "zoom_punch",
+        "duration_sec": 0.45
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -732,6 +754,17 @@
             "type": "fade_in"
           },
           "variant": "subtitle"
+        },
+        {
+          "type": "graphic",
+          "graphic": "year_stamp",
+          "text": "CONTEXT MARKER",
+          "start_sec": 162.453,
+          "end_sec": 166.213,
+          "placement": "top_left",
+          "animation": {
+            "type": "fade_in"
+          }
         }
       ]
     },

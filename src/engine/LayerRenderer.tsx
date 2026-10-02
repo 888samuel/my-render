@@ -1,5 +1,6 @@
 import { AnimatedText } from "../components/text/AnimatedText";
 import { AudioVisualizer } from "../components/graphics/AudioVisualizer";
+import { ChapterCard, LowerThird } from "../components/graphics/LowerThird";
 import { Comparison } from "../components/graphics/Comparison";
 import { FlowDiagram } from "../components/graphics/FlowDiagram";
 import { HighlightText } from "../components/text/HighlightText";
@@ -9,6 +10,7 @@ import { NumberedList } from "../components/graphics/NumberedList";
 import { Quote } from "../components/text/Quote";
 import { Timeline } from "../components/graphics/Timeline";
 import { Title } from "../components/text/Title";
+import { YearStamp } from "../components/graphics/YearStamp";
 import type { Layer } from "../types/edit-plan";
 
 type LayerRendererProps = {
@@ -98,6 +100,24 @@ export const LayerRenderer = ({
           placement={layer.placement}
         />
       );
+    case "lower_third":
+      return (
+        <LowerThird
+          title={layer.title}
+          subtitle={layer.subtitle}
+          animation={layer.animation}
+          placement={layer.placement}
+        />
+      );
+    case "chapter_card":
+      return (
+        <ChapterCard
+          eyebrow={layer.eyebrow}
+          title={layer.title}
+          subtitle={layer.subtitle}
+          animation={layer.animation}
+        />
+      );
     case "image":
       return <ImageAsset layer={layer} />;
     case "graphic":
@@ -144,6 +164,32 @@ const renderGraphic = (
         <AudioVisualizer
           compositionFrameOffset={compositionFrameOffset}
           variant={layer.variant}
+        />
+      );
+    case "lower_third":
+      return (
+        <LowerThird
+          title={layer.title}
+          subtitle={layer.subtitle}
+          animation={layer.animation}
+          placement={layer.placement}
+        />
+      );
+    case "chapter_card":
+      return (
+        <ChapterCard
+          eyebrow={layer.eyebrow}
+          title={layer.title}
+          subtitle={layer.subtitle}
+          animation={layer.animation}
+        />
+      );
+    case "year_stamp":
+      return (
+        <YearStamp
+          text={layer.text}
+          animation={layer.animation}
+          placement={layer.placement}
         />
       );
   }

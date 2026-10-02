@@ -3,6 +3,8 @@ import { Sequence } from "remotion";
 import { Crossfade } from "../components/transitions/Crossfade";
 import { Fade } from "../components/transitions/Fade";
 import { Slide } from "../components/transitions/Slide";
+import { Wipe } from "../components/transitions/Wipe";
+import { ZoomPunch } from "../components/transitions/ZoomPunch";
 import { LayerRenderer } from "./LayerRenderer";
 import type { Clip, Transition } from "../types/edit-plan";
 import { secondsToFrames } from "../utils/time";
@@ -25,11 +27,17 @@ export const ClipRenderer = ({ clip, fps }: ClipRendererProps) => {
       name={clip.id}
       layout="none"
     >
-      <ClipTransition transitionIn={clip.transition_in} transitionOut={clip.transition_out}>
+      <ClipTransition
+        transitionIn={clip.transition_in}
+        transitionOut={clip.transition_out}
+      >
         {clip.layers.map((layer, index) => {
           const layerStartSec = layer.start_sec ?? clip.start_sec;
           const layerEndSec = layer.end_sec ?? clip.end_sec;
-          const layerFrom = secondsToFrames(layerStartSec - clip.start_sec, fps);
+          const layerFrom = secondsToFrames(
+            layerStartSec - clip.start_sec,
+            fps,
+          );
           const layerDuration = secondsToFrames(
             layerEndSec - layerStartSec,
             fps,
@@ -70,11 +78,21 @@ const ClipTransition = ({
     const outType = normalizeTransitionType(transitionOut.type);
     const durationSec =
       transitionOut.duration_sec ?? theme.animation.transitionSec;
-    // Outgoing dissolve/slide is rendered as a fade-out so the next overlapping
-    // clip's fade-in can blend into a cross-dissolve.
     if (outType === "fade" || outType === "crossfade" || outType === "slide") {
       content = (
         <Fade direction="out" durationSec={durationSec}>
+          {content}
+        </Fade>
+      );
+    } else if (outType === "wipe") {
+      content = (
+        <Fade direction="out" durationSec={durationSec}>
+          {content}
+        </Fade>
+      );
+    } else if (outType === "zoom_punch") {
+      content = (
+        <Fade direction="out" durationSec={Math.min(0.35, durationSec)}>
           {content}
         </Fade>
       );
@@ -95,6 +113,10 @@ const ClipTransition = ({
       content = <Crossfade durationSec={durationSec}>{content}</Crossfade>;
     } else if (inType === "slide") {
       content = <Slide durationSec={durationSec}>{content}</Slide>;
+    } else if (inType === "wipe") {
+      content = <Wipe durationSec={durationSec}>{content}</Wipe>;
+    } else if (inType === "zoom_punch") {
+      content = <ZoomPunch durationSec={durationSec}>{content}</ZoomPunch>;
     }
   }
 

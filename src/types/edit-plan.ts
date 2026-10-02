@@ -18,6 +18,10 @@ export type Motion = {
 
 export type TextAnimation = {
   type: TextAnimationType;
+  /**
+   * When true (default), text fades out near the end of its layer window.
+   */
+  auto_exit?: boolean;
 };
 
 export type Transition = {
@@ -86,6 +90,21 @@ export type HighlightedTextLayer = LayerTiming & {
   animation?: TextAnimation;
 };
 
+export type LowerThirdLayer = LayerTiming & {
+  type: "lower_third";
+  title: string;
+  subtitle?: string;
+  animation?: TextAnimation;
+};
+
+export type ChapterCardLayer = LayerTiming & {
+  type: "chapter_card";
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  animation?: TextAnimation;
+};
+
 export type NumberedListGraphicLayer = LayerTiming & {
   type: "graphic";
   graphic: "numbered_list";
@@ -125,13 +144,40 @@ export type AudioVisualizerGraphicLayer = LayerTiming & {
   variant?: "bars" | "waveform";
 };
 
+export type LowerThirdGraphicLayer = LayerTiming & {
+  type: "graphic";
+  graphic: "lower_third";
+  title: string;
+  subtitle?: string;
+  animation?: TextAnimation;
+};
+
+export type ChapterCardGraphicLayer = LayerTiming & {
+  type: "graphic";
+  graphic: "chapter_card";
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  animation?: TextAnimation;
+};
+
+export type YearStampGraphicLayer = LayerTiming & {
+  type: "graphic";
+  graphic: "year_stamp";
+  text: string;
+  animation?: TextAnimation;
+};
+
 export type GraphicLayer =
   | NumberedListGraphicLayer
   | ComparisonGraphicLayer
   | TimelineGraphicLayer
   | FlowGraphicLayer
   | KeyStatementGraphicLayer
-  | AudioVisualizerGraphicLayer;
+  | AudioVisualizerGraphicLayer
+  | LowerThirdGraphicLayer
+  | ChapterCardGraphicLayer
+  | YearStampGraphicLayer;
 
 export type TransitionLayer = LayerTiming & {
   type: "transition";
@@ -146,6 +192,8 @@ export type Layer =
   | QuoteLayer
   | ListLayer
   | HighlightedTextLayer
+  | LowerThirdLayer
+  | ChapterCardLayer
   | GraphicLayer
   | TransitionLayer;
 

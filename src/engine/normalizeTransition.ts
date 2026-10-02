@@ -1,14 +1,21 @@
 import type { TransitionType } from "../types/common";
 
+export type NormalizedTransition =
+  | "none"
+  | "fade"
+  | "crossfade"
+  | "slide"
+  | "wipe"
+  | "zoom_punch";
+
 export function normalizeTransitionType(
   type: TransitionType,
-): "none" | "fade" | "crossfade" | "slide" {
+): NormalizedTransition {
   switch (type) {
     case "none":
     case "hard_cut":
     case "glitch_cut":
     case "flash_cut":
-    case "zoom_punch":
       return "none";
     case "fade":
     case "fade_in_from_black":
@@ -24,7 +31,10 @@ export function normalizeTransitionType(
     case "smooth_slide":
     case "whip_pan":
     case "whip_zoom":
-    case "wipe_left":
       return "slide";
+    case "wipe_left":
+      return "wipe";
+    case "zoom_punch":
+      return "zoom_punch";
   }
 }

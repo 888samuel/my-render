@@ -1,4 +1,4 @@
-import editPlanJson from "../src/data/edit-plan.json";
+import editPlanJson from "../src/data/edit_plan.json";
 import { validateEditPlan } from "../src/validation/validateEditPlan";
 import type { EditPlan } from "../src/types/edit-plan";
 

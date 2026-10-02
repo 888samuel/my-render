@@ -39,8 +39,8 @@ export function resolveMotion(type: MotionType): MotionCurve {
     case "slow_zoom_in":
     case "zoom_in":
       return {
-        scaleFrom: 1.02,
-        scaleTo: 1.08,
+        scaleFrom: 1.04,
+        scaleTo: 1.14,
         translateXFrom: 0,
         translateXTo: 0,
         translateYFrom: 0,
@@ -49,8 +49,8 @@ export function resolveMotion(type: MotionType): MotionCurve {
     case "slow_zoom_out":
     case "zoom_out":
       return {
-        scaleFrom: 1.08,
-        scaleTo: 1.02,
+        scaleFrom: 1.14,
+        scaleTo: 1.04,
         translateXFrom: 0,
         translateXTo: 0,
         translateYFrom: 0,
@@ -58,59 +58,59 @@ export function resolveMotion(type: MotionType): MotionCurve {
       };
     case "pan_left":
       return {
-        scaleFrom: 1.12,
-        scaleTo: 1.12,
-        translateXFrom: 3.2,
-        translateXTo: -3.2,
+        scaleFrom: 1.16,
+        scaleTo: 1.16,
+        translateXFrom: 4.2,
+        translateXTo: -4.2,
         translateYFrom: 0,
         translateYTo: 0,
       };
     case "pan_right":
       return {
-        scaleFrom: 1.12,
-        scaleTo: 1.12,
-        translateXFrom: -3.2,
-        translateXTo: 3.2,
+        scaleFrom: 1.16,
+        scaleTo: 1.16,
+        translateXFrom: -4.2,
+        translateXTo: 4.2,
         translateYFrom: 0,
         translateYTo: 0,
       };
     case "pan_up":
     case "tilt_up":
       return {
-        scaleFrom: 1.1,
-        scaleTo: 1.1,
+        scaleFrom: 1.14,
+        scaleTo: 1.14,
         translateXFrom: 0,
         translateXTo: 0,
-        translateYFrom: 3.2,
-        translateYTo: -3.2,
+        translateYFrom: 4.0,
+        translateYTo: -4.0,
       };
     case "pan_down":
     case "tilt_down":
       return {
-        scaleFrom: 1.1,
-        scaleTo: 1.1,
+        scaleFrom: 1.14,
+        scaleTo: 1.14,
         translateXFrom: 0,
         translateXTo: 0,
-        translateYFrom: -3.2,
-        translateYTo: 3.2,
+        translateYFrom: -4.0,
+        translateYTo: 4.0,
       };
     case "pan_diagonal":
       return {
-        scaleFrom: 1.12,
-        scaleTo: 1.12,
-        translateXFrom: -2.4,
-        translateXTo: 2.4,
-        translateYFrom: -2.0,
-        translateYTo: 2.0,
+        scaleFrom: 1.15,
+        scaleTo: 1.15,
+        translateXFrom: -3.2,
+        translateXTo: 3.2,
+        translateYFrom: -2.6,
+        translateYTo: 2.6,
       };
     case "subtle_movement":
       return {
-        scaleFrom: 1.03,
-        scaleTo: 1.07,
-        translateXFrom: -0.8,
-        translateXTo: 0.8,
-        translateYFrom: 0.6,
-        translateYTo: -1.2,
+        scaleFrom: 1.05,
+        scaleTo: 1.1,
+        translateXFrom: -1.2,
+        translateXTo: 1.2,
+        translateYFrom: 0.8,
+        translateYTo: -1.6,
       };
   }
 }
@@ -176,6 +176,7 @@ export function resolveTextEntrance(
   durationInFrames: number,
   animation: TextAnimationType,
   fps: number,
+  autoExit = true,
 ): EntranceStyle {
   const enterFrames = secondsToFrames(theme.animation.entranceSec, fps);
   const exitFrames = secondsToFrames(theme.animation.exitSec, fps);
@@ -187,19 +188,22 @@ export function resolveTextEntrance(
   };
   const type = normalizeTextAnimation(animation);
 
+  let style: EntranceStyle = rest;
   switch (type) {
     case "none":
     case "word_reveal":
     case "dramatic_reveal":
     case "sequential":
-      return rest;
+      style = rest;
+      break;
     case "fade_in":
-      return {
+      style = {
         ...rest,
         opacity: lerpFrames(frame, 0, enterFrames, 0, 1),
       };
+      break;
     case "fade_out":
-      return {
+      style = {
         ...rest,
         opacity: lerpFrames(
           frame,
@@ -209,27 +213,52 @@ export function resolveTextEntrance(
           0,
         ),
       };
+      break;
     case "fade_up":
     case "slide_up":
-      return {
+      style = {
         ...rest,
         opacity: lerpFrames(frame, 0, enterFrames, 0, 1),
         translateY: lerpFrames(frame, 0, enterFrames, 28, 0),
       };
+      break;
     case "slide_left":
-      return {
+      style = {
         ...rest,
         opacity: lerpFrames(frame, 0, enterFrames, 0, 1),
         translateX: lerpFrames(frame, 0, enterFrames, 36, 0),
       };
+      break;
     case "scale_up":
     case "scale_in":
-      return {
+      style = {
         ...rest,
         opacity: lerpFrames(frame, 0, enterFrames, 0, 1),
         scale: lerpFrames(frame, 0, enterFrames, 0.96, 1),
       };
+      break;
   }
+
+  if (
+    autoExit &&
+    type !== "fade_out" &&
+    type !== "none" &&
+    durationInFrames > enterFrames + exitFrames + 2
+  ) {
+    const exitOpacity = lerpFrames(
+      frame,
+      durationInFrames - exitFrames,
+      durationInFrames,
+      1,
+      0,
+    );
+    style = {
+      ...style,
+      opacity: Math.min(style.opacity, exitOpacity),
+    };
+  }
+
+  return style;
 }
 
 export function entranceToCss(style: EntranceStyle): CSSProperties {
