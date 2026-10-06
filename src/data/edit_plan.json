@@ -1,11 +1,11 @@
 {
   "version": "1.0",
   "video": {
-    "id": "tigrigna_educational_video",
+    "id": "3_financial_habits_for_true_wealth",
     "width": 1920,
     "height": 1080,
     "fps": 30,
-    "duration_sec": 229.758
+    "duration_sec": 251.459
   },
   "audio": {
     "src": "assets/audio/my-recording.mp3",
@@ -14,8 +14,8 @@
   "clips": [
     {
       "id": "s001",
-      "start_sec": 0,
-      "end_sec": 12.421,
+      "start_sec": 0.0,
+      "end_sec": 5.68,
       "transition_in": {
         "type": "fade_in_from_black",
         "duration_sec": 0.6
@@ -25,17 +25,6 @@
         "duration_sec": 0.6
       },
       "layers": [
-        {
-          "type": "chapter_card",
-          "eyebrow": "Episode",
-          "title": "THE ILLUSION OF KNOWLEDGE",
-          "subtitle": "Educational Series",
-          "start_sec": 0,
-          "end_sec": 3.2,
-          "animation": {
-            "type": "scale_in"
-          }
-        },
         {
           "type": "image",
           "asset_id": "img_001",
@@ -49,32 +38,17 @@
         },
         {
           "type": "text",
-          "text": "THE ILLUSION OF KNOWLEDGE",
-          "start_sec": 1.5,
-          "end_sec": 5,
-          "placement": "top_center",
-          "animation": {
-            "type": "dramatic_reveal"
-          },
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Until you wake up from the mental illusion of believing 'I know everything,' your self-confidence feels solid.",
-          "start_sec": 1.5,
-          "end_sec": 11.821,
+          "variant": "subtitle",
+          "text": "The balance in your bank account today is not what determines your future financial destiny.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s002",
-      "start_sec": 11.821,
-      "end_sec": 18.821,
+      "start_sec": 5.08,
+      "end_sec": 15.061,
       "transition_in": {
         "type": "cross_dissolve",
         "duration_sec": 0.6
@@ -91,40 +65,26 @@
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "pan_right",
-            "intensity": 0.26
+            "type": "pan_left",
+            "intensity": 0.25
           }
         },
         {
           "type": "text",
-          "text": "MECHANICAL CHALLENGE: CAN YOU EXPLAIN A ZIPPER?",
-          "start_sec": 11.821,
-          "end_sec": 14.5,
-          "placement": "top_right",
-          "animation": {
-            "type": "slide_left"
-          }
-        },
-        {
-          "type": "text",
-          "text": "However, can you explain in detail how a simple zipper works?",
-          "start_sec": 11.821,
-          "end_sec": 16.201,
+          "variant": "subtitle",
+          "text": "What truly determines it is this: if you don't have these 3 habits, even if you earn hundreds of thousands monthly, you cannot become wealthy!",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s003",
-      "start_sec": 18.221,
-      "end_sec": 49.364,
+      "start_sec": 14.461,
+      "end_sec": 25.382,
       "transition_in": {
-        "type": "wipe_left",
-        "duration_sec": 0.55
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -138,114 +98,29 @@
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "pan_left",
+            "type": "tilt_up",
             "intensity": 0.3
           }
         },
         {
           "type": "text",
-          "text": "EXPLANATION BREAKDOWN vs. SOCIAL MEDIA HYPE",
-          "start_sec": 18.221,
-          "end_sec": 24,
-          "placement": "top_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Most people say 'Yes, I know it'; however, when asked to explain the process step by step, how shallow their knowledge truly is immediately becomes evident.",
-          "start_sec": 18.221,
-          "end_sec": 33,
+          "variant": "subtitle",
+          "text": "On the other hand, if you have these 3 habits, even if you have nothing in your account today, reaching true wealth and freedom is guaranteed!",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "variant": "subtitle"
-        },
-        {
-          "type": "text",
-          "text": "On social media and common motivational advice, voices dominatingly shout 'believe in yourself' or 'fake it till you make it.'",
-          "start_sec": 33,
-          "end_sec": 47.244,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "variant": "subtitle"
-        },
-        {
-          "type": "lower_third",
-          "title": "Key Idea",
-          "subtitle": "Self-confidence vs true knowing",
-          "start_sec": 18.621,
-          "end_sec": 24.721,
-          "placement": "bottom_left",
-          "animation": {
-            "type": "slide_up"
-          }
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s004",
-      "start_sec": 48.764,
-      "end_sec": 55.724,
+      "start_sec": 24.782,
+      "end_sec": 40.343,
       "transition_in": {
         "type": "cross_dissolve",
         "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_004",
-          "src": "assets/images/img_004.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "tilt_down",
-            "intensity": 0.26
-          }
-        },
-        {
-          "type": "text",
-          "text": "Subjective Confidence vs. Real Competence",
-          "start_sec": 48.764,
-          "end_sec": 51.5,
-          "placement": "top_right",
-          "animation": {
-            "type": "scale_in"
-          }
-        },
-        {
-          "type": "text",
-          "text": "However, does subjective confidence built without competence lead to true achievements?",
-          "start_sec": 48.764,
-          "end_sec": 53.864,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
-        }
-      ]
-    },
-    {
-      "id": "s005",
-      "start_sec": 55.724,
-      "end_sec": 61.905,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+        "type": "none"
       },
       "layers": [
         {
@@ -256,43 +131,75 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "zoom_in",
-            "intensity": 0.35
+            "intensity": 0.22
           }
         },
         {
           "type": "text",
-          "text": "OVERCONFIDENCE & BLINDNESS",
-          "start_sec": 55.724,
-          "end_sec": 58,
-          "placement": "top_left",
-          "animation": {
-            "type": "slide_up"
-          }
+          "variant": "title",
+          "text": "Financial Awareness & Planning",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Or, on the contrary, does it lead us to blindness and overconfidence?",
-          "start_sec": 55.724,
-          "end_sec": 59.185,
+          "variant": "subtitle",
+          "text": "1. Dedicating time to your finances and having awareness — Financial Awareness & Planning. This habit saves you from asking \"Where did my money go?\" at the end of the month, serving as a golden habit that lets you know and decide where every single cent goes.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "variant": "subtitle"
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s005",
+      "start_sec": 40.343,
+      "end_sec": 43.903,
+      "transition_in": {
+        "type": "none"
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_004",
+          "src": "assets/images/img_004.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "subtle_movement",
+            "intensity": 0.2
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "Financial Awareness & Planning",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Know your monthly expenses in detail.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s006",
-      "start_sec": 61.305,
-      "end_sec": 71.906,
+      "start_sec": 43.303,
+      "end_sec": 56.924,
       "transition_in": {
         "type": "cross_dissolve",
         "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -302,87 +209,33 @@
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_out",
+            "type": "pan_right",
             "intensity": 0.26
           }
         },
         {
           "type": "text",
-          "text": "ILLUSION OF EXPLANATORY DEPTH (IOED)",
-          "start_sec": 61.305,
-          "end_sec": 66,
-          "placement": "right",
-          "animation": {
-            "type": "word_reveal"
-          }
+          "variant": "title",
+          "text": "Financial Awareness & Planning",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Psychological researchers call this cognitive distortion the 'Illusion of Explanatory Depth.'",
-          "start_sec": 61.305,
-          "end_sec": 70.546,
+          "variant": "subtitle",
+          "text": "Knowing your food, housing, and clothing expenses in detail will help you identify and eliminate those small, unnecessary expenses that quietly consume your income.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s007",
-      "start_sec": 71.906,
-      "end_sec": 81.446,
+      "start_sec": 56.324,
+      "end_sec": 71.125,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
         "type": "cross_dissolve",
         "duration_sec": 0.6
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_005",
-          "src": "assets/images/img_005.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_down",
-            "intensity": 0.26
-          }
-        },
-        {
-          "type": "text",
-          "text": "Perceived Understanding vs. Actual Knowledge",
-          "start_sec": 71.906,
-          "end_sec": 75,
-          "placement": "right",
-          "animation": {
-            "type": "fade_up"
-          }
-        },
-        {
-          "type": "text",
-          "text": "People feel that their understanding of various things is much deeper than what they actually know.",
-          "start_sec": 71.906,
-          "end_sec": 78.446,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
-        }
-      ]
-    },
-    {
-      "id": "s008",
-      "start_sec": 80.846,
-      "end_sec": 87.667,
-      "transition_in": {
-        "type": "zoom_punch",
-        "duration_sec": 0.45
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -396,89 +249,33 @@
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "pan_left",
-            "intensity": 0.26
+            "type": "slow_zoom_out",
+            "intensity": 0.25
           }
         },
         {
           "type": "text",
-          "text": "FALSE BELIEF: 'I KNOW'",
-          "start_sec": 80.846,
-          "end_sec": 83,
+          "variant": "title",
+          "text": "save first",
           "placement": "top_center",
-          "animation": {
-            "type": "scale_up"
-          },
-          "variant": "title"
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Starting from the false belief of 'I know,' they deceive themselves.",
-          "start_sec": 80.846,
-          "end_sec": 84.687,
+          "variant": "subtitle",
+          "text": "2. Save first. When most people receive their monthly salary, they first spend on clothes, entertainment, and other things, and then try to save whatever is left over.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s009",
-      "start_sec": 87.067,
-      "end_sec": 108.809,
+      "id": "s008",
+      "start_sec": 70.525,
+      "end_sec": 80.386,
       "transition_in": {
         "type": "cross_dissolve",
         "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_007",
-          "src": "assets/images/img_007.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_right",
-            "intensity": 0.35
-          }
-        },
-        {
-          "type": "text",
-          "text": "University of Waterloo Study: Zipper • Helicopter • Speedometer",
-          "start_sec": 87.067,
-          "end_sec": 95,
-          "placement": "top_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "As scientific studies conducted at the University of Waterloo confirmed, when participants were asked to explain in detail how a device—for example, a zipper, a helicopter, or a speedometer—works, because they could not explain the process, a major gap in their knowledge was instantly revealed.",
-          "start_sec": 87.067,
-          "end_sec": 106.729,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
-        }
-      ]
-    },
-    {
-      "id": "s010",
-      "start_sec": 108.809,
-      "end_sec": 115.369,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -492,88 +289,33 @@
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "zoom_in",
-            "intensity": 0.3
-          }
-        },
-        {
-          "type": "text",
-          "text": "SHATTERED OVERCONFIDENCE",
-          "start_sec": 108.809,
-          "end_sec": 111,
-          "placement": "bottom_left",
-          "animation": {
-            "type": "slide_up"
-          }
-        },
-        {
-          "type": "text",
-          "text": "Attempting to explain the process in detail shattered their false self-confidence.",
-          "start_sec": 108.809,
-          "end_sec": 112.449,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
-        }
-      ]
-    },
-    {
-      "id": "s011",
-      "start_sec": 114.769,
-      "end_sec": 125.65,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_008",
-          "src": "assets/images/img_008.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
+            "type": "pan_diagonal",
             "intensity": 0.28
           }
         },
         {
           "type": "text",
-          "text": "FEELING OF IGNORANCE (ስምዒት ዘይምፍላጥ)",
-          "start_sec": 114.769,
-          "end_sec": 120,
+          "variant": "title",
+          "text": "save first",
           "placement": "top_center",
-          "animation": {
-            "type": "dramatic_reveal"
-          },
-          "variant": "title"
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "The greatest insight was that this test generated a 'feeling of ignorance' inside people.",
-          "start_sec": 114.769,
-          "end_sec": 125.55,
+          "variant": "subtitle",
+          "text": "However, because your desires expand to match the money in your hands, your expenses completely swallow your income, leaving nothing at the end.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s012",
-      "start_sec": 125.65,
-      "end_sec": 143.171,
+      "id": "s009",
+      "start_sec": 79.786,
+      "end_sec": 87.847,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -584,6 +326,46 @@
           "type": "image",
           "asset_id": "img_008",
           "src": "assets/images/img_008.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_up",
+            "intensity": 0.24
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "save first",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Instead, as soon as your salary comes in and before making any purchases, transfer 10%–15% directly into your savings account.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s010",
+      "start_sec": 87.247,
+      "end_sec": 99.647,
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_009",
+          "src": "assets/images/img_009.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
@@ -593,134 +375,31 @@
         },
         {
           "type": "text",
-          "text": "STUDY N = 2,862 PARTICIPANTS | RECEPTIVITY TO EXPERTS ▲ 85%",
-          "start_sec": 125.65,
-          "end_sec": 133,
-          "placement": "top_left",
-          "animation": {
-            "type": "slide_left"
-          }
-        },
-        {
-          "type": "text",
-          "text": "As a large study of 2,862 participants confirmed, when people acknowledged their own ignorance by saying 'I don't know,' they became much more willing to set aside lay opinions and listen to and accept expert knowledge.",
-          "start_sec": 125.65,
-          "end_sec": 141.651,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
-        }
-      ]
-    },
-    {
-      "id": "s013",
-      "start_sec": 142.571,
-      "end_sec": 156.713,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_009",
-          "src": "assets/images/img_009.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.3
-          }
-        },
-        {
-          "type": "text",
-          "text": "'I KNOW' ➔ 'CAN I EXPLAIN?' ➔ 'I TRULY DON'T KNOW'",
-          "start_sec": 142.571,
-          "end_sec": 149,
+          "variant": "title",
+          "text": "save first",
           "placement": "top_center",
-          "animation": {
-            "type": "word_reveal"
-          },
-          "variant": "title"
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "So, if we shift from the distortion of 'I know' to the question 'Can I explain it in detail?', we ultimately reach the calibrated outcome of 'I truly don't know.'",
-          "start_sec": 142.571,
-          "end_sec": 154.792,
+          "variant": "subtitle",
+          "text": "Now a major question might arise for you: \"If my salary isn't even enough for my daily living and monthly expenses... how can I save?\" You are not the only one asking this.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s014",
-      "start_sec": 156.713,
-      "end_sec": 163.053,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_009",
-          "src": "assets/images/img_009.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_up",
-            "intensity": 0.26
-          }
-        },
-        {
-          "type": "text",
-          "text": "ADMISSION OF IGNORANCE = PATHWAY TO LEARNING",
-          "start_sec": 156.713,
-          "end_sec": 159.5,
-          "placement": "top_center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "And this acknowledgment of your ignorance is what opens the pathway to true learning.",
-          "start_sec": 156.713,
-          "end_sec": 161.373,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
-        }
-      ]
-    },
-    {
-      "id": "s015",
-      "start_sec": 162.453,
-      "end_sec": 166.213,
+      "id": "s011",
+      "start_sec": 99.047,
+      "end_sec": 109.028,
       "transition_in": {
         "type": "cross_dissolve",
         "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
       },
       "layers": [
         {
@@ -730,122 +409,36 @@
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "zoom_in",
+            "type": "slow_zoom_in",
             "intensity": 0.28
           }
         },
         {
           "type": "text",
-          "text": "TRUE COMPETENCE (ሓቀኛ ብቕዓት)",
-          "start_sec": 162.453,
-          "end_sec": 164.5,
-          "placement": "top_left",
-          "animation": {
-            "type": "scale_in"
-          }
+          "variant": "title",
+          "text": "save first",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Through this, true competence emerges.",
-          "start_sec": 162.453,
-          "end_sec": 165.553,
+          "variant": "subtitle",
+          "text": "Studies show that even people earning 00,000 or 00,000 a year worry that \"it isn't enough for my monthly expenses!\"",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
-        },
-        {
-          "type": "graphic",
-          "graphic": "year_stamp",
-          "text": "CONTEXT MARKER",
-          "start_sec": 162.453,
-          "end_sec": 166.213,
-          "placement": "top_left",
-          "animation": {
-            "type": "fade_in"
-          }
+          "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s016",
-      "start_sec": 166.213,
-      "end_sec": 175.574,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_010",
-          "src": "assets/images/img_010.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_right",
-            "intensity": 0.26
-          }
-        },
-        {
-          "type": "text",
-          "text": "1. Repeated Practice | ተደጋገሚ ልምምድ",
-          "start_sec": 166.213,
-          "end_sec": 173.894,
-          "placement": "top_left",
-          "animation": {
-            "type": "slide_up"
-          }
-        },
-        {
-          "type": "text",
-          "text": "2. Practical Experience | ተግብራዊ ልምዲ",
-          "start_sec": 168.7,
-          "end_sec": 173.894,
-          "placement": "center_left",
-          "animation": {
-            "type": "slide_up"
-          }
-        },
-        {
-          "type": "text",
-          "text": "3. Accurate Feedback | እሩም ርእይቶ",
-          "start_sec": 171.2,
-          "end_sec": 173.894,
-          "placement": "bottom_left",
-          "animation": {
-            "type": "slide_up"
-          }
-        },
-        {
-          "type": "text",
-          "text": "Competence is built through repeated practice, practical experience, and accurate feedback.",
-          "start_sec": 166.213,
-          "end_sec": 173.894,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
-        }
-      ]
-    },
-    {
-      "id": "s017",
-      "start_sec": 174.974,
-      "end_sec": 192.635,
+      "id": "s012",
+      "start_sec": 108.428,
+      "end_sec": 116.769,
       "transition_in": {
         "type": "cross_dissolve",
         "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "none"
       },
       "layers": [
         {
@@ -855,87 +448,148 @@
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "slow_zoom_in",
+            "type": "pan_left",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "save first",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Because when you see money sitting in your account, your expenses naturally expand to consume all the available money.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s013",
+      "start_sec": 116.769,
+      "end_sec": 125.789,
+      "transition_in": {
+        "type": "none"
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_011",
+          "src": "assets/images/img_011.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
             "intensity": 0.3
           }
         },
         {
           "type": "text",
-          "text": "ALBERT BANDURA | SELF-EFFICACY (ናይ ውልቀ-ዓቕሚ እምነት)",
-          "start_sec": 174.974,
-          "end_sec": 182,
-          "placement": "top_right",
-          "animation": {
-            "type": "fade_in"
-          }
+          "variant": "title",
+          "text": "save first",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "As research by psychologist Albert Bandura explains, 'self-efficacy' is an individual's conviction in their capability to effectively perform a specific task or produce a specific outcome in a given situation.",
-          "start_sec": 174.974,
-          "end_sec": 192.635,
+          "variant": "subtitle",
+          "text": "And if your account is empty at the end of the month, it creates the false impression that \"the money was only spent on basic living.\"",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s018",
-      "start_sec": 192.635,
-      "end_sec": 200.636,
+      "id": "s014",
+      "start_sec": 125.189,
+      "end_sec": 137.67,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
         "type": "cross_dissolve",
         "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "none"
       },
       "layers": [
         {
           "type": "image",
-          "asset_id": "img_011",
-          "src": "assets/images/img_011.png",
+          "asset_id": "img_012",
+          "src": "assets/images/img_012.png",
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "pan_diagonal",
-            "intensity": 0.26
+            "type": "zoom_in",
+            "intensity": 0.22
           }
         },
         {
           "type": "text",
-          "text": "ENACTIVE ATTAINMENT (ተግብራዊ ዓወታት)",
-          "start_sec": 192.635,
-          "end_sec": 196,
-          "placement": "top_right",
-          "animation": {
-            "type": "scale_in"
-          }
+          "variant": "title",
+          "text": "Artificial Scarcity",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "This self-efficacy belief is rooted not in empty hope, but in enactive attainment and the accumulation of real experience.",
-          "start_sec": 192.635,
-          "end_sec": 198.756,
+          "variant": "subtitle",
+          "text": "The hidden secret of people who build real wealth is this: \"Artificial Scarcity.\" They do not wait to pay their monthly expenses and save what is left.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s019",
-      "start_sec": 200.036,
-      "end_sec": 208.537,
+      "id": "s015",
+      "start_sec": 137.67,
+      "end_sec": 146.271,
       "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+        "type": "none"
+      },
+      "transition_out": {
+        "type": "none"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_012",
+          "src": "assets/images/img_012.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "subtle_movement",
+            "intensity": 0.2
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "Artificial Scarcity",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Before their salary even lands in their main account, they automatically direct 10% or 15% into a savings or investment account.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s016",
+      "start_sec": 146.271,
+      "end_sec": 150.691,
+      "transition_in": {
+        "type": "none"
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -949,140 +603,36 @@
           "fit": "cover",
           "overlay": "dark_gradient",
           "motion": {
-            "type": "tilt_up",
-            "intensity": 0.3
-          }
-        },
-        {
-          "type": "text",
-          "text": "SELF-CONFIDENCE & CAPACITY FOR ACTION GROWING",
-          "start_sec": 200.036,
-          "end_sec": 204,
-          "placement": "top_left",
-          "animation": {
-            "type": "slide_up"
-          }
-        },
-        {
-          "type": "text",
-          "text": "When true competence and self-efficacy are built, self-confidence and the capacity for action continue to grow.",
-          "start_sec": 200.036,
-          "end_sec": 206.296,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
-        }
-      ]
-    },
-    {
-      "id": "s020",
-      "start_sec": 207.937,
-      "end_sec": 216.917,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_013",
-          "src": "assets/images/img_013.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_diagonal",
+            "type": "pan_right",
             "intensity": 0.26
           }
         },
         {
           "type": "text",
-          "text": "RETURNING TO THE ZIPPER METAPHOR",
-          "start_sec": 207.937,
-          "end_sec": 211.5,
+          "variant": "title",
+          "text": "Artificial Scarcity",
           "placement": "top_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "title"
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Returning to our starting example of the zipper: true self-confidence does not begin with the false pretense that 'I know everything.'",
-          "start_sec": 207.937,
-          "end_sec": 215.157,
+          "variant": "subtitle",
+          "text": "In this way, they create an artificial scarcity of money for themselves.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s021",
-      "start_sec": 216.917,
-      "end_sec": 226.398,
+      "id": "s017",
+      "start_sec": 150.091,
+      "end_sec": 157.812,
       "transition_in": {
-        "type": "none",
-        "duration_sec": 0
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
       },
       "transition_out": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "layers": [
-        {
-          "type": "image",
-          "asset_id": "img_013",
-          "src": "assets/images/img_013.png",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.28
-          }
-        },
-        {
-          "type": "text",
-          "text": "HUMBLE ACKNOWLEDGMENT ➔ DELIBERATE PRACTICE",
-          "start_sec": 216.917,
-          "end_sec": 221,
-          "placement": "top_center",
-          "animation": {
-            "type": "scale_in"
-          },
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "On the contrary, it is grounded in humbly acknowledging your ignorance, and then building competence through genuine effort and practice.",
-          "start_sec": 216.917,
-          "end_sec": 225.178,
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "variant": "subtitle"
-        }
-      ]
-    },
-    {
-      "id": "s022",
-      "start_sec": 226.398,
-      "end_sec": 229.758,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
-        "type": "fade_to_black",
-        "duration_sec": 1
+        "type": "none"
       },
       "layers": [
         {
@@ -1093,26 +643,543 @@
           "overlay": "dark_gradient",
           "motion": {
             "type": "slow_zoom_out",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "Artificial Scarcity",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Since your mind treats the remaining 85% as your full income, it naturally aligns your daily expenses with that amount.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s018",
+      "start_sec": 157.812,
+      "end_sec": 164.332,
+      "transition_in": {
+        "type": "none"
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_013",
+          "src": "assets/images/img_013.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_diagonal",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "Artificial Scarcity",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "The surprising truth is that on the remaining 85%, you live just as comfortably as before!",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s019",
+      "start_sec": 163.732,
+      "end_sec": 174.733,
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_014",
+          "src": "assets/images/img_014.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_up",
+            "intensity": 0.24
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "Artificial Scarcity",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Meanwhile, the saved 15% builds a strong financial fortress for your future independence and unexpected emergencies.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s020",
+      "start_sec": 174.133,
+      "end_sec": 181.414,
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_015",
+          "src": "assets/images/img_015.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_down",
             "intensity": 0.26
           }
         },
         {
           "type": "text",
-          "text": "True self-confidence begins with acknowledging what you do not know.",
-          "start_sec": 226.398,
-          "end_sec": 229.758,
-          "placement": "center",
-          "animation": {
-            "type": "dramatic_reveal"
-          },
-          "variant": "title"
+          "variant": "title",
+          "text": "asset • liabilities",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "3. Invest your income in appreciating assets rather than expensive liabilities that lose value over time.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s021",
+      "start_sec": 180.814,
+      "end_sec": 185.594,
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "none"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_016",
+          "src": "assets/images/img_016.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "asset",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "An asset is property or an investment that puts money into your pocket and grows in value over time.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s022",
+      "start_sec": 185.594,
+      "end_sec": 192.754,
+      "transition_in": {
+        "type": "none"
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_016",
+          "src": "assets/images/img_016.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "asset",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "For example: company stocks, or items that appreciate over time such as gold.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s023",
+      "start_sec": 192.154,
+      "end_sec": 197.915,
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "none"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_017",
+          "src": "assets/images/img_017.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.3
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "liabilities",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "A liability, on the other hand, takes money out of your pocket and rapidly loses value over time.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s024",
+      "start_sec": 197.915,
+      "end_sec": 203.515,
+      "transition_in": {
+        "type": "none"
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_017",
+          "src": "assets/images/img_017.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "zoom_in",
+            "intensity": 0.22
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "liabilities",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "For example: expensive phones, clothes, and shoes.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s025",
+      "start_sec": 202.915,
+      "end_sec": 213.676,
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_018",
+          "src": "assets/images/img_018.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "subtle_movement",
+            "intensity": 0.2
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "liabilities",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Even high-income earners will see their net worth constantly drain if they spend their money on expensive cars that depreciate and flashy lifestyle choices.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s026",
+      "start_sec": 213.076,
+      "end_sec": 217.576,
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "none"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_019",
+          "src": "assets/images/img_019.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.26
+          }
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "These are not isolated rules—they are an interconnected path of life.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s027",
+      "start_sec": 217.576,
+      "end_sec": 230.877,
+      "transition_in": {
+        "type": "none"
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_019",
+          "src": "assets/images/img_019.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.25
+          }
+        },
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "Awareness • Intentional Saving • Asset Building",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Financial Awareness leads to Intentional Saving, which builds Asset Building, and ultimately leads to true financial security.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s028",
+      "start_sec": 230.277,
+      "end_sec": 236.418,
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "none"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_020",
+          "src": "assets/images/img_020.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_diagonal",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "The balance in your bank today is merely a brief snapshot reflecting your history from yesterday.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s029",
+      "start_sec": 236.418,
+      "end_sec": 238.758,
+      "transition_in": {
+        "type": "none"
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_020",
+          "src": "assets/images/img_020.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_up",
+            "intensity": 0.24
+          }
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "It is not your future destination.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s030",
+      "start_sec": 238.158,
+      "end_sec": 244.538,
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "none"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_021",
+          "src": "assets/images/img_021.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_down",
+            "intensity": 0.26
+          }
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Even if your salary is small, these daily habits you repeat are what determine your future financial direction.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s031",
+      "start_sec": 244.538,
+      "end_sec": 251.459,
+      "transition_in": {
+        "type": "none"
+      },
+      "transition_out": {
+        "type": "fade_to_black",
+        "duration_sec": 1.0
+      },
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_021",
+          "src": "assets/images/img_021.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "The question isn't \"How much money do I have today?\"... It is \"In what direction am I moving through my daily habits?\"",
+          "placement": "bottom_center",
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "clip_visualizer",
       "start_sec": 0,
-      "end_sec": 229.758,
+      "end_sec": 251.459,
       "layers": [
         {
           "type": "graphic",
