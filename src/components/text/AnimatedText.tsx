@@ -5,6 +5,7 @@ import {
   resolveTextEntrance,
   wordRevealOpacity,
 } from "../../engine/AnimationResolver";
+import { normalizeTextAnimationInput } from "../../engine/normalizeAnimation";
 import { lerpFrames } from "../../utils/interpolate";
 import { AbsoluteFill } from "../common/AbsoluteFill";
 import { SafeArea, textAlignForPlacement } from "../common/SafeArea";
@@ -28,8 +29,9 @@ export const RevealText = ({
 }: RevealTextProps) => {
   const frame = useCurrentFrame();
   const { durationInFrames, fps } = useVideoConfig();
-  const type = animation?.type ?? "fade_in";
-  const autoExit = animation?.auto_exit ?? true;
+  const anim = normalizeTextAnimationInput(animation);
+  const type = anim.type;
+  const autoExit = anim.auto_exit ?? true;
   const isWordReveal = type === "word_reveal" || type === "dramatic_reveal";
   const entrance = resolveTextEntrance(
     frame,
@@ -132,12 +134,13 @@ type EntranceProps = {
 export const Entrance = ({ animation, children }: EntranceProps) => {
   const frame = useCurrentFrame();
   const { durationInFrames, fps } = useVideoConfig();
+  const anim = normalizeTextAnimationInput(animation);
   const style = resolveTextEntrance(
     frame,
     durationInFrames,
-    animation?.type ?? "fade_in",
+    anim.type,
     fps,
-    animation?.auto_exit ?? true,
+    anim.auto_exit ?? true,
   );
 
   return <div style={entranceToCss(style)}>{children}</div>;

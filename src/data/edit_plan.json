@@ -8,13 +8,13 @@
     "duration_sec": 320.841
   },
   "audio": {
-    "src": "assets/audio/Untitled.mp3",
+    "src": "assets/audio/my-recording.mp3",
     "start_sec": 0
   },
   "clips": [
     {
       "id": "s001",
-      "start_sec": 0.0,
+      "start_sec": 0,
       "end_sec": 6.8,
       "transition_in": {
         "type": "fade_in_from_black",
@@ -40,26 +40,34 @@
           "type": "text",
           "text": "ዓርሰ-ምስሊ (Self-Image)",
           "placement": "center",
-          "animation": "fade_up",
-          "start_sec": 0.0,
-          "end_sec": 6.08
+          "animation": {
+            "type": "fade_up"
+          },
+          "start_sec": 0,
+          "end_sec": 6.08,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "When you look at your reflection in the mirror, you see someone who looks like you, but isn't really you.",
           "placement": "bottom_center",
-          "animation": "fade_in",
-          "start_sec": 0.0,
-          "end_sec": 6.08
+          "animation": {
+            "type": "fade_in"
+          },
+          "start_sec": 0,
+          "end_sec": 6.08,
+          "variant": "subtitle"
         },
         {
           "type": "graphic",
           "graphic": "chapter_card",
-          "text": "እቲ ኣብ ውሽጢ ኣእምሮና ዝርአ ሓሶት",
           "placement": "top_left",
-          "animation": "dramatic_reveal",
-          "start_sec": 0.0,
-          "end_sec": 6.08
+          "animation": {
+            "type": "dramatic_reveal"
+          },
+          "start_sec": 0,
+          "end_sec": 6.08,
+          "title": "እቲ ኣብ ውሽጢ ኣእምሮና ዝርአ ሓሶት"
         }
       ]
     },
@@ -91,17 +99,23 @@
           "type": "text",
           "text": "ዘይብቑዕ • ዘይድለ (Inadequate • Unwanted)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 6.92,
-          "end_sec": 13.021
+          "end_sec": 13.021,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Inadequate, unwanted, someone who always makes mistakes and is weaker than others.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 6.92,
-          "end_sec": 13.021
+          "end_sec": 13.021,
+          "variant": "subtitle"
         }
       ]
     },
@@ -133,17 +147,23 @@
           "type": "text",
           "text": "ሓቃዊ ማንነት (True Identity)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 13.781,
-          "end_sec": 16.741
+          "end_sec": 16.741,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Yet you accept it as your true identity.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 13.781,
-          "end_sec": 16.741
+          "end_sec": 16.741,
+          "variant": "subtitle"
         }
       ]
     },
@@ -175,17 +195,23 @@
           "type": "text",
           "text": "ኣእምሮኣዊ መነፅር (Cognitive Lens)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 17.601,
-          "end_sec": 19.981
+          "end_sec": 19.981,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Your brain is not showing you who you really are.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 17.601,
-          "end_sec": 19.981
+          "end_sec": 19.981,
+          "variant": "subtitle"
         }
       ]
     },
@@ -217,17 +243,23 @@
           "type": "text",
           "text": "እንታይ ዳኣ? (What Then?)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 20.461,
-          "end_sec": 21.101
+          "end_sec": 21.101,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "What is it showing instead?",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 20.461,
-          "end_sec": 21.101
+          "end_sec": 21.101,
+          "variant": "subtitle"
         }
       ]
     },
@@ -259,17 +291,23 @@
           "type": "text",
           "text": "ዝተዛብዐ ስእሊ (Distorted Perception)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 21.101,
-          "end_sec": 24.442
+          "end_sec": 24.442,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "It is showing you a distorted image created by its internal lens.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 21.101,
-          "end_sec": 24.442
+          "end_sec": 24.442,
+          "variant": "subtitle"
         }
       ]
     },
@@ -301,17 +339,23 @@
           "type": "text",
           "text": "ስለምንታይ? (The Central Paradox)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 24.582,
-          "end_sec": 33.122
+          "end_sec": 33.122,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Why do even capable, successful, or brilliant people see a broken, failure of a person when they look in the mirror?",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 24.582,
-          "end_sec": 33.122
+          "end_sec": 33.122,
+          "variant": "subtitle"
         }
       ]
     },
@@ -343,17 +387,23 @@
           "type": "text",
           "text": "ዓርሰ-ምስሊ (Self-Image Filter)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 34.182,
-          "end_sec": 44.223
+          "end_sec": 44.223,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "The reason is that our brain shows us not the objective reality in the mirror, but the self-image it constructed from various life experiences.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 34.182,
-          "end_sec": 44.223
+          "end_sec": 44.223,
+          "variant": "subtitle"
         }
       ]
     },
@@ -385,17 +435,23 @@
           "type": "text",
           "text": "ዓርሰ-ምስሊ ≠ ኣካል (Physical vs Self-Worth)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 44.843,
-          "end_sec": 51.443
+          "end_sec": 51.443,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Often when we hear \"self-image,\" we think it only refers to the physical image of our face or body in the mirror.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 44.843,
-          "end_sec": 51.443
+          "end_sec": 51.443,
+          "variant": "subtitle"
         }
       ]
     },
@@ -427,17 +483,23 @@
           "type": "text",
           "text": "ስነ-ልቦናዊ ሓቂ (Psychological Truth)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 52.163,
-          "end_sec": 54.504
+          "end_sec": 54.504,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "But the psychological reality is quite different.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 52.163,
-          "end_sec": 54.504
+          "end_sec": 54.504,
+          "variant": "subtitle"
         }
       ]
     },
@@ -469,26 +531,35 @@
           "type": "text",
           "text": "Cognitive Self-Schema",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 55.344,
-          "end_sec": 59.624
+          "end_sec": 59.624,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Self-image is the internal lens of your life imprinted in your mind.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 55.344,
-          "end_sec": 59.624
+          "end_sec": 59.624,
+          "variant": "subtitle"
         },
         {
           "type": "graphic",
           "graphic": "lower_third",
-          "text": "Cognitive Self-Schema • King's College London",
           "placement": "lower_third",
-          "animation": "slide_up",
+          "animation": {
+            "type": "slide_up"
+          },
           "start_sec": 55.344,
-          "end_sec": 59.624
+          "end_sec": 59.624,
+          "title": "Cognitive Self-Schema",
+          "subtitle": "King's College London"
         }
       ]
     },
@@ -520,17 +591,23 @@
           "type": "text",
           "text": "ቁልዕነት • ነቐፌታ (Developmental Origins)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 60.504,
-          "end_sec": 72.545
+          "end_sec": 72.545,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Built since childhood from experiences of love, criticism, humiliation, or comparison, it is the internal picture through which you view yourself and your worth.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 60.504,
-          "end_sec": 72.545
+          "end_sec": 72.545,
+          "variant": "subtitle"
         }
       ]
     },
@@ -562,17 +639,23 @@
           "type": "text",
           "text": "ሓቂ ዘየርኢ መነፅር (Distortion Prism)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 73.245,
-          "end_sec": 76.885
+          "end_sec": 76.885,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "This internal lens does not show you reality as it truly is.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 73.245,
-          "end_sec": 76.885
+          "end_sec": 76.885,
+          "variant": "subtitle"
         }
       ]
     },
@@ -604,17 +687,23 @@
           "type": "text",
           "text": "ሓበሬታ ዝመርጽ መፃረዪ (Confirmation Bias)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 77.425,
-          "end_sec": 88.806
+          "end_sec": 88.806,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Instead, acting like an information filter, it filters out good things that contradict your internal picture, while highlighting negative evidence to confirm that picture in your mind.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 77.425,
-          "end_sec": 88.806
+          "end_sec": 88.806,
+          "variant": "subtitle"
         }
       ]
     },
@@ -646,17 +735,23 @@
           "type": "text",
           "text": "ናይ ውሽጢ ራዳር (Internal Radar)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 89.286,
-          "end_sec": 92.726
+          "end_sec": 92.726,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "This mental filter answers two fundamental life questions for us.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 89.286,
-          "end_sec": 92.726
+          "end_sec": 92.726,
+          "variant": "subtitle"
         }
       ]
     },
@@ -688,17 +783,23 @@
           "type": "text",
           "text": "1. ብቑዕዶ እየ?  2. ተፍቃሪዶ እየ?",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 93.766,
-          "end_sec": 106.387
+          "end_sec": 106.387,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "\"Am I a capable person worthy of respect in front of others?\" \"Am I loved and accepted by people?\" If the answer your mind gives is \"NO\", your self-image is negative and distorted.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 93.766,
-          "end_sec": 106.387
+          "end_sec": 106.387,
+          "variant": "subtitle"
         }
       ]
     },
@@ -730,17 +831,23 @@
           "type": "text",
           "text": "ተፈጥሮኣዊ ብቕዓት (Inherent Worth)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 106.387,
-          "end_sec": 110.327
+          "end_sec": 110.327,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Because by nature, every human being possesses competence and is worthy of being loved.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 106.387,
-          "end_sec": 110.327
+          "end_sec": 110.327,
+          "variant": "subtitle"
         }
       ]
     },
@@ -772,17 +879,23 @@
           "type": "text",
           "text": "ናይ ውሽጢ ጥራጠረ (Internal Doubt)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 111.247,
-          "end_sec": 117.968
+          "end_sec": 117.968,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "You might ask, \"Then why do I constantly fail, make mistakes, and feel like people distance themselves from me?\"",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 111.247,
-          "end_sec": 117.968
+          "end_sec": 117.968,
+          "variant": "subtitle"
         }
       ]
     },
@@ -814,26 +927,34 @@
           "type": "text",
           "text": "Self-Fulfilling Prophecy (-35% - -40%)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 118.808,
-          "end_sec": 140.029
+          "end_sec": 140.029,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "The reason is that you are living a self-fulfilling prophecy. Psychological studies confirm that people who believe \"I am incompetent; I cannot do this\" lose 35 to 40 percent of their cognitive efficiency and problem-solving capacity during testing.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 118.808,
-          "end_sec": 140.029
+          "end_sec": 140.029,
+          "variant": "subtitle"
         },
         {
           "type": "graphic",
           "graphic": "lower_third",
-          "text": "Research Data: -35% to -40% Cognitive Efficiency",
           "placement": "lower_third",
-          "animation": "slide_up",
+          "animation": {
+            "type": "slide_up"
+          },
           "start_sec": 118.808,
-          "end_sec": 140.029
+          "end_sec": 140.029,
+          "title": "Research Data: -35% to -40% Cognitive Efficiency"
         }
       ]
     },
@@ -865,17 +986,23 @@
           "type": "text",
           "text": "Behavioral Withdrawal (+60%)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 140.589,
-          "end_sec": 151.25
+          "end_sec": 151.25,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Furthermore, individuals who believe \"I am unlovable\" exhibit 60 percent higher behavioral withdrawal compared to others.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 140.589,
-          "end_sec": 151.25
+          "end_sec": 151.25,
+          "variant": "subtitle"
         }
       ]
     },
@@ -907,17 +1034,23 @@
           "type": "text",
           "text": "ዓርሰ-ተነፅሎ (Social Isolation Barrier)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 151.93,
-          "end_sec": 154.05
+          "end_sec": 154.05,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "This behavioral retreat is precisely what prevents them from forming deep friendships.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 151.93,
-          "end_sec": 154.05
+          "end_sec": 154.05,
+          "variant": "subtitle"
         }
       ]
     },
@@ -949,17 +1082,23 @@
           "type": "text",
           "text": "ኣእምሮኣዊ ሓሳብ (Mind Construct)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 154.69,
-          "end_sec": 159.051
+          "end_sec": 159.051,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Incompetence and isolation are thoughts constructed by your mind, not your true nature.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 154.69,
-          "end_sec": 159.051
+          "end_sec": 159.051,
+          "variant": "subtitle"
         }
       ]
     },
@@ -991,26 +1130,34 @@
           "type": "text",
           "text": "5 ዓበይቲ ምልክታት (5 Warning Signs)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 159.811,
-          "end_sec": 165.951
+          "end_sec": 165.951,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Now, let's examine 5 major warning signs that indicate your self-image is distorted.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 159.811,
-          "end_sec": 165.951
+          "end_sec": 165.951,
+          "variant": "subtitle"
         },
         {
           "type": "graphic",
           "graphic": "chapter_card",
-          "text": "5 Warning Signs of Distorted Self-Image",
           "placement": "top_center",
-          "animation": "scale_in",
+          "animation": {
+            "type": "scale_in"
+          },
           "start_sec": 159.811,
-          "end_sec": 165.951
+          "end_sec": 165.951,
+          "title": "5 Warning Signs of Distorted Self-Image"
         }
       ]
     },
@@ -1042,17 +1189,23 @@
           "type": "text",
           "text": "1. Self-Hate Trap (ንርእስኻ ምጽላእ)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 165.991,
-          "end_sec": 178.112
+          "end_sec": 178.112,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "1. Harsh self-hatred and self-criticism: The Self-Hate Trap. When you make a minor mistake at work or in life, instead of saying \"I'll learn from this mistake,\" does your mind say, \"I am a total failure!",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 165.991,
-          "end_sec": 178.112
+          "end_sec": 178.112,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1084,17 +1237,23 @@
           "type": "text",
           "text": "ንርእስኻ ምጽላእ (Harsh Self-Criticism)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 178.512,
-          "end_sec": 181.772
+          "end_sec": 181.772,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "I am a worthless, terrible person!\" and harshly criticize yourself?",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 178.512,
-          "end_sec": 181.772
+          "end_sec": 181.772,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1126,17 +1285,23 @@
           "type": "text",
           "text": "Self-Hate = Threat System Activation",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 182.572,
-          "end_sec": 192.493
+          "end_sec": 192.493,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Harsh self-hatred is a warning sign created when your mind views you as its own worst enemy, generating severe psychological distress.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 182.572,
-          "end_sec": 192.493
+          "end_sec": 192.493,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1168,17 +1333,23 @@
           "type": "text",
           "text": "2. Online Comparison Loop (ማሕበራዊ ሚዲያ)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 193.013,
-          "end_sec": 209.174
+          "end_sec": 209.174,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "2. The compulsive online comparison loop: When you pick up your phone and scroll through social media, seeing other people's successful lives or wealth, do you immediately feel feelings of inadequacy and weakness inside?",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 193.013,
-          "end_sec": 209.174
+          "end_sec": 209.174,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1210,26 +1381,35 @@
           "type": "text",
           "text": "83 Studies • 55,440 Participants (r = .454)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 209.974,
-          "end_sec": 226.915
+          "end_sec": 226.915,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Researchers analyzing over 55,440 participants across 83 major studies confirmed that the more you compare yourself to others on social media, the higher your feelings of self-hate and body dissatisfaction become.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 209.974,
-          "end_sec": 226.915
+          "end_sec": 226.915,
+          "variant": "subtitle"
         },
         {
           "type": "graphic",
           "graphic": "lower_third",
-          "text": "83 Studies • 55,440 Participants (Bonfanti et al.)",
           "placement": "lower_third",
-          "animation": "slide_up",
+          "animation": {
+            "type": "slide_up"
+          },
           "start_sec": 209.974,
-          "end_sec": 226.915
+          "end_sec": 226.915,
+          "title": "83 Studies",
+          "subtitle": "55,440 Participants (Bonfanti et al.)"
         }
       ]
     },
@@ -1261,17 +1441,23 @@
           "type": "text",
           "text": "3. Excessive Perfectionism (ንፍጹምነት ምቅላስ)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 227.275,
-          "end_sec": 237.676
+          "end_sec": 237.676,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "3. Excessive perfectionism: Do you trap yourself in endless work until exhaustion under the rule \"If everything I do isn't flawless, I am a failure\"?",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 227.275,
-          "end_sec": 237.676
+          "end_sec": 237.676,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1285,7 +1471,7 @@
       },
       "transition_out": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -1303,17 +1489,23 @@
           "type": "text",
           "text": "Perfectionism = Defensive Armor",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 238.716,
-          "end_sec": 242.216
+          "end_sec": 242.216,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Striving for perfectionism does not stem from a love for your work.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 238.716,
-          "end_sec": 242.216
+          "end_sec": 242.216,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1323,11 +1515,11 @@
       "end_sec": 243.946,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -1345,17 +1537,23 @@
           "type": "text",
           "text": "እንታይ ዳኣ? (Defensive Motive)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 243.016,
-          "end_sec": 243.936
+          "end_sec": 243.936,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "What is it instead?",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 243.016,
-          "end_sec": 243.936
+          "end_sec": 243.936,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1365,7 +1563,7 @@
       "end_sec": 252.897,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -1387,17 +1585,23 @@
           "type": "text",
           "text": "ናይ ብረት ድፋዕ (Shield Against Rejection)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 243.956,
-          "end_sec": 252.177
+          "end_sec": 252.177,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "It is a protective shield your brain constructs out of fear that people will see your flaws and reject you.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 243.956,
-          "end_sec": 252.177
+          "end_sec": 252.177,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1411,7 +1615,7 @@
       },
       "transition_out": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -1429,17 +1633,23 @@
           "type": "text",
           "text": "4. Safety Behaviors (ናይ ምሕባእ ባህሪ)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 253.017,
-          "end_sec": 261.417
+          "end_sec": 261.417,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "4. Safety behaviors and social avoidance: Do you hide from social gatherings out of fear that people will criticize you?",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 253.017,
-          "end_sec": 261.417
+          "end_sec": 261.417,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1449,11 +1659,11 @@
       "end_sec": 265.888,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -1471,17 +1681,23 @@
           "type": "text",
           "text": "Short-Term Relief ➔ Long-Term Isolation",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 262.278,
-          "end_sec": 265.418
+          "end_sec": 265.418,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "When you hide from people, it feels like temporary relief.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 262.278,
-          "end_sec": 265.418
+          "end_sec": 265.418,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1491,7 +1707,7 @@
       "end_sec": 280.309,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -1513,17 +1729,23 @@
           "type": "text",
           "text": "Self-Fulfilling Prophecy (ምራሓቕ)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 266.358,
-          "end_sec": 279.499
+          "end_sec": 279.499,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "But in reality, hiding makes you feel isolated, reinforcing the negative image that says \"See, nobody wants you,\" creating the very isolation and distance you feared.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 266.358,
-          "end_sec": 279.499
+          "end_sec": 279.499,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1537,7 +1759,7 @@
       },
       "transition_out": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "layers": [
         {
@@ -1555,17 +1777,23 @@
           "type": "text",
           "text": "5. Rumination (ምድግጋም ሓሳባት)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 280.519,
-          "end_sec": 291.679
+          "end_sec": 291.679,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "5. Rumination: Before falling asleep, do you replay minor mistakes you made yesterday or awkward moments in front of people over and over in your head?",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 280.519,
-          "end_sec": 291.679
+          "end_sec": 291.679,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1575,7 +1803,7 @@
       "end_sec": 302.47,
       "transition_in": {
         "type": "none",
-        "duration_sec": 0.0
+        "duration_sec": 0
       },
       "transition_out": {
         "type": "cross_dissolve",
@@ -1597,17 +1825,23 @@
           "type": "text",
           "text": "Rumination = Endless Re-Activation of Shame",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 292.54,
-          "end_sec": 301.8
+          "end_sec": 301.8,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "This constant rumination continuously fuels our internal negative beliefs, keeping feelings of anxiety and embarrassment alive within us.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 292.54,
-          "end_sec": 301.8
+          "end_sec": 301.8,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1639,17 +1873,23 @@
           "type": "text",
           "text": "ሓቃዊ ማንነት (Your True Identity)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 302.54,
-          "end_sec": 305.96
+          "end_sec": 305.96,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "The image you hold of yourself is not your true identity.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 302.54,
-          "end_sec": 305.96
+          "end_sec": 305.96,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1681,17 +1921,23 @@
           "type": "text",
           "text": "ናይ ትማሊ ፍርሃት (Conditioned Illusion)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 306.26,
-          "end_sec": 310.361
+          "end_sec": 310.361,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "It is merely a mental picture shaped by yesterday's fears and other people's criticisms.",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 306.26,
-          "end_sec": 310.361
+          "end_sec": 310.361,
+          "variant": "subtitle"
         }
       ]
     },
@@ -1705,7 +1951,7 @@
       },
       "transition_out": {
         "type": "fade_to_black",
-        "duration_sec": 1.0
+        "duration_sec": 1
       },
       "layers": [
         {
@@ -1723,23 +1969,29 @@
           "type": "text",
           "text": "እቲ ናይ ሓቂ መንነትካ (Who You Truly Are)",
           "placement": "center",
-          "animation": "fade_up",
+          "animation": {
+            "type": "fade_up"
+          },
           "start_sec": 310.641,
-          "end_sec": 320.841
+          "end_sec": 320.841,
+          "variant": "title"
         },
         {
           "type": "text",
           "text": "Now, when you look at yourself in the mirror or doubt your worth, remember this: \"Perhaps... the way you see yourself is not who you truly are.\"",
           "placement": "bottom_center",
-          "animation": "fade_in",
+          "animation": {
+            "type": "fade_in"
+          },
           "start_sec": 310.641,
-          "end_sec": 320.841
+          "end_sec": 320.841,
+          "variant": "subtitle"
         }
       ]
     },
     {
       "id": "clip_visualizer",
-      "start_sec": 0.0,
+      "start_sec": 0,
       "end_sec": 320.841,
       "layers": [
         {

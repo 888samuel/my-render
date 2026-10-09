@@ -11,11 +11,21 @@ import { Quote } from "../components/text/Quote";
 import { Timeline } from "../components/graphics/Timeline";
 import { Title } from "../components/text/Title";
 import { YearStamp } from "../components/graphics/YearStamp";
-import type { Layer } from "../types/edit-plan";
+import { normalizeTextAnimationInput } from "./normalizeAnimation";
+import type { Layer, TextAnimation } from "../types/edit-plan";
 
 type LayerRendererProps = {
   layer: Layer;
   compositionFrameOffset: number;
+};
+
+const animOf = (layer: { animation?: TextAnimation | string }): TextAnimation =>
+  normalizeTextAnimationInput(layer.animation);
+
+/** LLM plans sometimes put copy in `text` instead of `title`. */
+const titleOf = (layer: object): string => {
+  const record = layer as { title?: string; text?: string };
+  return record.title ?? record.text ?? "";
 };
 
 export const LayerRenderer = ({
@@ -30,7 +40,7 @@ export const LayerRenderer = ({
       return (
         <Title
           text={layer.text}
-          animation={layer.animation}
+          animation={animOf(layer)}
           placement={layer.placement}
         />
       );
@@ -42,7 +52,7 @@ export const LayerRenderer = ({
         return (
           <Title
             text={layer.text}
-            animation={layer.animation}
+            animation={animOf(layer)}
             placement={layer.placement}
           />
         );
@@ -51,7 +61,7 @@ export const LayerRenderer = ({
         return (
           <Quote
             text={layer.text}
-            animation={layer.animation}
+            animation={animOf(layer)}
             placement={layer.placement}
           />
         );
@@ -60,7 +70,7 @@ export const LayerRenderer = ({
         return (
           <HighlightText
             text={layer.text}
-            animation={layer.animation}
+            animation={animOf(layer)}
             placement={layer.placement}
           />
         );
@@ -68,7 +78,7 @@ export const LayerRenderer = ({
       return (
         <AnimatedText
           text={layer.text}
-          animation={layer.animation}
+          animation={animOf(layer)}
           placement={layer.placement}
           variant={layer.variant === "subtitle" ? "subtitle" : "body"}
         />
@@ -78,7 +88,7 @@ export const LayerRenderer = ({
         <Quote
           text={layer.text}
           attribution={layer.attribution}
-          animation={layer.animation}
+          animation={animOf(layer)}
           placement={layer.placement}
         />
       );
@@ -87,7 +97,7 @@ export const LayerRenderer = ({
         <List
           items={layer.items}
           style={layer.style}
-          animation={layer.animation}
+          animation={animOf(layer)}
           placement={layer.placement}
         />
       );
@@ -96,16 +106,16 @@ export const LayerRenderer = ({
         <HighlightText
           text={layer.text}
           highlight={layer.highlight}
-          animation={layer.animation}
+          animation={animOf(layer)}
           placement={layer.placement}
         />
       );
     case "lower_third":
       return (
         <LowerThird
-          title={layer.title}
+          title={titleOf(layer)}
           subtitle={layer.subtitle}
-          animation={layer.animation}
+          animation={animOf(layer)}
           placement={layer.placement}
         />
       );
@@ -113,9 +123,9 @@ export const LayerRenderer = ({
       return (
         <ChapterCard
           eyebrow={layer.eyebrow}
-          title={layer.title}
+          title={titleOf(layer)}
           subtitle={layer.subtitle}
-          animation={layer.animation}
+          animation={animOf(layer)}
         />
       );
     case "image":
@@ -138,7 +148,7 @@ const renderGraphic = (
       return (
         <NumberedList
           items={layer.items}
-          animation={layer.animation}
+          animation={animOf(layer)}
           placement={layer.placement}
         />
       );
@@ -154,7 +164,7 @@ const renderGraphic = (
       return (
         <Title
           text={layer.text}
-          animation={layer.animation}
+          animation={animOf(layer)}
           placement={layer.placement}
           variant="statement"
         />
@@ -169,9 +179,9 @@ const renderGraphic = (
     case "lower_third":
       return (
         <LowerThird
-          title={layer.title}
+          title={titleOf(layer)}
           subtitle={layer.subtitle}
-          animation={layer.animation}
+          animation={animOf(layer)}
           placement={layer.placement}
         />
       );
@@ -179,16 +189,16 @@ const renderGraphic = (
       return (
         <ChapterCard
           eyebrow={layer.eyebrow}
-          title={layer.title}
+          title={titleOf(layer)}
           subtitle={layer.subtitle}
-          animation={layer.animation}
+          animation={animOf(layer)}
         />
       );
     case "year_stamp":
       return (
         <YearStamp
           text={layer.text}
-          animation={layer.animation}
+          animation={animOf(layer)}
           placement={layer.placement}
         />
       );
