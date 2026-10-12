@@ -1,11 +1,11 @@
 {
   "version": "1.0",
   "video": {
-    "id": "self_image_psychology",
+    "id": "unseen_ceiling_part1",
     "width": 1920,
     "height": 1080,
     "fps": 30,
-    "duration_sec": 320.841
+    "duration_sec": 224.67
   },
   "audio": {
     "src": "assets/audio/my-recording.mp3",
@@ -14,1985 +14,1986 @@
   "clips": [
     {
       "id": "s001",
-      "start_sec": 0,
-      "end_sec": 6.8,
-      "transition_in": {
-        "type": "fade_in_from_black",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_001",
+      "src": "assets/images/img_001.png",
+      "start_sec": 0.0,
+      "end_sec": 2.54,
+      "transition": "fade_in_from_black",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_in",
+        "intensity": 0.2
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_001.png",
-          "asset_id": "img_001",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.25
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "COMPENSATION HESITATION",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ዓርሰ-ምስሊ (Self-Image)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 0,
-          "end_sec": 6.08,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "When you look at your reflection in the mirror, you see someone who looks like you, but isn't really you.",
+          "variant": "subtitle",
+          "text": "When your monthly salary arrives in your hands,",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 0,
-          "end_sec": 6.08,
-          "variant": "subtitle"
+          "animation": "fade_in"
         },
         {
           "type": "graphic",
           "graphic": "chapter_card",
-          "placement": "top_left",
-          "animation": {
-            "type": "dramatic_reveal"
-          },
-          "start_sec": 0,
-          "end_sec": 6.08,
-          "title": "እቲ ኣብ ውሽጢ ኣእምሮና ዝርአ ሓሶት"
+          "title": "THE UNSEEN CEILING",
+          "subtitle": "Part 1: Self-Image & Financial Destiny",
+          "placement": "center"
         }
       ]
     },
     {
       "id": "s002",
-      "start_sec": 6.2,
-      "end_sec": 13.701,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_001",
+      "src": "assets/images/img_001.png",
+      "start_sec": 2.54,
+      "end_sec": 6.11,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_out",
+        "intensity": 0.25
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_002.png",
-          "asset_id": "img_002",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_right",
-            "intensity": 0.3
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "WORKPLACE VALUE",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ዘይብቑዕ • ዘይድለ (Inadequate • Unwanted)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 6.92,
-          "end_sec": 13.021,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Inadequate, unwanted, someone who always makes mistakes and is weaker than others.",
+          "variant": "subtitle",
+          "text": "or when you set a value for your labor,",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 6.92,
-          "end_sec": 13.021,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s003",
-      "start_sec": 13.101,
-      "end_sec": 17.471,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_002",
+      "src": "assets/images/img_002.png",
+      "start_sec": 5.51,
+      "end_sec": 9.22,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_right",
+        "intensity": 0.3
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_003.png",
-          "asset_id": "img_003",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_out",
-            "intensity": 0.2
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "INTERNAL DOUBT",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ሓቃዊ ማንነት (True Identity)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 13.781,
-          "end_sec": 16.741,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Yet you accept it as your true identity.",
+          "variant": "subtitle",
+          "text": "there is a quiet voice of doubt inside you.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 13.781,
-          "end_sec": 16.741,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s004",
-      "start_sec": 16.871,
-      "end_sec": 20.521,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_002",
+      "src": "assets/images/img_002.png",
+      "start_sec": 9.22,
+      "end_sec": 12.08,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_left",
+        "intensity": 0.35
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_004.png",
-          "asset_id": "img_004",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_left",
-            "intensity": 0.28
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "UNDESERVED FEELING",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ኣእምሮኣዊ መነፅር (Cognitive Lens)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 17.601,
-          "end_sec": 19.981,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Your brain is not showing you who you really are.",
+          "variant": "subtitle",
+          "text": "With a subtle feeling that whispers \"I do not deserve this\",",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 17.601,
-          "end_sec": 19.981,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s005",
-      "start_sec": 19.921,
-      "end_sec": 21.401,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_002",
+      "src": "assets/images/img_002.png",
+      "start_sec": 12.08,
+      "end_sec": 15.75,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "tilt_up",
+        "intensity": 0.2
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_005.png",
-          "asset_id": "img_005",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "subtle_movement",
-            "intensity": 0.22
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "MISSED OPPORTUNITIES",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "እንታይ ዳኣ? (What Then?)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 20.461,
-          "end_sec": 21.101,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "What is it showing instead?",
+          "variant": "subtitle",
+          "text": "how many opportunities have you passed up?",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 20.461,
-          "end_sec": 21.101,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s006",
-      "start_sec": 20.801,
-      "end_sec": 24.812,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_003",
+      "src": "assets/images/img_003.png",
+      "start_sec": 15.15,
+      "end_sec": 16.32,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "subtle_movement",
+        "intensity": 0.25
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_006.png",
-          "asset_id": "img_006",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "tilt_up",
-            "intensity": 0.25
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "THE UNSEEN CEILING",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ዝተዛብዐ ስእሊ (Distorted Perception)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 21.101,
-          "end_sec": 24.442,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "It is showing you a distorted image created by its internal lens.",
+          "variant": "subtitle",
+          "text": "The surprising thing is:",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 21.101,
-          "end_sec": 24.442,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s007",
-      "start_sec": 24.212,
-      "end_sec": 33.952,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_003",
+      "src": "assets/images/img_003.png",
+      "start_sec": 16.32,
+      "end_sec": 19.92,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "zoom_in",
+        "intensity": 0.3
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_007.png",
-          "asset_id": "img_007",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_diagonal",
-            "intensity": 0.32
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "HIDDEN DRIVER",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ስለምንታይ? (The Central Paradox)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 24.582,
-          "end_sec": 33.122,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Why do even capable, successful, or brilliant people see a broken, failure of a person when they look in the mirror?",
+          "variant": "subtitle",
+          "text": "what secretly controls our opportunities and expenses",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 24.582,
-          "end_sec": 33.122,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s008",
-      "start_sec": 33.352,
-      "end_sec": 44.833,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_003",
+      "src": "assets/images/img_003.png",
+      "start_sec": 19.92,
+      "end_sec": 22.36,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_diagonal",
+        "intensity": 0.35
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_008.png",
-          "asset_id": "img_008",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "zoom_in",
-            "intensity": 0.27
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "BEYOND CASH FLOW",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ዓርሰ-ምስሊ (Self-Image Filter)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 34.182,
-          "end_sec": 44.223,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "The reason is that our brain shows us not the objective reality in the mirror, but the self-image it constructed from various life experiences.",
+          "variant": "subtitle",
+          "text": "is not just a lack of money, but",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 34.182,
-          "end_sec": 44.223,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s009",
-      "start_sec": 44.233,
-      "end_sec": 52.103,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_003",
+      "src": "assets/images/img_003.png",
+      "start_sec": 22.36,
+      "end_sec": 26.99,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_in",
+        "intensity": 0.2
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_009.png",
-          "asset_id": "img_009",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "tilt_down",
-            "intensity": 0.24
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "CAPABILITY BELIEF",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ዓርሰ-ምስሊ ≠ ኣካል (Physical vs Self-Worth)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 44.843,
-          "end_sec": 51.443,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Often when we hear \"self-image,\" we think it only refers to the physical image of our face or body in the mirror.",
+          "variant": "subtitle",
+          "text": "what if it is the hidden belief we carry about ourselves?",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 44.843,
-          "end_sec": 51.443,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s010",
-      "start_sec": 51.503,
-      "end_sec": 55.224,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_004",
+      "src": "assets/images/img_004.png",
+      "start_sec": 26.39,
+      "end_sec": 29.78,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_out",
+        "intensity": 0.25
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_010.png",
-          "asset_id": "img_010",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "zoom_out",
-            "intensity": 0.3
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "AVOIDANCE PATTERN",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ስነ-ልቦናዊ ሓቂ (Psychological Truth)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 52.163,
-          "end_sec": 54.504,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "But the psychological reality is quite different.",
+          "variant": "subtitle",
+          "text": "This situation is deeply familiar to many of us.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 52.163,
-          "end_sec": 54.504,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s011",
-      "start_sec": 54.624,
-      "end_sec": 60.364,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_004",
+      "src": "assets/images/img_004.png",
+      "start_sec": 29.78,
+      "end_sec": 32.43,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_right",
+        "intensity": 0.3
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_011.png",
-          "asset_id": "img_011",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.25
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "MONEY MANAGEMENT",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Cognitive Self-Schema",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 55.344,
-          "end_sec": 59.624,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Self-image is the internal lens of your life imprinted in your mind.",
+          "variant": "subtitle",
+          "text": "How you should manage your money,",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 55.344,
-          "end_sec": 59.624,
-          "variant": "subtitle"
-        },
-        {
-          "type": "graphic",
-          "graphic": "lower_third",
-          "placement": "lower_third",
-          "animation": {
-            "type": "slide_up"
-          },
-          "start_sec": 55.344,
-          "end_sec": 59.624,
-          "title": "Cognitive Self-Schema",
-          "subtitle": "King's College London"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s012",
-      "start_sec": 59.764,
-      "end_sec": 73.195,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_004",
+      "src": "assets/images/img_004.png",
+      "start_sec": 32.43,
+      "end_sec": 37.94,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_left",
+        "intensity": 0.35
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_012.png",
-          "asset_id": "img_012",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_right",
-            "intensity": 0.3
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "BUDGETING KNOWLEDGE",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ቁልዕነት • ነቐፌታ (Developmental Origins)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 60.504,
-          "end_sec": 72.545,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Built since childhood from experiences of love, criticism, humiliation, or comparison, it is the internal picture through which you view yourself and your worth.",
+          "variant": "subtitle",
+          "text": "you know well that you should save or make a budget.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 60.504,
-          "end_sec": 72.545,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s013",
-      "start_sec": 72.595,
-      "end_sec": 77.455,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_004",
+      "src": "assets/images/img_004.png",
+      "start_sec": 37.94,
+      "end_sec": 40.38,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "tilt_up",
+        "intensity": 0.2
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_013.png",
-          "asset_id": "img_013",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_out",
-            "intensity": 0.2
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "MOMENT OF DECISION",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ሓቂ ዘየርኢ መነፅር (Distortion Prism)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 73.245,
-          "end_sec": 76.885,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "This internal lens does not show you reality as it truly is.",
+          "variant": "subtitle",
+          "text": "Yet, at the exact moment of decision,",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 73.245,
-          "end_sec": 76.885,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s014",
-      "start_sec": 76.855,
-      "end_sec": 89.346,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_004",
+      "src": "assets/images/img_004.png",
+      "start_sec": 40.38,
+      "end_sec": 43.84,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "subtle_movement",
+        "intensity": 0.25
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_014.png",
-          "asset_id": "img_014",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_left",
-            "intensity": 0.28
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "INVISIBLE BARRIER",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ሓበሬታ ዝመርጽ መፃረዪ (Confirmation Bias)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 77.425,
-          "end_sec": 88.806,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Instead, acting like an information filter, it filters out good things that contradict your internal picture, while highlighting negative evidence to confirm that picture in your mind.",
+          "variant": "subtitle",
+          "text": "an invisible doubt pulls you back.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 77.425,
-          "end_sec": 88.806,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s015",
-      "start_sec": 88.746,
-      "end_sec": 93.546,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_005",
+      "src": "assets/images/img_005.png",
+      "start_sec": 43.24,
+      "end_sec": 46.42,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "zoom_in",
+        "intensity": 0.3
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_015.png",
-          "asset_id": "img_015",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "subtle_movement",
-            "intensity": 0.22
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "SALARY NEGOTIATION",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ናይ ውሽጢ ራዳር (Internal Radar)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 89.286,
-          "end_sec": 92.726,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "This mental filter answers two fundamental life questions for us.",
+          "variant": "subtitle",
+          "text": "When you think about asking for a salary raise,",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 89.286,
-          "end_sec": 92.726,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s016",
-      "start_sec": 92.946,
-      "end_sec": 106.687,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_005",
+      "src": "assets/images/img_005.png",
+      "start_sec": 46.42,
+      "end_sec": 49.92,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_diagonal",
+        "intensity": 0.35
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_016.png",
-          "asset_id": "img_016",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "tilt_up",
-            "intensity": 0.25
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "TRUE LABOR VALUE",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "1. ብቑዕዶ እየ?  2. ተፍቃሪዶ እየ?",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 93.766,
-          "end_sec": 106.387,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "\"Am I a capable person worthy of respect in front of others?\" \"Am I loved and accepted by people?\" If the answer your mind gives is \"NO\", your self-image is negative and distorted.",
+          "variant": "subtitle",
+          "text": "or when asking for the true value your work deserves,",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 93.766,
-          "end_sec": 106.387,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s017",
-      "start_sec": 106.087,
-      "end_sec": 111.087,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_005",
+      "src": "assets/images/img_005.png",
+      "start_sec": 49.92,
+      "end_sec": 54.34,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_in",
+        "intensity": 0.2
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_017.png",
-          "asset_id": "img_017",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_diagonal",
-            "intensity": 0.32
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "SELF-LIMITING BELIEF",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ተፈጥሮኣዊ ብቕዓት (Inherent Worth)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 106.387,
-          "end_sec": 110.327,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Because by nature, every human being possesses competence and is worthy of being loved.",
+          "variant": "subtitle",
+          "text": "the voice inside you says, \"You are not there yet.\"",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 106.387,
-          "end_sec": 110.327,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s018",
-      "start_sec": 110.487,
-      "end_sec": 118.688,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_006",
+      "src": "assets/images/img_006.png",
+      "start_sec": 53.74,
+      "end_sec": 56.6,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_out",
+        "intensity": 0.25
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_018.png",
-          "asset_id": "img_018",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "zoom_in",
-            "intensity": 0.27
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "WALL OF DOUBT",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ናይ ውሽጢ ጥራጠረ (Internal Doubt)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 111.247,
-          "end_sec": 117.968,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "You might ask, \"Then why do I constantly fail, make mistakes, and feel like people distance themselves from me?\"",
+          "variant": "subtitle",
+          "text": "And because of this wall of doubt,",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 111.247,
-          "end_sec": 117.968,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s019",
-      "start_sec": 118.088,
-      "end_sec": 140.609,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_006",
+      "src": "assets/images/img_006.png",
+      "start_sec": 56.6,
+      "end_sec": 60.31,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_right",
+        "intensity": 0.3
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_019.png",
-          "asset_id": "img_019",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "tilt_down",
-            "intensity": 0.24
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "SHORT-TERM BIAS",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Self-Fulfilling Prophecy (-35% - -40%)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 118.808,
-          "end_sec": 140.029,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "The reason is that you are living a self-fulfilling prophecy. Psychological studies confirm that people who believe \"I am incompetent; I cannot do this\" lose 35 to 40 percent of their cognitive efficiency and problem-solving capacity during testing.",
+          "variant": "subtitle",
+          "text": "we often stay away from long-term financial plans;",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 118.808,
-          "end_sec": 140.029,
-          "variant": "subtitle"
-        },
-        {
-          "type": "graphic",
-          "graphic": "lower_third",
-          "placement": "lower_third",
-          "animation": {
-            "type": "slide_up"
-          },
-          "start_sec": 118.808,
-          "end_sec": 140.029,
-          "title": "Research Data: -35% to -40% Cognitive Efficiency"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s020",
-      "start_sec": 140.009,
-      "end_sec": 151.89,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_006",
+      "src": "assets/images/img_006.png",
+      "start_sec": 60.31,
+      "end_sec": 62.75,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_left",
+        "intensity": 0.35
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_020.png",
-          "asset_id": "img_020",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "zoom_out",
-            "intensity": 0.3
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "SAVINGS HESITATION",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Behavioral Withdrawal (+60%)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 140.589,
-          "end_sec": 151.25,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Furthermore, individuals who believe \"I am unlovable\" exhibit 60 percent higher behavioral withdrawal compared to others.",
+          "variant": "subtitle",
+          "text": "and instead of moving toward saving,",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 140.589,
-          "end_sec": 151.25,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s021",
-      "start_sec": 151.29,
-      "end_sec": 154.67,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_006",
+      "src": "assets/images/img_006.png",
+      "start_sec": 62.75,
+      "end_sec": 66.11,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "tilt_up",
+        "intensity": 0.2
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_021.png",
-          "asset_id": "img_021",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.25
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "HIGH-COST DEBT",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ዓርሰ-ተነፅሎ (Social Isolation Barrier)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 151.93,
-          "end_sec": 154.05,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "This behavioral retreat is precisely what prevents them from forming deep friendships.",
+          "variant": "subtitle",
+          "text": "we are drawn toward emergency loans.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 151.93,
-          "end_sec": 154.05,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s022",
-      "start_sec": 154.07,
-      "end_sec": 159.731,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_007",
+      "src": "assets/images/img_007.png",
+      "start_sec": 65.51,
+      "end_sec": 68.37,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "subtle_movement",
+        "intensity": 0.25
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_022.png",
-          "asset_id": "img_022",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_right",
-            "intensity": 0.3
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "RESEARCH PERSPECTIVE",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ኣእምሮኣዊ ሓሳብ (Mind Construct)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 154.69,
-          "end_sec": 159.051,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Incompetence and isolation are thoughts constructed by your mind, not your true nature.",
+          "variant": "subtitle",
+          "text": "Psychologists and financial researchers",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 154.69,
-          "end_sec": 159.051,
-          "variant": "subtitle"
+          "animation": "fade_in"
+        },
+        {
+          "type": "graphic",
+          "graphic": "lower_third",
+          "title": "FINANCIAL SELF-EFFICACY",
+          "subtitle": "Gulati & Singh (2024)",
+          "placement": "top_left"
         }
       ]
     },
     {
       "id": "s023",
-      "start_sec": 159.131,
-      "end_sec": 166.271,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_007",
+      "src": "assets/images/img_007.png",
+      "start_sec": 68.37,
+      "end_sec": 74.83,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "zoom_in",
+        "intensity": 0.3
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_023.png",
-          "asset_id": "img_023",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_out",
-            "intensity": 0.2
-          }
-        },
-        {
           "type": "text",
-          "text": "5 ዓበይቲ ምልክታት (5 Warning Signs)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 159.811,
-          "end_sec": 165.951,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Now, let's examine 5 major warning signs that indicate your self-image is distorted.",
-          "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 159.811,
-          "end_sec": 165.951,
-          "variant": "subtitle"
-        },
-        {
-          "type": "graphic",
-          "graphic": "chapter_card",
+          "variant": "title",
+          "text": "KNOWLEDGE VS ACTION",
           "placement": "top_center",
-          "animation": {
-            "type": "scale_in"
-          },
-          "start_sec": 159.811,
-          "end_sec": 165.951,
-          "title": "5 Warning Signs of Distorted Self-Image"
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "have studied the difference between knowing about money and believing in your ability.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s024",
-      "start_sec": 165.671,
-      "end_sec": 178.612,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_007",
+      "src": "assets/images/img_007.png",
+      "start_sec": 74.83,
+      "end_sec": 77.9,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_diagonal",
+        "intensity": 0.35
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_024.png",
-          "asset_id": "img_024",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_left",
-            "intensity": 0.28
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "FINANCIAL LITERACY",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "1. Self-Hate Trap (ንርእስኻ ምጽላእ)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 165.991,
-          "end_sec": 178.112,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "1. Harsh self-hatred and self-criticism: The Self-Hate Trap. When you make a minor mistake at work or in life, instead of saying \"I'll learn from this mistake,\" does your mind say, \"I am a total failure!",
+          "variant": "subtitle",
+          "text": "Simply knowing how to manage your money",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 165.991,
-          "end_sec": 178.112,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s025",
-      "start_sec": 178.012,
-      "end_sec": 182.472,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_007",
+      "src": "assets/images/img_007.png",
+      "start_sec": 77.9,
+      "end_sec": 81.36,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_in",
+        "intensity": 0.2
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_025.png",
-          "asset_id": "img_025",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "subtle_movement",
-            "intensity": 0.22
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "EXECUTION GAP",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ንርእስኻ ምጽላእ (Harsh Self-Criticism)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 178.512,
-          "end_sec": 181.772,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "I am a worthless, terrible person!\" and harshly criticize yourself?",
+          "variant": "subtitle",
+          "text": "is not enough on its own to take action.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 178.512,
-          "end_sec": 181.772,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s026",
-      "start_sec": 181.872,
-      "end_sec": 193.053,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_008",
+      "src": "assets/images/img_008.png",
+      "start_sec": 80.76,
+      "end_sec": 82.46,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_out",
+        "intensity": 0.25
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_026.png",
-          "asset_id": "img_026",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "tilt_up",
-            "intensity": 0.25
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "FINANCIAL SELF-EFFICACY",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Self-Hate = Threat System Activation",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 182.572,
-          "end_sec": 192.493,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Harsh self-hatred is a warning sign created when your mind views you as its own worst enemy, generating severe psychological distress.",
+          "variant": "subtitle",
+          "text": "Researchers call this belief",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 182.572,
-          "end_sec": 192.493,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s027",
-      "start_sec": 192.453,
-      "end_sec": 209.874,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_008",
+      "src": "assets/images/img_008.png",
+      "start_sec": 82.46,
+      "end_sec": 85.11,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_right",
+        "intensity": 0.3
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_027.png",
-          "asset_id": "img_027",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_diagonal",
-            "intensity": 0.32
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "CAPABILITY CONSTRUCT",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "2. Online Comparison Loop (ማሕበራዊ ሚዲያ)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 193.013,
-          "end_sec": 209.174,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "2. The compulsive online comparison loop: When you pick up your phone and scroll through social media, seeing other people's successful lives or wealth, do you immediately feel feelings of inadequacy and weakness inside?",
+          "variant": "subtitle",
+          "text": "\"Financial Self-Efficacy.\"",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 193.013,
-          "end_sec": 209.174,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s028",
-      "start_sec": 209.274,
-      "end_sec": 227.395,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_008",
+      "src": "assets/images/img_008.png",
+      "start_sec": 85.11,
+      "end_sec": 85.64,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_left",
+        "intensity": 0.35
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_028.png",
-          "asset_id": "img_028",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "zoom_in",
-            "intensity": 0.27
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "DYNAMIC SKILL",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "83 Studies • 55,440 Participants (r = .454)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 209.974,
-          "end_sec": 226.915,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Researchers analyzing over 55,440 participants across 83 major studies confirmed that the more you compare yourself to others on social media, the higher your feelings of self-hate and body dissatisfaction become.",
+          "variant": "subtitle",
+          "text": "They term it.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 209.974,
-          "end_sec": 226.915,
-          "variant": "subtitle"
-        },
-        {
-          "type": "graphic",
-          "graphic": "lower_third",
-          "placement": "lower_third",
-          "animation": {
-            "type": "slide_up"
-          },
-          "start_sec": 209.974,
-          "end_sec": 226.915,
-          "title": "83 Studies",
-          "subtitle": "55,440 Participants (Bonfanti et al.)"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s029",
-      "start_sec": 226.795,
-      "end_sec": 238.496,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_008",
+      "src": "assets/images/img_008.png",
+      "start_sec": 85.64,
+      "end_sec": 91.75,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "tilt_up",
+        "intensity": 0.2
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_029.png",
-          "asset_id": "img_029",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "tilt_down",
-            "intensity": 0.24
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "24-YEAR REVIEW (64 STUDIES)",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "3. Excessive Perfectionism (ንፍጹምነት ምቅላስ)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 227.275,
-          "end_sec": 237.676,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "3. Excessive perfectionism: Do you trap yourself in endless work until exhaustion under the rule \"If everything I do isn't flawless, I am a failure\"?",
+          "variant": "subtitle",
+          "text": "When 64 scientific studies across 24 years were synthesized,",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 227.275,
-          "end_sec": 237.676,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s030",
-      "start_sec": 237.896,
-      "end_sec": 242.616,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+      "asset_id": "img_009",
+      "src": "assets/images/img_009.png",
+      "start_sec": 91.15,
+      "end_sec": 96.66,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "subtle_movement",
+        "intensity": 0.25
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_030.png",
-          "asset_id": "img_030",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "zoom_out",
-            "intensity": 0.3
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "PROACTIVE BEHAVIOR",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Perfectionism = Defensive Armor",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 238.716,
-          "end_sec": 242.216,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Striving for perfectionism does not stem from a love for your work.",
+          "variant": "subtitle",
+          "text": "people who believe in their ability—more than those with equal income—",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 238.716,
-          "end_sec": 242.216,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s031",
-      "start_sec": 242.616,
-      "end_sec": 243.946,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+      "asset_id": "img_009",
+      "src": "assets/images/img_009.png",
+      "start_sec": 96.66,
+      "end_sec": 102.03,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "zoom_in",
+        "intensity": 0.3
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_030.png",
-          "asset_id": "img_030",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_in",
-            "intensity": 0.25
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "BUDGET EXECUTION",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "እንታይ ዳኣ? (Defensive Motive)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 243.016,
-          "end_sec": 243.936,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "What is it instead?",
+          "variant": "subtitle",
+          "text": "were proven to successfully manage savings and expense budgets.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 243.016,
-          "end_sec": 243.936,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s032",
-      "start_sec": 243.946,
-      "end_sec": 252.897,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_010",
+      "src": "assets/images/img_010.png",
+      "start_sec": 101.43,
+      "end_sec": 104.72,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_diagonal",
+        "intensity": 0.35
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_030.png",
-          "asset_id": "img_030",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_right",
-            "intensity": 0.3
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "LONG-TERM IMPACT",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ናይ ብረት ድፋዕ (Shield Against Rejection)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 243.956,
-          "end_sec": 252.177,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "It is a protective shield your brain constructs out of fear that people will see your flaws and reject you.",
+          "variant": "subtitle",
+          "text": "Does this belief really change people income?",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 243.956,
-          "end_sec": 252.177,
-          "variant": "subtitle"
+          "animation": "fade_in"
+        },
+        {
+          "type": "graphic",
+          "graphic": "lower_third",
+          "title": "GERMAN LONGITUDINAL STUDY",
+          "subtitle": "Abele & Spurk (2009) | N=734",
+          "placement": "top_left"
         }
       ]
     },
     {
       "id": "s033",
-      "start_sec": 252.297,
-      "end_sec": 261.847,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+      "asset_id": "img_010",
+      "src": "assets/images/img_010.png",
+      "start_sec": 104.72,
+      "end_sec": 110.12,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_in",
+        "intensity": 0.2
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_031.png",
-          "asset_id": "img_031",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "slow_zoom_out",
-            "intensity": 0.2
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "GERMAN LONGITUDINAL STUDY",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "4. Safety Behaviors (ናይ ምሕባእ ባህሪ)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 253.017,
-          "end_sec": 261.417,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "4. Safety behaviors and social avoidance: Do you hide from social gatherings out of fear that people will criticize you?",
+          "variant": "subtitle",
+          "text": "To answer this question, a 7-year study was conducted in Germany.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 253.017,
-          "end_sec": 261.417,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s034",
-      "start_sec": 261.847,
-      "end_sec": 265.888,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+      "asset_id": "img_010",
+      "src": "assets/images/img_010.png",
+      "start_sec": 110.12,
+      "end_sec": 113.41,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_out",
+        "intensity": 0.25
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_031.png",
-          "asset_id": "img_031",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_left",
-            "intensity": 0.28
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "734 PROFESSIONALS TRACKED",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Short-Term Relief ➔ Long-Term Isolation",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 262.278,
-          "end_sec": 265.418,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "When you hide from people, it feels like temporary relief.",
+          "variant": "subtitle",
+          "text": "Researchers closely tracked 734 university-educated professionals",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 262.278,
-          "end_sec": 265.418,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s035",
-      "start_sec": 265.888,
-      "end_sec": 280.309,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_010",
+      "src": "assets/images/img_010.png",
+      "start_sec": 113.41,
+      "end_sec": 117.51,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_right",
+        "intensity": 0.3
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_031.png",
-          "asset_id": "img_031",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "subtle_movement",
-            "intensity": 0.22
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "CAREER ENTRY BASELINE",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Self-Fulfilling Prophecy (ምራሓቕ)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 266.358,
-          "end_sec": 279.499,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "But in reality, hiding makes you feel isolated, reinforcing the negative image that says \"See, nobody wants you,\" creating the very isolation and distance you feared.",
+          "variant": "subtitle",
+          "text": "from the very start of their careers.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 266.358,
-          "end_sec": 279.499,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s036",
-      "start_sec": 279.709,
-      "end_sec": 292.11,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "none",
-        "duration_sec": 0
+      "asset_id": "img_011",
+      "src": "assets/images/img_011.png",
+      "start_sec": 116.91,
+      "end_sec": 122.0,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_left",
+        "intensity": 0.35
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_032.png",
-          "asset_id": "img_032",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "tilt_up",
-            "intensity": 0.25
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "7-YEAR SALARY GROWTH",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "5. Rumination (ምድግጋም ሓሳባት)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 280.519,
-          "end_sec": 291.679,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "5. Rumination: Before falling asleep, do you replay minor mistakes you made yesterday or awkward moments in front of people over and over in your head?",
+          "variant": "subtitle",
+          "text": "When their belief in their professional capability was measured at entry,",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 280.519,
-          "end_sec": 291.679,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s037",
-      "start_sec": 292.11,
-      "end_sec": 302.47,
-      "transition_in": {
-        "type": "none",
-        "duration_sec": 0
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_011",
+      "src": "assets/images/img_011.png",
+      "start_sec": 122.0,
+      "end_sec": 127.3,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "tilt_up",
+        "intensity": 0.2
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_032.png",
-          "asset_id": "img_032",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "pan_diagonal",
-            "intensity": 0.32
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "JOB STATUS ADVANCEMENT",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "Rumination = Endless Re-Activation of Shame",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 292.54,
-          "end_sec": 301.8,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "This constant rumination continuously fuels our internal negative beliefs, keeping feelings of anxiety and embarrassment alive within us.",
+          "variant": "subtitle",
+          "text": "3 and 7 years later, those with high capability beliefs—",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 292.54,
-          "end_sec": 301.8,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s038",
-      "start_sec": 301.87,
-      "end_sec": 306.41,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_011",
+      "src": "assets/images/img_011.png",
+      "start_sec": 127.3,
+      "end_sec": 130.8,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "subtle_movement",
+        "intensity": 0.25
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_015.png",
-          "asset_id": "img_015",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "zoom_in",
-            "intensity": 0.27
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "CONTROLLED COHORT",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ሓቃዊ ማንነት (Your True Identity)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 302.54,
-          "end_sec": 305.96,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "The image you hold of yourself is not your true identity.",
+          "variant": "subtitle",
+          "text": "even with identical academic performance and profession—",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 302.54,
-          "end_sec": 305.96,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s039",
-      "start_sec": 305.81,
-      "end_sec": 310.801,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
+      "asset_id": "img_011",
+      "src": "assets/images/img_011.png",
+      "start_sec": 130.8,
+      "end_sec": 135.64,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "zoom_in",
+        "intensity": 0.3
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_022.png",
-          "asset_id": "img_022",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "tilt_down",
-            "intensity": 0.24
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "INCOME TRAJECTORY",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "ናይ ትማሊ ፍርሃት (Conditioned Illusion)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 306.26,
-          "end_sec": 310.361,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "It is merely a mental picture shaped by yesterday's fears and other people's criticisms.",
+          "variant": "subtitle",
+          "text": "achieved significantly higher salaries and career growth.",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 306.26,
-          "end_sec": 310.361,
-          "variant": "subtitle"
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "s040",
-      "start_sec": 310.201,
-      "end_sec": 320.841,
-      "transition_in": {
-        "type": "cross_dissolve",
-        "duration_sec": 0.6
-      },
-      "transition_out": {
-        "type": "fade_to_black",
-        "duration_sec": 1
+      "asset_id": "img_012",
+      "src": "assets/images/img_012.png",
+      "start_sec": 135.04,
+      "end_sec": 140.97,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_diagonal",
+        "intensity": 0.35
       },
       "layers": [
         {
-          "type": "image",
-          "src": "assets/images/img_017.png",
-          "asset_id": "img_017",
-          "fit": "cover",
-          "overlay": "dark_gradient",
-          "motion": {
-            "type": "zoom_out",
-            "intensity": 0.3
-          }
+          "type": "text",
+          "variant": "title",
+          "text": "PSYCHOLOGICAL ENGINE",
+          "placement": "top_center",
+          "animation": "fade_up"
         },
         {
           "type": "text",
-          "text": "እቲ ናይ ሓቂ መንነትካ (Who You Truly Are)",
-          "placement": "center",
-          "animation": {
-            "type": "fade_up"
-          },
-          "start_sec": 310.641,
-          "end_sec": 320.841,
-          "variant": "title"
-        },
-        {
-          "type": "text",
-          "text": "Now, when you look at yourself in the mirror or doubt your worth, remember this: \"Perhaps... the way you see yourself is not who you truly are.\"",
+          "variant": "subtitle",
+          "text": "Why does this belief create such a large difference in income?",
           "placement": "bottom_center",
-          "animation": {
-            "type": "fade_in"
-          },
-          "start_sec": 310.641,
-          "end_sec": 320.841,
-          "variant": "subtitle"
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s041",
+      "asset_id": "img_012",
+      "src": "assets/images/img_012.png",
+      "start_sec": 140.97,
+      "end_sec": 143.3,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_in",
+        "intensity": 0.2
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "PERSISTENCE MECHANISM",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Because when you believe in your capability,",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s042",
+      "asset_id": "img_012",
+      "src": "assets/images/img_012.png",
+      "start_sec": 143.3,
+      "end_sec": 147.54,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_out",
+        "intensity": 0.25
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "WORKPLACE RESILIENCE",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "you do not easily give up in the face of workplace obstacles.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s043",
+      "asset_id": "img_012",
+      "src": "assets/images/img_012.png",
+      "start_sec": 147.54,
+      "end_sec": 149.66,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_right",
+        "intensity": 0.3
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "FAIR COMPENSATION",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "It helps you ask for the true value of your work,",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s044",
+      "asset_id": "img_012",
+      "src": "assets/images/img_012.png",
+      "start_sec": 149.66,
+      "end_sec": 151.46,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_left",
+        "intensity": 0.35
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "CAREER OPPORTUNITIES",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "dare to pursue new opportunities,",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s045",
+      "asset_id": "img_012",
+      "src": "assets/images/img_012.png",
+      "start_sec": 151.46,
+      "end_sec": 155.56,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "tilt_up",
+        "intensity": 0.2
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "COURAGE & AGENCY",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "and overcome challenges with courage.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s046",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 154.96,
+      "end_sec": 159.09,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "subtle_movement",
+        "intensity": 0.25
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "CRITICAL BOUNDARY",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "However, we must understand one crucial and fundamental truth.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        },
+        {
+          "type": "graphic",
+          "graphic": "lower_third",
+          "title": "SCARCITY & COGNITIVE LOAD",
+          "subtitle": "Science (Mani et al., 2013)",
+          "placement": "top_left"
+        }
+      ]
+    },
+    {
+      "id": "s047",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 159.09,
+      "end_sec": 163.12,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "zoom_in",
+        "intensity": 0.3
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "REALISTIC PERSPECTIVE",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Changing your mindset alone will not magically make you rich;",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s048",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 163.12,
+      "end_sec": 166.41,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_diagonal",
+        "intensity": 0.35
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "STRUCTURAL REALITY",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "nor is poverty caused by a bad mindset.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s049",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 166.41,
+      "end_sec": 166.62,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_in",
+        "intensity": 0.2
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "EPIDEMIOLOGICAL STUDY",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "In",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s050",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 166.62,
+      "end_sec": 167.36,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_out",
+        "intensity": 0.25
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "SCIENCE JOURNAL (2013)",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Science",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s051",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 167.36,
+      "end_sec": 170.12,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_right",
+        "intensity": 0.3
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "SCARCITY & COGNITIVE LOAD",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "journal, a published study proved that",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s052",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 170.12,
+      "end_sec": 173.72,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_left",
+        "intensity": 0.35
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "FINANCIAL STRAIN",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "financial hardship causes so much mental stress",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s053",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 173.72,
+      "end_sec": 177.96,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "tilt_up",
+        "intensity": 0.2
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "SLEEP LOSS EQUIVALENT",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "that it weakens our thinking just like staying awake all night—",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s054",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 177.96,
+      "end_sec": 181.78,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "subtle_movement",
+        "intensity": 0.25
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "COGNITIVE DRAIN (-13 IQ PTS)",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "reducing our cognitive capacity (IQ) by about 13 points.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s055",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 181.78,
+      "end_sec": 185.6,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "zoom_in",
+        "intensity": 0.3
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "MENTAL BANDWIDTH",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "Because financial strain puts our minds under severe pressure,",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s056",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 185.6,
+      "end_sec": 189.8,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_diagonal",
+        "intensity": 0.35
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "EXECUTIVE FUNCTION",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "making long-term planning extremely difficult.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s057",
+      "asset_id": "img_014",
+      "src": "assets/images/img_014.png",
+      "start_sec": 189.2,
+      "end_sec": 191.64,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_in",
+        "intensity": 0.2
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "REALITY SHIFT",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "This reveals the true reality:",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s058",
+      "asset_id": "img_014",
+      "src": "assets/images/img_014.png",
+      "start_sec": 191.64,
+      "end_sec": 194.82,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_out",
+        "intensity": 0.25
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "UNSEEN CHOICE",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "the hidden belief you hold about yourself",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s059",
+      "asset_id": "img_014",
+      "src": "assets/images/img_014.png",
+      "start_sec": 194.82,
+      "end_sec": 198.21,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_right",
+        "intensity": 0.3
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "DAILY DECISION ENGINE",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "will not magically change your bank account tomorrow.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s060",
+      "asset_id": "img_014",
+      "src": "assets/images/img_014.png",
+      "start_sec": 198.21,
+      "end_sec": 201.07,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_left",
+        "intensity": 0.35
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "OPPORTUNITY MATRIX",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "However, when opportunities do exist,",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s061",
+      "asset_id": "img_014",
+      "src": "assets/images/img_014.png",
+      "start_sec": 201.07,
+      "end_sec": 207.0,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "tilt_up",
+        "intensity": 0.2
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "MICRO-CHOICES",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "your perspective on your capability quietly guides the small decisions you make today.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s062",
+      "asset_id": "img_014",
+      "src": "assets/images/img_014.png",
+      "start_sec": 207.0,
+      "end_sec": 209.33,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "subtle_movement",
+        "intensity": 0.25
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "FUTURE TRAJECTORY",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "And it is these hidden decisions",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s063",
+      "asset_id": "img_014",
+      "src": "assets/images/img_014.png",
+      "start_sec": 209.33,
+      "end_sec": 213.22,
+      "transition": "cross_dissolve",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "zoom_in",
+        "intensity": 0.3
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "FINANCIAL DESTINY",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "that quietly write your future financial story.",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s064",
+      "asset_id": "img_015",
+      "src": "assets/images/img_015.png",
+      "start_sec": 212.62,
+      "end_sec": 219.08,
+      "transition": "none",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "pan_diagonal",
+        "intensity": 0.35
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "THE UNSEEN CEILING",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "So how do we break this invisible wall between our mind and reality?",
+          "placement": "bottom_center",
+          "animation": "fade_in"
+        }
+      ]
+    },
+    {
+      "id": "s065",
+      "asset_id": "img_015",
+      "src": "assets/images/img_015.png",
+      "start_sec": 219.08,
+      "end_sec": 224.67,
+      "transition": "fade_to_black",
+      "fit": "cover",
+      "overlay": "dark_gradient",
+      "motion": {
+        "type": "slow_zoom_in",
+        "intensity": 0.2
+      },
+      "layers": [
+        {
+          "type": "text",
+          "variant": "title",
+          "text": "SCIENCE-BACKED SOLUTIONS",
+          "placement": "top_center",
+          "animation": "fade_up"
+        },
+        {
+          "type": "text",
+          "variant": "subtitle",
+          "text": "We will explore the scientifically proven solution in our next episode...",
+          "placement": "bottom_center",
+          "animation": "fade_in"
         }
       ]
     },
     {
       "id": "clip_visualizer",
       "start_sec": 0,
-      "end_sec": 320.841,
+      "end_sec": 224.67,
       "layers": [
         {
           "type": "graphic",
