@@ -1,0 +1,210 @@
+import { VideoComposition, type VideoCompositionProps } from "./Composition";
+import type { EditPlan } from "./types/edit-plan";
+
+/** 10-second tour of the engine features added for illustrated edits. */
+export const capabilityPlan: EditPlan = {
+  version: "1.0",
+  video: {
+    id: "capability_reel",
+    width: 1920,
+    height: 1080,
+    fps: 30,
+    duration_sec: 10,
+  },
+  clips: [
+    {
+      id: "photo",
+      start_sec: 0,
+      end_sec: 2,
+      src: "assets/images/img_001.png",
+      fit: "cover",
+      overlay: "dark_gradient",
+      motion: { type: "slow_zoom_in", intensity: 0.8 },
+      transition_in: { type: "fade", duration_sec: 0.35 },
+      layers: [
+        {
+          type: "text",
+          variant: "title",
+          text: "FULL-FRAME PHOTO",
+          placement: "top_center",
+          animation: { type: "fade_up" },
+        },
+        {
+          type: "text",
+          variant: "subtitle",
+          text: "One picture. Slow zoom. Subtitle stays at the bottom.",
+          placement: "bottom_center",
+          animation: { type: "fade_in" },
+        },
+      ],
+    },
+    {
+      id: "parallax",
+      start_sec: 2,
+      end_sec: 4.4,
+      src: "assets/images/img_003.png",
+      fit: "cover",
+      camera: { type: "drift_right", intensity: 1.15 },
+      transition_in: { type: "fade", duration_sec: 0.3 },
+      media: [
+        {
+          zIndex: 1,
+          src: "assets/images/img_010.png",
+          placement: "center_left",
+          opacity: 0.82,
+          motion: { type: "float", parallaxFactor: 0.45 },
+        },
+        {
+          zIndex: 3,
+          src: "assets/images/img_008.png",
+          placement: "center_right",
+          opacity: 1,
+          motion: { type: "breathe", parallaxFactor: 1.65 },
+        },
+      ],
+      layers: [
+        {
+          type: "text",
+          variant: "title",
+          text: "PARALLAX STACK",
+          placement: "top_center",
+          animation: { type: "fade_up" },
+        },
+        {
+          type: "text",
+          variant: "subtitle",
+          text: "The front picture drifts farther than the one behind it.",
+          placement: "bottom_center",
+          animation: { type: "fade_in" },
+        },
+      ],
+    },
+    {
+      id: "entrances",
+      start_sec: 4.4,
+      end_sec: 7,
+      src: "assets/images/img_004.png",
+      fit: "cover",
+      transition_in: { type: "slide", duration_sec: 0.35 },
+      layers: [
+        {
+          type: "image",
+          src: "assets/images/img_012.png",
+          x: 28,
+          y: 58,
+          width: 28,
+          motion: { type: "slide_in", from: "left" },
+        },
+        {
+          type: "image",
+          src: "assets/images/img_013.png",
+          x: 72,
+          y: 56,
+          width: 26,
+          start_sec: 4.85,
+          motion: { type: "pop_in" },
+        },
+        {
+          type: "image_sequence",
+          frames: [
+            "assets/images/img_005.png",
+            "assets/images/img_006.png",
+            "assets/images/img_007.png",
+          ],
+          playback_fps: 4,
+          loop: true,
+          x: 50,
+          y: 40,
+          width: 18,
+          motion: { type: "float" },
+        },
+        {
+          type: "text",
+          variant: "title",
+          text: "SLIDE, POP, LOOP",
+          placement: "top_center",
+          animation: { type: "fade_up" },
+        },
+        {
+          type: "text",
+          variant: "subtitle",
+          text: "Pieces enter, then a short frame loop keeps moving.",
+          placement: "bottom_center",
+          animation: { type: "fade_in" },
+        },
+      ],
+    },
+    {
+      id: "data",
+      start_sec: 7,
+      end_sec: 10,
+      src: "assets/images/img_009.png",
+      fit: "cover",
+      overlay: "dark_gradient",
+      motion: { type: "slow_zoom_out", intensity: 0.5 },
+      transition_in: { type: "fade", duration_sec: 0.3 },
+      layers: [
+        {
+          type: "counter",
+          from: 0,
+          to: 64,
+          label: "studies",
+          placement: "center",
+        },
+        {
+          type: "vector",
+          shape: "underline",
+          placement: "center",
+          start_sec: 7,
+          end_sec: 7.7,
+        },
+        {
+          type: "vector",
+          shape: "line",
+          placement: "center",
+          start_sec: 7.7,
+          end_sec: 8.3,
+        },
+        {
+          type: "vector",
+          shape: "circle",
+          placement: "center",
+          start_sec: 8.3,
+          end_sec: 8.9,
+        },
+        {
+          type: "vector",
+          shape: "arrow",
+          placement: "center",
+          start_sec: 8.9,
+          end_sec: 9.45,
+        },
+        {
+          type: "vector",
+          shape: "bar",
+          placement: "center",
+          start_sec: 9.45,
+          end_sec: 10,
+        },
+        {
+          type: "text",
+          variant: "title",
+          text: "COUNTER AND DRAWING",
+          placement: "top_center",
+          animation: { type: "fade_up" },
+        },
+        {
+          type: "text",
+          variant: "subtitle",
+          text: "Underline, line, circle, arrow, then a bar.",
+          placement: "bottom_center",
+          animation: { type: "fade_in" },
+        },
+      ],
+    },
+  ],
+};
+
+export const CapabilityReel = ({ editPlan }: VideoCompositionProps) => {
+  return <VideoComposition editPlan={editPlan} />;
+};

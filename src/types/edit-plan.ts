@@ -11,9 +11,62 @@ import type {
   TransitionType,
 } from "./common";
 
+export type MotionFrom = "left" | "right" | "top" | "bottom";
+
 export type Motion = {
   type: MotionType;
   intensity?: number;
+  /** Edge a slide_in starts from. Defaults to bottom. */
+  from?: MotionFrom;
+  /**
+   * How much this layer follows the clip camera and its own move.
+   * 0.5 sits back, 1 matches the camera, 1.5 pushes forward.
+   */
+  parallaxFactor?: number;
+};
+
+export type MediaPlacement =
+  | "center"
+  | "center_left"
+  | "center_right"
+  | "top_center"
+  | "bottom_center";
+
+export type CameraType =
+  | "push_in"
+  | "pull_out"
+  | "drift_left"
+  | "drift_right"
+  | "rise"
+  | "settle";
+
+export type CameraMove = {
+  type: CameraType;
+  intensity?: number;
+};
+
+/** One transparent picture in a stacked shot. Omit placement to fill the frame. */
+export type MediaLayer = ImagePlacement & {
+  zIndex: number;
+  src: string;
+  placement?: MediaPlacement;
+  opacity?: number;
+  fit?: ImageFit;
+  motion?: Motion;
+  id?: LayerId;
+  start_sec?: Seconds;
+  end_sec?: Seconds;
+};
+
+/**
+ * Position of an illustrated piece inside the frame.
+ * Percents are 0–100. Omit all of them to fill the frame like a photograph.
+ */
+export type ImagePlacement = {
+  x?: number;
+  y?: number;
+  width?: number;
+  height?: number;
 };
 
 export type TextAnimation = {
@@ -42,18 +95,54 @@ export type LayerTiming = {
   placement?: LayerPlacement;
 };
 
-export type ImageLayer = LayerTiming & {
-  type: "image";
-  asset_id?: AssetId;
-  src?: string;
-  fit?: ImageFit;
-  motion?: Motion;
-  overlay?: ImageOverlay;
-};
+export type ImageLayer = LayerTiming &
+  ImagePlacement & {
+    type: "image";
+    asset_id?: AssetId;
+    src?: string;
+    fit?: ImageFit;
+    motion?: Motion;
+    overlay?: ImageOverlay;
+  };
+
+export type ImageSequenceLayer = LayerTiming &
+  ImagePlacement & {
+    type: "image_sequence";
+    /** Public paths, played in order. A short loop such as a blink. */
+    frames: string[];
+    playback_fps?: number;
+    loop?: boolean;
+    fit?: ImageFit;
+    motion?: Motion;
+  };
 
 export type VideoLayer = LayerTiming & {
   type: "video";
   asset_id: AssetId;
+};
+
+export type MediaLayerItem = LayerTiming &
+  MediaLayer & {
+    type: "media";
+  };
+
+export type CounterLayer = LayerTiming & {
+  type: "counter";
+  from: number;
+  to: number;
+  prefix?: string;
+  suffix?: string;
+  decimals?: number;
+  label?: string;
+};
+
+export type VectorShape = "line" | "circle" | "arrow" | "bar" | "underline";
+
+export type VectorLayer = LayerTiming & {
+  type: "vector";
+  shape: VectorShape;
+  color?: string;
+  strokeWidth?: number;
 };
 
 export type TextLayer = LayerTiming & {
@@ -186,6 +275,10 @@ export type TransitionLayer = LayerTiming & {
 
 export type Layer =
   | ImageLayer
+  | ImageSequenceLayer
+  | MediaLayerItem
+  | CounterLayer
+  | VectorLayer
   | VideoLayer
   | TextLayer
   | TitleLayer
@@ -204,6 +297,19 @@ export type Clip = {
   layers: Layer[];
   transition_in?: Transition;
   transition_out?: Transition;
+  /**
+   * Background photo for the whole clip. Plans store this on the clip
+   * instead of as a layer with type "image".
+   */
+  asset_id?: AssetId;
+  src?: string;
+  fit?: ImageFit;
+  overlay?: ImageOverlay;
+  motion?: Motion;
+  /** Shared move. Each picture follows it by its own parallaxFactor. */
+  camera?: CameraMove;
+  /** Extra pictures stacked by zIndex. The clip src remains the back plate. */
+  media?: MediaLayer[];
 };
 
 export type VideoSettings = {

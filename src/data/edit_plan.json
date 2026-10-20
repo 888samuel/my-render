@@ -17,7 +17,7 @@
       "asset_id": "img_001",
       "src": "assets/images/img_001.png",
       "start_sec": 0.0,
-      "end_sec": 2.54,
+      "end_sec": 10.52,
       "transition": "fade_in_from_black",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -28,15 +28,8 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "COMPENSATION HESITATION",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "When your monthly salary arrives in your hands,",
+          "text": "When your monthly salary arrives in your hands, or when you set a value for your labor, there is a quiet voice of doubt inside you.",
           "placement": "bottom_center",
           "animation": "fade_in"
         },
@@ -51,10 +44,10 @@
     },
     {
       "id": "s002",
-      "asset_id": "img_001",
-      "src": "assets/images/img_001.png",
-      "start_sec": 2.54,
-      "end_sec": 6.11,
+      "asset_id": "img_002",
+      "src": "assets/images/img_002.png",
+      "start_sec": 9.92,
+      "end_sec": 16.22,
       "transition": "cross_dissolve",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -65,15 +58,8 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "WORKPLACE VALUE",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "or when you set a value for your labor,",
+          "text": "With a subtle feeling that whispers \"I do not deserve this\", how many opportunities have you passed up?",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
@@ -81,11 +67,11 @@
     },
     {
       "id": "s003",
-      "asset_id": "img_002",
-      "src": "assets/images/img_002.png",
-      "start_sec": 5.51,
-      "end_sec": 9.22,
-      "transition": "none",
+      "asset_id": "img_003",
+      "src": "assets/images/img_003.png",
+      "start_sec": 15.62,
+      "end_sec": 26.02,
+      "transition": "cross_dissolve",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -95,15 +81,8 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "INTERNAL DOUBT",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "there is a quiet voice of doubt inside you.",
+          "text": "The surprising thing is: what secretly controls our opportunities and expenses is not just a lack of money, but what if it is the hidden belief we carry about ourselves?",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
@@ -111,10 +90,10 @@
     },
     {
       "id": "s004",
-      "asset_id": "img_002",
-      "src": "assets/images/img_002.png",
-      "start_sec": 9.22,
-      "end_sec": 12.08,
+      "asset_id": "img_004",
+      "src": "assets/images/img_004.png",
+      "start_sec": 25.42,
+      "end_sec": 28.6,
       "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -123,193 +102,6 @@
         "intensity": 0.35
       },
       "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "UNDESERVED FEELING",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "With a subtle feeling that whispers \"I do not deserve this\",",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s005",
-      "asset_id": "img_002",
-      "src": "assets/images/img_002.png",
-      "start_sec": 12.08,
-      "end_sec": 15.75,
-      "transition": "cross_dissolve",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "tilt_up",
-        "intensity": 0.2
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "MISSED OPPORTUNITIES",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "how many opportunities have you passed up?",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s006",
-      "asset_id": "img_003",
-      "src": "assets/images/img_003.png",
-      "start_sec": 15.15,
-      "end_sec": 16.32,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "subtle_movement",
-        "intensity": 0.25
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "THE UNSEEN CEILING",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "The surprising thing is:",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s007",
-      "asset_id": "img_003",
-      "src": "assets/images/img_003.png",
-      "start_sec": 16.32,
-      "end_sec": 19.92,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "zoom_in",
-        "intensity": 0.3
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "HIDDEN DRIVER",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "what secretly controls our opportunities and expenses",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s008",
-      "asset_id": "img_003",
-      "src": "assets/images/img_003.png",
-      "start_sec": 19.92,
-      "end_sec": 22.36,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_diagonal",
-        "intensity": 0.35
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "BEYOND CASH FLOW",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "is not just a lack of money, but",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s009",
-      "asset_id": "img_003",
-      "src": "assets/images/img_003.png",
-      "start_sec": 22.36,
-      "end_sec": 26.99,
-      "transition": "cross_dissolve",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "slow_zoom_in",
-        "intensity": 0.2
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "CAPABILITY BELIEF",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "what if it is the hidden belief we carry about ourselves?",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s010",
-      "asset_id": "img_004",
-      "src": "assets/images/img_004.png",
-      "start_sec": 26.39,
-      "end_sec": 29.78,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "slow_zoom_out",
-        "intensity": 0.25
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "AVOIDANCE PATTERN",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
         {
           "type": "text",
           "variant": "subtitle",
@@ -320,71 +112,11 @@
       ]
     },
     {
-      "id": "s011",
+      "id": "s005",
       "asset_id": "img_004",
       "src": "assets/images/img_004.png",
-      "start_sec": 29.78,
-      "end_sec": 32.43,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_right",
-        "intensity": 0.3
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "MONEY MANAGEMENT",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "How you should manage your money,",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s012",
-      "asset_id": "img_004",
-      "src": "assets/images/img_004.png",
-      "start_sec": 32.43,
-      "end_sec": 37.94,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_left",
-        "intensity": 0.35
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "BUDGETING KNOWLEDGE",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "you know well that you should save or make a budget.",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s013",
-      "asset_id": "img_004",
-      "src": "assets/images/img_004.png",
-      "start_sec": 37.94,
-      "end_sec": 40.38,
+      "start_sec": 28.6,
+      "end_sec": 36.18,
       "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -395,26 +127,19 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "MOMENT OF DECISION",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "Yet, at the exact moment of decision,",
+          "text": "How you should manage your money, you know well that you should save or make a budget.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s014",
+      "id": "s006",
       "asset_id": "img_004",
       "src": "assets/images/img_004.png",
-      "start_sec": 40.38,
-      "end_sec": 43.84,
+      "start_sec": 36.18,
+      "end_sec": 42.54,
       "transition": "cross_dissolve",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -425,27 +150,20 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "INVISIBLE BARRIER",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "an invisible doubt pulls you back.",
+          "text": "Yet, at the exact moment of decision, an invisible doubt pulls you back.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s015",
+      "id": "s007",
       "asset_id": "img_005",
       "src": "assets/images/img_005.png",
-      "start_sec": 43.24,
-      "end_sec": 46.42,
-      "transition": "none",
+      "start_sec": 41.94,
+      "end_sec": 52.47,
+      "transition": "cross_dissolve",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -455,27 +173,20 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "SALARY NEGOTIATION",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "When you think about asking for a salary raise,",
+          "text": "When you think about asking for a salary raise, or when asking for the true value your work deserves, the voice inside you says, \"You are not there yet.\"",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s016",
-      "asset_id": "img_005",
-      "src": "assets/images/img_005.png",
-      "start_sec": 46.42,
-      "end_sec": 49.92,
-      "transition": "none",
+      "id": "s008",
+      "asset_id": "img_006",
+      "src": "assets/images/img_006.png",
+      "start_sec": 51.87,
+      "end_sec": 64.01,
+      "transition": "cross_dissolve",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -485,27 +196,20 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "TRUE LABOR VALUE",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "or when asking for the true value your work deserves,",
+          "text": "And because of this wall of doubt, we often stay away from long-term financial plans; and instead of moving toward saving, we are drawn toward emergency loans.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s017",
-      "asset_id": "img_005",
-      "src": "assets/images/img_005.png",
-      "start_sec": 49.92,
-      "end_sec": 54.34,
-      "transition": "cross_dissolve",
+      "id": "s009",
+      "asset_id": "img_007",
+      "src": "assets/images/img_007.png",
+      "start_sec": 63.41,
+      "end_sec": 71.75,
+      "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -515,165 +219,8 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "SELF-LIMITING BELIEF",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "the voice inside you says, \"You are not there yet.\"",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s018",
-      "asset_id": "img_006",
-      "src": "assets/images/img_006.png",
-      "start_sec": 53.74,
-      "end_sec": 56.6,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "slow_zoom_out",
-        "intensity": 0.25
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "WALL OF DOUBT",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "And because of this wall of doubt,",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s019",
-      "asset_id": "img_006",
-      "src": "assets/images/img_006.png",
-      "start_sec": 56.6,
-      "end_sec": 60.31,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_right",
-        "intensity": 0.3
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "SHORT-TERM BIAS",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "we often stay away from long-term financial plans;",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s020",
-      "asset_id": "img_006",
-      "src": "assets/images/img_006.png",
-      "start_sec": 60.31,
-      "end_sec": 62.75,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_left",
-        "intensity": 0.35
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "SAVINGS HESITATION",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "and instead of moving toward saving,",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s021",
-      "asset_id": "img_006",
-      "src": "assets/images/img_006.png",
-      "start_sec": 62.75,
-      "end_sec": 66.11,
-      "transition": "cross_dissolve",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "tilt_up",
-        "intensity": 0.2
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "HIGH-COST DEBT",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "we are drawn toward emergency loans.",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s022",
-      "asset_id": "img_007",
-      "src": "assets/images/img_007.png",
-      "start_sec": 65.51,
-      "end_sec": 68.37,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "subtle_movement",
-        "intensity": 0.25
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "RESEARCH PERSPECTIVE",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "Psychologists and financial researchers",
+          "text": "Psychologists and financial researchers have extensively studied the difference between \"knowing about money\" and \"believing in your ability.\"",
           "placement": "bottom_center",
           "animation": "fade_in"
         },
@@ -687,102 +234,12 @@
       ]
     },
     {
-      "id": "s023",
+      "id": "s010",
       "asset_id": "img_007",
       "src": "assets/images/img_007.png",
-      "start_sec": 68.37,
-      "end_sec": 74.83,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "zoom_in",
-        "intensity": 0.3
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "KNOWLEDGE VS ACTION",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "have studied the difference between knowing about money and believing in your ability.",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s024",
-      "asset_id": "img_007",
-      "src": "assets/images/img_007.png",
-      "start_sec": 74.83,
-      "end_sec": 77.9,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_diagonal",
-        "intensity": 0.35
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "FINANCIAL LITERACY",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "Simply knowing how to manage your money",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s025",
-      "asset_id": "img_007",
-      "src": "assets/images/img_007.png",
-      "start_sec": 77.9,
-      "end_sec": 81.36,
+      "start_sec": 71.75,
+      "end_sec": 77.81,
       "transition": "cross_dissolve",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "slow_zoom_in",
-        "intensity": 0.2
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "EXECUTION GAP",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "is not enough on its own to take action.",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s026",
-      "asset_id": "img_008",
-      "src": "assets/images/img_008.png",
-      "start_sec": 80.76,
-      "end_sec": 82.46,
-      "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -792,27 +249,20 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "FINANCIAL SELF-EFFICACY",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "Researchers call this belief",
+          "text": "Simply knowing how to manage your money is not enough on its own to take action.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s027",
+      "id": "s011",
       "asset_id": "img_008",
       "src": "assets/images/img_008.png",
-      "start_sec": 82.46,
-      "end_sec": 85.11,
-      "transition": "none",
+      "start_sec": 77.21,
+      "end_sec": 83.01,
+      "transition": "cross_dissolve",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -822,27 +272,27 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "CAPABILITY CONSTRUCT",
-          "placement": "top_center",
-          "animation": "fade_up"
+          "variant": "subtitle",
+          "text": "Researchers call this belief \"Financial Self-Efficacy.\"",
+          "placement": "bottom_center",
+          "animation": "fade_in"
         },
         {
           "type": "text",
-          "variant": "subtitle",
-          "text": "\"Financial Self-Efficacy.\"",
-          "placement": "bottom_center",
-          "animation": "fade_in"
+          "variant": "title",
+          "text": "FINANCIAL SELF-EFFICACY",
+          "placement": "top_center",
+          "animation": "fade_up"
         }
       ]
     },
     {
-      "id": "s028",
-      "asset_id": "img_008",
-      "src": "assets/images/img_008.png",
-      "start_sec": 85.11,
-      "end_sec": 85.64,
-      "transition": "none",
+      "id": "s012",
+      "asset_id": "img_009",
+      "src": "assets/images/img_009.png",
+      "start_sec": 82.41,
+      "end_sec": 97.11,
+      "transition": "cross_dissolve",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -852,27 +302,27 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "DYNAMIC SKILL",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "They term it.",
+          "text": "When 64 scientific studies across 24 years were synthesized, people who believe in their ability—more than those with equal income and education—were proven to successfully manage savings and expense budgets.",
           "placement": "bottom_center",
           "animation": "fade_in"
+        },
+        {
+          "type": "graphic",
+          "graphic": "lower_third",
+          "title": "24-YEAR META-ANALYSIS",
+          "subtitle": "64 Empirical Studies Synthesized",
+          "placement": "top_left"
         }
       ]
     },
     {
-      "id": "s029",
-      "asset_id": "img_008",
-      "src": "assets/images/img_008.png",
-      "start_sec": 85.64,
-      "end_sec": 91.75,
-      "transition": "cross_dissolve",
+      "id": "s013",
+      "asset_id": "img_010",
+      "src": "assets/images/img_010.png",
+      "start_sec": 96.51,
+      "end_sec": 100.21,
+      "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -882,26 +332,19 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "24-YEAR REVIEW (64 STUDIES)",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "When 64 scientific studies across 24 years were synthesized,",
+          "text": "Does this belief really change people's income?",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s030",
-      "asset_id": "img_009",
-      "src": "assets/images/img_009.png",
-      "start_sec": 91.15,
-      "end_sec": 96.66,
+      "id": "s014",
+      "asset_id": "img_010",
+      "src": "assets/images/img_010.png",
+      "start_sec": 100.21,
+      "end_sec": 104.99,
       "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -912,75 +355,8 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "PROACTIVE BEHAVIOR",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "people who believe in their ability—more than those with equal income—",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s031",
-      "asset_id": "img_009",
-      "src": "assets/images/img_009.png",
-      "start_sec": 96.66,
-      "end_sec": 102.03,
-      "transition": "cross_dissolve",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "zoom_in",
-        "intensity": 0.3
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "BUDGET EXECUTION",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "were proven to successfully manage savings and expense budgets.",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s032",
-      "asset_id": "img_010",
-      "src": "assets/images/img_010.png",
-      "start_sec": 101.43,
-      "end_sec": 104.72,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_diagonal",
-        "intensity": 0.35
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "LONG-TERM IMPACT",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "Does this belief really change people income?",
+          "text": "To answer this question, a 7-year study was conducted in Germany.",
           "placement": "bottom_center",
           "animation": "fade_in"
         },
@@ -994,191 +370,11 @@
       ]
     },
     {
-      "id": "s033",
+      "id": "s015",
       "asset_id": "img_010",
       "src": "assets/images/img_010.png",
-      "start_sec": 104.72,
-      "end_sec": 110.12,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "slow_zoom_in",
-        "intensity": 0.2
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "GERMAN LONGITUDINAL STUDY",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "To answer this question, a 7-year study was conducted in Germany.",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s034",
-      "asset_id": "img_010",
-      "src": "assets/images/img_010.png",
-      "start_sec": 110.12,
-      "end_sec": 113.41,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "slow_zoom_out",
-        "intensity": 0.25
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "734 PROFESSIONALS TRACKED",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "Researchers closely tracked 734 university-educated professionals",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s035",
-      "asset_id": "img_010",
-      "src": "assets/images/img_010.png",
-      "start_sec": 113.41,
-      "end_sec": 117.51,
-      "transition": "cross_dissolve",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_right",
-        "intensity": 0.3
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "CAREER ENTRY BASELINE",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "from the very start of their careers.",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s036",
-      "asset_id": "img_011",
-      "src": "assets/images/img_011.png",
-      "start_sec": 116.91,
-      "end_sec": 122.0,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_left",
-        "intensity": 0.35
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "7-YEAR SALARY GROWTH",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "When their belief in their professional capability was measured at entry,",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s037",
-      "asset_id": "img_011",
-      "src": "assets/images/img_011.png",
-      "start_sec": 122.0,
-      "end_sec": 127.3,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "tilt_up",
-        "intensity": 0.2
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "JOB STATUS ADVANCEMENT",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "3 and 7 years later, those with high capability beliefs—",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s038",
-      "asset_id": "img_011",
-      "src": "assets/images/img_011.png",
-      "start_sec": 127.3,
-      "end_sec": 130.8,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "subtle_movement",
-        "intensity": 0.25
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "CONTROLLED COHORT",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "even with identical academic performance and profession—",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s039",
-      "asset_id": "img_011",
-      "src": "assets/images/img_011.png",
-      "start_sec": 130.8,
-      "end_sec": 135.64,
+      "start_sec": 104.99,
+      "end_sec": 112.95,
       "transition": "cross_dissolve",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -1189,27 +385,20 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "INCOME TRAJECTORY",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "achieved significantly higher salaries and career growth.",
+          "text": "Researchers closely tracked 734 university-educated professionals from the very start of their careers.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s040",
-      "asset_id": "img_012",
-      "src": "assets/images/img_012.png",
-      "start_sec": 135.04,
-      "end_sec": 140.97,
-      "transition": "none",
+      "id": "s016",
+      "asset_id": "img_011",
+      "src": "assets/images/img_011.png",
+      "start_sec": 112.35,
+      "end_sec": 129.65,
+      "transition": "cross_dissolve",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -1219,26 +408,19 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "PSYCHOLOGICAL ENGINE",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "Why does this belief create such a large difference in income?",
+          "text": "When their belief in their professional capability was measured at entry, 3 and 7 years later, those with high capability beliefs—even with identical academic performance and profession—achieved significantly higher salaries and career growth.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s041",
+      "id": "s017",
       "asset_id": "img_012",
       "src": "assets/images/img_012.png",
-      "start_sec": 140.97,
-      "end_sec": 143.3,
+      "start_sec": 129.05,
+      "end_sec": 134.03,
       "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -1249,26 +431,19 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "PERSISTENCE MECHANISM",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "Because when you believe in your capability,",
+          "text": "Why does this belief create such a large difference in our income?",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s042",
+      "id": "s018",
       "asset_id": "img_012",
       "src": "assets/images/img_012.png",
-      "start_sec": 143.3,
-      "end_sec": 147.54,
+      "start_sec": 134.03,
+      "end_sec": 139.39,
       "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -1279,27 +454,20 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "WORKPLACE RESILIENCE",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "you do not easily give up in the face of workplace obstacles.",
+          "text": "Because when you believe in your capability, you do not easily give up in the face of workplace obstacles.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s043",
+      "id": "s019",
       "asset_id": "img_012",
       "src": "assets/images/img_012.png",
-      "start_sec": 147.54,
-      "end_sec": 149.66,
-      "transition": "none",
+      "start_sec": 139.39,
+      "end_sec": 146.91,
+      "transition": "cross_dissolve",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -1309,26 +477,19 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "FAIR COMPENSATION",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "It helps you ask for the true value of your work,",
+          "text": "It helps you ask for the true value of your work, dare to pursue new opportunities, and overcome challenges with courage.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s044",
-      "asset_id": "img_012",
-      "src": "assets/images/img_012.png",
-      "start_sec": 149.66,
-      "end_sec": 151.46,
+      "id": "s020",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 146.31,
+      "end_sec": 151.74,
       "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -1339,27 +500,20 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "CAREER OPPORTUNITIES",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "dare to pursue new opportunities,",
+          "text": "However, we must understand one crucial and fundamental truth.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s045",
-      "asset_id": "img_012",
-      "src": "assets/images/img_012.png",
-      "start_sec": 151.46,
-      "end_sec": 155.56,
-      "transition": "cross_dissolve",
+      "id": "s021",
+      "asset_id": "img_013",
+      "src": "assets/images/img_013.png",
+      "start_sec": 151.74,
+      "end_sec": 158.28,
+      "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -1369,26 +523,19 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "COURAGE & AGENCY",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "and overcome challenges with courage.",
+          "text": "Changing your mindset alone will not magically make you rich; nor is poverty caused by a bad mindset.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s046",
+      "id": "s022",
       "asset_id": "img_013",
       "src": "assets/images/img_013.png",
-      "start_sec": 154.96,
-      "end_sec": 159.09,
+      "start_sec": 158.28,
+      "end_sec": 172.02,
       "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -1399,15 +546,8 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "CRITICAL BOUNDARY",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "However, we must understand one crucial and fundamental truth.",
+          "text": "In Science journal, a published study proved that financial hardship causes so much mental stress that it weakens our thinking just like staying awake all night—reducing our cognitive capacity (IQ) by about 13 points.",
           "placement": "bottom_center",
           "animation": "fade_in"
         },
@@ -1417,256 +557,23 @@
           "title": "SCARCITY & COGNITIVE LOAD",
           "subtitle": "Science (Mani et al., 2013)",
           "placement": "top_left"
-        }
-      ]
-    },
-    {
-      "id": "s047",
-      "asset_id": "img_013",
-      "src": "assets/images/img_013.png",
-      "start_sec": 159.09,
-      "end_sec": 163.12,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "zoom_in",
-        "intensity": 0.3
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "REALISTIC PERSPECTIVE",
-          "placement": "top_center",
-          "animation": "fade_up"
         },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "Changing your mindset alone will not magically make you rich;",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s048",
-      "asset_id": "img_013",
-      "src": "assets/images/img_013.png",
-      "start_sec": 163.12,
-      "end_sec": 166.41,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_diagonal",
-        "intensity": 0.35
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "STRUCTURAL REALITY",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "nor is poverty caused by a bad mindset.",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s049",
-      "asset_id": "img_013",
-      "src": "assets/images/img_013.png",
-      "start_sec": 166.41,
-      "end_sec": 166.62,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "slow_zoom_in",
-        "intensity": 0.2
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "EPIDEMIOLOGICAL STUDY",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "In",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s050",
-      "asset_id": "img_013",
-      "src": "assets/images/img_013.png",
-      "start_sec": 166.62,
-      "end_sec": 167.36,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "slow_zoom_out",
-        "intensity": 0.25
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "SCIENCE JOURNAL (2013)",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "Science",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s051",
-      "asset_id": "img_013",
-      "src": "assets/images/img_013.png",
-      "start_sec": 167.36,
-      "end_sec": 170.12,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_right",
-        "intensity": 0.3
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "SCARCITY & COGNITIVE LOAD",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "journal, a published study proved that",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s052",
-      "asset_id": "img_013",
-      "src": "assets/images/img_013.png",
-      "start_sec": 170.12,
-      "end_sec": 173.72,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_left",
-        "intensity": 0.35
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "FINANCIAL STRAIN",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "financial hardship causes so much mental stress",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s053",
-      "asset_id": "img_013",
-      "src": "assets/images/img_013.png",
-      "start_sec": 173.72,
-      "end_sec": 177.96,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "tilt_up",
-        "intensity": 0.2
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "SLEEP LOSS EQUIVALENT",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "that it weakens our thinking just like staying awake all night—",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s054",
-      "asset_id": "img_013",
-      "src": "assets/images/img_013.png",
-      "start_sec": 177.96,
-      "end_sec": 181.78,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "subtle_movement",
-        "intensity": 0.25
-      },
-      "layers": [
         {
           "type": "text",
           "variant": "title",
           "text": "COGNITIVE DRAIN (-13 IQ PTS)",
           "placement": "top_center",
           "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "reducing our cognitive capacity (IQ) by about 13 points.",
-          "placement": "bottom_center",
-          "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s055",
+      "id": "s023",
       "asset_id": "img_013",
       "src": "assets/images/img_013.png",
-      "start_sec": 181.78,
-      "end_sec": 185.6,
-      "transition": "none",
+      "start_sec": 172.02,
+      "end_sec": 179.84,
+      "transition": "cross_dissolve",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -1676,27 +583,20 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "MENTAL BANDWIDTH",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "Because financial strain puts our minds under severe pressure,",
+          "text": "Because financial strain puts our minds under severe pressure, making long-term planning extremely difficult.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s056",
-      "asset_id": "img_013",
-      "src": "assets/images/img_013.png",
-      "start_sec": 185.6,
-      "end_sec": 189.8,
-      "transition": "cross_dissolve",
+      "id": "s024",
+      "asset_id": "img_014",
+      "src": "assets/images/img_014.png",
+      "start_sec": 179.24,
+      "end_sec": 186.92,
+      "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -1706,26 +606,19 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "EXECUTIVE FUNCTION",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "making long-term planning extremely difficult.",
+          "text": "This reveals the true reality: the hidden belief you hold about yourself will not magically change your bank account tomorrow.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s057",
+      "id": "s025",
       "asset_id": "img_014",
       "src": "assets/images/img_014.png",
-      "start_sec": 189.2,
-      "end_sec": 191.64,
+      "start_sec": 186.92,
+      "end_sec": 206.88,
       "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -1736,27 +629,20 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "REALITY SHIFT",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "This reveals the true reality:",
+          "text": "However, when opportunities do exist, your perspective on your capability quietly guides the small decisions you make today.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s058",
+      "id": "s026",
       "asset_id": "img_014",
       "src": "assets/images/img_014.png",
-      "start_sec": 191.64,
-      "end_sec": 194.82,
-      "transition": "none",
+      "start_sec": 206.88,
+      "end_sec": 213.48,
+      "transition": "cross_dissolve",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -1766,26 +652,19 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "UNSEEN CHOICE",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "the hidden belief you hold about yourself",
+          "text": "And it is these hidden decisions that quietly write your future financial story.",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s059",
-      "asset_id": "img_014",
-      "src": "assets/images/img_014.png",
-      "start_sec": 194.82,
-      "end_sec": 198.21,
+      "id": "s027",
+      "asset_id": "img_015",
+      "src": "assets/images/img_015.png",
+      "start_sec": 212.88,
+      "end_sec": 219.68,
       "transition": "none",
       "fit": "cover",
       "overlay": "dark_gradient",
@@ -1796,27 +675,20 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "DAILY DECISION ENGINE",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "will not magically change your bank account tomorrow.",
+          "text": "So how do we break this invisible wall between our mind and our financial reality?",
           "placement": "bottom_center",
           "animation": "fade_in"
         }
       ]
     },
     {
-      "id": "s060",
-      "asset_id": "img_014",
-      "src": "assets/images/img_014.png",
-      "start_sec": 198.21,
-      "end_sec": 201.07,
-      "transition": "none",
+      "id": "s028",
+      "asset_id": "img_015",
+      "src": "assets/images/img_015.png",
+      "start_sec": 219.68,
+      "end_sec": 224.67,
+      "transition": "fade_to_black",
       "fit": "cover",
       "overlay": "dark_gradient",
       "motion": {
@@ -1826,167 +698,17 @@
       "layers": [
         {
           "type": "text",
-          "variant": "title",
-          "text": "OPPORTUNITY MATRIX",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
           "variant": "subtitle",
-          "text": "However, when opportunities do exist,",
+          "text": "We will explore the scientifically proven solution in our next episode...",
           "placement": "bottom_center",
           "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s061",
-      "asset_id": "img_014",
-      "src": "assets/images/img_014.png",
-      "start_sec": 201.07,
-      "end_sec": 207.0,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "tilt_up",
-        "intensity": 0.2
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "MICRO-CHOICES",
-          "placement": "top_center",
-          "animation": "fade_up"
         },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "your perspective on your capability quietly guides the small decisions you make today.",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s062",
-      "asset_id": "img_014",
-      "src": "assets/images/img_014.png",
-      "start_sec": 207.0,
-      "end_sec": 209.33,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "subtle_movement",
-        "intensity": 0.25
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "FUTURE TRAJECTORY",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "And it is these hidden decisions",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s063",
-      "asset_id": "img_014",
-      "src": "assets/images/img_014.png",
-      "start_sec": 209.33,
-      "end_sec": 213.22,
-      "transition": "cross_dissolve",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "zoom_in",
-        "intensity": 0.3
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "FINANCIAL DESTINY",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "that quietly write your future financial story.",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s064",
-      "asset_id": "img_015",
-      "src": "assets/images/img_015.png",
-      "start_sec": 212.62,
-      "end_sec": 219.08,
-      "transition": "none",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "pan_diagonal",
-        "intensity": 0.35
-      },
-      "layers": [
-        {
-          "type": "text",
-          "variant": "title",
-          "text": "THE UNSEEN CEILING",
-          "placement": "top_center",
-          "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "So how do we break this invisible wall between our mind and reality?",
-          "placement": "bottom_center",
-          "animation": "fade_in"
-        }
-      ]
-    },
-    {
-      "id": "s065",
-      "asset_id": "img_015",
-      "src": "assets/images/img_015.png",
-      "start_sec": 219.08,
-      "end_sec": 224.67,
-      "transition": "fade_to_black",
-      "fit": "cover",
-      "overlay": "dark_gradient",
-      "motion": {
-        "type": "slow_zoom_in",
-        "intensity": 0.2
-      },
-      "layers": [
         {
           "type": "text",
           "variant": "title",
           "text": "SCIENCE-BACKED SOLUTIONS",
           "placement": "top_center",
           "animation": "fade_up"
-        },
-        {
-          "type": "text",
-          "variant": "subtitle",
-          "text": "We will explore the scientifically proven solution in our next episode...",
-          "placement": "bottom_center",
-          "animation": "fade_in"
         }
       ]
     },

@@ -5,6 +5,10 @@ import { Comparison } from "../components/graphics/Comparison";
 import { FlowDiagram } from "../components/graphics/FlowDiagram";
 import { HighlightText } from "../components/text/HighlightText";
 import { ImageAsset } from "../components/images/ImageAsset";
+import { ImageSequence } from "../components/images/ImageSequence";
+import { MediaLayerView } from "../components/images/MediaLayerView";
+import { DataCounter } from "../components/graphics/DataCounter";
+import { VectorDrawing } from "../components/graphics/VectorDrawing";
 import { List } from "../components/text/List";
 import { NumberedList } from "../components/graphics/NumberedList";
 import { Quote } from "../components/text/Quote";
@@ -17,6 +21,7 @@ import type { Layer, TextAnimation } from "../types/edit-plan";
 type LayerRendererProps = {
   layer: Layer;
   compositionFrameOffset: number;
+  durationInFrames: number;
 };
 
 const animOf = (layer: { animation?: TextAnimation | string }): TextAnimation =>
@@ -31,6 +36,7 @@ const titleOf = (layer: object): string => {
 export const LayerRenderer = ({
   layer,
   compositionFrameOffset,
+  durationInFrames,
 }: LayerRendererProps) => {
   switch (layer.type) {
     case "title":
@@ -129,7 +135,17 @@ export const LayerRenderer = ({
         />
       );
     case "image":
-      return <ImageAsset layer={layer} />;
+      return <ImageAsset layer={layer} durationInFrames={durationInFrames} />;
+    case "image_sequence":
+      return (
+        <ImageSequence layer={layer} durationInFrames={durationInFrames} />
+      );
+    case "media":
+      return <MediaLayerView layer={layer} durationInFrames={durationInFrames} />;
+    case "counter":
+      return <DataCounter layer={layer} durationInFrames={durationInFrames} />;
+    case "vector":
+      return <VectorDrawing layer={layer} durationInFrames={durationInFrames} />;
     case "graphic":
       return renderGraphic(layer, compositionFrameOffset);
     case "video":

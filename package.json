@@ -25,8 +25,15 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "render": "remotion render VideoComposition",
+    "compositions": "remotion compositions src/index.ts",
+    "render": "remotion render VideoComposition out/video.mp4",
+    "render:illustrated": "remotion render IllustratedScene out/illustrated.mp4",
     "render:low-ram": "remotion render VideoComposition out/youtube-low-ram.mp4 --concurrency=1 --disallow-parallel-encoding --jpeg-quality=80 --offthreadvideo-cache-size-in-bytes=268435456 --timeout=180000",
-    "still": "remotion still VideoComposition out/preview.png"
+    "render:illustrated:low-ram": "remotion render IllustratedScene out/illustrated-low-ram.mp4 --concurrency=1 --disallow-parallel-encoding --jpeg-quality=80 --offthreadvideo-cache-size-in-bytes=268435456 --timeout=180000",
+    "render:draft": "remotion render VideoComposition out/draft.mp4 --frames=0-149 --concurrency=1 --jpeg-quality=70",
+    "render:illustrated:draft": "remotion render IllustratedScene out/illustrated-draft.mp4 --frames=0-89 --concurrency=1 --jpeg-quality=70",
+    "still": "remotion still VideoComposition out/preview.png",
+    "still:illustrated": "remotion still IllustratedScene out/illustrated-preview.png --frame=40",
+    "render:capability": "remotion render CapabilityReel out/capability-10s.mp4"
   }
 }

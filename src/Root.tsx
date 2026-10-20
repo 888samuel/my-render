@@ -2,6 +2,8 @@ import "./index.css";
 import { Composition } from "remotion";
 import type { CalculateMetadataFunction } from "remotion";
 import { VideoComposition } from "./Composition";
+import { CapabilityReel, capabilityPlan } from "./CapabilityReel";
+import { IllustratedScene } from "./IllustratedScene";
 import { getVideoDurationSeconds } from "./engine/Timeline";
 import { secondsToFrames } from "./utils/time";
 import type { EditPlan } from "./types/edit-plan";
@@ -25,15 +27,35 @@ const calculateMetadata: CalculateMetadataFunction<{
 
 export const RemotionRoot = () => {
   return (
-    <Composition
-      id="VideoComposition"
-      component={VideoComposition}
-      durationInFrames={150}
-      fps={30}
-      width={1920}
-      height={1080}
-      defaultProps={{ editPlan }}
-      calculateMetadata={calculateMetadata}
-    />
+    <>
+      <Composition
+        id="VideoComposition"
+        component={VideoComposition}
+        durationInFrames={150}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ editPlan }}
+        calculateMetadata={calculateMetadata}
+      />
+      <Composition
+        id="IllustratedScene"
+        component={IllustratedScene}
+        durationInFrames={180}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="CapabilityReel"
+        component={CapabilityReel}
+        durationInFrames={300}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ editPlan: capabilityPlan }}
+        calculateMetadata={calculateMetadata}
+      />
+    </>
   );
 };

@@ -24,6 +24,10 @@ export const CAPABILITIES = {
       "tilt_up",
       "tilt_down",
       "subtle_movement",
+      "breathe",
+      "float",
+      "pop_in",
+      "slide_in",
     ],
     textAnimation: [
       "none",
@@ -53,6 +57,10 @@ export const CAPABILITIES = {
     ],
     layers: [
       "image",
+      "image_sequence",
+      "media",
+      "counter",
+      "vector",
       "text",
       "title",
       "quote",
@@ -68,6 +76,8 @@ export const CAPABILITIES = {
     notes: [
       "Keep concurrency=1 on Actions.",
       "Prefer 1 image + 1–2 text overlays per beat.",
+      "Illustrated shots: a full-frame background plus small placed layers using breathe, float, pop_in, or slide_in.",
+      "Stack transparent pictures in clip.media with zIndex, opacity, and parallaxFactor. Add camera for a shared 2.5D move.",
       "Cross-dissolve needs overlapping clips (~0.5–0.6s).",
       "Avoid heavy blur/particle stacks on free runners.",
     ],

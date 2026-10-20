@@ -40,7 +40,11 @@ export type MotionType =
   | "pan_diagonal"
   | "tilt_up"
   | "tilt_down"
-  | "subtle_movement";
+  | "subtle_movement"
+  | "breathe"
+  | "float"
+  | "pop_in"
+  | "slide_in";
 
 export type TextAnimationType =
   | "none"
@@ -88,6 +92,10 @@ export type GraphicKind =
 
 export type LayerType =
   | "image"
+  | "image_sequence"
+  | "media"
+  | "counter"
+  | "vector"
   | "video"
   | "text"
   | "title"
