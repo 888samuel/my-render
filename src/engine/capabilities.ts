@@ -24,6 +24,7 @@ export const CAPABILITIES = {
       "tilt_up",
       "tilt_down",
       "subtle_movement",
+      "drift",
       "breathe",
       "float",
       "pop_in",

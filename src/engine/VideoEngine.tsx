@@ -25,8 +25,13 @@ export const VideoEngine = ({ editPlan }: VideoEngineProps) => {
         }}
       >
         <EthiopicFont />
-        {editPlan.clips.map((clip) => (
-          <ClipRenderer key={clip.id} clip={clip} fps={editPlan.video.fps} />
+        {editPlan.clips.map((clip, index) => (
+          <ClipRenderer
+            key={clip.id}
+            clip={clip}
+            nextClip={editPlan.clips[index + 1]}
+            fps={editPlan.video.fps}
+          />
         ))}
         {editPlan.audio ? <VoiceOver audio={editPlan.audio} fps={editPlan.video.fps} /> : null}
       </AbsoluteFill>

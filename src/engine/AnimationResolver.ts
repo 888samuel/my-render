@@ -127,6 +127,17 @@ export function resolveMotion(type: MotionType, from?: MotionFrom): MotionCurve 
         translateYFrom: 0.8,
         translateYTo: -1.6,
       });
+    case "drift":
+      return linear({
+        scaleFrom: 1.06,
+        scaleTo: 1.1,
+        translateXFrom: -2.4,
+        translateXTo: 2.4,
+        translateYFrom: 1.1,
+        translateYTo: -1.1,
+      });
+    default:
+      return STATIC_MOTION;
     case "breathe":
       return {
         behavior: "breathe",
@@ -193,8 +204,8 @@ export function applyMotionIntensity(
   curve: MotionCurve,
   intensity: number | undefined,
 ): MotionCurve {
-  if (intensity === undefined) {
-    return curve;
+  if (!curve || intensity === undefined) {
+    return curve ?? STATIC_MOTION;
   }
 
   if (intensity <= 0) {

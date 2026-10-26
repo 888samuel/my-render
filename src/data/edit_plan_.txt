@@ -1,0 +1,5427 @@
+{
+  "version": "1.0",
+  "video": {
+    "id": "divine_deliverance_remotion",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "duration_sec": 920.516
+  },
+  "audio": {
+    "src": "assets/audio/srgut1.mp3",
+    "start_sec": 0
+  },
+  "clips": [
+    {
+      "id": "s001",
+      "start_sec": 0.6,
+      "end_sec": 5.48,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_001_sunrise_canaan",
+          "src": "assets/images/img_001_sunrise_canaan.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "ካብ ግብ ናብ ክብ",
+          "variant": "title",
+          "start_sec": 0.6,
+          "end_sec": 5.48,
+          "placement": "center",
+          "animation": {
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "From the Pit to Glory. Peace be upon you, children of God. How have you been?",
+          "variant": "subtitle",
+          "start_sec": 0.6,
+          "end_sec": 5.48,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "chapter_card",
+          "eyebrow": "",
+          "title": "ካብ ግብ ናብ ክብ",
+          "subtitle": "",
+          "start_sec": 0.6,
+          "end_sec": 4.6,
+          "animation": {
+            "type": "scale_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "fade_in_from_black",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s002",
+      "start_sec": 5.9,
+      "end_sec": 7.9,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_001_sunrise_canaan",
+          "src": "assets/images/img_001_sunrise_canaan.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "May the peace of God overflow in your hearts.",
+          "variant": "subtitle",
+          "start_sec": 5.9,
+          "end_sec": 7.9,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s003",
+      "start_sec": 8.74,
+      "end_sec": 53.681,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_001_sunrise_canaan",
+          "src": "assets/images/img_001_sunrise_canaan.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "ኢሳ 55:8-9 “ሓሳባተይ ሓሳባትኩም ኣይኰነን፡ መገድታትኩም ከኣ መገድታተይ ኣይኰነን፡ ይብል እግዚኣብሄር ከምቲ ሰማይ ካብ ምድሪ ልዕል ዚብል፡ መገድታተይ ካብ መገድታትኩም፡ ሓሳባተይ ከኣ ካብ ሓሳባትኩም ልዕል ዝበለ እዩ።”",
+          "variant": "title",
+          "start_sec": 8.74,
+          "end_sec": 53.681,
+          "placement": "center",
+          "animation": {
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Many times, when a wall stands before us or a chasm is stretched out in front of us, we think it is impassable and uncrossable. We feel that God has abandoned us, that nothing can change or be fixed anymore, and that we have reached the final moment of our existence. But God, who says in Isaiah 55:8-9, \"'For my thoughts are not your thoughts, neither are your ways my ways,' declares the LORD. 'As the heavens are higher than the earth, so are my ways higher than your ways and my thoughts than your thoughts,'\" is calling us to trust Him, that by His own plan and design He will cross us over from the deepest darkness into glorious light.",
+          "variant": "subtitle",
+          "start_sec": 8.74,
+          "end_sec": 53.681,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s004",
+      "start_sec": 54.241,
+      "end_sec": 65.081,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_001_sunrise_canaan",
+          "src": "assets/images/img_001_sunrise_canaan.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Now, we will look at people in the Bible who waited in faith, and whom God, through His miraculous wisdom, brought across from deep darkness into glorious light.",
+          "variant": "subtitle",
+          "start_sec": 54.241,
+          "end_sec": 65.081,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s005",
+      "start_sec": 65.241,
+      "end_sec": 72.261,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_005_jacob_canaan",
+          "src": "assets/images/img_005_jacob_canaan.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "ዮሴፍ",
+          "variant": "title",
+          "start_sec": 65.241,
+          "end_sec": 72.261,
+          "placement": "center",
+          "animation": {
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph and Jacob—Jacob, who wrestled with God and was named \"Israel,\" settled in Canaan.",
+          "variant": "subtitle",
+          "start_sec": 65.241,
+          "end_sec": 72.261,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "lower_third",
+          "title": "Joseph",
+          "subtitle": "Son of Jacob (Israel)",
+          "placement": "bottom_left",
+          "start_sec": 65.241,
+          "end_sec": 72.261,
+          "animation": {
+            "type": "slide_up"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s006",
+      "start_sec": 72.941,
+      "end_sec": 75.421,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_005_jacob_canaan",
+          "src": "assets/images/img_005_jacob_canaan.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He fathered 12 sons through four wives.",
+          "variant": "subtitle",
+          "start_sec": 72.941,
+          "end_sec": 75.421,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s007",
+      "start_sec": 76.461,
+      "end_sec": 84.981,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_005_jacob_canaan",
+          "src": "assets/images/img_005_jacob_canaan.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "However, Joseph was the apple of his eye, because he was born in his old age to his beloved Rachel, for whom he had labored 14 years.",
+          "variant": "subtitle",
+          "start_sec": 76.461,
+          "end_sec": 84.981,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s008",
+      "start_sec": 85.241,
+      "end_sec": 92.422,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_008_coat_of_many_colors",
+          "src": "assets/images/img_008_coat_of_many_colors.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "\"Now Israel loved Joseph more than all his other sons, and he made an ornate robe of many colors for him,\" Holy Scripture tells us.",
+          "variant": "subtitle",
+          "start_sec": 85.241,
+          "end_sec": 92.422,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s009",
+      "start_sec": 92.962,
+      "end_sec": 97.382,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_008_coat_of_many_colors",
+          "src": "assets/images/img_008_coat_of_many_colors.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "That robe of many colors was an expression of a father's love and a sign of favor.",
+          "variant": "subtitle",
+          "start_sec": 92.962,
+          "end_sec": 97.382,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s010",
+      "start_sec": 98.202,
+      "end_sec": 100.702,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_008_coat_of_many_colors",
+          "src": "assets/images/img_008_coat_of_many_colors.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "But to his brothers, the robe felt like a slap in the face.",
+          "variant": "subtitle",
+          "start_sec": 98.202,
+          "end_sec": 100.702,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s011",
+      "start_sec": 101.302,
+      "end_sec": 104.082,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_008_coat_of_many_colors",
+          "src": "assets/images/img_008_coat_of_many_colors.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Jealousy rose in their hearts like a wave.",
+          "variant": "subtitle",
+          "start_sec": 101.302,
+          "end_sec": 104.082,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s012",
+      "start_sec": 104.122,
+      "end_sec": 127.442,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_012_joseph_first_dream",
+          "src": "assets/images/img_012_joseph_first_dream.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "\"When his brothers saw that their father loved him more than any of them, they hated him and could not speak a kind word to him,\" the Holy Scripture tells us. Then Joseph began to have dreams and told his brothers, saying, \"We were binding sheaves of grain out in the field when suddenly my sheaf rose and stood upright, while your eleven sheaves gathered around mine and bowed down to it.\"",
+          "variant": "subtitle",
+          "start_sec": 104.122,
+          "end_sec": 127.442,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s013",
+      "start_sec": 127.342,
+      "end_sec": 133.442,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_013_josephs_second_dream",
+          "src": "assets/images/img_013_josephs_second_dream.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He told them another dream, saying, \"I saw the sun, the moon, and eleven stars bowing down to me.\"",
+          "variant": "subtitle",
+          "start_sec": 127.342,
+          "end_sec": 133.442,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s014",
+      "start_sec": 133.462,
+      "end_sec": 139.702,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_013_josephs_second_dream",
+          "src": "assets/images/img_013_josephs_second_dream.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "His brothers mocked him in anger, saying, \"Do you really intend to reign over us?\"",
+          "variant": "subtitle",
+          "start_sec": 133.462,
+          "end_sec": 139.702,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s015",
+      "start_sec": 140.542,
+      "end_sec": 145.982,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_013_josephs_second_dream",
+          "src": "assets/images/img_013_josephs_second_dream.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Jacob sent Joseph, saying, \"Go and see how your brothers and the flocks are doing.\"",
+          "variant": "subtitle",
+          "start_sec": 140.542,
+          "end_sec": 145.982,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s016",
+      "start_sec": 146.062,
+      "end_sec": 155.183,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_016_conspiracy_at_dothan",
+          "src": "assets/images/img_016_conspiracy_at_dothan.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "When they saw him approaching in Dothan, they plotted, \"Here comes that dreamer! Let's kill him, and then we'll see what comes of his dreams.\"",
+          "variant": "subtitle",
+          "start_sec": 146.062,
+          "end_sec": 155.183,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s017",
+      "start_sec": 155.783,
+      "end_sec": 159.583,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_016_conspiracy_at_dothan",
+          "src": "assets/images/img_016_conspiracy_at_dothan.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Reuben, wanting to save him, said, \"Throw him into this pit.\"",
+          "variant": "subtitle",
+          "start_sec": 155.783,
+          "end_sec": 159.583,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s018",
+      "start_sec": 159.463,
+      "end_sec": 168.043,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_018_joseph_thrown_in_pit",
+          "src": "assets/images/img_018_joseph_thrown_in_pit.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "They cruelly tore off his robe of many colors. As Joseph cried out, those peaceful colors were ripped apart, and they threw him into the empty pit.",
+          "variant": "subtitle",
+          "start_sec": 159.463,
+          "end_sec": 168.043,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s019",
+      "start_sec": 168.743,
+      "end_sec": 172.163,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_018_joseph_thrown_in_pit",
+          "src": "assets/images/img_018_joseph_thrown_in_pit.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "While Joseph wept, his brothers sat down above to eat.",
+          "variant": "subtitle",
+          "start_sec": 168.743,
+          "end_sec": 172.163,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s020",
+      "start_sec": 172.743,
+      "end_sec": 179.223,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_018_joseph_thrown_in_pit",
+          "src": "assets/images/img_018_joseph_thrown_in_pit.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Just imagine when your life suddenly turns dark, and the very people who were supposed to protect you turn you into a plaything.",
+          "variant": "subtitle",
+          "start_sec": 172.743,
+          "end_sec": 179.223,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s021",
+      "start_sec": 180.063,
+      "end_sec": 185.223,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_018_joseph_thrown_in_pit",
+          "src": "assets/images/img_018_joseph_thrown_in_pit.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "When the dream you placed your hope in is crushed in the dust, and you are left waiting only for death.",
+          "variant": "subtitle",
+          "start_sec": 180.063,
+          "end_sec": 185.223,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s022",
+      "start_sec": 185.223,
+      "end_sec": 193.883,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_018_joseph_thrown_in_pit",
+          "src": "assets/images/img_018_joseph_thrown_in_pit.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "They dipped his robe in goat's blood and sent it to Jacob, saying, \"We found this; see whether it is your son's robe or not.\"",
+          "variant": "subtitle",
+          "start_sec": 185.223,
+          "end_sec": 193.883,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s023",
+      "start_sec": 194.063,
+      "end_sec": 198.783,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_023_grief_of_jacob",
+          "src": "assets/images/img_023_grief_of_jacob.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Jacob tore his clothes and wept bitterly, saying, \"I will go down to the grave mourning.\"",
+          "variant": "subtitle",
+          "start_sec": 194.063,
+          "end_sec": 198.783,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s024",
+      "start_sec": 199.383,
+      "end_sec": 202.543,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_023_grief_of_jacob",
+          "src": "assets/images/img_023_grief_of_jacob.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "This heavy grief tore a father's heart apart.",
+          "variant": "subtitle",
+          "start_sec": 199.383,
+          "end_sec": 202.543,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s025",
+      "start_sec": 202.703,
+      "end_sec": 207.964,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_025_sold_to_ishmaelite_caravan",
+          "src": "assets/images/img_025_sold_to_ishmaelite_caravan.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Meanwhile, Joseph was sold by his brothers for 20 pieces of silver and taken down to Egypt with Ishmaelite traders.",
+          "variant": "subtitle",
+          "start_sec": 202.703,
+          "end_sec": 207.964,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s026",
+      "start_sec": 208.404,
+      "end_sec": 210.924,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_025_sold_to_ishmaelite_caravan",
+          "src": "assets/images/img_025_sold_to_ishmaelite_caravan.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph arrived in Egypt.",
+          "variant": "subtitle",
+          "start_sec": 208.404,
+          "end_sec": 210.924,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s027",
+      "start_sec": 211.104,
+      "end_sec": 217.064,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_027_potiphars_house_arrival",
+          "src": "assets/images/img_027_potiphars_house_arrival.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He was sold as a servant in the house of Potiphar, the captain of Pharaoh's guard.",
+          "variant": "subtitle",
+          "start_sec": 211.104,
+          "end_sec": 217.064,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s028",
+      "start_sec": 217.324,
+      "end_sec": 223.824,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_028_god_with_joseph_potiphar",
+          "src": "assets/images/img_028_god_with_joseph_potiphar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "But \"the LORD was with Joseph\"—and this was the secret that broke every chain.",
+          "variant": "subtitle",
+          "start_sec": 217.324,
+          "end_sec": 223.824,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s029",
+      "start_sec": 224.184,
+      "end_sec": 226.564,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_028_god_with_joseph_potiphar",
+          "src": "assets/images/img_028_god_with_joseph_potiphar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He rose from a slave to the overseer of the house.",
+          "variant": "subtitle",
+          "start_sec": 224.184,
+          "end_sec": 226.564,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s030",
+      "start_sec": 227.684,
+      "end_sec": 229.144,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_028_god_with_joseph_potiphar",
+          "src": "assets/images/img_028_god_with_joseph_potiphar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "But darkness struck again.",
+          "variant": "subtitle",
+          "start_sec": 227.684,
+          "end_sec": 229.144,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s031",
+      "start_sec": 229.984,
+      "end_sec": 234.744,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_028_god_with_joseph_potiphar",
+          "src": "assets/images/img_028_god_with_joseph_potiphar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Potiphar's wife cast her eyes on handsome and good-looking Joseph.",
+          "variant": "subtitle",
+          "start_sec": 229.984,
+          "end_sec": 234.744,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s032",
+      "start_sec": 234.544,
+      "end_sec": 240.224,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_032_joseph_resisting_temptation",
+          "src": "assets/images/img_032_joseph_resisting_temptation.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Day after day she tempted him with words and perfume, saying, \"Sleep with me,\" putting him in a tight spot.",
+          "variant": "subtitle",
+          "start_sec": 234.544,
+          "end_sec": 240.224,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s033",
+      "start_sec": 241.044,
+      "end_sec": 248.144,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_032_joseph_resisting_temptation",
+          "src": "assets/images/img_032_joseph_resisting_temptation.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph was caught between two great forces: sensual desire and spiritual faithfulness.",
+          "variant": "subtitle",
+          "start_sec": 241.044,
+          "end_sec": 248.144,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s034",
+      "start_sec": 248.384,
+      "end_sec": 254.944,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_034_potiphars_wife_temptation",
+          "src": "assets/images/img_034_potiphars_wife_temptation.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Finally, one day when he was alone inside the house, she came, grabbed his garment, and said, \"Sleep with me.\"",
+          "variant": "subtitle",
+          "start_sec": 248.384,
+          "end_sec": 254.944,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s035",
+      "start_sec": 255.744,
+      "end_sec": 258.864,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_034_potiphars_wife_temptation",
+          "src": "assets/images/img_034_potiphars_wife_temptation.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "But in that moment, Joseph saw God.",
+          "variant": "subtitle",
+          "start_sec": 255.744,
+          "end_sec": 258.864,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s036",
+      "start_sec": 259.524,
+      "end_sec": 263.604,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_034_potiphars_wife_temptation",
+          "src": "assets/images/img_034_potiphars_wife_temptation.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He said, \"How could I do such a great wickedness and sin against God?\"",
+          "variant": "subtitle",
+          "start_sec": 259.524,
+          "end_sec": 263.604,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s037",
+      "start_sec": 264.104,
+      "end_sec": 267.105,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_037_joseph_fleeing_room",
+          "src": "assets/images/img_037_joseph_fleeing_room.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Leaving his garment in her hand, he fled outside.",
+          "variant": "subtitle",
+          "start_sec": 264.104,
+          "end_sec": 267.105,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s038",
+      "start_sec": 267.085,
+      "end_sec": 274.665,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_038_potiphars_wife_false_accusation",
+          "src": "assets/images/img_038_potiphars_wife_false_accusation.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Furious and vengeful, she falsely cried out, \"This Hebrew man came in to humiliate and rape me!\"",
+          "variant": "subtitle",
+          "start_sec": 267.085,
+          "end_sec": 274.665,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s039",
+      "start_sec": 275.305,
+      "end_sec": 277.485,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_038_potiphars_wife_false_accusation",
+          "src": "assets/images/img_038_potiphars_wife_false_accusation.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Potiphar burned with anger.",
+          "variant": "subtitle",
+          "start_sec": 275.305,
+          "end_sec": 277.485,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s040",
+      "start_sec": 277.665,
+      "end_sec": 281.185,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_040_taken_to_dungeon",
+          "src": "assets/images/img_040_taken_to_dungeon.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph was betrayed a second time, despite his innocence.",
+          "variant": "subtitle",
+          "start_sec": 277.665,
+          "end_sec": 281.185,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s041",
+      "start_sec": 281.325,
+      "end_sec": 284.165,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_041_joseph_dark_prison_cell",
+          "src": "assets/images/img_041_joseph_dark_prison_cell.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph was thrown into the dark prison.",
+          "variant": "subtitle",
+          "start_sec": 281.325,
+          "end_sec": 284.165,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s042",
+      "start_sec": 284.805,
+      "end_sec": 290.365,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_041_joseph_dark_prison_cell",
+          "src": "assets/images/img_041_joseph_dark_prison_cell.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Just imagine: the man who kept his integrity is now imprisoned with criminals.",
+          "variant": "subtitle",
+          "start_sec": 284.805,
+          "end_sec": 290.365,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s043",
+      "start_sec": 291.305,
+      "end_sec": 297.445,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_041_joseph_dark_prison_cell",
+          "src": "assets/images/img_041_joseph_dark_prison_cell.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Chains wounded his feet, and the cramped cell tested his spirit.",
+          "variant": "subtitle",
+          "start_sec": 291.305,
+          "end_sec": 297.445,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s044",
+      "start_sec": 298.185,
+      "end_sec": 298.885,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_041_joseph_dark_prison_cell",
+          "src": "assets/images/img_041_joseph_dark_prison_cell.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Years passed.",
+          "variant": "subtitle",
+          "start_sec": 298.185,
+          "end_sec": 298.885,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s045",
+      "start_sec": 299.365,
+      "end_sec": 302.685,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_041_joseph_dark_prison_cell",
+          "src": "assets/images/img_041_joseph_dark_prison_cell.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "But even in that darkness, God was with him.",
+          "variant": "subtitle",
+          "start_sec": 299.365,
+          "end_sec": 302.685,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s046",
+      "start_sec": 302.525,
+      "end_sec": 308.085,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_046_cupbearer_baker_dungeon",
+          "src": "assets/images/img_046_cupbearer_baker_dungeon.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The king's chief cupbearer and baker offended Pharaoh and were put in the prison where Joseph was bound.",
+          "variant": "subtitle",
+          "start_sec": 302.525,
+          "end_sec": 308.085,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s047",
+      "start_sec": 308.705,
+      "end_sec": 313.465,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_046_cupbearer_baker_dungeon",
+          "src": "assets/images/img_046_cupbearer_baker_dungeon.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "While in prison, Joseph comforted the sorrowful and served the prisoners.",
+          "variant": "subtitle",
+          "start_sec": 308.705,
+          "end_sec": 313.465,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s048",
+      "start_sec": 313.465,
+      "end_sec": 319.945,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_048_troubling_dreams_prison",
+          "src": "assets/images/img_048_troubling_dreams_prison.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Both the cupbearer and the baker had dreams, and they were sad because there was no one to interpret them.",
+          "variant": "subtitle",
+          "start_sec": 313.465,
+          "end_sec": 319.945,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s049",
+      "start_sec": 320.605,
+      "end_sec": 324.406,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_048_troubling_dreams_prison",
+          "src": "assets/images/img_048_troubling_dreams_prison.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph saw that they were sad and asked them why they were troubled.",
+          "variant": "subtitle",
+          "start_sec": 320.605,
+          "end_sec": 324.406,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s050",
+      "start_sec": 324.946,
+      "end_sec": 327.906,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_048_troubling_dreams_prison",
+          "src": "assets/images/img_048_troubling_dreams_prison.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "They said to him, \"We had dreams, but there is no one to interpret them.\"",
+          "variant": "subtitle",
+          "start_sec": 324.946,
+          "end_sec": 327.906,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s051",
+      "start_sec": 328.746,
+      "end_sec": 333.346,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_048_troubling_dreams_prison",
+          "src": "assets/images/img_048_troubling_dreams_prison.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph told them, \"Do not interpretations belong to God? Tell them to me.\"",
+          "variant": "subtitle",
+          "start_sec": 328.746,
+          "end_sec": 333.346,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s052",
+      "start_sec": 334.166,
+      "end_sec": 335.246,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_048_troubling_dreams_prison",
+          "src": "assets/images/img_048_troubling_dreams_prison.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Both of them told him their dreams.",
+          "variant": "subtitle",
+          "start_sec": 334.166,
+          "end_sec": 335.246,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s053",
+      "start_sec": 335.606,
+      "end_sec": 346.406,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_048_troubling_dreams_prison",
+          "src": "assets/images/img_048_troubling_dreams_prison.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph interpreted them, saying to the cupbearer, \"In three days you will be restored to your position,\" and to the baker, \"In three days you will be executed.\"",
+          "variant": "subtitle",
+          "start_sec": 335.606,
+          "end_sec": 346.406,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s054",
+      "start_sec": 346.986,
+      "end_sec": 351.546,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_048_troubling_dreams_prison",
+          "src": "assets/images/img_048_troubling_dreams_prison.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He begged the cupbearer, \"Remember me when you get out.\"",
+          "variant": "subtitle",
+          "start_sec": 346.986,
+          "end_sec": 351.546,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s055",
+      "start_sec": 351.646,
+      "end_sec": 354.106,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_055_cupbearer_forgetting_joseph",
+          "src": "assets/images/img_055_cupbearer_forgetting_joseph.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "But once the man went out, he forgot him.",
+          "variant": "subtitle",
+          "start_sec": 351.646,
+          "end_sec": 354.106,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s056",
+      "start_sec": 354.766,
+      "end_sec": 357.466,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_055_cupbearer_forgetting_joseph",
+          "src": "assets/images/img_055_cupbearer_forgetting_joseph.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Being forgotten breaks the heart more than chains.",
+          "variant": "subtitle",
+          "start_sec": 354.766,
+          "end_sec": 357.466,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s057",
+      "start_sec": 358.606,
+      "end_sec": 361.506,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_055_cupbearer_forgetting_joseph",
+          "src": "assets/images/img_055_cupbearer_forgetting_joseph.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph waited in silence for two more years.",
+          "variant": "subtitle",
+          "start_sec": 358.606,
+          "end_sec": 361.506,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s058",
+      "start_sec": 362.106,
+      "end_sec": 364.206,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_055_cupbearer_forgetting_joseph",
+          "src": "assets/images/img_055_cupbearer_forgetting_joseph.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "After two years, Pharaoh had a dream.",
+          "variant": "subtitle",
+          "start_sec": 362.106,
+          "end_sec": 364.206,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s059",
+      "start_sec": 364.686,
+      "end_sec": 369.546,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_055_cupbearer_forgetting_joseph",
+          "src": "assets/images/img_055_cupbearer_forgetting_joseph.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Pharaoh told his dream to all the wise men of Egypt, but no one could interpret it for him.",
+          "variant": "subtitle",
+          "start_sec": 364.686,
+          "end_sec": 369.546,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s060",
+      "start_sec": 370.286,
+      "end_sec": 377.426,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_055_cupbearer_forgetting_joseph",
+          "src": "assets/images/img_055_cupbearer_forgetting_joseph.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Then the cupbearer remembered Joseph and told Pharaoh, \"There is a young Hebrew man.\"",
+          "variant": "subtitle",
+          "start_sec": 370.286,
+          "end_sec": 377.426,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s061",
+      "start_sec": 378.506,
+      "end_sec": 381.766,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_055_cupbearer_forgetting_joseph",
+          "src": "assets/images/img_055_cupbearer_forgetting_joseph.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Pharaoh commanded that Joseph be brought out of prison.",
+          "variant": "subtitle",
+          "start_sec": 378.506,
+          "end_sec": 381.766,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s062",
+      "start_sec": 381.786,
+      "end_sec": 386.207,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_062_joseph_before_pharaoh",
+          "src": "assets/images/img_062_joseph_before_pharaoh.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph shaved, changed his clothes, and stood before Pharaoh.",
+          "variant": "subtitle",
+          "start_sec": 381.786,
+          "end_sec": 386.207,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s063",
+      "start_sec": 386.907,
+      "end_sec": 394.027,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_062_joseph_before_pharaoh",
+          "src": "assets/images/img_062_joseph_before_pharaoh.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "When Pharaoh told Joseph his dream, Joseph interpreted it, saying, \"God has revealed to Pharaoh what He is about to do.\"",
+          "variant": "subtitle",
+          "start_sec": 386.907,
+          "end_sec": 394.027,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s064",
+      "start_sec": 394.927,
+      "end_sec": 398.787,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_062_joseph_before_pharaoh",
+          "src": "assets/images/img_062_joseph_before_pharaoh.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He told him that seven years of abundance and seven years of famine were coming.",
+          "variant": "subtitle",
+          "start_sec": 394.927,
+          "end_sec": 398.787,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s065",
+      "start_sec": 398.747,
+      "end_sec": 404.227,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_065_joseph_elevated_pharaoh",
+          "src": "assets/images/img_065_joseph_elevated_pharaoh.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Pharaoh said, \"Since God has revealed all this to you, I appoint you over my house.\"",
+          "variant": "subtitle",
+          "start_sec": 398.747,
+          "end_sec": 404.227,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s066",
+      "start_sec": 405.187,
+      "end_sec": 407.967,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_065_joseph_elevated_pharaoh",
+          "src": "assets/images/img_065_joseph_elevated_pharaoh.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "At 30 years old, Joseph became second-in-command over Pharaoh.",
+          "variant": "subtitle",
+          "start_sec": 405.187,
+          "end_sec": 407.967,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s067",
+      "start_sec": 408.907,
+      "end_sec": 411.947,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_065_joseph_elevated_pharaoh",
+          "src": "assets/images/img_065_joseph_elevated_pharaoh.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He was given a signet ring, fine linen robes, and a gold chain.",
+          "variant": "subtitle",
+          "start_sec": 408.907,
+          "end_sec": 411.947,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s068",
+      "start_sec": 412.787,
+      "end_sec": 417.007,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_065_joseph_elevated_pharaoh",
+          "src": "assets/images/img_065_joseph_elevated_pharaoh.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He married Asenath and fathered Manasseh and Ephraim.",
+          "variant": "subtitle",
+          "start_sec": 412.787,
+          "end_sec": 417.007,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s069",
+      "start_sec": 418.327,
+      "end_sec": 419.787,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_065_joseph_elevated_pharaoh",
+          "src": "assets/images/img_065_joseph_elevated_pharaoh.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Famine swept across the earth.",
+          "variant": "subtitle",
+          "start_sec": 418.327,
+          "end_sec": 419.787,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s070",
+      "start_sec": 420.587,
+      "end_sec": 422.567,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_065_joseph_elevated_pharaoh",
+          "src": "assets/images/img_065_joseph_elevated_pharaoh.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "His brothers came to Egypt to buy food.",
+          "variant": "subtitle",
+          "start_sec": 420.587,
+          "end_sec": 422.567,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s071",
+      "start_sec": 423.007,
+      "end_sec": 425.787,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_065_joseph_elevated_pharaoh",
+          "src": "assets/images/img_065_joseph_elevated_pharaoh.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph recognized them, but they did not recognize him.",
+          "variant": "subtitle",
+          "start_sec": 423.007,
+          "end_sec": 425.787,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s072",
+      "start_sec": 426.507,
+      "end_sec": 429.587,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_065_joseph_elevated_pharaoh",
+          "src": "assets/images/img_065_joseph_elevated_pharaoh.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He tested them: Simeon was bound, and Benjamin was brought down.",
+          "variant": "subtitle",
+          "start_sec": 426.507,
+          "end_sec": 429.587,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s073",
+      "start_sec": 430.067,
+      "end_sec": 435.567,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_065_joseph_elevated_pharaoh",
+          "src": "assets/images/img_065_joseph_elevated_pharaoh.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "In the end, when Judah said, \"Let me stay as a slave instead of the boy,\" Joseph's heart broke.",
+          "variant": "subtitle",
+          "start_sec": 430.067,
+          "end_sec": 435.567,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s074",
+      "start_sec": 435.347,
+      "end_sec": 437.707,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_074_joseph_reveals_identity",
+          "src": "assets/images/img_074_joseph_reveals_identity.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He wept aloud, saying, \"I am Joseph!\"",
+          "variant": "subtitle",
+          "start_sec": 435.347,
+          "end_sec": 437.707,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s075",
+      "start_sec": 438.547,
+      "end_sec": 441.827,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_074_joseph_reveals_identity",
+          "src": "assets/images/img_074_joseph_reveals_identity.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "\"God sent me ahead of you to save lives,\" he said.",
+          "variant": "subtitle",
+          "start_sec": 438.547,
+          "end_sec": 441.827,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s076",
+      "start_sec": 442.608,
+      "end_sec": 447.888,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_074_joseph_reveals_identity",
+          "src": "assets/images/img_074_joseph_reveals_identity.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He told them to call his father Jacob. When Jacob heard, his spirit revived.",
+          "variant": "subtitle",
+          "start_sec": 442.608,
+          "end_sec": 447.888,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s077",
+      "start_sec": 448.468,
+      "end_sec": 452.688,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_074_joseph_reveals_identity",
+          "src": "assets/images/img_074_joseph_reveals_identity.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He said, \"My son Joseph is still alive! I will go and see him before I die.\"",
+          "variant": "subtitle",
+          "start_sec": 448.468,
+          "end_sec": 452.688,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s078",
+      "start_sec": 452.828,
+      "end_sec": 457.348,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "They met in Goshen; there were tears, blessings, and great joy.",
+          "variant": "subtitle",
+          "start_sec": 452.828,
+          "end_sec": 457.348,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s079",
+      "start_sec": 458.988,
+      "end_sec": 461.368,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Jacob died 17 years later.",
+          "variant": "subtitle",
+          "start_sec": 458.988,
+          "end_sec": 461.368,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s080",
+      "start_sec": 462.148,
+      "end_sec": 465.008,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph lived to be 110 years old.",
+          "variant": "subtitle",
+          "start_sec": 462.148,
+          "end_sec": 465.008,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s081",
+      "start_sec": 465.628,
+      "end_sec": 466.388,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "What is your pit?",
+          "variant": "subtitle",
+          "start_sec": 465.628,
+          "end_sec": 466.388,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s082",
+      "start_sec": 467.468,
+      "end_sec": 468.428,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Family conflict?",
+          "variant": "subtitle",
+          "start_sec": 467.468,
+          "end_sec": 468.428,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s083",
+      "start_sec": 469.028,
+      "end_sec": 469.868,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "A false accusation?",
+          "variant": "subtitle",
+          "start_sec": 469.028,
+          "end_sec": 469.868,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s084",
+      "start_sec": 470.668,
+      "end_sec": 471.528,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "A forgotten dream?",
+          "variant": "subtitle",
+          "start_sec": 470.668,
+          "end_sec": 471.528,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s085",
+      "start_sec": 472.488,
+      "end_sec": 477.308,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Have faith like Joseph; God twists man's evil deeds into blessings.",
+          "variant": "subtitle",
+          "start_sec": 472.488,
+          "end_sec": 477.308,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s086",
+      "start_sec": 478.328,
+      "end_sec": 482.588,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Heavenly Father, there are times when we are thrown into a pit like Joseph.",
+          "variant": "subtitle",
+          "start_sec": 478.328,
+          "end_sec": 482.588,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s087",
+      "start_sec": 483.488,
+      "end_sec": 486.948,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Through Your wisdom, turn our final chapter into glory.",
+          "variant": "subtitle",
+          "start_sec": 483.488,
+          "end_sec": 486.948,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s088",
+      "start_sec": 487.828,
+      "end_sec": 490.668,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Grant us the grace of forgiveness and the fulfillment of dreams.",
+          "variant": "subtitle",
+          "start_sec": 487.828,
+          "end_sec": 490.668,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s089",
+      "start_sec": 491.448,
+      "end_sec": 495.208,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Just as You saved Joseph's life, save us through Christ.",
+          "variant": "subtitle",
+          "start_sec": 491.448,
+          "end_sec": 495.208,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s090",
+      "start_sec": 495.248,
+      "end_sec": 503.289,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "When your feet are deeply wounded, you have lost your path, and the burning desert sand becomes your only bed.",
+          "variant": "subtitle",
+          "start_sec": 495.248,
+          "end_sec": 503.289,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s091",
+      "start_sec": 503.969,
+      "end_sec": 514.109,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "When your tears mix with the dust at your feet, and tomorrow seems to bring worse pain than yesterday—a dead end.",
+          "variant": "subtitle",
+          "start_sec": 503.969,
+          "end_sec": 514.109,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s092",
+      "start_sec": 514.669,
+      "end_sec": 519.509,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "But what if I told you that in the deepest darkness, God is watching over you?",
+          "variant": "subtitle",
+          "start_sec": 514.669,
+          "end_sec": 519.509,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s093",
+      "start_sec": 520.429,
+      "end_sec": 527.549,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_078_reunion_in_goshen",
+          "src": "assets/images/img_078_reunion_in_goshen.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "What if I told you that God is ready to turn your dead end into a greater life than you could ever dream of?",
+          "variant": "subtitle",
+          "start_sec": 520.429,
+          "end_sec": 527.549,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s094",
+      "start_sec": 527.549,
+      "end_sec": 534.509,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_094_hagar_servant_intro",
+          "src": "assets/images/img_094_hagar_servant_intro.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "ኣጋር",
+          "variant": "title",
+          "start_sec": 527.549,
+          "end_sec": 534.509,
+          "placement": "center",
+          "animation": {
+            "type": "fade_up"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Today, the story of the forgotten Egyptian maidservant Hagar will speak this truth to us louder than thunder.",
+          "variant": "subtitle",
+          "start_sec": 527.549,
+          "end_sec": 534.509,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "lower_third",
+          "title": "Hagar",
+          "subtitle": "Egyptian Servant",
+          "placement": "bottom_left",
+          "start_sec": 527.549,
+          "end_sec": 534.509,
+          "animation": {
+            "type": "slide_up"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s095",
+      "start_sec": 535.389,
+      "end_sec": 538.949,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_094_hagar_servant_intro",
+          "src": "assets/images/img_094_hagar_servant_intro.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Hagar's story does not begin in a peaceful palace.",
+          "variant": "subtitle",
+          "start_sec": 535.389,
+          "end_sec": 538.949,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s096",
+      "start_sec": 538.949,
+      "end_sec": 543.469,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_094_hagar_servant_intro",
+          "src": "assets/images/img_094_hagar_servant_intro.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "She was an ordinary Egyptian maidservant, the property of Sarah, Abram's wife.",
+          "variant": "subtitle",
+          "start_sec": 538.949,
+          "end_sec": 543.469,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s097",
+      "start_sec": 544.669,
+      "end_sec": 554.949,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_094_hagar_servant_intro",
+          "src": "assets/images/img_094_hagar_servant_intro.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Abram and Sarah were a married couple who had wandered in Canaan for ten years, given a great promise by God, yet Sarah's womb remained silent.",
+          "variant": "subtitle",
+          "start_sec": 544.669,
+          "end_sec": 554.949,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s098",
+      "start_sec": 555.469,
+      "end_sec": 567.03,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_098_sarai_scheme_tent",
+          "src": "assets/images/img_098_sarai_scheme_tent.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "In her dried-up hope, Sarah said to Abram, \"The LORD has kept me from having children. Go, sleep with my slave; perhaps I can build a family through her.\"",
+          "variant": "subtitle",
+          "start_sec": 555.469,
+          "end_sec": 567.03,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s099",
+      "start_sec": 567.91,
+      "end_sec": 568.93,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_098_sarai_scheme_tent",
+          "src": "assets/images/img_098_sarai_scheme_tent.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Abram listened to her.",
+          "variant": "subtitle",
+          "start_sec": 567.91,
+          "end_sec": 568.93,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s100",
+      "start_sec": 569.89,
+      "end_sec": 570.69,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_098_sarai_scheme_tent",
+          "src": "assets/images/img_098_sarai_scheme_tent.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Hagar became pregnant.",
+          "variant": "subtitle",
+          "start_sec": 569.89,
+          "end_sec": 570.69,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s101",
+      "start_sec": 571.61,
+      "end_sec": 578.33,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_098_sarai_scheme_tent",
+          "src": "assets/images/img_098_sarai_scheme_tent.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "What seemed like joy at first did not last long before a great storm arose.",
+          "variant": "subtitle",
+          "start_sec": 571.61,
+          "end_sec": 578.33,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s102",
+      "start_sec": 578.81,
+      "end_sec": 585.67,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_102_hagar_sarai_conflict",
+          "src": "assets/images/img_102_hagar_sarai_conflict.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "When Hagar realized she was carrying life inside her while her mistress was barren, she began to look upon Sarah with contempt.",
+          "variant": "subtitle",
+          "start_sec": 578.81,
+          "end_sec": 585.67,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s103",
+      "start_sec": 586.63,
+      "end_sec": 588.81,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_102_hagar_sarai_conflict",
+          "src": "assets/images/img_102_hagar_sarai_conflict.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Human pride took over her heart.",
+          "variant": "subtitle",
+          "start_sec": 586.63,
+          "end_sec": 588.81,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s104",
+      "start_sec": 589.17,
+      "end_sec": 603.55,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_104_sarai_confronts_abram",
+          "src": "assets/images/img_104_sarai_confronts_abram.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Overwhelmed by pain, Sarah poured her anger onto Abram: \"May the wrong done to me be on you!\" Abram coldly replied, \"Your servant is in your hands; do with her as you please.\"",
+          "variant": "subtitle",
+          "start_sec": 589.17,
+          "end_sec": 603.55,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s105",
+      "start_sec": 603.97,
+      "end_sec": 606.29,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_105_sarai_mistreats_hagar",
+          "src": "assets/images/img_105_sarai_mistreats_hagar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Sarah then mistreated Hagar severely.",
+          "variant": "subtitle",
+          "start_sec": 603.97,
+          "end_sec": 606.29,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s106",
+      "start_sec": 607.49,
+      "end_sec": 615.95,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_105_sarai_mistreats_hagar",
+          "src": "assets/images/img_105_sarai_mistreats_hagar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The Bible says \"mistreated her,\" which means beatings, insults, and harsh labor.",
+          "variant": "subtitle",
+          "start_sec": 607.49,
+          "end_sec": 615.95,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s107",
+      "start_sec": 615.45,
+      "end_sec": 619.211,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_107_hagar_fleeing_wilderness",
+          "src": "assets/images/img_107_hagar_fleeing_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Finally, Hagar, while pregnant, fled alone into the wilderness.",
+          "variant": "subtitle",
+          "start_sec": 615.45,
+          "end_sec": 619.211,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s108",
+      "start_sec": 620.211,
+      "end_sec": 625.871,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_107_hagar_fleeing_wilderness",
+          "src": "assets/images/img_107_hagar_fleeing_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Picture it: a pregnant woman wandering in the endless desert.",
+          "variant": "subtitle",
+          "start_sec": 620.211,
+          "end_sec": 625.871,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s109",
+      "start_sec": 626.871,
+      "end_sec": 630.931,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_107_hagar_fleeing_wilderness",
+          "src": "assets/images/img_107_hagar_fleeing_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The scorching wind strikes her face, and fear suffocates her throat.",
+          "variant": "subtitle",
+          "start_sec": 626.871,
+          "end_sec": 630.931,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s110",
+      "start_sec": 632.051,
+      "end_sec": 636.211,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_107_hagar_fleeing_wilderness",
+          "src": "assets/images/img_107_hagar_fleeing_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "No food, no water, no future.",
+          "variant": "subtitle",
+          "start_sec": 632.051,
+          "end_sec": 636.211,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s111",
+      "start_sec": 636.211,
+      "end_sec": 638.491,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_107_hagar_fleeing_wilderness",
+          "src": "assets/images/img_107_hagar_fleeing_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "She was completely abandoned.",
+          "variant": "subtitle",
+          "start_sec": 636.211,
+          "end_sec": 638.491,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s112",
+      "start_sec": 638.851,
+      "end_sec": 642.011,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_112_angel_appears_hagar",
+          "src": "assets/images/img_112_angel_appears_hagar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "But in that solitude, the angel of the LORD found her.",
+          "variant": "subtitle",
+          "start_sec": 638.851,
+          "end_sec": 642.011,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s113",
+      "start_sec": 642.631,
+      "end_sec": 645.811,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_113_angel_interrogates_hagar",
+          "src": "assets/images/img_113_angel_interrogates_hagar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He said, \"Hagar, where have you come from, and where are you going?\"",
+          "variant": "subtitle",
+          "start_sec": 642.631,
+          "end_sec": 645.811,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s114",
+      "start_sec": 647.011,
+      "end_sec": 650.751,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_113_angel_interrogates_hagar",
+          "src": "assets/images/img_113_angel_interrogates_hagar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Weeping, she told him she was fleeing from her mistress.",
+          "variant": "subtitle",
+          "start_sec": 647.011,
+          "end_sec": 650.751,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s115",
+      "start_sec": 651.691,
+      "end_sec": 655.911,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_113_angel_interrogates_hagar",
+          "src": "assets/images/img_113_angel_interrogates_hagar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The angel gave her a hard command: \"Go back and submit to her.\"",
+          "variant": "subtitle",
+          "start_sec": 651.691,
+          "end_sec": 655.911,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s116",
+      "start_sec": 656.831,
+      "end_sec": 670.171,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_113_angel_interrogates_hagar",
+          "src": "assets/images/img_113_angel_interrogates_hagar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "But he followed it with great mercy: \"I will greatly multiply your offspring... You will give birth to a son, and you shall name him Ishmael (God hears).\"",
+          "variant": "subtitle",
+          "start_sec": 656.831,
+          "end_sec": 670.171,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s117",
+      "start_sec": 670.771,
+      "end_sec": 675.831,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_117_hagar_returns_camp",
+          "src": "assets/images/img_117_hagar_returns_camp.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Hagar returned to Sarah and submitted as the angel told her.",
+          "variant": "subtitle",
+          "start_sec": 670.771,
+          "end_sec": 675.831,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s118",
+      "start_sec": 676.551,
+      "end_sec": 678.632,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_117_hagar_returns_camp",
+          "src": "assets/images/img_117_hagar_returns_camp.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Thirteen years passed.",
+          "variant": "subtitle",
+          "start_sec": 676.551,
+          "end_sec": 678.632,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s119",
+      "start_sec": 678.952,
+      "end_sec": 683.792,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_119_birth_of_isaac",
+          "src": "assets/images/img_119_birth_of_isaac.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "God fulfilled His promise, and Sarah gave birth to Isaac (\"laughter\") at 90 years old.",
+          "variant": "subtitle",
+          "start_sec": 678.952,
+          "end_sec": 683.792,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s120",
+      "start_sec": 684.612,
+      "end_sec": 687.712,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_119_birth_of_isaac",
+          "src": "assets/images/img_119_birth_of_isaac.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "But during that great celebration, darkness returned again.",
+          "variant": "subtitle",
+          "start_sec": 684.612,
+          "end_sec": 687.712,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s121",
+      "start_sec": 688.612,
+      "end_sec": 693.572,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_119_birth_of_isaac",
+          "src": "assets/images/img_119_birth_of_isaac.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "When Sarah saw Ishmael playing with Isaac, jealousy flared up.",
+          "variant": "subtitle",
+          "start_sec": 688.612,
+          "end_sec": 693.572,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s122",
+      "start_sec": 693.752,
+      "end_sec": 696.592,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_122_sarah_demands_banishment",
+          "src": "assets/images/img_122_sarah_demands_banishment.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "She said, \"Get rid of that slave woman and her son!\"",
+          "variant": "subtitle",
+          "start_sec": 693.752,
+          "end_sec": 696.592,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s123",
+      "start_sec": 697.612,
+      "end_sec": 708.732,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_122_sarah_demands_banishment",
+          "src": "assets/images/img_122_sarah_demands_banishment.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Abraham's heart was broken, but God told him, \"Listen to whatever Sarah tells you... through Isaac your offspring will be named, and I will also make the son of the slave into a great nation.\"",
+          "variant": "subtitle",
+          "start_sec": 697.612,
+          "end_sec": 708.732,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s124",
+      "start_sec": 709.512,
+      "end_sec": 710.892,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_122_sarah_demands_banishment",
+          "src": "assets/images/img_122_sarah_demands_banishment.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "They got up early in the morning.",
+          "variant": "subtitle",
+          "start_sec": 709.512,
+          "end_sec": 710.892,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s125",
+      "start_sec": 711.792,
+      "end_sec": 715.772,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_125_abraham_sends_hagar",
+          "src": "assets/images/img_125_abraham_sends_hagar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Abraham gave her a skin of water and some bread, and sent them away.",
+          "variant": "subtitle",
+          "start_sec": 711.792,
+          "end_sec": 715.772,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s126",
+      "start_sec": 716.492,
+      "end_sec": 718.132,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_125_abraham_sends_hagar",
+          "src": "assets/images/img_125_abraham_sends_hagar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "They wandered in the wilderness of Beersheba.",
+          "variant": "subtitle",
+          "start_sec": 716.492,
+          "end_sec": 718.132,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s127",
+      "start_sec": 718.732,
+      "end_sec": 719.292,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_125_abraham_sends_hagar",
+          "src": "assets/images/img_125_abraham_sends_hagar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The water ran out.",
+          "variant": "subtitle",
+          "start_sec": 718.732,
+          "end_sec": 719.292,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s128",
+      "start_sec": 720.112,
+      "end_sec": 724.172,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_125_abraham_sends_hagar",
+          "src": "assets/images/img_125_abraham_sends_hagar.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "A second dead end, worse than the first.",
+          "variant": "subtitle",
+          "start_sec": 720.112,
+          "end_sec": 724.172,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s129",
+      "start_sec": 724.592,
+      "end_sec": 730.672,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_129_hagar_ishmael_beersheba",
+          "src": "assets/images/img_129_hagar_ishmael_beersheba.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Heartbroken, Hagar placed dying Ishmael under a bush.",
+          "variant": "subtitle",
+          "start_sec": 724.592,
+          "end_sec": 730.672,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s130",
+      "start_sec": 731.072,
+      "end_sec": 734.592,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_130_hagar_crying_beersheba",
+          "src": "assets/images/img_130_hagar_crying_beersheba.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "She sat down a distance away, saying, \"I cannot watch the boy die.\"",
+          "variant": "subtitle",
+          "start_sec": 731.072,
+          "end_sec": 734.592,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s131",
+      "start_sec": 735.572,
+      "end_sec": 740.493,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_130_hagar_crying_beersheba",
+          "src": "assets/images/img_130_hagar_crying_beersheba.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The mother turned her face away from her son and wept aloud.",
+          "variant": "subtitle",
+          "start_sec": 735.572,
+          "end_sec": 740.493,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s132",
+      "start_sec": 741.833,
+      "end_sec": 744.533,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_130_hagar_crying_beersheba",
+          "src": "assets/images/img_130_hagar_crying_beersheba.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "My friends, do you feel her pain?",
+          "variant": "subtitle",
+          "start_sec": 741.833,
+          "end_sec": 744.533,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s133",
+      "start_sec": 745.493,
+      "end_sec": 748.913,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_130_hagar_crying_beersheba",
+          "src": "assets/images/img_130_hagar_crying_beersheba.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The suffocating sob in the throat, the sheer despair.",
+          "variant": "subtitle",
+          "start_sec": 745.493,
+          "end_sec": 748.913,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s134",
+      "start_sec": 750.113,
+      "end_sec": 752.833,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_130_hagar_crying_beersheba",
+          "src": "assets/images/img_130_hagar_crying_beersheba.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Mothers here today understand this pain.",
+          "variant": "subtitle",
+          "start_sec": 750.113,
+          "end_sec": 752.833,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s135",
+      "start_sec": 753.593,
+      "end_sec": 756.513,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_130_hagar_crying_beersheba",
+          "src": "assets/images/img_130_hagar_crying_beersheba.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The ultimate dead end.",
+          "variant": "subtitle",
+          "start_sec": 753.593,
+          "end_sec": 756.513,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s136",
+      "start_sec": 757.533,
+      "end_sec": 759.373,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_130_hagar_crying_beersheba",
+          "src": "assets/images/img_130_hagar_crying_beersheba.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "But God heard the voice of the boy.",
+          "variant": "subtitle",
+          "start_sec": 757.533,
+          "end_sec": 759.373,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s137",
+      "start_sec": 760.873,
+      "end_sec": 765.033,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_130_hagar_crying_beersheba",
+          "src": "assets/images/img_130_hagar_crying_beersheba.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The angel of God called from heaven, \"Hagar, what is the matter?\"",
+          "variant": "subtitle",
+          "start_sec": 760.873,
+          "end_sec": 765.033,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s138",
+      "start_sec": 765.693,
+      "end_sec": 768.853,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_130_hagar_crying_beersheba",
+          "src": "assets/images/img_130_hagar_crying_beersheba.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "\"Do not be afraid; God has heard the boy's voice.\"",
+          "variant": "subtitle",
+          "start_sec": 765.693,
+          "end_sec": 768.853,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s139",
+      "start_sec": 769.473,
+      "end_sec": 774.033,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_130_hagar_crying_beersheba",
+          "src": "assets/images/img_130_hagar_crying_beersheba.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "\"Lift the boy up; I will make him into a great nation.\"",
+          "variant": "subtitle",
+          "start_sec": 769.473,
+          "end_sec": 774.033,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s140",
+      "start_sec": 774.593,
+      "end_sec": 779.733,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_140_well_of_water_miracle",
+          "src": "assets/images/img_140_well_of_water_miracle.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Then a miracle happened: God opened her eyes, and she saw a spring of water.",
+          "variant": "subtitle",
+          "start_sec": 774.593,
+          "end_sec": 779.733,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s141",
+      "start_sec": 780.633,
+      "end_sec": 783.573,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_140_well_of_water_miracle",
+          "src": "assets/images/img_140_well_of_water_miracle.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "She filled the waterskin and gave the boy a drink.",
+          "variant": "subtitle",
+          "start_sec": 780.633,
+          "end_sec": 783.573,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s142",
+      "start_sec": 784.753,
+      "end_sec": 786.413,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_140_well_of_water_miracle",
+          "src": "assets/images/img_140_well_of_water_miracle.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "God was with the boy.",
+          "variant": "subtitle",
+          "start_sec": 784.753,
+          "end_sec": 786.413,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s143",
+      "start_sec": 786.653,
+      "end_sec": 789.073,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_143_ishmael_grows_wilderness",
+          "src": "assets/images/img_143_ishmael_grows_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Ishmael grew up and became a great nation.",
+          "variant": "subtitle",
+          "start_sec": 786.653,
+          "end_sec": 789.073,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s144",
+      "start_sec": 789.973,
+      "end_sec": 790.433,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_143_ishmael_grows_wilderness",
+          "src": "assets/images/img_143_ishmael_grows_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "What about you?",
+          "variant": "subtitle",
+          "start_sec": 789.973,
+          "end_sec": 790.433,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s145",
+      "start_sec": 791.273,
+      "end_sec": 793.193,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_143_ishmael_grows_wilderness",
+          "src": "assets/images/img_143_ishmael_grows_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "What is your dead end today?",
+          "variant": "subtitle",
+          "start_sec": 791.273,
+          "end_sec": 793.193,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s146",
+      "start_sec": 794.273,
+      "end_sec": 795.814,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_143_ishmael_grows_wilderness",
+          "src": "assets/images/img_143_ishmael_grows_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Ruins of war?",
+          "variant": "subtitle",
+          "start_sec": 794.273,
+          "end_sec": 795.814,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s147",
+      "start_sec": 795.834,
+      "end_sec": 796.614,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_143_ishmael_grows_wilderness",
+          "src": "assets/images/img_143_ishmael_grows_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "A lost job?",
+          "variant": "subtitle",
+          "start_sec": 795.834,
+          "end_sec": 796.614,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s148",
+      "start_sec": 797.594,
+      "end_sec": 798.674,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_143_ishmael_grows_wilderness",
+          "src": "assets/images/img_143_ishmael_grows_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "A broken family?",
+          "variant": "subtitle",
+          "start_sec": 797.594,
+          "end_sec": 798.674,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s149",
+      "start_sec": 799.554,
+      "end_sec": 801.134,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_143_ishmael_grows_wilderness",
+          "src": "assets/images/img_143_ishmael_grows_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Run to God like Hagar.",
+          "variant": "subtitle",
+          "start_sec": 799.554,
+          "end_sec": 801.134,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s150",
+      "start_sec": 801.754,
+      "end_sec": 804.014,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_143_ishmael_grows_wilderness",
+          "src": "assets/images/img_143_ishmael_grows_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He sees your tears today.",
+          "variant": "subtitle",
+          "start_sec": 801.754,
+          "end_sec": 804.014,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s151",
+      "start_sec": 804.794,
+      "end_sec": 808.674,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_143_ishmael_grows_wilderness",
+          "src": "assets/images/img_143_ishmael_grows_wilderness.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Obey Him in the hardest place and trust His voice.",
+          "variant": "subtitle",
+          "start_sec": 804.794,
+          "end_sec": 808.674,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s152",
+      "start_sec": 808.974,
+      "end_sec": 811.614,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "He opens springs of water in the desert.",
+          "variant": "subtitle",
+          "start_sec": 808.974,
+          "end_sec": 811.614,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s153",
+      "start_sec": 812.434,
+      "end_sec": 815.754,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "O Lord, like Hagar, we have fled and lost hope.",
+          "variant": "subtitle",
+          "start_sec": 812.434,
+          "end_sec": 815.754,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s154",
+      "start_sec": 816.434,
+      "end_sec": 818.774,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Open our eyes to the spring of Your mercy.",
+          "variant": "subtitle",
+          "start_sec": 816.434,
+          "end_sec": 818.774,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s155",
+      "start_sec": 819.454,
+      "end_sec": 821.794,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Turn our dead end into a blessing.",
+          "variant": "subtitle",
+          "start_sec": 819.454,
+          "end_sec": 821.794,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s156",
+      "start_sec": 822.374,
+      "end_sec": 827.814,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Like Joseph, we are betrayed by those we trusted; like Hagar, we are cast into the desert of hunger.",
+          "variant": "subtitle",
+          "start_sec": 822.374,
+          "end_sec": 827.814,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s157",
+      "start_sec": 828.414,
+      "end_sec": 834.654,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Our wounds are deep, and our tears carry the same bitterness and pain as Joseph weeping in the pit.",
+          "variant": "subtitle",
+          "start_sec": 828.414,
+          "end_sec": 834.654,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s158",
+      "start_sec": 835.354,
+      "end_sec": 838.374,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "But listen to me: in the midst of this pain, there is a secret.",
+          "variant": "subtitle",
+          "start_sec": 835.354,
+          "end_sec": 838.374,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s159",
+      "start_sec": 839.114,
+      "end_sec": 843.214,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph's torn robe of many colors was a stepping stone to the glory of Egypt.",
+          "variant": "subtitle",
+          "start_sec": 839.114,
+          "end_sec": 843.214,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s160",
+      "start_sec": 843.714,
+      "end_sec": 849.694,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The empty desert Hagar saw became the place where a spring of life gushed forth just minutes later.",
+          "variant": "subtitle",
+          "start_sec": 843.714,
+          "end_sec": 849.694,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s161",
+      "start_sec": 850.114,
+      "end_sec": 868.355,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "As Saint John Chrysostom said, \"God shows us His light in the darkest times, because only then do we humble ourselves and look up to heaven.\" The word in Isaiah 55:8-9 speaks to us today: \"'My thoughts are not your thoughts!' says the LORD.\"",
+          "variant": "subtitle",
+          "start_sec": 850.114,
+          "end_sec": 868.355,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s162",
+      "start_sec": 868.875,
+      "end_sec": 871.435,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "We say \"death\"; He says \"resurrection.\"",
+          "variant": "subtitle",
+          "start_sec": 868.875,
+          "end_sec": 871.435,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s163",
+      "start_sec": 872.015,
+      "end_sec": 874.535,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "We say \"hunger\"; He says \"a test of endurance.\"",
+          "variant": "subtitle",
+          "start_sec": 872.015,
+          "end_sec": 874.535,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s164",
+      "start_sec": 875.095,
+      "end_sec": 879.295,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_right",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "We say \"dead end\"; but He says \"the greater life.\"",
+          "variant": "subtitle",
+          "start_sec": 875.095,
+          "end_sec": 879.295,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s165",
+      "start_sec": 879.835,
+      "end_sec": 887.915,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_152_god_opens_wells_desert",
+          "src": "assets/images/img_152_god_opens_wells_desert.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "drift",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "O my wounded people, the God who lifted Joseph out of the pit and placed him on the highest throne is watching over you today as well.",
+          "variant": "subtitle",
+          "start_sec": 879.835,
+          "end_sec": 887.915,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s166",
+      "start_sec": 887.735,
+      "end_sec": 894.075,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_166_el_roi_god_who_sees",
+          "src": "assets/images/img_166_el_roi_god_who_sees.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "breathe",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "\"El Roi,\" the God who sees me, is with you in your dark house, in your hunger, and in your grief.",
+          "variant": "subtitle",
+          "start_sec": 887.735,
+          "end_sec": 894.075,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        },
+        {
+          "type": "lower_third",
+          "title": "El Roi",
+          "subtitle": "The God Who Sees Me",
+          "placement": "bottom_left",
+          "start_sec": 887.735,
+          "end_sec": 894.075,
+          "animation": {
+            "type": "slide_up"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s167",
+      "start_sec": 894.675,
+      "end_sec": 898.955,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_166_el_roi_god_who_sees",
+          "src": "assets/images/img_166_el_roi_god_who_sees.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_up",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "Joseph could have taken revenge on his brothers, but he chose \"mercy.\"",
+          "variant": "subtitle",
+          "start_sec": 894.675,
+          "end_sec": 898.955,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s168",
+      "start_sec": 899.655,
+      "end_sec": 901.295,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_166_el_roi_god_who_sees",
+          "src": "assets/images/img_166_el_roi_god_who_sees.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "tilt_down",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "That is where healing begins.",
+          "variant": "subtitle",
+          "start_sec": 899.655,
+          "end_sec": 901.295,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s169",
+      "start_sec": 901.935,
+      "end_sec": 910.855,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_166_el_roi_god_who_sees",
+          "src": "assets/images/img_166_el_roi_god_who_sees.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_in",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The story of Joseph and Hagar teaches us one thing: what the enemy intended for evil, God turns into good.",
+          "variant": "subtitle",
+          "start_sec": 901.935,
+          "end_sec": 910.855,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s170",
+      "start_sec": 911.035,
+      "end_sec": 917.196,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_170_harvest_of_joy",
+          "src": "assets/images/img_170_harvest_of_joy.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "slow_zoom_out",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The path where you sow tears today will be the field where you reap with joy tomorrow.",
+          "variant": "subtitle",
+          "start_sec": 911.035,
+          "end_sec": 917.196,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      }
+    },
+    {
+      "id": "s171",
+      "start_sec": 916.976,
+      "end_sec": 920.516,
+      "layers": [
+        {
+          "type": "image",
+          "asset_id": "img_171_new_chapter_horizon",
+          "src": "assets/images/img_171_new_chapter_horizon.png",
+          "fit": "cover",
+          "overlay": "dark_gradient",
+          "motion": {
+            "type": "pan_left",
+            "intensity": 0.28
+          }
+        },
+        {
+          "type": "text",
+          "text": "The path that seems like the \"end\" is actually a new chapter of your life.",
+          "variant": "subtitle",
+          "start_sec": 916.976,
+          "end_sec": 920.516,
+          "placement": "bottom_center",
+          "animation": {
+            "type": "fade_in"
+          }
+        }
+      ],
+      "transition_in": {
+        "type": "cross_dissolve",
+        "duration_sec": 0.6
+      },
+      "transition_out": {
+        "type": "fade_to_black",
+        "duration_sec": 1.0
+      }
+    },
+    {
+      "id": "clip_visualizer",
+      "start_sec": 0,
+      "end_sec": 920.516,
+      "layers": [
+        {
+          "type": "graphic",
+          "graphic": "audio_visualizer",
+          "variant": "bars"
+        }
+      ]
+    }
+  ]
+}

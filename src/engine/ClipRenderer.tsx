@@ -16,12 +16,17 @@ import { normalizeTransitionType } from "./normalizeTransition";
 
 type ClipRendererProps = {
   clip: Clip;
+  nextClip?: Clip;
   fps: number;
 };
 
-export const ClipRenderer = ({ clip, fps }: ClipRendererProps) => {
+export const ClipRenderer = ({ clip, nextClip, fps }: ClipRendererProps) => {
   const startFrame = secondsToFrames(clip.start_sec, fps);
-  const durationInFrames = secondsToFrames(clip.end_sec - clip.start_sec, fps);
+  const visualEnd = visualEndSec(clip, nextClip);
+  const durationInFrames = Math.max(
+    1,
+    secondsToFrames(visualEnd - clip.start_sec, fps),
+  );
 
   return (
     <Sequence
@@ -33,19 +38,23 @@ export const ClipRenderer = ({ clip, fps }: ClipRendererProps) => {
       <ClipTransition
         transitionIn={clip.transition_in}
         transitionOut={clip.transition_out}
+        durationInFrames={durationInFrames}
       >
         <CameraRig camera={clip.camera} durationInFrames={durationInFrames}>
           {clipBackground(clip, durationInFrames)}
           {[...(clip.media ?? [])]
             .sort((a, b) => a.zIndex - b.zIndex)
             .map((item, index) =>
-              timedLayer(clip, item, index, fps, (duration) => (
+              timedLayer(clip, item, index, fps, visualEnd, (duration) => (
                 <MediaLayerView layer={item} durationInFrames={duration} />
               )),
             )}
           {clip.layers.map((layer, index) => {
             const layerStartSec = layer.start_sec ?? clip.start_sec;
-            const layerEndSec = layer.end_sec ?? clip.end_sec;
+            const authoredEnd = layer.end_sec ?? clip.end_sec;
+            const layerEndSec = holdsPastClip(layer.type, authoredEnd, clip.end_sec)
+              ? visualEnd
+              : authoredEnd;
             const layerFrom = secondsToFrames(layerStartSec - clip.start_sec, fps);
             const layerDuration = secondsToFrames(layerEndSec - layerStartSec, fps);
 
@@ -76,10 +85,14 @@ const timedLayer = (
   item: MediaLayer,
   index: number,
   fps: number,
+  visualEnd: number,
   render: (durationInFrames: number) => ReactNode,
 ) => {
   const layerStartSec = item.start_sec ?? clip.start_sec;
-  const layerEndSec = item.end_sec ?? clip.end_sec;
+  const authoredEnd = item.end_sec ?? clip.end_sec;
+  const layerEndSec = holdsPastClip("media", authoredEnd, clip.end_sec)
+    ? visualEnd
+    : authoredEnd;
   const layerFrom = secondsToFrames(layerStartSec - clip.start_sec, fps);
   const layerDuration = Math.max(
     1,
@@ -127,10 +140,12 @@ const clipBackground = (clip: Clip, durationInFrames: number) => {
 const ClipTransition = ({
   transitionIn,
   transitionOut,
+  durationInFrames,
   children,
 }: {
   transitionIn?: Transition;
   transitionOut?: Transition;
+  durationInFrames: number;
   children: ReactNode;
 }) => {
   let content: ReactNode = children;
@@ -141,19 +156,23 @@ const ClipTransition = ({
       transitionOut.duration_sec ?? theme.animation.transitionSec;
     if (outType === "fade" || outType === "crossfade" || outType === "slide") {
       content = (
-        <Fade direction="out" durationSec={durationSec}>
+        <Fade direction="out" durationSec={durationSec} durationInFrames={durationInFrames}>
           {content}
         </Fade>
       );
     } else if (outType === "wipe") {
       content = (
-        <Fade direction="out" durationSec={durationSec}>
+        <Fade direction="out" durationSec={durationSec} durationInFrames={durationInFrames}>
           {content}
         </Fade>
       );
     } else if (outType === "zoom_punch") {
       content = (
-        <Fade direction="out" durationSec={Math.min(0.35, durationSec)}>
+        <Fade
+          direction="out"
+          durationSec={Math.min(0.35, durationSec)}
+          durationInFrames={durationInFrames}
+        >
           {content}
         </Fade>
       );
@@ -183,3 +202,46 @@ const ClipTransition = ({
 
   return content;
 };
+
+/** Keep the picture up through a gap, and overlap a dissolve into the next shot. */
+function visualEndSec(clip: Clip, nextClip: Clip | undefined): number {
+  if (!nextClip) {
+    return clip.end_sec;
+  }
+
+  const outType = clip.transition_out?.type;
+  const inType = nextClip.transition_in?.type;
+  if (outType === "fade_to_black" || inType === "fade_in_from_black") {
+    return clip.end_sec;
+  }
+
+  const gap = nextClip.start_sec - clip.end_sec;
+  let end = gap > 0 ? nextClip.start_sec : clip.end_sec;
+  if (isBlend(outType) || isBlend(inType)) {
+    const duration = Math.max(
+      clip.transition_out?.duration_sec ?? 0,
+      nextClip.transition_in?.duration_sec ?? 0,
+      0.45,
+    );
+    end = Math.max(end, nextClip.start_sec + duration);
+    end = Math.min(end, nextClip.end_sec - 0.05);
+  }
+  return Math.max(end, clip.end_sec);
+}
+
+function isBlend(type: string | undefined): boolean {
+  return (
+    type === "cross_dissolve" ||
+    type === "crossfade" ||
+    type === "fade" ||
+    type === "slide" ||
+    type === "smooth_slide"
+  );
+}
+
+function holdsPastClip(type: string, authoredEnd: number, clipEnd: number): boolean {
+  if (authoredEnd < clipEnd - 0.05) {
+    return false;
+  }
+  return type === "image" || type === "image_sequence" || type === "media";
+}
