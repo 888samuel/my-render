@@ -26,6 +26,13 @@ export const AudioVisualizer = ({
   );
   const audioData = useAudioData(src);
   const frame = compositionFrameOffset + localFrame;
+  const visualWidth = Math.max(320, width - theme.layout.safeMargin * 2);
+  const barWidth = 5;
+  const barGap = 4;
+  const numberOfSamples =
+    variant === "waveform"
+      ? 160
+      : Math.max(48, Math.floor((visualWidth + barGap) / (barWidth + barGap)));
 
   if (!audioSrc) {
     throw new Error(
@@ -41,7 +48,7 @@ export const AudioVisualizer = ({
     audioData,
     fps,
     frame,
-    numberOfSamples: 32,
+    numberOfSamples,
     windowInSeconds: 0.1,
     normalize: false,
   });
@@ -49,21 +56,21 @@ export const AudioVisualizer = ({
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
       {variant === "waveform" ? (
-        <Waveform samples={samples} width={width} />
+        <Waveform samples={samples} width={visualWidth} />
       ) : (
-        <Bars samples={samples} />
+        <Bars samples={samples} width={visualWidth} />
       )}
     </AbsoluteFill>
   );
 };
 
-const Bars = ({ samples }: { samples: number[] }) => {
+const Bars = ({ samples, width }: { samples: number[]; width: number }) => {
   return (
     <div
       style={{
         position: "absolute",
-        left: 0,
-        right: 0,
+        left: theme.layout.safeMargin,
+        width,
         bottom: 40,
         display: "flex",
         alignItems: "flex-end",
@@ -100,11 +107,10 @@ const Waveform = ({
   samples: number[];
   width: number;
 }) => {
-  const visualWidth = Math.min(720, width - theme.layout.safeMargin * 2);
   const height = 56;
   const path = createSmoothSvgPath({
     points: samples.map((sample, index) => ({
-      x: (index / Math.max(samples.length - 1, 1)) * visualWidth,
+      x: (index / Math.max(samples.length - 1, 1)) * width,
       y: height / 2 + sample * (height / 2) * 0.9,
     })),
   });
@@ -121,9 +127,9 @@ const Waveform = ({
       }}
     >
       <svg
-        width={visualWidth}
+        width={width}
         height={height}
-        viewBox={`0 0 ${String(visualWidth)} ${String(height)}`}
+        viewBox={`0 0 ${String(width)} ${String(height)}`}
       >
         <path
           d={path}

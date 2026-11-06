@@ -1,0 +1,197 @@
+﻿{
+  "cues": 320,
+  "scenes": 36,
+  "textLayers": 320,
+  "missingCues": 0,
+  "duration": 3078.566,
+  "secretChecks": [
+    {
+      "label": "ሚስጢር 1 Starving",
+      "cue": 22,
+      "t": 137.369,
+      "clip": "s006",
+      "assetOk": true,
+      "asset": "hero_05_starving_crowd",
+      "overlay": "ጠለብ ምንዳይ (Starving Crowd)"
+    },
+    {
+      "label": "ሚስጢር 2 Commodity",
+      "cue": 45,
+      "t": 345.643,
+      "clip": "s010",
+      "assetOk": true,
+      "asset": "hero_09_commodity_trap",
+      "overlay": "ካብ ኮሞዲቲ ውድድር ምውጻእ"
+    },
+    {
+      "label": "ሚስጢር 3 Premium",
+      "cue": 68,
+      "t": 535.376,
+      "clip": "s012",
+      "assetOk": true,
+      "asset": "hero_11_premium_pricing",
+      "overlay": "ልዑል ወይ ክቡር ዋጋ ምሕታት"
+    },
+    {
+      "label": "ሚስጢር 4 ValueEq",
+      "cue": 76,
+      "t": 692.826,
+      "clip": "s014",
+      "assetOk": true,
+      "asset": "hero_13_value_equation",
+      "overlay": "ቀመር ዋጋ (The Value Equation)"
+    },
+    {
+      "label": "ሚስጢር 5 Ultimate",
+      "cue": 102,
+      "t": 917.521,
+      "clip": "s017",
+      "assetOk": true,
+      "asset": "hero_16_value_drivers",
+      "overlay": "ዝተማልአ መፍትሒ (Ultimate Solution)"
+    },
+    {
+      "label": "10x Test",
+      "cue": 124,
+      "t": 1083.732,
+      "clip": "s018",
+      "assetOk": true,
+      "asset": "hero_17_10x_test",
+      "overlay": "ፈተነ 10 ዕጽፊ ዋጋ (The 10x Test)"
+    },
+    {
+      "label": "Magic Blend",
+      "cue": 135,
+      "t": 1250.003,
+      "clip": "s020",
+      "assetOk": true,
+      "asset": "hero_19_magic_blend",
+      "overlay": "ምውህሃድ (The Magic Blend)"
+    },
+    {
+      "label": "ሚስጢር 6 Scarcity",
+      "cue": 141,
+      "t": 1347.45,
+      "clip": "s021",
+      "assetOk": true,
+      "asset": "hero_20_scarcity",
+      "overlay": "ሕጽረት (Scarcity)"
+    },
+    {
+      "label": "ሚስጢር 7 Urgency",
+      "cue": 165,
+      "t": 1551.883,
+      "clip": "s023",
+      "assetOk": true,
+      "asset": "hero_22_urgency_timer",
+      "overlay": "ህጹጽነት (Urgency)"
+    },
+    {
+      "label": "ሚስጢር 8 Bonuses",
+      "cue": 190,
+      "t": 1801.06,
+      "clip": "s025",
+      "assetOk": true,
+      "asset": "hero_24_bonus_stacking",
+      "overlay": "ቦነሳት ምድራብ (Strategic Bonuses)"
+    },
+    {
+      "label": "ሚስጢር 9 Guarantee",
+      "cue": 214,
+      "t": 2006.854,
+      "clip": "s027",
+      "assetOk": true,
+      "asset": "hero_26_risk_reversal",
+      "overlay": "ውሕስና (Guarantees)"
+    },
+    {
+      "label": "ሚስጢር 10 Naming",
+      "cue": 246,
+      "t": 2306.594,
+      "clip": "s029",
+      "assetOk": true,
+      "asset": "hero_28_magic_naming_formula",
+      "overlay": "ስም ፍርያትካ ምሰያም"
+    }
+  ],
+  "sample": [
+    {
+      "id": "s001",
+      "start": 0,
+      "end": 20.341,
+      "img": "hero_01_two_stores_contrast",
+      "ov": {
+        "type": "chapter_card",
+        "title": "ክልተ ተመሳሳሊ ትካላት",
+        "start": 0.06,
+        "end": 10.981
+      },
+      "texts": 6
+    },
+    {
+      "id": "s002",
+      "start": 20.341,
+      "end": 53.364,
+      "img": "hero_02_weak_offer_marketing",
+      "ov": {
+        "type": "chapter_card",
+        "title": "ዱኹም ኣቕርቦት ወይ ማርኬቲንግ?",
+        "start": 20.341,
+        "end": 35.582
+      },
+      "texts": 5
+    },
+    {
+      "id": "s003",
+      "start": 53.364,
+      "end": 84.846,
+      "img": "hero_03_alex_hormozi_book",
+      "ov": {
+        "type": "lower_third",
+        "title": "ኣሌክስ ሆርሞዚ (Alex Hormozi)",
+        "start": 53.364,
+        "end": 77.445
+      },
+      "texts": 3
+    },
+    {
+      "id": "s004",
+      "start": 84.846,
+      "end": 110.427,
+      "img": "hero_04_secrets_roadmap",
+      "ov": {
+        "type": "chapter_card",
+        "title": "ጠቀምቲ መጽሓፍቲ ብትግርኛ",
+        "start": 84.846,
+        "end": 92.846
+      },
+      "texts": 4
+    },
+    {
+      "id": "s005",
+      "start": 110.427,
+      "end": 137.369,
+      "img": "hero_10_grand_slam_offer",
+      "ov": {
+        "type": "chapter_card",
+        "title": "Grand Slam Offer",
+        "start": 110.427,
+        "end": 127.228
+      },
+      "texts": 3
+    },
+    {
+      "id": "s006",
+      "start": 137.369,
+      "end": 186.812,
+      "img": "hero_05_starving_crowd",
+      "ov": {
+        "type": "chapter_card",
+        "title": "ጠለብ ምንዳይ (Starving Crowd)",
+        "start": 137.369,
+        "end": 159.131
+      },
+      "texts": 4
+    }
+  ]
+}

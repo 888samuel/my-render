@@ -47,7 +47,7 @@ export const ImageMotion = ({
         width: "100%",
         height: fill ? "100%" : "auto",
         opacity: sampled.opacity * opacity,
-        transform: `translate(${String(translateX)}%, ${String(translateY)}%) scale(${String(scale)})`,
+        transform: `translate(${String(translateX)}%, ${String(translateY)}%) rotate(${String(sampled.rotate)}deg) scale(${String(scale)})`,
         transformOrigin: "center center",
       }}
     >

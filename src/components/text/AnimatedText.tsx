@@ -1,5 +1,5 @@
 import type { CSSProperties, ReactNode } from "react";
-import { useCurrentFrame, useVideoConfig } from "remotion";
+import { Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import {
   entranceToCss,
   resolveTextEntrance,
@@ -40,6 +40,84 @@ export const RevealText = ({
     fps,
     autoExit,
   );
+
+  if (type === "typewriter") {
+    return (
+      <Typewriter
+        text={text}
+        frame={frame}
+        fps={fps}
+        opacity={entrance.opacity}
+        style={style}
+        align={align}
+      />
+    );
+  }
+
+  if (type === "kinetic") {
+    return (
+      <KineticLine
+        text={text}
+        frame={frame}
+        fps={fps}
+        opacity={entrance.opacity}
+        style={style}
+        align={align}
+      />
+    );
+  }
+
+  if (type === "marker") {
+    return (
+      <MarkerLine
+        text={text}
+        frame={frame}
+        fps={fps}
+        opacity={entrance.opacity}
+        style={style}
+        align={align}
+      />
+    );
+  }
+
+  if (type === "letter_rise") {
+    return (
+      <LetterRise
+        text={text}
+        frame={frame}
+        fps={fps}
+        opacity={entrance.opacity}
+        style={style}
+        align={align}
+      />
+    );
+  }
+
+  if (type === "shimmer") {
+    return (
+      <ShimmerLine
+        text={text}
+        frame={frame}
+        fps={fps}
+        opacity={entrance.opacity}
+        style={style}
+        align={align}
+      />
+    );
+  }
+
+  if (type === "wave") {
+    return (
+      <WaveLine
+        text={text}
+        frame={frame}
+        fps={fps}
+        opacity={entrance.opacity}
+        style={style}
+        align={align}
+      />
+    );
+  }
 
   if (!isWordReveal) {
     return (
@@ -123,6 +201,279 @@ export const AnimatedText = ({
         />
       </SafeArea>
     </AbsoluteFill>
+  );
+};
+
+const Typewriter = ({
+  text,
+  frame,
+  fps,
+  opacity,
+  style,
+  align,
+}: {
+  text: string;
+  frame: number;
+  fps: number;
+  opacity: number;
+  style?: CSSProperties;
+  align: "left" | "center" | "right";
+}) => {
+  const chars = Array.from(text);
+  const framesPerChar = Math.max(1, Math.round(fps * 0.045));
+  const count = Math.min(chars.length, Math.floor(frame / framesPerChar));
+  const done = count >= chars.length;
+  const caretOn = !done && Math.floor(frame / 8) % 2 === 0;
+
+  return (
+    <div style={{ ...style, opacity, textAlign: align }}>
+      {chars.slice(0, count).join("")}
+      <span
+        style={{
+          display: "inline-block",
+          width: done ? 0 : 2,
+          height: "0.82em",
+          marginLeft: done ? 0 : 5,
+          backgroundColor: theme.colors.accent,
+          opacity: caretOn ? 1 : 0,
+          verticalAlign: "text-bottom",
+        }}
+      />
+    </div>
+  );
+};
+
+const KineticLine = ({
+  text,
+  frame,
+  fps,
+  opacity,
+  style,
+  align,
+}: {
+  text: string;
+  frame: number;
+  fps: number;
+  opacity: number;
+  style?: CSSProperties;
+  align: "left" | "center" | "right";
+}) => {
+  const words = text.split(" ").filter((word) => word.length > 0);
+  const stagger = Math.max(1, Math.round(fps * 0.07));
+  const length = Math.max(1, Math.round(fps * 0.42));
+
+  return (
+    <div style={{ ...style, opacity, textAlign: align }}>
+      {words.map((word, index) => {
+        const start = stagger * index;
+        const progress = interpolate(frame, [start, start + length], [0, 1], {
+          easing: Easing.out(Easing.back(1.5)),
+          extrapolateLeft: "clamp",
+          extrapolateRight: "clamp",
+        });
+        const wordOpacity = interpolate(
+          frame,
+          [start, start + length * 0.45],
+          [0, 1],
+          { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+        );
+
+        return (
+          <span
+            key={`${word}-${String(index)}`}
+            style={{
+              display: "inline-block",
+              marginRight: index === words.length - 1 ? 0 : "0.28em",
+              opacity: wordOpacity,
+              transform: `translateY(${String((1 - progress) * 18)}px) rotate(${String((1 - progress) * -2.5)}deg) scale(${String(0.9 + progress * 0.1)})`,
+            }}
+          >
+            {word}
+          </span>
+        );
+      })}
+    </div>
+  );
+};
+
+const MarkerLine = ({
+  text,
+  frame,
+  fps,
+  opacity,
+  style,
+  align,
+}: {
+  text: string;
+  frame: number;
+  fps: number;
+  opacity: number;
+  style?: CSSProperties;
+  align: "left" | "center" | "right";
+}) => {
+  const enter = secondsToFrames(theme.animation.entranceSec, fps);
+  const width = lerpFrames(frame, 4, enter, 0, 100);
+
+  return (
+    <div
+      style={{
+        display: "inline-block",
+        maxWidth: style?.maxWidth ?? "100%",
+        opacity,
+        textAlign: align,
+      }}
+    >
+      <div style={{ ...style, maxWidth: "100%" }}>{text}</div>
+      <div
+        style={{
+          height: 5,
+          width: `${String(width)}%`,
+          marginTop: 12,
+          backgroundColor: theme.colors.accent,
+        }}
+      />
+    </div>
+  );
+};
+
+const LetterRise = ({
+  text,
+  frame,
+  fps,
+  opacity,
+  style,
+  align,
+}: {
+  text: string;
+  frame: number;
+  fps: number;
+  opacity: number;
+  style?: CSSProperties;
+  align: "left" | "center" | "right";
+}) => {
+  const chars = Array.from(text);
+  const stagger = Math.max(1, Math.round(fps * 0.028));
+  const length = Math.max(1, Math.round(fps * 0.36));
+
+  return (
+    <div style={{ ...style, opacity, textAlign: align }}>
+      {chars.map((char, index) => {
+        if (char === " " || char === "\n") {
+          return char === "\n" ? <br key={index} /> : <span key={index}> </span>;
+        }
+        const start = stagger * index;
+        const progress = interpolate(frame, [start, start + length], [0, 1], {
+          easing: Easing.out(Easing.back(1.35)),
+          extrapolateLeft: "clamp",
+          extrapolateRight: "clamp",
+        });
+        const charOpacity = interpolate(
+          frame,
+          [start, start + length * 0.4],
+          [0, 1],
+          { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+        );
+        return (
+          <span
+            key={`${char}-${String(index)}`}
+            style={{
+              display: "inline-block",
+              opacity: charOpacity,
+              transform: `translateY(${String((1 - progress) * 24)}px)`,
+            }}
+          >
+            {char}
+          </span>
+        );
+      })}
+    </div>
+  );
+};
+
+const ShimmerLine = ({
+  text,
+  frame,
+  fps,
+  opacity,
+  style,
+  align,
+}: {
+  text: string;
+  frame: number;
+  fps: number;
+  opacity: number;
+  style?: CSSProperties;
+  align: "left" | "center" | "right";
+}) => {
+  const fade = lerpFrames(frame, 0, Math.round(fps * 0.35), 0, 1);
+  const period = Math.max(1, Math.round(fps * 2.2));
+  const travel = ((frame % period) / period) * 160 - 30;
+
+  return (
+    <div
+      style={{
+        ...style,
+        display: "inline-block",
+        maxWidth: "100%",
+        opacity: opacity * fade,
+        textAlign: align,
+        color: "transparent",
+        backgroundImage: `linear-gradient(100deg, ${theme.colors.text} ${String(travel - 16)}%, ${theme.colors.accent} ${String(travel)}%, ${theme.colors.text} ${String(travel + 16)}%)`,
+        backgroundClip: "text",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      }}
+    >
+      {text}
+    </div>
+  );
+};
+
+const WaveLine = ({
+  text,
+  frame,
+  fps,
+  opacity,
+  style,
+  align,
+}: {
+  text: string;
+  frame: number;
+  fps: number;
+  opacity: number;
+  style?: CSSProperties;
+  align: "left" | "center" | "right";
+}) => {
+  const chars = Array.from(text);
+  const stagger = Math.max(1, Math.round(fps * 0.03));
+  const length = Math.max(1, Math.round(fps * 0.28));
+
+  return (
+    <div style={{ ...style, opacity, textAlign: align }}>
+      {chars.map((char, index) => {
+        if (char === " " || char === "\n") {
+          return char === "\n" ? <br key={index} /> : <span key={index}> </span>;
+        }
+        const start = stagger * index;
+        const reveal = interpolate(frame, [start, start + length], [0, 1], {
+          extrapolateLeft: "clamp",
+          extrapolateRight: "clamp",
+        });
+        const bob = Math.sin((frame / fps) * 3.4 + index * 0.55) * 7 * reveal;
+        return (
+          <span
+            key={`${char}-${String(index)}`}
+            style={{
+              display: "inline-block",
+              opacity: reveal,
+              transform: `translateY(${String(bob)}px)`,
+            }}
+          >
+            {char}
+          </span>
+        );
+      })}
+    </div>
   );
 };
 

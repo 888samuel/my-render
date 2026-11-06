@@ -1,5 +1,8 @@
 import { AnimatedText } from "../components/text/AnimatedText";
 import { AudioVisualizer } from "../components/graphics/AudioVisualizer";
+import { Callout } from "../components/graphics/Callout";
+import { Chips } from "../components/graphics/Chips";
+import { ProgressRail } from "../components/graphics/ProgressRail";
 import { ChapterCard, LowerThird } from "../components/graphics/LowerThird";
 import { Comparison } from "../components/graphics/Comparison";
 import { FlowDiagram } from "../components/graphics/FlowDiagram";
@@ -124,6 +127,25 @@ export const LayerRenderer = ({
           animation={animOf(layer)}
           placement={layer.placement}
         />
+      );
+    case "callout":
+      if (!layer.text.trim()) {
+        return null;
+      }
+      return (
+        <Callout
+          kicker={layer.kicker}
+          text={layer.text}
+          detail={layer.detail}
+          animation={animOf(layer)}
+          placement={layer.placement}
+        />
+      );
+    case "chips":
+      return <Chips items={layer.items} placement={layer.placement} />;
+    case "progress":
+      return (
+        <ProgressRail label={layer.label} durationInFrames={durationInFrames} />
       );
     case "chapter_card":
       return (

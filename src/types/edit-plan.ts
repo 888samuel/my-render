@@ -186,6 +186,27 @@ export type LowerThirdLayer = LayerTiming & {
   animation?: TextAnimation;
 };
 
+/** Short labels that pop in one after another, then keep a small float. */
+export type ChipsLayer = LayerTiming & {
+  type: "chips";
+  items: string[];
+};
+
+/** A bar that fills across the layer. The number ticks as it moves. */
+export type ProgressLayer = LayerTiming & {
+  type: "progress";
+  label?: string;
+};
+
+/** A short fact held in a corner so the picture stays readable. */
+export type CalloutLayer = LayerTiming & {
+  type: "callout";
+  kicker?: string;
+  text: string;
+  detail?: string;
+  animation?: TextAnimation;
+};
+
 export type ChapterCardLayer = LayerTiming & {
   type: "chapter_card";
   eyebrow?: string;
@@ -286,6 +307,9 @@ export type Layer =
   | ListLayer
   | HighlightedTextLayer
   | LowerThirdLayer
+  | CalloutLayer
+  | ChipsLayer
+  | ProgressLayer
   | ChapterCardLayer
   | GraphicLayer
   | TransitionLayer;

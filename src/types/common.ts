@@ -8,7 +8,12 @@ export type LayerId = string;
 
 export type ImageFit = "contain" | "cover" | "centered_crop";
 
-export type ImageOverlay = "none" | "dark_gradient";
+export type ImageOverlay =
+  | "none"
+  | "dark_gradient"
+  | "vignette"
+  | "spotlight"
+  | "warm";
 
 export type LayerPlacement =
   | "center"
@@ -45,7 +50,11 @@ export type MotionType =
   | "breathe"
   | "float"
   | "pop_in"
-  | "slide_in";
+  | "slide_in"
+  | "ken_burns"
+  | "focus_pull"
+  | "orbit"
+  | "sway";
 
 export type TextAnimationType =
   | "none"
@@ -58,7 +67,14 @@ export type TextAnimationType =
   | "dramatic_reveal"
   | "sequential"
   | "fade_up"
-  | "scale_up";
+  | "scale_up"
+  | "kinetic"
+  | "typewriter"
+  | "marker"
+  | "mask_up"
+  | "letter_rise"
+  | "shimmer"
+  | "wave";
 
 export type TransitionType =
   | "none"
@@ -105,6 +121,9 @@ export type LayerType =
   | "highlighted_text"
   | "lower_third"
   | "chapter_card"
+  | "callout"
+  | "chips"
+  | "progress"
   | "graphic"
   | "transition";
 

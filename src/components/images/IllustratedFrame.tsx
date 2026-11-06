@@ -1,7 +1,10 @@
-import { Img, staticFile } from "remotion";
+import type { CSSProperties } from "react";
+import { Img, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { AbsoluteFill } from "../common/AbsoluteFill";
 import { ImageMotion } from "./ImageMotion";
 import { theme } from "../../styles/theme";
+import { lerpFrames } from "../../utils/interpolate";
+import { secondsToFrames } from "../../utils/time";
 import type { ImageFit, ImageOverlay } from "../../types/common";
 import type { Motion } from "../../types/edit-plan";
 
@@ -90,7 +93,7 @@ export const IllustratedFrame = ({
         }}
       >
         {moving}
-        {overlay === "dark_gradient" ? <DarkGradient /> : null}
+        <FrameGrade overlay={overlay} />
       </AbsoluteFill>
     );
   }
@@ -112,12 +115,96 @@ export const IllustratedFrame = ({
   );
 };
 
-const DarkGradient = () => {
+const ReadabilityScrim = () => {
   return (
     <AbsoluteFill
       style={{
-        background: `linear-gradient(180deg, ${theme.colors.overlay} 0%, rgba(6, 7, 10, 0.18) 38%, ${theme.colors.overlayBottom} 100%)`,
+        background: `linear-gradient(180deg, ${theme.colors.overlay} 0%, rgba(6, 7, 10, 0.1) 40%, ${theme.colors.overlayBottom} 100%)`,
       }}
     />
+  );
+};
+
+const FrameGrade = ({ overlay }: { overlay?: ImageOverlay }) => {
+  if (!overlay || overlay === "none") {
+    return null;
+  }
+
+  if (overlay === "dark_gradient") {
+    return (
+      <AbsoluteFill
+        style={{
+          background: `linear-gradient(180deg, ${theme.colors.overlay} 0%, rgba(6, 7, 10, 0.18) 38%, ${theme.colors.overlayBottom} 100%)`,
+        }}
+      />
+    );
+  }
+
+  if (overlay === "spotlight") {
+    return (
+      <>
+        <AbsoluteFill
+          style={{
+            background:
+              "radial-gradient(ellipse at 50% 40%, rgba(6,7,10,0.02) 0%, rgba(6,7,10,0.2) 46%, rgba(6,7,10,0.72) 100%)",
+          }}
+        />
+        <ReadabilityScrim />
+      </>
+    );
+  }
+
+  const warm = overlay === "warm";
+
+  return (
+    <>
+      <AbsoluteFill
+        style={{
+          background: warm
+            ? "radial-gradient(ellipse at center, rgba(140, 86, 32, 0.2) 0%, rgba(6,7,10,0.08) 42%, rgba(6,7,10,0.62) 100%)"
+            : "radial-gradient(ellipse at center, rgba(6,7,10,0) 36%, rgba(6,7,10,0.55) 100%)",
+        }}
+      />
+      <ReadabilityScrim />
+      <CropMarks />
+    </>
+  );
+};
+
+const CropMarks = () => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const opacity = lerpFrames(frame, 0, secondsToFrames(0.7, fps), 0, 1);
+  const arm = 34;
+  const inset = 42;
+  const edge = `1.5px solid rgba(196, 165, 116, ${String(0.75 * opacity)})`;
+  const corner = (style: CSSProperties) => (
+    <div
+      style={{
+        position: "absolute",
+        width: arm,
+        height: arm,
+        ...style,
+      }}
+    />
+  );
+
+  return (
+    <AbsoluteFill>
+      {corner({ top: inset, left: inset, borderTop: edge, borderLeft: edge })}
+      {corner({ top: inset, right: inset, borderTop: edge, borderRight: edge })}
+      {corner({
+        bottom: inset,
+        left: inset,
+        borderBottom: edge,
+        borderLeft: edge,
+      })}
+      {corner({
+        bottom: inset,
+        right: inset,
+        borderBottom: edge,
+        borderRight: edge,
+      })}
+    </AbsoluteFill>
   );
 };

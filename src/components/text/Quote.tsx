@@ -1,7 +1,10 @@
+import { useCurrentFrame, useVideoConfig } from "remotion";
 import { AbsoluteFill } from "../common/AbsoluteFill";
 import { SafeArea, textAlignForPlacement } from "../common/SafeArea";
 import { Entrance } from "./AnimatedText";
+import { lerpFrames } from "../../utils/interpolate";
 import { theme } from "../../styles/theme";
+import { secondsToFrames } from "../../utils/time";
 import type { LayerPlacement } from "../../types/common";
 import type { TextAnimation } from "../../types/edit-plan";
 
@@ -18,6 +21,10 @@ export const Quote = ({
   animation,
   placement = "center",
 }: QuoteProps) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const mark = lerpFrames(frame, 0, secondsToFrames(0.55, fps), 0, 1);
+
   return (
     <AbsoluteFill>
       <SafeArea placement={placement}>
@@ -28,6 +35,19 @@ export const Quote = ({
               textAlign: textAlignForPlacement(placement),
             }}
           >
+            <div
+              style={{
+                color: theme.colors.accent,
+                fontFamily: theme.fonts.display,
+                fontSize: 140,
+                lineHeight: 0.45,
+                height: 72,
+                opacity: mark,
+                transform: `translateY(${String((1 - mark) * 16)}px)`,
+              }}
+            >
+              “
+            </div>
             <div
               style={{
                 color: theme.colors.text,

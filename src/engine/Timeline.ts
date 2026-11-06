@@ -23,6 +23,9 @@ export function buildTimeline(editPlan: EditPlan): TimedClip[] {
   return editPlan.clips.map((clip) => ({
     clip,
     startFrame: secondsToFrames(clip.start_sec, fps),
-    durationInFrames: secondsToFrames(clip.end_sec - clip.start_sec, fps),
+    durationInFrames: Math.max(
+      1,
+      secondsToFrames(clip.end_sec, fps) - secondsToFrames(clip.start_sec, fps),
+    ),
   }));
 }

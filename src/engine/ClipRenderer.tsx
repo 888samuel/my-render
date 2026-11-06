@@ -23,9 +23,11 @@ type ClipRendererProps = {
 export const ClipRenderer = ({ clip, nextClip, fps }: ClipRendererProps) => {
   const startFrame = secondsToFrames(clip.start_sec, fps);
   const visualEnd = visualEndSec(clip, nextClip);
+  // Subtract absolute frames. Rounding each edge, then the gap, can
+  // miss the SRT frame by one when the clip does not start at 0.
   const durationInFrames = Math.max(
     1,
-    secondsToFrames(visualEnd - clip.start_sec, fps),
+    secondsToFrames(visualEnd, fps) - startFrame,
   );
 
   return (
@@ -55,21 +57,20 @@ export const ClipRenderer = ({ clip, nextClip, fps }: ClipRendererProps) => {
             const layerEndSec = holdsPastClip(layer.type, authoredEnd, clip.end_sec)
               ? visualEnd
               : authoredEnd;
-            const layerFrom = secondsToFrames(layerStartSec - clip.start_sec, fps);
-            const layerDuration = secondsToFrames(layerEndSec - layerStartSec, fps);
+            const span = layerWindow(startFrame, layerStartSec, layerEndSec, fps);
 
             return (
               <Sequence
                 key={layer.id ?? `${clip.id}-layer-${String(index)}`}
-                from={layerFrom}
-                durationInFrames={Math.max(1, layerDuration)}
+                from={span.from}
+                durationInFrames={span.durationInFrames}
                 name={layer.id ?? layer.type}
                 layout="none"
               >
                 <LayerRenderer
                   layer={layer}
-                  compositionFrameOffset={startFrame + layerFrom}
-                  durationInFrames={Math.max(1, layerDuration)}
+                  compositionFrameOffset={startFrame + span.from}
+                  durationInFrames={span.durationInFrames}
                 />
               </Sequence>
             );
@@ -93,21 +94,22 @@ const timedLayer = (
   const layerEndSec = holdsPastClip("media", authoredEnd, clip.end_sec)
     ? visualEnd
     : authoredEnd;
-  const layerFrom = secondsToFrames(layerStartSec - clip.start_sec, fps);
-  const layerDuration = Math.max(
-    1,
-    secondsToFrames(layerEndSec - layerStartSec, fps),
+  const span = layerWindow(
+    secondsToFrames(clip.start_sec, fps),
+    layerStartSec,
+    layerEndSec,
+    fps,
   );
 
   return (
     <Sequence
       key={item.id ?? `${clip.id}-media-${String(index)}`}
-      from={layerFrom}
-      durationInFrames={layerDuration}
+      from={span.from}
+      durationInFrames={span.durationInFrames}
       name={item.id ?? `media-${String(item.zIndex)}`}
       layout="none"
     >
-      {render(layerDuration)}
+      {render(span.durationInFrames)}
     </Sequence>
   );
 };
@@ -219,9 +221,8 @@ function visualEndSec(clip: Clip, nextClip: Clip | undefined): number {
   let end = gap > 0 ? nextClip.start_sec : clip.end_sec;
   if (isBlend(outType) || isBlend(inType)) {
     const duration = Math.max(
-      clip.transition_out?.duration_sec ?? 0,
-      nextClip.transition_in?.duration_sec ?? 0,
-      0.45,
+      clip.transition_out?.duration_sec ?? 0.45,
+      nextClip.transition_in?.duration_sec ?? 0.45,
     );
     end = Math.max(end, nextClip.start_sec + duration);
     end = Math.min(end, nextClip.end_sec - 0.05);
@@ -237,6 +238,24 @@ function isBlend(type: string | undefined): boolean {
     type === "slide" ||
     type === "smooth_slide"
   );
+}
+
+/** Layer sequence inside a clip, measured from absolute timeline frames. */
+function layerWindow(
+  clipStartFrame: number,
+  layerStartSec: number,
+  layerEndSec: number,
+  fps: number,
+): { from: number; durationInFrames: number } {
+  const start = secondsToFrames(layerStartSec, fps);
+  const end = secondsToFrames(layerEndSec, fps);
+  let from = start - clipStartFrame;
+  let durationInFrames = Math.max(1, end - start);
+  if (from < 0) {
+    durationInFrames = Math.max(1, durationInFrames + from);
+    from = 0;
+  }
+  return { from, durationInFrames };
 }
 
 function holdsPastClip(type: string, authoredEnd: number, clipEnd: number): boolean {

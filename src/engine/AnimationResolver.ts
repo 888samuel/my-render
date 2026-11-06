@@ -7,7 +7,14 @@ import { lerpFrames } from "../utils/interpolate";
 import { secondsToFrames } from "../utils/time";
 import { normalizeTextAnimation } from "./normalizeAliases";
 
-export type MotionBehavior = "linear" | "breathe" | "float" | "pop" | "enter";
+export type MotionBehavior =
+  | "linear"
+  | "breathe"
+  | "float"
+  | "pop"
+  | "enter"
+  | "orbit"
+  | "sway";
 
 export type MotionCurve = {
   behavior: MotionBehavior;
@@ -17,6 +24,8 @@ export type MotionCurve = {
   translateXTo: number;
   translateYFrom: number;
   translateYTo: number;
+  rotateFrom: number;
+  rotateTo: number;
   periodSec?: number;
   enterSec?: number;
 };
@@ -26,6 +35,8 @@ export type EntranceStyle = {
   translateX: number;
   translateY: number;
   scale: number;
+  /** Percent of the element still hidden from the bottom. 0 means fully open. */
+  clipBottom: number;
 };
 
 const STATIC_MOTION: MotionCurve = {
@@ -36,12 +47,25 @@ const STATIC_MOTION: MotionCurve = {
   translateXTo: 0,
   translateYFrom: 0,
   translateYTo: 0,
+  rotateFrom: 0,
+  rotateTo: 0,
 };
 
-const linear = (
-  curve: Omit<MotionCurve, "behavior" | "periodSec" | "enterSec">,
-): MotionCurve => ({
+type LinearInput = {
+  scaleFrom: number;
+  scaleTo: number;
+  translateXFrom: number;
+  translateXTo: number;
+  translateYFrom: number;
+  translateYTo: number;
+  rotateFrom?: number;
+  rotateTo?: number;
+};
+
+const linear = (curve: LinearInput): MotionCurve => ({
   behavior: "linear",
+  rotateFrom: 0,
+  rotateTo: 0,
   ...curve,
 });
 
@@ -136,6 +160,28 @@ export function resolveMotion(type: MotionType, from?: MotionFrom): MotionCurve 
         translateYFrom: 1.1,
         translateYTo: -1.1,
       });
+    case "ken_burns":
+      return linear({
+        scaleFrom: 1.04,
+        scaleTo: 1.14,
+        translateXFrom: -2.6,
+        translateXTo: 2.2,
+        translateYFrom: 1.5,
+        translateYTo: -1.3,
+        rotateFrom: -0.45,
+        rotateTo: 0.55,
+      });
+    case "focus_pull":
+      return linear({
+        scaleFrom: 1.16,
+        scaleTo: 1.05,
+        translateXFrom: 0.6,
+        translateXTo: -0.2,
+        translateYFrom: 1.2,
+        translateYTo: -0.3,
+        rotateFrom: -0.7,
+        rotateTo: 0,
+      });
     default:
       return STATIC_MOTION;
     case "breathe":
@@ -147,6 +193,8 @@ export function resolveMotion(type: MotionType, from?: MotionFrom): MotionCurve 
         translateXTo: 0,
         translateYFrom: 0,
         translateYTo: 0,
+        rotateFrom: 0,
+        rotateTo: 0,
         periodSec: 2.6,
       };
     case "float":
@@ -158,7 +206,35 @@ export function resolveMotion(type: MotionType, from?: MotionFrom): MotionCurve 
         translateXTo: 0,
         translateYFrom: -1.6,
         translateYTo: 1.6,
+        rotateFrom: 0,
+        rotateTo: 0,
         periodSec: 3.2,
+      };
+    case "orbit":
+      return {
+        behavior: "orbit",
+        scaleFrom: 1.12,
+        scaleTo: 1.12,
+        translateXFrom: -2.2,
+        translateXTo: 2.2,
+        translateYFrom: -1.4,
+        translateYTo: 1.4,
+        rotateFrom: -0.55,
+        rotateTo: 0.55,
+        periodSec: 10,
+      };
+    case "sway":
+      return {
+        behavior: "sway",
+        scaleFrom: 1.08,
+        scaleTo: 1.11,
+        translateXFrom: -0.4,
+        translateXTo: 0.4,
+        translateYFrom: -0.7,
+        translateYTo: 0.7,
+        rotateFrom: -0.5,
+        rotateTo: 0.5,
+        periodSec: 4.8,
       };
     case "pop_in":
       return {
@@ -169,6 +245,8 @@ export function resolveMotion(type: MotionType, from?: MotionFrom): MotionCurve 
         translateXTo: 0,
         translateYFrom: 0,
         translateYTo: 0,
+        rotateFrom: 0,
+        rotateTo: 0,
         enterSec: 0.48,
       };
     case "slide_in":
@@ -185,6 +263,8 @@ function slideIn(from: MotionFrom): MotionCurve {
     translateXTo: 0,
     translateYFrom: 0,
     translateYTo: 0,
+    rotateFrom: 0,
+    rotateTo: 0,
     enterSec: 0.55,
   };
 
@@ -228,13 +308,29 @@ export function applyMotionIntensity(
     };
   }
 
-  if (curve.behavior === "float" || curve.behavior === "enter") {
+  if (curve.behavior === "float" || curve.behavior === "enter" || curve.behavior === "orbit") {
     return {
       ...curve,
       translateXFrom: curve.translateXFrom * factor,
       translateXTo: curve.translateXTo * factor,
       translateYFrom: curve.translateYFrom * factor,
       translateYTo: curve.translateYTo * factor,
+      rotateFrom: curve.rotateFrom * factor,
+      rotateTo: curve.rotateTo * factor,
+    };
+  }
+
+  if (curve.behavior === "sway") {
+    return {
+      ...curve,
+      scaleFrom: 1 + (curve.scaleFrom - 1) * factor,
+      scaleTo: 1 + (curve.scaleTo - 1) * factor,
+      translateXFrom: curve.translateXFrom * factor,
+      translateXTo: curve.translateXTo * factor,
+      translateYFrom: curve.translateYFrom * factor,
+      translateYTo: curve.translateYTo * factor,
+      rotateFrom: curve.rotateFrom * factor,
+      rotateTo: curve.rotateTo * factor,
     };
   }
 
@@ -246,6 +342,8 @@ export function applyMotionIntensity(
     translateXTo: curve.translateXTo * factor,
     translateYFrom: curve.translateYFrom * factor,
     translateYTo: curve.translateYTo * factor,
+    rotateFrom: curve.rotateFrom * factor,
+    rotateTo: curve.rotateTo * factor,
   };
 }
 
@@ -253,6 +351,7 @@ export type SampledMotion = {
   scale: number;
   translateX: number;
   translateY: number;
+  rotate: number;
   opacity: number;
 };
 
@@ -270,6 +369,7 @@ export function sampleMotion(
       scale: curve.scaleFrom + (curve.scaleTo - curve.scaleFrom) * wave,
       translateX: 0,
       translateY: 0,
+      rotate: 0,
       opacity: 1,
     };
   }
@@ -281,6 +381,31 @@ export function sampleMotion(
       scale: 1,
       translateX: midpoint(curve.translateXFrom, curve.translateXTo, wave),
       translateY: midpoint(curve.translateYFrom, curve.translateYTo, wave),
+      rotate: 0,
+      opacity: 1,
+    };
+  }
+
+  if (curve.behavior === "orbit") {
+    const periodFrames = Math.max(1, (curve.periodSec ?? 10) * fps);
+    const turn = (frame / periodFrames) * Math.PI * 2;
+    return {
+      scale: curve.scaleFrom,
+      translateX: midpoint(curve.translateXFrom, curve.translateXTo, Math.cos(turn)),
+      translateY: midpoint(curve.translateYFrom, curve.translateYTo, Math.sin(turn)),
+      rotate: midpoint(curve.rotateFrom, curve.rotateTo, Math.sin(turn)),
+      opacity: 1,
+    };
+  }
+
+  if (curve.behavior === "sway") {
+    const periodFrames = Math.max(1, (curve.periodSec ?? 4.8) * fps);
+    const wave = Math.sin((frame / periodFrames) * Math.PI * 2);
+    return {
+      scale: midpoint(curve.scaleFrom, curve.scaleTo, wave),
+      translateX: midpoint(curve.translateXFrom, curve.translateXTo, wave),
+      translateY: midpoint(curve.translateYFrom, curve.translateYTo, wave),
+      rotate: midpoint(curve.rotateFrom, curve.rotateTo, wave),
       opacity: 1,
     };
   }
@@ -309,6 +434,8 @@ export function sampleMotion(
       translateY:
         curve.translateYFrom +
         (curve.translateYTo - curve.translateYFrom) * progress,
+      rotate:
+        curve.rotateFrom + (curve.rotateTo - curve.rotateFrom) * progress,
       opacity,
     };
   }
@@ -331,6 +458,7 @@ export function sampleMotion(
       curve.translateYFrom,
       curve.translateYTo,
     ),
+    rotate: lerpFrames(frame, 0, endFrame, curve.rotateFrom, curve.rotateTo),
     opacity: 1,
   };
 }
@@ -355,6 +483,7 @@ export function resolveTextEntrance(
     translateX: 0,
     translateY: 0,
     scale: 1,
+    clipBottom: 0,
   };
   const type = normalizeTextAnimation(animation);
 
@@ -364,8 +493,24 @@ export function resolveTextEntrance(
     case "word_reveal":
     case "dramatic_reveal":
     case "sequential":
+    case "kinetic":
+    case "typewriter":
+    case "marker":
+    case "letter_rise":
+    case "shimmer":
+    case "wave":
       style = rest;
       break;
+    case "mask_up": {
+      const reveal = lerpFrames(frame, 0, enterFrames, 0, 1);
+      style = {
+        ...rest,
+        opacity: reveal,
+        translateY: lerpFrames(frame, 0, enterFrames, 22, 0),
+        clipBottom: (1 - reveal) * 100,
+      };
+      break;
+    }
     case "fade_in":
       style = {
         ...rest,
@@ -435,7 +580,26 @@ export function entranceToCss(style: EntranceStyle): CSSProperties {
   return {
     opacity: style.opacity,
     transform: `translate(${String(style.translateX)}px, ${String(style.translateY)}px) scale(${String(style.scale)})`,
+    ...(style.clipBottom > 0.4
+      ? { clipPath: `inset(0 0 ${String(style.clipBottom)}% 0)` }
+      : {}),
   };
+}
+
+const PER_WORD = new Set<TextAnimationType>([
+  "kinetic",
+  "typewriter",
+  "marker",
+  "letter_rise",
+  "shimmer",
+  "wave",
+  "word_reveal",
+  "dramatic_reveal",
+]);
+
+/** Animations that move each word or character instead of the whole block. */
+export function isPerWordAnimation(type: TextAnimationType): boolean {
+  return PER_WORD.has(type);
 }
 
 export function wordRevealOpacity(
