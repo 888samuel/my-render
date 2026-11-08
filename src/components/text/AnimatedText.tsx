@@ -3,9 +3,12 @@ import { Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import {
   entranceToCss,
   resolveTextEntrance,
+  spokenCharCount,
   wordRevealOpacity,
 } from "../../engine/AnimationResolver";
 import { normalizeTextAnimationInput } from "../../engine/normalizeAnimation";
+import { isCueTextAnimation, isSpokenKind } from "../../engine/spokenUnits";
+import { SpokenLine } from "./SpokenLine";
 import { lerpFrames } from "../../utils/interpolate";
 import { AbsoluteFill } from "../common/AbsoluteFill";
 import { SafeArea, textAlignForPlacement } from "../common/SafeArea";
@@ -31,7 +34,7 @@ export const RevealText = ({
   const { durationInFrames, fps } = useVideoConfig();
   const anim = normalizeTextAnimationInput(animation);
   const type = anim.type;
-  const autoExit = anim.auto_exit ?? true;
+  const autoExit = isCueTextAnimation(type) ? false : (anim.auto_exit ?? true);
   const isWordReveal = type === "word_reveal" || type === "dramatic_reveal";
   const entrance = resolveTextEntrance(
     frame,
@@ -41,12 +44,29 @@ export const RevealText = ({
     autoExit,
   );
 
-  if (type === "typewriter") {
+  if (type === "typewriter" || type === "voice") {
     return (
       <Typewriter
         text={text}
         frame={frame}
         fps={fps}
+        durationInFrames={durationInFrames}
+        pace={type === "voice" ? "voice" : "fixed"}
+        opacity={entrance.opacity}
+        style={style}
+        align={align}
+      />
+    );
+  }
+
+  if (isSpokenKind(type)) {
+    return (
+      <SpokenLine
+        kind={type}
+        text={text}
+        frame={frame}
+        fps={fps}
+        durationInFrames={durationInFrames}
         opacity={entrance.opacity}
         style={style}
         align={align}
@@ -208,6 +228,8 @@ const Typewriter = ({
   text,
   frame,
   fps,
+  durationInFrames,
+  pace,
   opacity,
   style,
   align,
@@ -215,30 +237,55 @@ const Typewriter = ({
   text: string;
   frame: number;
   fps: number;
+  durationInFrames: number;
+  pace: "fixed" | "voice";
   opacity: number;
   style?: CSSProperties;
   align: "left" | "center" | "right";
 }) => {
   const chars = Array.from(text);
   const framesPerChar = Math.max(1, Math.round(fps * 0.045));
-  const count = Math.min(chars.length, Math.floor(frame / framesPerChar));
+  const count =
+    pace === "voice"
+      ? spokenCharCount(frame, durationInFrames, chars.length)
+      : Math.min(chars.length, Math.floor(frame / framesPerChar));
   const done = count >= chars.length;
   const caretOn = !done && Math.floor(frame / 8) % 2 === 0;
+  const visible = chars.slice(0, count).join("");
+  const caret = (
+    <span
+      style={{
+        display: "inline-block",
+        width: done ? 0 : 2,
+        height: "0.82em",
+        marginLeft: done ? 0 : 5,
+        backgroundColor: theme.colors.accent,
+        opacity: caretOn ? 1 : 0,
+        verticalAlign: "text-bottom",
+      }}
+    />
+  );
+
+  if (pace === "voice") {
+    return (
+      <div style={{ ...style, opacity, textAlign: align }}>
+        {count === 0 ? caret : null}
+        {chars.map((char, index) => (
+          <span key={index}>
+            <span style={{ opacity: index < count ? 1 : 0 }}>
+              {char === "\n" ? <br /> : char}
+            </span>
+            {index === count - 1 ? caret : null}
+          </span>
+        ))}
+      </div>
+    );
+  }
 
   return (
     <div style={{ ...style, opacity, textAlign: align }}>
-      {chars.slice(0, count).join("")}
-      <span
-        style={{
-          display: "inline-block",
-          width: done ? 0 : 2,
-          height: "0.82em",
-          marginLeft: done ? 0 : 5,
-          backgroundColor: theme.colors.accent,
-          opacity: caretOn ? 1 : 0,
-          verticalAlign: "text-bottom",
-        }}
-      />
+      {visible}
+      {caret}
     </div>
   );
 };

@@ -495,6 +495,21 @@ export function resolveTextEntrance(
     case "sequential":
     case "kinetic":
     case "typewriter":
+    case "voice":
+    case "voice_words":
+    case "follow":
+    case "dim_past":
+    case "word_box":
+    case "wipe":
+    case "underline":
+    case "ghost":
+    case "word_rise":
+    case "focus":
+    case "lines":
+    case "clauses":
+    case "punch":
+    case "decode":
+    case "stroke":
     case "marker":
     case "letter_rise":
     case "shimmer":
@@ -589,6 +604,21 @@ export function entranceToCss(style: EntranceStyle): CSSProperties {
 const PER_WORD = new Set<TextAnimationType>([
   "kinetic",
   "typewriter",
+  "voice",
+  "voice_words",
+  "follow",
+  "dim_past",
+  "word_box",
+  "wipe",
+  "underline",
+  "ghost",
+  "word_rise",
+  "focus",
+  "lines",
+  "clauses",
+  "punch",
+  "decode",
+  "stroke",
   "marker",
   "letter_rise",
   "shimmer",
@@ -600,6 +630,23 @@ const PER_WORD = new Set<TextAnimationType>([
 /** Animations that move each word or character instead of the whole block. */
 export function isPerWordAnimation(type: TextAnimationType): boolean {
   return PER_WORD.has(type);
+}
+
+/**
+ * Characters visible while a line is spoken.
+ * The first glyph is on screen as the layer starts. The last glyph arrives
+ * on the final frame, so the line finishes typing with the voice.
+ */
+export function spokenCharCount(
+  frame: number,
+  durationInFrames: number,
+  length: number,
+): number {
+  if (length <= 0) return 0;
+  if (durationInFrames <= 1) return length;
+  const end = durationInFrames - 1;
+  const t = Math.min(1, Math.max(0, frame / end));
+  return Math.min(length, Math.floor(t * (length - 1)) + 1);
 }
 
 export function wordRevealOpacity(

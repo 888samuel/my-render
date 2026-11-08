@@ -73,6 +73,8 @@ export type TextAnimation = {
   type: TextAnimationType;
   /**
    * When true (default), text fades out near the end of its layer window.
+   * `voice` ignores this and stays up until the layer ends, because that
+   * window is the spoken line.
    */
   auto_exit?: boolean;
 };

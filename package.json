@@ -36,9 +36,12 @@
     "still:illustrated": "remotion still IllustratedScene out/illustrated-preview.png --frame=40",
     "render:capability": "remotion render CapabilityReel out/capability-10s.mp4",
     "render:demo": "remotion render CapabilityDemo out/capability-20s.mp4 --concurrency=1",
+    "render:text-motion": "remotion render TextMotionReel out/text-motion-40s.mp4 --concurrency=1",
     "phrase": "node scripts/phrase-script.js",
     "phrase:test": "node --test scripts/phrase-script.test.js",
     "align": "node scripts/align-plan-to-srt.js",
-    "align:test": "node --test scripts/align-plan-to-srt.test.js"
+    "align:test": "node --test scripts/align-plan-to-srt.test.js",
+    "align:images": "node scripts/align-images.js",
+    "align:images:test": "node --test scripts/align-images.test.js"
   }
 }
