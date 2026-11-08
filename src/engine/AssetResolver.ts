@@ -1,4 +1,5 @@
 import type { AssetId } from "../types/common";
+import { isRemoteSrc, isVideoSrc } from "./videoPlayback";
 
 const localAssetRegistry: Record<AssetId, string> = {
   img_001: "assets/images/img_001.png",
@@ -50,4 +51,27 @@ export function hasAsset(assetId: AssetId): boolean {
 
 export function resolvePublicSrc(src: string): string {
   return src.replace(/^\//, "");
+}
+
+/** `vid_001` and `vid001` both point at public/assets/videos/vid_001.mp4. */
+export function resolveVideoAsset(assetId: AssetId): string {
+  if (isRemoteSrc(assetId)) {
+    return assetId;
+  }
+
+  const relative = assetId.replace(/^\//, "");
+  if (isVideoSrc(relative) && relative.includes("/")) {
+    return relative;
+  }
+
+  if (isVideoSrc(relative)) {
+    return `assets/videos/${relative}`;
+  }
+
+  const underscored = relative.match(/^vid[_-]?(\d+)$/i);
+  if (underscored?.[1]) {
+    return `assets/videos/vid_${underscored[1].padStart(3, "0")}.mp4`;
+  }
+
+  return `assets/videos/${relative}.mp4`;
 }

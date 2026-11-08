@@ -1,4 +1,4 @@
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { Img, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { AbsoluteFill } from "../common/AbsoluteFill";
 import { ImageMotion } from "./ImageMotion";
@@ -9,7 +9,9 @@ import type { ImageFit, ImageOverlay } from "../../types/common";
 import type { Motion } from "../../types/edit-plan";
 
 type IllustratedFrameProps = {
-  src: string;
+  src?: string;
+  /** Replaces the still. Used for video frames that share this crop and grade. */
+  media?: ReactNode;
   durationInFrames: number;
   fit?: ImageFit;
   motion?: Motion;
@@ -24,6 +26,7 @@ type IllustratedFrameProps = {
 
 export const IllustratedFrame = ({
   src,
+  media,
   durationInFrames,
   fit = "cover",
   motion,
@@ -36,12 +39,15 @@ export const IllustratedFrame = ({
   height,
 }: IllustratedFrameProps) => {
   const placed = x !== undefined || y !== undefined || width !== undefined;
-  const publicSrc = staticFile(src.replace(/^\//, ""));
   const cropScale = !placed && fit === "centered_crop" ? 1.18 : 1;
 
-  const image = (
+  if (!media && !src) {
+    throw new Error("ERROR:\nFrame is missing a picture.");
+  }
+
+  const image = media ?? (
     <Img
-      src={publicSrc}
+      src={staticFile((src ?? "").replace(/^\//, ""))}
       style={
         placed
           ? {

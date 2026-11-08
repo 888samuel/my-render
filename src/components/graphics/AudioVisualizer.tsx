@@ -5,6 +5,7 @@ import {
 } from "@remotion/media-utils";
 import { staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { AbsoluteFill } from "../common/AbsoluteFill";
+import { listAudioTracks } from "../../engine/audioTracks";
 import { useEditPlan } from "../../engine/EditPlanContext";
 import { theme } from "../../styles/theme";
 
@@ -20,7 +21,7 @@ export const AudioVisualizer = ({
   const plan = useEditPlan();
   const localFrame = useCurrentFrame();
   const { fps, width } = useVideoConfig();
-  const audioSrc = plan.audio?.src;
+  const audioSrc = listAudioTracks(plan.audio)[0]?.src;
   const src = staticFile(
     (audioSrc ?? "assets/audio/output.mp3").replace(/^\//, ""),
   );

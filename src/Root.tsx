@@ -5,6 +5,7 @@ import { VideoComposition } from "./Composition";
 import { CapabilityReel, capabilityPlan } from "./CapabilityReel";
 import { CapabilityDemo, capabilityDemoPlan } from "./CapabilityDemo";
 import { TextMotionReel } from "./TextMotionReel";
+import { VideoEditReel, videoEditPlan } from "./VideoEditReel";
 import { IllustratedScene } from "./IllustratedScene";
 import { getVideoDurationSeconds } from "./engine/Timeline";
 import { secondsToFrames } from "./utils/time";
@@ -75,6 +76,16 @@ export const RemotionRoot = () => {
         fps={30}
         width={1920}
         height={1080}
+      />
+      <Composition
+        id="VideoEditReel"
+        component={VideoEditReel}
+        durationInFrames={240}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ editPlan: videoEditPlan }}
+        calculateMetadata={calculateMetadata}
       />
     </>
   );

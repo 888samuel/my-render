@@ -118,10 +118,41 @@ export type ImageSequenceLayer = LayerTiming &
     motion?: Motion;
   };
 
-export type VideoLayer = LayerTiming & {
-  type: "video";
-  asset_id: AssetId;
+/**
+ * How a footage file plays inside a shot.
+ * Times are seconds in the source file, not the timeline.
+ */
+export type VideoPlayback = {
+  /** In-point. The shot starts this far into the file. */
+  trim_start_sec?: Seconds;
+  /**
+   * Out-point. Omit to use the end of the file.
+   * The timeline length of the trim is divided by playback_rate.
+   */
+  trim_end_sec?: Seconds;
+  /** 1 is normal. 0.5 is half speed, 2 is double. */
+  playback_rate?: number;
+  /** Linear gain from 0 to 1. Defaults to 1. Use 0 under narration. */
+  volume?: number;
+  muted?: boolean;
+  /**
+   * Repeat the trimmed range when the shot is longer than the footage.
+   * Otherwise the last frame holds.
+   */
+  loop?: boolean;
 };
+
+export type VideoLayer = LayerTiming &
+  ImagePlacement &
+  VideoPlayback & {
+    type: "video";
+    asset_id?: AssetId;
+    src?: string;
+    fit?: ImageFit;
+    motion?: Motion;
+    overlay?: ImageOverlay;
+    opacity?: number;
+  };
 
 export type MediaLayerItem = LayerTiming &
   MediaLayer & {
@@ -324,14 +355,26 @@ export type Clip = {
   transition_in?: Transition;
   transition_out?: Transition;
   /**
-   * Background photo for the whole clip. Plans store this on the clip
-   * instead of as a layer with type "image".
+   * Background for the whole clip. "image" is the default.
+   * "video" plays the file, with trim and speed. A path ending in
+   * .mp4, .webm, .mov, .mkv, or .m4v is video even when this is omitted.
+   */
+  source?: "image" | "video";
+  /**
+   * Background picture or footage. Plans store this on the clip
+   * instead of as a layer.
    */
   asset_id?: AssetId;
   src?: string;
   fit?: ImageFit;
   overlay?: ImageOverlay;
   motion?: Motion;
+  trim_start_sec?: Seconds;
+  trim_end_sec?: Seconds;
+  playback_rate?: number;
+  volume?: number;
+  muted?: boolean;
+  loop?: boolean;
   /** Shared move. Each picture follows it by its own parallaxFactor. */
   camera?: CameraMove;
   /** Extra pictures stacked by zIndex. The clip src remains the back plate. */
@@ -351,12 +394,27 @@ export type VideoSettings = {
 
 export type AudioTrack = {
   src: string;
+  /** Timeline time when this bed starts. */
   start_sec?: Seconds;
+  /** Timeline time when this bed stops. Omit to play through the video. */
+  end_sec?: Seconds;
+  /** In-point in the audio file. */
+  trim_start_sec?: Seconds;
+  /**
+   * Out-point in the audio file. The bed stops when the trim or
+   * `end_sec` is reached, whichever comes first.
+   */
+  trim_end_sec?: Seconds;
+  /** 0–1. Defaults to 1. */
+  volume?: number;
+  playback_rate?: number;
+  loop?: boolean;
 };
 
 export type EditPlan = {
   version: string;
   video: VideoSettings;
-  audio?: AudioTrack;
+  /** One narration file, or a list of beds (narration, music, effects). */
+  audio?: AudioTrack | AudioTrack[];
   clips: Clip[];
 };

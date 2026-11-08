@@ -7,9 +7,11 @@ import { Wipe } from "../components/transitions/Wipe";
 import { ZoomPunch } from "../components/transitions/ZoomPunch";
 import { ImageAsset } from "../components/images/ImageAsset";
 import { MediaLayerView } from "../components/images/MediaLayerView";
+import { VideoAsset } from "../components/video/VideoAsset";
 import { LayerRenderer } from "./LayerRenderer";
 import { CameraRig } from "./CameraRig";
-import type { Clip, ImageLayer, MediaLayer, Transition } from "../types/edit-plan";
+import { mediaKind } from "./videoPlayback";
+import type { Clip, ImageLayer, MediaLayer, Transition, VideoLayer } from "../types/edit-plan";
 import { secondsToFrames } from "../utils/time";
 import { theme } from "../styles/theme";
 import { normalizeTransitionType } from "./normalizeTransition";
@@ -117,6 +119,33 @@ const timedLayer = (
 const clipBackground = (clip: Clip, durationInFrames: number) => {
   if (!clip.src && !clip.asset_id) {
     return null;
+  }
+
+  if (mediaKind(clip) === "video") {
+    const layer: VideoLayer = {
+      type: "video",
+      id: `${clip.id}-background`,
+      asset_id: clip.asset_id,
+      src: clip.src,
+      fit: clip.fit,
+      overlay: clip.overlay,
+      motion: clip.camera
+        ? {
+            type: clip.motion?.type ?? "static",
+            intensity: clip.motion?.intensity,
+            from: clip.motion?.from,
+            parallaxFactor: clip.motion?.parallaxFactor ?? 0.55,
+          }
+        : clip.motion,
+      trim_start_sec: clip.trim_start_sec,
+      trim_end_sec: clip.trim_end_sec,
+      playback_rate: clip.playback_rate,
+      volume: clip.volume,
+      muted: clip.muted,
+      loop: clip.loop,
+    };
+
+    return <VideoAsset layer={layer} durationInFrames={durationInFrames} />;
   }
 
   const layer: ImageLayer = {
@@ -262,5 +291,10 @@ function holdsPastClip(type: string, authoredEnd: number, clipEnd: number): bool
   if (authoredEnd < clipEnd - 0.05) {
     return false;
   }
-  return type === "image" || type === "image_sequence" || type === "media";
+  return (
+    type === "image" ||
+    type === "image_sequence" ||
+    type === "media" ||
+    type === "video"
+  );
 }

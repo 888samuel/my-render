@@ -8,6 +8,7 @@ import { Comparison } from "../components/graphics/Comparison";
 import { FlowDiagram } from "../components/graphics/FlowDiagram";
 import { HighlightText } from "../components/text/HighlightText";
 import { ImageAsset } from "../components/images/ImageAsset";
+import { VideoAsset } from "../components/video/VideoAsset";
 import { ImageSequence } from "../components/images/ImageSequence";
 import { MediaLayerView } from "../components/images/MediaLayerView";
 import { DataCounter } from "../components/graphics/DataCounter";
@@ -171,7 +172,7 @@ export const LayerRenderer = ({
     case "graphic":
       return renderGraphic(layer, compositionFrameOffset);
     case "video":
-      throw new Error('ERROR:\nLayer type "video" is not implemented yet.');
+      return <VideoAsset layer={layer} durationInFrames={durationInFrames} />;
     case "transition":
       throw new Error('ERROR:\nLayer type "transition" is not implemented yet.');
   }

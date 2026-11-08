@@ -12,7 +12,7 @@ timed_script.json + asset_analysis.json + edit_plan.json
      rendered MP4
 ```
 
-For this first stage, only project initialization and architecture are in place. Motion, image playback, educational graphics, and full validation are not implemented yet.
+The engine renders the edit plan: stills, video footage, motion, graphics, and narration.
 
 ## Run locally
 
@@ -72,7 +72,7 @@ Keep videos at **3 minutes or less**.
 
 | Path | Role |
 | --- | --- |
-| `public/assets` | Media files referenced by asset ids |
+| `public/assets` | Media files. Stills live in `images`, footage in `videos` |
 | `src/data` | JSON inputs (`edit-plan`, timed script, asset analysis) |
 | `src/types` | TypeScript schemas for those JSON files |
 | `src/engine` | Timeline, clip/layer dispatch, asset lookup |
@@ -82,6 +82,30 @@ Keep videos at **3 minutes or less**.
 | `src/styles` | Shared documentary theme |
 | `scripts` | Local validate/render helpers |
 
-## Next
+## Video footage
 
-Implement the image layer next: resolve `asset_id`, fill the 16:9 frame, and add deterministic Ken Burns-style motion from JSON.
+A clip can play a video file instead of a still. Set `"source": "video"`, or point `src` at an `.mp4`, `.webm`, `.mov`, `.mkv`, or `.m4v`. Asset ids `vid_001` and `vid001` resolve to `public/assets/videos/vid_001.mp4`.
+
+```json
+{
+  "id": "interview",
+  "start_sec": 12,
+  "end_sec": 18.5,
+  "source": "video",
+  "src": "assets/videos/interview.mp4",
+  "trim_start_sec": 4.2,
+  "trim_end_sec": 12,
+  "playback_rate": 1,
+  "volume": 1,
+  "fit": "cover",
+  "layers": []
+}
+```
+
+`trim_start_sec` and `trim_end_sec` are times in the file. `playback_rate` is speed (`2` plays twice as fast, so the same trim occupies half as much timeline). `volume` is `0`–`1`. Use `0` when narration should stay in front. `loop` repeats the trimmed range. Without it, the last frame holds when the file runs out.
+
+A layer with `"type": "video"` does the same inside a shot. Leave `x`, `y`, and `width` off to fill the frame, or set them to place the footage (a picture-in-picture). `fit`, `overlay`, and `motion` work the same way they do on stills.
+
+`audio` can be one track or a list. Each track accepts `start_sec`, `end_sec`, `trim_start_sec`, `trim_end_sec`, `volume`, `playback_rate`, and `loop`.
+
+Open `VideoEditReel` in Remotion Studio to see a full-frame plate, a sped-up picture-in-picture, and a trimmed shot. The sample file is `public/assets/videos/sample-bars.mp4`.
