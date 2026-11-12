@@ -17,6 +17,7 @@ export const ImageAsset = ({ layer, durationInFrames }: ImageAssetProps) => {
       fit={layer.fit}
       motion={layer.motion}
       overlay={layer.overlay}
+      look={layer.look}
       x={layer.x}
       y={layer.y}
       width={layer.width}

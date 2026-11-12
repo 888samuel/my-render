@@ -13,6 +13,8 @@ import {
 } from "remotion";
 import { resolveVideoAsset } from "../../engine/AssetResolver";
 import {
+  canPlayNatively,
+  footageGain,
   footageWindow,
   isRemoteSrc,
   resolvePlayback,
@@ -32,8 +34,11 @@ const durationCache = new Map<string, number>();
 export const VideoAsset = ({ layer, durationInFrames }: VideoAssetProps) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const relativePath = layer.src?.replace(/^\//, "") ?? resolveLayerAsset(layer);
-  const url = isRemoteSrc(relativePath) ? relativePath : staticFile(relativePath);
+  const relativePath =
+    layer.src?.replace(/^\//, "") ?? resolveLayerAsset(layer);
+  const url = isRemoteSrc(relativePath)
+    ? relativePath
+    : staticFile(relativePath);
   const durationSec = useVideoDuration(url);
 
   if (durationSec === null) {
@@ -41,38 +46,85 @@ export const VideoAsset = ({ layer, durationInFrames }: VideoAssetProps) => {
   }
 
   const playback = resolvePlayback(layer);
-  const window = footageWindow(playback, durationSec, fps);
+  const footage = footageWindow(playback, durationSec, fps, durationInFrames);
   const sample = sampleFootage({
     timelineFrame: frame,
     fps,
-    window,
-    playbackRate: playback.playbackRate,
+    window: footage,
+    playbackRate: footage.rateStart,
+    playbackRateEnd: footage.rateEnd,
     loop: playback.loop,
+    reverse: playback.reverse,
+    freeze: playback.freeze,
   });
-  const silent = playback.muted || sample.holding;
+  const atEnd =
+    !playback.loop && !playback.freeze && frame >= footage.contentFrames;
+  const silent = playback.muted || playback.freeze || atEnd;
+  const gain = silent
+    ? 0
+    : footageGain({
+        frame,
+        durationInFrames,
+        fps,
+        volume: playback.volume,
+        fadeInSec: playback.audioFadeInSec,
+        fadeOutSec: playback.audioFadeOutSec,
+      });
   const placed =
     layer.x !== undefined || layer.y !== undefined || layer.width !== undefined;
   const fit = layer.fit ?? (placed ? "contain" : "cover");
+  const focus = `${String(playback.focusX)}% ${String(playback.focusY)}%`;
+  const native = canPlayNatively(playback);
+  const trimBefore = Math.round(footage.trimStartSec * fps);
 
   return (
     <IllustratedFrame
       media={
-        <Freeze frame={sample.frame}>
-          <OffthreadVideo
-            name={layer.id ?? "video"}
-            src={url}
-            playbackRate={1}
-            muted={silent}
-            volume={silent ? 0 : playback.volume}
-            toneMapped={false}
-            style={pictureStyle(placed, fit, layer.height)}
-          />
-        </Freeze>
+        native ? (
+          atEnd ? (
+            <Freeze frame={Math.max(0, footage.contentFrames - 1)}>
+              <OffthreadVideo
+                name={layer.id ?? "video"}
+                src={url}
+                trimBefore={trimBefore}
+                playbackRate={footage.rateStart}
+                muted
+                volume={0}
+                toneMapped={false}
+                style={pictureStyle(placed, fit, layer.height, focus)}
+              />
+            </Freeze>
+          ) : (
+            <OffthreadVideo
+              name={layer.id ?? "video"}
+              src={url}
+              trimBefore={trimBefore}
+              playbackRate={footage.rateStart}
+              muted={silent}
+              volume={gain}
+              toneMapped={false}
+              style={pictureStyle(placed, fit, layer.height, focus)}
+            />
+          )
+        ) : (
+          <Freeze frame={sample.frame}>
+            <OffthreadVideo
+              name={layer.id ?? "video"}
+              src={url}
+              playbackRate={1}
+              muted={silent}
+              volume={gain}
+              toneMapped={false}
+              style={pictureStyle(placed, fit, layer.height, focus)}
+            />
+          </Freeze>
+        )
       }
       durationInFrames={durationInFrames}
       fit={fit}
       motion={layer.motion}
       overlay={layer.overlay}
+      look={layer.look}
       opacity={layer.opacity ?? 1}
       x={layer.x}
       y={layer.y}
@@ -94,6 +146,7 @@ function pictureStyle(
   placed: boolean,
   fit: ImageFit,
   height: number | undefined,
+  focus: string,
 ): CSSProperties {
   if (placed) {
     return {
@@ -102,6 +155,7 @@ function pictureStyle(
       height: height !== undefined ? "100%" : "auto",
       aspectRatio: height === undefined ? "16 / 9" : undefined,
       objectFit: "contain",
+      objectPosition: focus,
     };
   }
 
@@ -109,7 +163,7 @@ function pictureStyle(
     width: "100%",
     height: "100%",
     objectFit: fit === "contain" ? "contain" : "cover",
-    objectPosition: "center center",
+    objectPosition: focus,
   };
 }
 
@@ -130,7 +184,10 @@ function useVideoDuration(src: string): number | null {
 
     getVideoMetadata(src)
       .then((meta) => {
-        if (!Number.isFinite(meta.durationInSeconds) || meta.durationInSeconds <= 0) {
+        if (
+          !Number.isFinite(meta.durationInSeconds) ||
+          meta.durationInSeconds <= 0
+        ) {
           throw new Error("Video file has no duration.");
         }
         durationCache.set(src, meta.durationInSeconds);
@@ -141,7 +198,9 @@ function useVideoDuration(src: string): number | null {
       })
       .catch((error: unknown) => {
         const message = error instanceof Error ? error.message : String(error);
-        cancelRender(new Error(`ERROR:\nCould not read video "${src}". ${message}`));
+        cancelRender(
+          new Error(`ERROR:\nCould not read video "${src}". ${message}`),
+        );
       });
 
     return () => {

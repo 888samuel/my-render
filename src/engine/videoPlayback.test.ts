@@ -3,6 +3,8 @@ import test from "node:test";
 import { resolveVideoAsset } from "./AssetResolver";
 import {
   assertPlayback,
+  canPlayNatively,
+  footageGain,
   footageWindow,
   isVideoSrc,
   mediaKind,
@@ -73,6 +75,114 @@ test("trim and speed land on the right source frame", () => {
   });
   assert.equal(looped.holding, false);
   assert.equal(looped.frame, first.frame);
+});
+
+test("a ramp, a reverse, a freeze, and a conform land on source frames", () => {
+  const trim = {
+    trim_start_sec: 1.2,
+    trim_end_sec: 3.2,
+  };
+  const ramp = footageWindow(
+    resolvePlayback({ ...trim, playback_rate: 1, playback_rate_end: 3 }),
+    4,
+    30,
+  );
+  assert.equal(ramp.contentFrames, 30);
+  assert.equal(canPlayNatively(resolvePlayback({ playback_rate: 2 })), true);
+  assert.equal(
+    canPlayNatively(resolvePlayback({ ...trim, playback_rate_end: 3 })),
+    false,
+  );
+
+  const midRamp = sampleFootage({
+    timelineFrame: 15,
+    fps: 30,
+    window: ramp,
+    playbackRate: ramp.rateStart,
+    playbackRateEnd: ramp.rateEnd,
+    loop: false,
+  });
+  assert.equal(midRamp.frame, 59);
+
+  const reversed = footageWindow(
+    resolvePlayback({ ...trim, playback_rate: 2, reverse: true }),
+    4,
+    30,
+  );
+  const reverseStart = sampleFootage({
+    timelineFrame: 0,
+    fps: 30,
+    window: reversed,
+    playbackRate: reversed.rateStart,
+    playbackRateEnd: reversed.rateEnd,
+    loop: false,
+    reverse: true,
+  });
+  assert.equal(reverseStart.frame, 95);
+
+  const frozen = resolvePlayback({ ...trim, freeze: true });
+  const held = sampleFootage({
+    timelineFrame: 10,
+    fps: 30,
+    window: footageWindow(frozen, 4, 30),
+    playbackRate: 0,
+    loop: false,
+    freeze: true,
+  });
+  assert.equal(held.holding, true);
+  assert.equal(held.frame, 36);
+
+  const fitted = footageWindow(
+    resolvePlayback({ ...trim, conform: true }),
+    4,
+    30,
+    15,
+  );
+  assert.equal(fitted.contentFrames, 15);
+  assert.equal(fitted.rateStart, 4);
+
+  assert.equal(
+    footageGain({
+      frame: 0,
+      durationInFrames: 30,
+      fps: 30,
+      volume: 1,
+      fadeInSec: 0.5,
+      fadeOutSec: 0,
+    }),
+    0,
+  );
+  assert.equal(
+    footageGain({
+      frame: 15,
+      durationInFrames: 30,
+      fps: 30,
+      volume: 1,
+      fadeInSec: 0.5,
+      fadeOutSec: 0,
+    }),
+    1,
+  );
+  assert.equal(
+    footageGain({
+      frame: 29,
+      durationInFrames: 30,
+      fps: 30,
+      volume: 1,
+      fadeInSec: 0,
+      fadeOutSec: 0.5,
+    }),
+    0,
+  );
+
+  assert.throws(
+    () => assertPlayback({ conform: true, playback_rate: 2 }, "Clip"),
+    /conform/,
+  );
+  assert.throws(
+    () => assertPlayback({ focus_x: 140 }, "Clip"),
+    /focus_x/,
+  );
 });
 
 test("the current edit plan still validates", () => {

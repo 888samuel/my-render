@@ -9,6 +9,7 @@ import type {
   Seconds,
   TextAnimationType,
   TransitionType,
+  VideoLook,
 } from "./common";
 
 export type MotionFrom = "left" | "right" | "top" | "bottom";
@@ -26,19 +27,10 @@ export type Motion = {
 };
 
 export type MediaPlacement =
-  | "center"
-  | "center_left"
-  | "center_right"
-  | "top_center"
-  | "bottom_center";
+  "center" | "center_left" | "center_right" | "top_center" | "bottom_center";
 
 export type CameraType =
-  | "push_in"
-  | "pull_out"
-  | "drift_left"
-  | "drift_right"
-  | "rise"
-  | "settle";
+  "push_in" | "pull_out" | "drift_left" | "drift_right" | "rise" | "settle";
 
 export type CameraMove = {
   type: CameraType;
@@ -105,6 +97,8 @@ export type ImageLayer = LayerTiming &
     fit?: ImageFit;
     motion?: Motion;
     overlay?: ImageOverlay;
+    /** Grade for this still. Omit to inherit the shot, then the video default. */
+    look?: VideoLook;
   };
 
 export type ImageSequenceLayer = LayerTiming &
@@ -132,6 +126,11 @@ export type VideoPlayback = {
   trim_end_sec?: Seconds;
   /** 1 is normal. 0.5 is half speed, 2 is double. */
   playback_rate?: number;
+  /**
+   * Speed at the end of the shot. The rate eases from playback_rate to this.
+   * Omit it for one constant speed.
+   */
+  playback_rate_end?: number;
   /** Linear gain from 0 to 1. Defaults to 1. Use 0 under narration. */
   volume?: number;
   muted?: boolean;
@@ -140,6 +139,25 @@ export type VideoPlayback = {
    * Otherwise the last frame holds.
    */
   loop?: boolean;
+  /** Play the trim backwards. The rate stays positive. */
+  reverse?: boolean;
+  /**
+   * Stretch the trim so it fills this shot.
+   * Leave playback_rate unset. A ramp is not used.
+   */
+  conform?: boolean;
+  /** Hold trim_start_sec for the whole shot. */
+  freeze?: boolean;
+  /** Fade the footage's own audio in, in seconds. */
+  audio_fade_in_sec?: Seconds;
+  /** Fade the footage's own audio out, in seconds. */
+  audio_fade_out_sec?: Seconds;
+  /**
+   * Where a cover crop sits, 0–100.
+   * 0 is the left or top edge. 50 is the center.
+   */
+  focus_x?: number;
+  focus_y?: number;
 };
 
 export type VideoLayer = LayerTiming &
@@ -152,6 +170,11 @@ export type VideoLayer = LayerTiming &
     motion?: Motion;
     overlay?: ImageOverlay;
     opacity?: number;
+    /**
+     * Grade for this window only.
+     * Omit to inherit the shot look. "none" keeps this window clean.
+     */
+    look?: VideoLook;
   };
 
 export type MediaLayerItem = LayerTiming &
@@ -369,12 +392,25 @@ export type Clip = {
   fit?: ImageFit;
   overlay?: ImageOverlay;
   motion?: Motion;
+  /**
+   * Artistic grade for the plate.
+   * A video layer can override it. Omit to use video.look.
+   */
+  look?: VideoLook;
   trim_start_sec?: Seconds;
   trim_end_sec?: Seconds;
   playback_rate?: number;
+  playback_rate_end?: number;
   volume?: number;
   muted?: boolean;
   loop?: boolean;
+  reverse?: boolean;
+  conform?: boolean;
+  freeze?: boolean;
+  audio_fade_in_sec?: Seconds;
+  audio_fade_out_sec?: Seconds;
+  focus_x?: number;
+  focus_y?: number;
   /** Shared move. Each picture follows it by its own parallaxFactor. */
   camera?: CameraMove;
   /** Extra pictures stacked by zIndex. The clip src remains the back plate. */
@@ -390,6 +426,11 @@ export type VideoSettings = {
    * Optional explicit duration. If omitted, the engine uses the last clip end time.
    */
   duration_sec?: Seconds;
+  /**
+   * Grade for every shot that does not set its own look.
+   * "none" and omitting it leave the picture untouched.
+   */
+  look?: VideoLook;
 };
 
 export type AudioTrack = {

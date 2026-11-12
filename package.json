@@ -38,6 +38,7 @@
     "render:demo": "remotion render CapabilityDemo out/capability-20s.mp4 --concurrency=1",
     "render:text-motion": "remotion render TextMotionReel out/text-motion-40s.mp4 --concurrency=1",
     "render:video": "remotion render VideoEditReel out/video-edit.mp4 --concurrency=1",
+    "render:looks": "remotion render ArtisticIllustration out/artistic-looks-50s.mp4 --concurrency=1 --jpeg-quality=80",
     "phrase": "node scripts/phrase-script.js",
     "phrase:test": "node --test scripts/phrase-script.test.js",
     "align": "node scripts/align-plan-to-srt.js",

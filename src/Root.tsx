@@ -6,6 +6,7 @@ import { CapabilityReel, capabilityPlan } from "./CapabilityReel";
 import { CapabilityDemo, capabilityDemoPlan } from "./CapabilityDemo";
 import { TextMotionReel } from "./TextMotionReel";
 import { VideoEditReel, videoEditPlan } from "./VideoEditReel";
+import { ArtisticIllustration, artisticPlan } from "./ArtisticIllustration";
 import { IllustratedScene } from "./IllustratedScene";
 import { getVideoDurationSeconds } from "./engine/Timeline";
 import { secondsToFrames } from "./utils/time";
@@ -85,6 +86,16 @@ export const RemotionRoot = () => {
         width={1920}
         height={1080}
         defaultProps={{ editPlan: videoEditPlan }}
+        calculateMetadata={calculateMetadata}
+      />
+      <Composition
+        id="ArtisticIllustration"
+        component={ArtisticIllustration}
+        durationInFrames={1500}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ editPlan: artisticPlan }}
         calculateMetadata={calculateMetadata}
       />
     </>

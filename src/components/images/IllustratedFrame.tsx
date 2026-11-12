@@ -1,6 +1,9 @@
 import type { CSSProperties, ReactNode } from "react";
 import { Img, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { AbsoluteFill } from "../common/AbsoluteFill";
+import { ArtisticLook } from "../video/ArtisticLook";
+import { lookPictureStyle, normalizeLook } from "../../engine/artisticLook";
+import { useInheritedLook } from "../../engine/LookContext";
 import { ImageMotion } from "./ImageMotion";
 import { theme } from "../../styles/theme";
 import { lerpFrames } from "../../utils/interpolate";
@@ -16,6 +19,8 @@ type IllustratedFrameProps = {
   fit?: ImageFit;
   motion?: Motion;
   overlay?: ImageOverlay;
+  /** Omit to use the shot grade. "none" leaves this picture clean. */
+  look?: string;
   opacity?: number;
   zIndex?: number;
   x?: number;
@@ -31,6 +36,7 @@ export const IllustratedFrame = ({
   fit = "cover",
   motion,
   overlay,
+  look: lookProp,
   opacity = 1,
   zIndex,
   x,
@@ -38,6 +44,9 @@ export const IllustratedFrame = ({
   width,
   height,
 }: IllustratedFrameProps) => {
+  const frame = useCurrentFrame();
+  const inherited = useInheritedLook();
+  const look = lookProp !== undefined ? normalizeLook(lookProp) : inherited;
   const placed = x !== undefined || y !== undefined || width !== undefined;
   const cropScale = !placed && fit === "centered_crop" ? 1.18 : 1;
 
@@ -66,7 +75,7 @@ export const IllustratedFrame = ({
     />
   );
 
-  const moving = (
+  const picture = (
     <ImageMotion
       motion={motion}
       durationInFrames={durationInFrames}
@@ -88,6 +97,21 @@ export const IllustratedFrame = ({
       )}
     </ImageMotion>
   );
+  const moving =
+    look === "none" ? (
+      picture
+    ) : (
+      <div
+        style={{
+          width: "100%",
+          height: placed ? "auto" : "100%",
+          ...lookPictureStyle(look, frame),
+        }}
+      >
+        {picture}
+      </div>
+    );
+  const grade = look === "none" ? null : <ArtisticLook look={look} />;
 
   if (!placed) {
     return (
@@ -99,6 +123,7 @@ export const IllustratedFrame = ({
         }}
       >
         {moving}
+        {grade}
         <FrameGrade overlay={overlay} />
       </AbsoluteFill>
     );
@@ -117,6 +142,7 @@ export const IllustratedFrame = ({
       }}
     >
       {moving}
+      {grade}
     </div>
   );
 };

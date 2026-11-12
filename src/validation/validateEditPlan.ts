@@ -1,3 +1,4 @@
+import { normalizeLook } from "../engine/artisticLook";
 import { listAudioTracks } from "../engine/audioTracks";
 import {
   assertPlayback,
@@ -19,12 +20,16 @@ export function validateEditPlan(plan: EditPlan): void {
     throw new Error("ERROR:\nEdit plan clips must be an array.");
   }
 
+  assertKnownLook(plan.video.look, "Video settings");
+
   for (const clip of plan.clips) {
     if (clip.end_sec <= clip.start_sec) {
       throw new Error(
         `ERROR:\nClip "${clip.id}" ends before it starts (${String(clip.start_sec)}s → ${String(clip.end_sec)}s).`,
       );
     }
+
+    assertKnownLook(clip.look, `Clip "${clip.id}"`);
 
     if (mediaKind(clip) === "video") {
       assertPlayback(clip, `Clip "${clip.id}"`);
@@ -35,6 +40,10 @@ export function validateEditPlan(plan: EditPlan): void {
     }
 
     for (const layer of clip.layers) {
+      if (layer.type === "image" || layer.type === "video") {
+        assertKnownLook(layer.look, `Clip "${clip.id}" ${layer.type}`);
+      }
+
       if (layer.type !== "video") {
         continue;
       }
@@ -42,7 +51,9 @@ export function validateEditPlan(plan: EditPlan): void {
       assertPlayback(layer, `Clip "${clip.id}" video`);
       if (
         layer.opacity !== undefined &&
-        (!Number.isFinite(layer.opacity) || layer.opacity < 0 || layer.opacity > 1)
+        (!Number.isFinite(layer.opacity) ||
+          layer.opacity < 0 ||
+          layer.opacity > 1)
       ) {
         throw new Error(
           `ERROR:\nClip "${clip.id}" video opacity must be between 0 and 1.`,
@@ -63,5 +74,21 @@ export function validateEditPlan(plan: EditPlan): void {
         `ERROR:\nAudio "${track.src}" ends before it starts (${String(start)}s → ${String(track.end_sec)}s).`,
       );
     }
+  }
+}
+
+function assertKnownLook(look: string | undefined, where: string): void {
+  if (look === undefined) {
+    return;
+  }
+
+  try {
+    normalizeLook(look);
+  } catch (error) {
+    const message =
+      error instanceof Error
+        ? error.message.replace(/^ERROR:\n/, "")
+        : String(error);
+    throw new Error(`ERROR:\n${where}: ${message}`);
   }
 }

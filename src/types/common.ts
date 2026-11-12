@@ -9,11 +9,26 @@ export type LayerId = string;
 export type ImageFit = "contain" | "cover" | "centered_crop";
 
 export type ImageOverlay =
-  | "none"
-  | "dark_gradient"
-  | "vignette"
-  | "spotlight"
-  | "warm";
+  "none" | "dark_gradient" | "vignette" | "spotlight" | "warm";
+
+/**
+ * A grade applied to a shot or a video window.
+ * These are CSS treatments, so they stay light enough for low-RAM renders.
+ */
+export const VIDEO_LOOKS = [
+  "none",
+  "cinema",
+  "film",
+  "noir",
+  "golden",
+  "teal",
+  "fade",
+  "vhs",
+  "dream",
+  "ink",
+] as const;
+
+export type VideoLook = (typeof VIDEO_LOOKS)[number];
 
 export type LayerPlacement =
   | "center"

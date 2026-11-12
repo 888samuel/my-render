@@ -1,17 +1,30 @@
 import type { ReactNode } from "react";
 import { Sequence } from "remotion";
+import { CircleReveal } from "../components/transitions/CircleReveal";
 import { Crossfade } from "../components/transitions/Crossfade";
 import { Fade } from "../components/transitions/Fade";
+import { FlashCut } from "../components/transitions/FlashCut";
+import { GlitchCut } from "../components/transitions/GlitchCut";
 import { Slide } from "../components/transitions/Slide";
+import { WhipPan } from "../components/transitions/WhipPan";
 import { Wipe } from "../components/transitions/Wipe";
 import { ZoomPunch } from "../components/transitions/ZoomPunch";
 import { ImageAsset } from "../components/images/ImageAsset";
 import { MediaLayerView } from "../components/images/MediaLayerView";
 import { VideoAsset } from "../components/video/VideoAsset";
+import { normalizeLook } from "./artisticLook";
 import { LayerRenderer } from "./LayerRenderer";
 import { CameraRig } from "./CameraRig";
-import { mediaKind } from "./videoPlayback";
-import type { Clip, ImageLayer, MediaLayer, Transition, VideoLayer } from "../types/edit-plan";
+import { useEditPlan } from "./EditPlanContext";
+import { LookProvider } from "./LookContext";
+import { mediaKind, playbackInputOf } from "./videoPlayback";
+import type {
+  Clip,
+  ImageLayer,
+  MediaLayer,
+  Transition,
+  VideoLayer,
+} from "../types/edit-plan";
 import { secondsToFrames } from "../utils/time";
 import { theme } from "../styles/theme";
 import { normalizeTransitionType } from "./normalizeTransition";
@@ -23,6 +36,8 @@ type ClipRendererProps = {
 };
 
 export const ClipRenderer = ({ clip, nextClip, fps }: ClipRendererProps) => {
+  const plan = useEditPlan();
+  const shotLook = normalizeLook(clip.look ?? plan.video.look);
   const startFrame = secondsToFrames(clip.start_sec, fps);
   const visualEnd = visualEndSec(clip, nextClip);
   // Subtract absolute frames. Rounding each edge, then the gap, can
@@ -44,40 +59,51 @@ export const ClipRenderer = ({ clip, nextClip, fps }: ClipRendererProps) => {
         transitionOut={clip.transition_out}
         durationInFrames={durationInFrames}
       >
-        <CameraRig camera={clip.camera} durationInFrames={durationInFrames}>
-          {clipBackground(clip, durationInFrames)}
-          {[...(clip.media ?? [])]
-            .sort((a, b) => a.zIndex - b.zIndex)
-            .map((item, index) =>
-              timedLayer(clip, item, index, fps, visualEnd, (duration) => (
-                <MediaLayerView layer={item} durationInFrames={duration} />
-              )),
-            )}
-          {clip.layers.map((layer, index) => {
-            const layerStartSec = layer.start_sec ?? clip.start_sec;
-            const authoredEnd = layer.end_sec ?? clip.end_sec;
-            const layerEndSec = holdsPastClip(layer.type, authoredEnd, clip.end_sec)
-              ? visualEnd
-              : authoredEnd;
-            const span = layerWindow(startFrame, layerStartSec, layerEndSec, fps);
+        <LookProvider value={shotLook}>
+          <CameraRig camera={clip.camera} durationInFrames={durationInFrames}>
+            {clipBackground(clip, durationInFrames)}
+            {[...(clip.media ?? [])]
+              .sort((a, b) => a.zIndex - b.zIndex)
+              .map((item, index) =>
+                timedLayer(clip, item, index, fps, visualEnd, (duration) => (
+                  <MediaLayerView layer={item} durationInFrames={duration} />
+                )),
+              )}
+            {clip.layers.map((layer, index) => {
+              const layerStartSec = layer.start_sec ?? clip.start_sec;
+              const authoredEnd = layer.end_sec ?? clip.end_sec;
+              const layerEndSec = holdsPastClip(
+                layer.type,
+                authoredEnd,
+                clip.end_sec,
+              )
+                ? visualEnd
+                : authoredEnd;
+              const span = layerWindow(
+                startFrame,
+                layerStartSec,
+                layerEndSec,
+                fps,
+              );
 
-            return (
-              <Sequence
-                key={layer.id ?? `${clip.id}-layer-${String(index)}`}
-                from={span.from}
-                durationInFrames={span.durationInFrames}
-                name={layer.id ?? layer.type}
-                layout="none"
-              >
-                <LayerRenderer
-                  layer={layer}
-                  compositionFrameOffset={startFrame + span.from}
+              return (
+                <Sequence
+                  key={layer.id ?? `${clip.id}-layer-${String(index)}`}
+                  from={span.from}
                   durationInFrames={span.durationInFrames}
-                />
-              </Sequence>
-            );
-          })}
-        </CameraRig>
+                  name={layer.id ?? layer.type}
+                  layout="none"
+                >
+                  <LayerRenderer
+                    layer={layer}
+                    compositionFrameOffset={startFrame + span.from}
+                    durationInFrames={span.durationInFrames}
+                  />
+                </Sequence>
+              );
+            })}
+          </CameraRig>
+        </LookProvider>
       </ClipTransition>
     </Sequence>
   );
@@ -137,12 +163,7 @@ const clipBackground = (clip: Clip, durationInFrames: number) => {
             parallaxFactor: clip.motion?.parallaxFactor ?? 0.55,
           }
         : clip.motion,
-      trim_start_sec: clip.trim_start_sec,
-      trim_end_sec: clip.trim_end_sec,
-      playback_rate: clip.playback_rate,
-      volume: clip.volume,
-      muted: clip.muted,
-      loop: clip.loop,
+      ...playbackInputOf(clip),
     };
 
     return <VideoAsset layer={layer} durationInFrames={durationInFrames} />;
@@ -187,13 +208,21 @@ const ClipTransition = ({
       transitionOut.duration_sec ?? theme.animation.transitionSec;
     if (outType === "fade" || outType === "crossfade" || outType === "slide") {
       content = (
-        <Fade direction="out" durationSec={durationSec} durationInFrames={durationInFrames}>
+        <Fade
+          direction="out"
+          durationSec={durationSec}
+          durationInFrames={durationInFrames}
+        >
           {content}
         </Fade>
       );
     } else if (outType === "wipe") {
       content = (
-        <Fade direction="out" durationSec={durationSec} durationInFrames={durationInFrames}>
+        <Fade
+          direction="out"
+          durationSec={durationSec}
+          durationInFrames={durationInFrames}
+        >
           {content}
         </Fade>
       );
@@ -228,6 +257,16 @@ const ClipTransition = ({
       content = <Wipe durationSec={durationSec}>{content}</Wipe>;
     } else if (inType === "zoom_punch") {
       content = <ZoomPunch durationSec={durationSec}>{content}</ZoomPunch>;
+    } else if (inType === "flash") {
+      content = <FlashCut durationSec={durationSec}>{content}</FlashCut>;
+    } else if (inType === "circle") {
+      content = (
+        <CircleReveal durationSec={durationSec}>{content}</CircleReveal>
+      );
+    } else if (inType === "whip") {
+      content = <WhipPan durationSec={durationSec}>{content}</WhipPan>;
+    } else if (inType === "glitch") {
+      content = <GlitchCut durationSec={durationSec}>{content}</GlitchCut>;
     }
   }
 
@@ -287,7 +326,11 @@ function layerWindow(
   return { from, durationInFrames };
 }
 
-function holdsPastClip(type: string, authoredEnd: number, clipEnd: number): boolean {
+function holdsPastClip(
+  type: string,
+  authoredEnd: number,
+  clipEnd: number,
+): boolean {
   if (authoredEnd < clipEnd - 0.05) {
     return false;
   }

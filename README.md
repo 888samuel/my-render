@@ -102,7 +102,44 @@ A clip can play a video file instead of a still. Set `"source": "video"`, or poi
 }
 ```
 
-`trim_start_sec` and `trim_end_sec` are times in the file. `playback_rate` is speed (`2` plays twice as fast, so the same trim occupies half as much timeline). `volume` is `0`–`1`. Use `0` when narration should stay in front. `loop` repeats the trimmed range. Without it, the last frame holds when the file runs out.
+`trim_start_sec` and `trim_end_sec` are times in the file. `playback_rate` is speed (`2` plays twice as fast, so the same trim occupies half as much timeline). `playback_rate_end` eases from the start speed to another speed across the shot. `reverse` plays that trim backwards. `conform` stretches the trim to fill the shot, so leave `playback_rate` unset. `freeze` holds the in-point. `audio_fade_in_sec` and `audio_fade_out_sec` fade the footage's own sound. `focus_x` and `focus_y` aim a cover crop: `0` is the left or top edge, `50` is the center. `volume` is `0`–`1`. Use `0` when narration should stay in front. `loop` repeats the trimmed range. Without it, the last frame holds when the file runs out.
+
+A straight cut plays on the video's own clock, so the sound stays in sync. Reverse, a speed ramp, and a loop step through frames instead.
+
+## Artistic looks
+
+`look` grades the picture without touching titles. Set it on `video` to grade the whole film, on a clip to grade that shot, or on a video layer to grade one window. A layer value wins. `"none"` leaves that window clean.
+
+```json
+{
+  "id": "interview",
+  "start_sec": 12,
+  "end_sec": 18.5,
+  "source": "video",
+  "src": "assets/videos/interview.mp4",
+  "look": "cinema",
+  "transition_in": { "type": "whip_pan", "duration_sec": 0.4 },
+  "layers": []
+}
+```
+
+| Look | What you see |
+| --- | --- |
+| `cinema` | Letterbox, cooler contrast, light grain |
+| `film` | Warm print, heavier grain |
+| `noir` | Black and white, crushed edges |
+| `golden` | Amber hour |
+| `teal` | Teal shadows, warm highlights |
+| `fade` | Lifted, washed print |
+| `vhs` | Scan lines, a tracking bar, a small wobble |
+| `dream` | Soft bright center |
+| `ink` | High-contrast graphic |
+
+`cinematic`, `vintage`, `black_and_white`, `gold`, `tape`, and `poster` are accepted aliases.
+
+Entrances that read as an edit, not a dissolve: `flash_cut`, `circle_pulse`, `whip_pan`, `glitch_cut`. The glitch moves the frame and tints the edges. It does not split the footage into separate color channels.
+
+Open `ArtisticIllustration` for a 50-second walk through every look on a real still. `VideoEditReel` is the short version on the sample footage.
 
 A layer with `"type": "video"` does the same inside a shot. Leave `x`, `y`, and `width` off to fill the frame, or set them to place the footage (a picture-in-picture). `fit`, `overlay`, and `motion` work the same way they do on stills.
 
